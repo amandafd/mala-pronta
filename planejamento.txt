@@ -9,22 +9,25 @@ Esse arquivo será utilizado durante a execução do projeto para auxiliar no se
 -Se nevará no local
 -Se haverá algum evento. ex: festa, casamento, festa a fantasia, etc
 -Se precisa levar roupa de cama
+-Idade da pessoa para quem a mala está sendo montada(adulto, crianças, ou bebês)
+-Sugerir substituições. Exemplo: 2 Vestidos ou roupas para sair a noite, como conjunto de shorts e camisa casual. Assim abrangemos ambos os sexos e estilos.
 
 *Itens fixos na mala:
 -Roupa intimas: número de dias + 1 se for abaixo de 4 dias
 -Roupas intimas: número de dias + 2 se for de 5 a 15 dias
 -Óculos de sol: pelo menos um
--Itens de higiene(elaborar melhor): 
+-Itens de higiene(TODO: elaborar melhor): 
     -se menstrua: verificar se estará menstruada no dia da viagem
     -verificar se o local de hospedagem fornece shampoo, condicionador e sabonete ou se o usuário gosta de usar algum especifico
     -lamina de barbear/metodo de depilação
     -outros itens utilizados no dia-a-dia(skincare, etc)
--Remedios(elaborar)
+-Remedios(TODO: elaborar)
 -Livro ou itens relacionados a hobbies
 
-*Dicas fixadas no final da mala(melhorar textos):
+*Dicas fixadas no final da mala(TODO: melhorar textos):
 -Fazer rolinhos com as roupas para economizar espaço
 -Escolher tecidos que não amassam e ocupam pouco espaço
+-É possível adequar a sugestão da mala ao seu estilo
 -Verificar se é possível alugar itens especificos, como roupas de neve
 -Se for de avião, lembrar de verificar o que pode ir na mala de mão e na bagagem despachada
 -Se for para mais de um destino, com perfis diferentes, coloca no fundo o que for usar depois
