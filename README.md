@@ -52,12 +52,12 @@
 
 
 <!--TODO: Atualizar com as informações da Soraia-->
-<img align="left" src="">Soraia Barbosa</a>
+<img align="left" src="https://avatars.githubusercontent.com/u/114086320?v=4" width=115>
+<a href="https://github.com/soraia-barbosa">Soraia Barbosa</a>
 <h3 align="left">Você me encontra nas redes sociais:</h3>
 <p align="left">
-  <!--<a href=""><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Badge Linkedin" /></a>
-  <a href=""><img src="https://img.shields.io/badge/-Behance-blue?style=for-the-badge&logo=behance&logoColor=white" alt="Badge Behance" /></a>
-  <a href=""><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"  alt="Badge Instagram" /></a>-->
+  <a href="https://www.linkedin.com/in/soraiacbarbosa/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Badge Linkedin" /></a>-->
+  <!--<a href=""><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"  alt="Badge Instagram" /></a>-->
 </p>
 
 
