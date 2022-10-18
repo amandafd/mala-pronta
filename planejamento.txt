@@ -9,7 +9,7 @@ Esse arquivo será utilizado durante a execução do projeto para auxiliar no se
 -Se nevará no local
 -Se haverá algum evento. ex: festa, casamento, festa a fantasia, etc
 -Se precisa levar roupa de cama
--Idade da pessoa para quem a mala está sendo montada(adulto, crianças, ou bebês)
+-Mala apenas para adultos. Crianças e bebês pode variar da criança e dos pais
 -Sugerir substituições. Exemplo: 2 Vestidos ou roupas para sair a noite, como conjunto de shorts e camisa casual. Assim abrangemos ambos os sexos e estilos.
 
 *Itens fixos na mala:
