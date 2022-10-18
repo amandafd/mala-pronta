@@ -1,0 +1,43 @@
+Esse arquivo será utilizado durante a execução do projeto para auxiliar no seu planejamento e execução.
+
+*Levar em consideração:
+-Quantos dias
+-Se será apenas um destino. Se for mais de um, podemos fazer em apenas uma etapa, ou em uma etapa para cada destino, acrescentando os itens ao final.
+-Qual o clima
+-Se vai chover
+-Se tem praia, cachoeira ou piscina no local
+-Se nevará no local
+-Se haverá algum evento. ex: festa, casamento, festa a fantasia, etc
+-Se precisa levar roupa de cama
+
+*Itens fixos na mala:
+-Roupa intimas: número de dias + 1 se for abaixo de 4 dias
+-Roupas intimas: número de dias + 2 se for de 5 a 15 dias
+-Óculos de sol: pelo menos um
+-Itens de higiene(elaborar melhor): 
+    -se menstrua: verificar se estará menstruada no dia da viagem
+    -verificar se o local de hospedagem fornece shampoo, condicionador e sabonete ou se o usuário gosta de usar algum especifico
+    -lamina de barbear/metodo de depilação
+    -outros itens utilizados no dia-a-dia(skincare, etc)
+-Remedios(elaborar)
+-Livro ou itens relacionados a hobbies
+
+*Dicas fixadas no final da mala(melhorar textos):
+-Fazer rolinhos com as roupas para economizar espaço
+-Escolher tecidos que não amassam e ocupam pouco espaço
+-Verificar se é possível alugar itens especificos, como roupas de neve
+-Se for de avião, lembrar de verificar o que pode ir na mala de mão e na bagagem despachada
+-Se for para mais de um destino, com perfis diferentes, coloca no fundo o que for usar depois
+
+*Detalhes da execução:
+-HTML:
+
+
+-CSS:
+
+
+-Javascript:
+    -Sugestão de texto de abertura:
+    -Sugestão de output final: `Olá, ${nome}. Aqui está sua sugestão de mala de viagem: 
+    (checklist com os itens)
+    Espero que faça uma ótima viagem!`
