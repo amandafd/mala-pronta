@@ -29,14 +29,14 @@
 
 <h3 id="o-projeto">O Projeto</h3>
 
-<p>Esse site está desenvolvido por nós com o intuito de auxiliar na montagem de malas de viagem de acordo com o tempo em cada destino, clima e demais fatores. Assim o viajante não esquece não corre o risco de esquecer itens essenciais e economiza tempo, pensando apenas na parte boa: aproveitar o destino!</p> 
+<p>Esse site está sendo desenvolvido por nós com o intuito de auxiliar na montagem de malas de viagem de acordo com o tempo em cada destino, clima e demais fatores. Assim o viajante não corre o risco de esquecer itens essenciais e economiza tempo, pensando apenas na parte boa: aproveitar o destino!</p> 
 <p>Os objetivos de aprendizado desse projeto serão atualizados na seção "Aprendizados" conforme são trabalhados na execução.</p>
 
 
 <h2 id="o-processo">O processo</h2>
 
 <h3 id="aprendizados">Aprendizados</h3>
-<ul>Os aprendizados reforçados e adquiridos durante a execução desse projeto foram:
+<ul>Os aprendizados reforçados e adquiridos durante a execução desse projeto serão atualizados constantemente:
   <li></li>
 </ul> 
 
@@ -51,7 +51,7 @@
 </p>
 
 
-<!--TODO: Atualizar com as informações da Soraia-->
+<!--TODO: Atualizar com outras redes sociais que quiser adicionar-->
 <img align="left" src="https://avatars.githubusercontent.com/u/114086320?v=4" width=115>
 <a href="https://github.com/soraia-barbosa">Soraia Barbosa</a>
 <h3 align="left">Você me encontra nas redes sociais:</h3>
