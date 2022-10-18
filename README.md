@@ -56,7 +56,7 @@
 <a href="https://github.com/soraia-barbosa">Soraia Barbosa</a>
 <h3 align="left">Você me encontra nas redes sociais:</h3>
 <p align="left">
-  <a href="https://www.linkedin.com/in/soraiacbarbosa/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Badge Linkedin" /></a>-->
+  <a href="https://www.linkedin.com/in/soraiacbarbosa/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Badge Linkedin" /></a>
   <!--<a href=""><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"  alt="Badge Instagram" /></a>-->
 </p>
 
