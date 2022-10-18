@@ -1,0 +1,15 @@
+/*TODO: Escolher paleta de cores e adicionar aqui
+:root {
+    
+}*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /*TODO: definir font-family*/
+    font-size: 16px;
+}
