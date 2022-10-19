@@ -13,6 +13,10 @@
 }
 
 html {
-    /*TODO: definir font-family*/
+    font-family: 'Quicksand', sans-serif; 
     font-size: 16px;
 }
+
+/*button {
+    font-family: 'Amatic SC', cursive;
+}*/
