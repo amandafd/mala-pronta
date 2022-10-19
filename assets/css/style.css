@@ -1,7 +1,10 @@
-/*TODO: Escolher paleta de cores e adicionar aqui
 :root {
-    
-}*/
+    --cinza-claro: #BABDBF;
+    --turquesa: #3F7373;
+    --laranja-claro: #BF754B;
+    --laranja: #A64826;
+    --vinho: #732B1A;
+}
 
 * {
     padding: 0;
