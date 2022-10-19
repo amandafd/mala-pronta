@@ -1,35 +1,76 @@
 Esse arquivo será utilizado durante a execução do projeto para auxiliar no seu planejamento e execução.
 
+*Agrupar as perguntas em grupos fixos para fazer as variáveis dentro de cada grupo.
+
+*Step by step CSS (opção)
+
+*Usuário responde e vai pro próximo grupo de perguntas com a possibilidade de voltar atrás nas respostas.
+
+*A PARTE DAS PERGUNTAS ESTÁ RELACIONADA À INTELIGÊNCIA DA APLICAÇÃO. A PARTE DA ABSTRAÇÃO ESTÁ ASSOCIADA AOS ITENS QUE SERÃO SUGERIDOS (ex: protetor solar)
+PERGUNTAS CATEGORIZADAS, ITENS CATEGORIZADOS.
+
+*O USUÁRIO PODE SELECIONAR OS ITENS, SEM DIGITAR.
+
+*PARA CHEGAR SO SEU DESTINO, PRECISARÁ DE VÔO? SE SIM, ALGUNS ITENS NÃO APARECERÃO COMO OPÇÃO, E ETC.(msg pro usuário)
+
+*O USUÁRIO RESPONDE TUDO E A MALA APARECE NO FINAL OU O USUÁRIO RESPONDE POR GRUPOS E JÁ APARECE A MALA SENDO FEITA? NO FINAL APARECE A OPÇÃO DE TIRAR ITENS OU ACRESCENTAR ITENS DA MALA.
+
 *Levar em consideração:
--Quantos dias
--Se será apenas um destino. Se for mais de um, podemos fazer em apenas uma etapa, ou em uma etapa para cada destino, acrescentando os itens ao final.
--Qual o clima
--Se vai chover
+
+-Período.  (Para uma fase posterior: Há a possibilidade de mesclar destino e período para consumir API de clima)
+
+-Destino. Se for mais de um, podemos fazer em apenas uma etapa, ou em uma etapa para cada destino, acrescentando os itens ao final.
+
+-Qual o clima (se vai chover, se nevará no local)
+
 -Se tem praia, cachoeira ou piscina no local
--Se nevará no local
+
 -Se haverá algum evento. ex: festa, casamento, festa a fantasia, etc
+
 -Se precisa levar roupa de cama
--Mala apenas para adultos. Crianças e bebês pode variar da criança e dos pais
+
+-Mala apenas para adultos. Crianças e bebês pode variar da criança e dos pais. Tamanho limite da mala desejada. (Usar configurador - uma vez por pessoa)
+
 -Sugerir substituições. Exemplo: 2 Vestidos ou roupas para sair a noite, como conjunto de shorts e camisa casual. Assim abrangemos ambos os sexos e estilos.
 
 *Itens fixos na mala:
--Roupa intimas: número de dias + 1 se for abaixo de 4 dias
--Roupas intimas: número de dias + 2 se for de 5 a 15 dias
+
+Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuário quiser adicionar algum item a aplicação devolve uma resposta.
+
+-Roupa íntimas: número de dias + 1 se for abaixo de 4 dias
+-Roupas íntimas: número de dias + 2 se for de 5 a 15 dias
 -Óculos de sol: pelo menos um
+
 -Itens de higiene(TODO: elaborar melhor): 
+
+    -frasco de creme, skincare, xampu, creme dental com volumes definidos
     -se menstrua: verificar se estará menstruada no dia da viagem
     -verificar se o local de hospedagem fornece shampoo, condicionador e sabonete ou se o usuário gosta de usar algum especifico
-    -lamina de barbear/metodo de depilação
+    -lâmina de barbear/método de depilação
     -outros itens utilizados no dia-a-dia(skincare, etc)
--Remedios(TODO: elaborar)
--Livro ou itens relacionados a hobbies
+
+-Pac de maquiagem
+-básico
+-completo
+-supercompleto
+
+(perguntas: concordo, concordo totalmente, discordo, etc)
+
+-Remédios(TODO: elaborar)
+
+-cartela(volume fixo)
+-xarope (frasco de remédio líquido até ... ml
+
+-Livro ou itens relacionados a hobbies(muito volátil)
+
+-Eletrônicos(notebook produzido entre x... ou y... determina o volume específico)
 
 *Dicas fixadas no final da mala(TODO: melhorar textos):
 -Fazer rolinhos com as roupas para economizar espaço
 -Escolher tecidos que não amassam e ocupam pouco espaço
 -É possível adequar a sugestão da mala ao seu estilo
--Verificar se é possível alugar itens especificos, como roupas de neve
--Se for de avião, lembrar de verificar o que pode ir na mala de mão e na bagagem despachada
+-Verificar se é possível alugar itens específicos, como roupas de neve
+-Se for de avião, lembrar de verificar o que pode ir na mala de mão e na bagagem despachada 
 -Se for para mais de um destino, com perfis diferentes, coloca no fundo o que for usar depois
 
 *Detalhes da execução:
