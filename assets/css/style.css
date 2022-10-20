@@ -17,6 +17,11 @@ html {
     font-size: 16px;
 }
 
+main {
+    background-color: var(--laranja-claro);
+    min-height: 100vh;
+}
+
 /*button {
     font-family: 'Amatic SC', cursive;
 }*/
