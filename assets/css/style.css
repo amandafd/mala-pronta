@@ -25,3 +25,26 @@ main {
 /*button {
     font-family: 'Amatic SC', cursive;
 }*/
+
+footer {
+    background-color: var(--laranja);
+    height: 3rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__texto {
+    color: var(--laranja-claro);
+}
+
+.footer__texto--link {
+    color: var(--cinza-claro);
+    text-decoration: none;
+}
+
+.footer__texto--link:hover {
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
