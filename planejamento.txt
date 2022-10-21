@@ -4,6 +4,8 @@
 
 *Step by step CSS (opção)
 
+*vetores para layout (opção)
+
 *Usuário responde e vai pro próximo grupo de perguntas com a possibilidade de voltar atrás nas respostas.
 
 *A PARTE DAS PERGUNTAS ESTÁ RELACIONADA À INTELIGÊNCIA DA APLICAÇÃO. A PARTE DA ABSTRAÇÃO ESTÁ ASSOCIADA AOS ITENS QUE SERÃO SUGERIDOS (ex: protetor solar)
