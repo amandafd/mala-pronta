@@ -1,5 +1,6 @@
 :root {
-    --cinza-claro: #BABDBF;
+    --cinza: #BABDBF;
+    --cinza-claro: #eaeaea;
     --turquesa: #3F7373;
     --laranja-claro: #BF754B;
     --laranja: #A64826;
@@ -18,8 +19,37 @@ html {
 }
 
 main {
-    background-color: var(--laranja-claro);
     min-height: 100vh;
+}
+
+.questao {
+margin: 0 10rem;
+}
+
+.questao__pergunta {
+    color: var(--turquesa);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.questao__resposta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.questao__resposta--box {
+    background-color: var(--cinza-claro);
+    width: 13rem;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 2rem;    
+}
+
+.questao__resposta--box p {
+    padding: 0.5rem;
 }
 
 /*button {
@@ -27,8 +57,8 @@ main {
 }*/
 
 footer {
-    background-color: var(--laranja);
-    height: 5rem;
+    background-color: var(--laranja-claro);
+    height: 4rem;
 }
 
 .footer {
@@ -43,7 +73,9 @@ footer {
 }
 
 .footer__link {
-    color: var(--laranja-claro);
+    color: var(--turquesa);
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .footer__link:hover {
