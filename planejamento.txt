@@ -87,6 +87,9 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 -Verificar se é possível alugar itens específicos, como roupas de neve
 -Se for de avião, lembrar de verificar o que pode ir na mala de mão e na bagagem despachada 
 -Se for para mais de um destino, com perfis diferentes, coloca no fundo o que for usar depois
+-Verifique se o local onde ficará hospedado fornece:
+    -tabua de passar
+    -
 
 *Detalhes da execução:
 -HTML:

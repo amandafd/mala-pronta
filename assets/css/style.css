@@ -28,23 +28,30 @@ main {
 
 footer {
     background-color: var(--laranja);
-    height: 3rem;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    height: 5rem;
 }
 
-.footer__texto {
+.footer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: var(--vinho);
+}
+
+.footer__link {
     color: var(--laranja-claro);
 }
 
-.footer__texto--link {
-    color: var(--vinho);
-    text-decoration: none;
-}
-
-.footer__texto--link:hover {
+.footer__link:hover {
     font-size: 1.2rem;
     transition: 0.5s;
 }
+
+.footer__ponto {
+    padding: 0 2rem;
+}
+
