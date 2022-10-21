@@ -53,10 +53,12 @@ margin: 0 10rem;
 }
 
 .mala{
+    color: var(--turquesa);
     padding: 3rem 10rem;
 }
 
 .dicas {
+    color: var(--turquesa);
     padding: 3rem 10rem ;
 }
 
