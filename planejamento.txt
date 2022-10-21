@@ -13,13 +13,12 @@ PERGUNTAS CATEGORIZADAS, ITENS CATEGORIZADOS.
 
 *O USUÁRIO PODE SELECIONAR OS ITENS, SEM DIGITAR.
 
-*PARA CHEGAR SO SEU DESTINO, PRECISARÁ DE VÔO? SE SIM, ALGUNS ITENS NÃO APARECERÃO COMO OPÇÃO, E ETC.(msg pro usuário)
+*PARA CHEGAR AO SEU DESTINO, PRECISARÁ DE VÔO? SE SIM, ALGUNS ITENS NÃO APARECERÃO COMO OPÇÃO, E ETC.(msg pro usuário)
 
 *O USUÁRIO RESPONDE TUDO E A MALA APARECE NO FINAL OU O USUÁRIO RESPONDE POR GRUPOS E JÁ APARECE A MALA SENDO FEITA? NO FINAL APARECE A OPÇÃO DE TIRAR ITENS OU ACRESCENTAR ITENS DA MALA.
 
 *Agrupar as perguntas em grupos fixos para fazer as variáveis dentro de cada grupo.
 
-*Step by step CSS (opção)
 
 *Usuário responde e vai pro próximo grupo de perguntas com a possibilidade de voltar atrás nas respostas.
 
