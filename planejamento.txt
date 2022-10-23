@@ -79,6 +79,7 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
     -tabua de passar
     -Itens de higiene(caso ofereça, sinta-se livre para retirar da sua sugestão de mala)
 -Coloque peças que combinam entre si para montar diversas combinações de roupas com cada peça.
+-Você vai observar que mesmo que sua viagem seja em lugares frios, colocamos protetor solar na sua mala. É importante sempre usar, pois independente da temperatura o nível de insolação pode variar de lugar para lugar;
 
 *Detalhes da execução:
 -HTML:
@@ -121,4 +122,51 @@ Próximos passos(Organizar no Trello depois)
 -Elaborar texto final das dicas fixas(melhorar texto, filtrar, organizar ordem das dicas)
 -Elaborar funcionamento com javascript com base no layout pronto
 -Revisar e entregar
+
+
+
+
+
+
+
+---PERGUNTAS--- 
+TODO:
+-Transformar "Regra" em código javascript;
+-Colocar nomes ou trocar para nomes melhores de variáveis;
+
+- Qual o seu nome? 
+REGRA: Captar o input ${nome};
+
+- Quantos dias vai durar sua viagem?
+REGRA: captar input ${numeroDeDias} e já calcular itens básicos, como roupas intimas;
+
+TODO: colocar respostas
+- Selecione as variações de temperatura que encontrará durante a sua viagem(mais de uma resposta)
+    -
+    -
+    -
+    -
+    -
+REGRA: 
+if (quantidadeDeVariacoesDeTemperatura = 1) {
+    não exibir próxima pergunta basear a reposta apenas na variação de temperatura e número de dias
+} else {
+    exibir próxima pergunta
+}
+
+-Coloque o número de dias que a temperatura permanecerá entre:
+REGRA: exibir opções de input de cada variação escolhida. Soma dos números inseridos deve ser igual a ${numeroDeDias};
+O tipo e a quantidade de cada item serão exibidos de acordo com essa reposta
+
+
+- Selecione quais os cenários estão presentes na sua viagem(mais de uma resposta)
+TODO: existe mais alguma opção a ser colocada?
+    - Água(praia, cachoeira ou piscina)
+    - Neve
+    - Montanha ou trilha
+    - Cidade
+REGRA: servirá para definir itens especificos, como: biquini, calçado para montanha ou trilha, quantidade de chinelos, roupa de neve
+
+
+
 
