@@ -9,25 +9,12 @@
 *Usuário responde e vai pro próximo grupo de perguntas com a possibilidade de voltar atrás nas respostas.
 
 *A PARTE DAS PERGUNTAS ESTÁ RELACIONADA À INTELIGÊNCIA DA APLICAÇÃO. A PARTE DA ABSTRAÇÃO ESTÁ ASSOCIADA AOS ITENS QUE SERÃO SUGERIDOS (ex: protetor solar)
+
 PERGUNTAS CATEGORIZADAS, ITENS CATEGORIZADOS.
 
 *O USUÁRIO PODE SELECIONAR OS ITENS, SEM DIGITAR.
 
 *PARA CHEGAR AO SEU DESTINO, PRECISARÁ DE VÔO? SE SIM, ALGUNS ITENS NÃO APARECERÃO COMO OPÇÃO, E ETC.(msg pro usuário)
-
-*O USUÁRIO RESPONDE TUDO E A MALA APARECE NO FINAL OU O USUÁRIO RESPONDE POR GRUPOS E JÁ APARECE A MALA SENDO FEITA? NO FINAL APARECE A OPÇÃO DE TIRAR ITENS OU ACRESCENTAR ITENS DA MALA.
-
-*Agrupar as perguntas em grupos fixos para fazer as variáveis dentro de cada grupo.
-
-
-*Usuário responde e vai pro próximo grupo de perguntas com a possibilidade de voltar atrás nas respostas.
-
-*A PARTE DAS PERGUNTAS ESTÁ RELACIONADA À INTELIGÊNCIA DA APLICAÇÃO. A PARTE DA ABSTRAÇÃO ESTÁ ASSOCIADA AOS ITENS QUE SERÃO SUGERIDOS (ex: protetor solar)
-PERGUNTAS CATEGORIZADAS, ITENS CATEGORIZADOS.
-
-*O USUÁRIO PODE SELECIONAR OS ITENS, SEM DIGITAR.
-
-*PARA CHEGAR SO SEU DESTINO, PRECISARÁ DE VÔO? SE SIM, ALGUNS ITENS NÃO APARECERÃO COMO OPÇÃO, E ETC.(msg pro usuário)
 
 *O USUÁRIO RESPONDE TUDO E A MALA APARECE NO FINAL OU O USUÁRIO RESPONDE POR GRUPOS E JÁ APARECE A MALA SENDO FEITA? NO FINAL APARECE A OPÇÃO DE TIRAR ITENS OU ACRESCENTAR ITENS DA MALA.
 
@@ -90,7 +77,8 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 -Se for para mais de um destino, com perfis diferentes, coloca no fundo o que for usar depois
 -Verifique se o local onde ficará hospedado fornece:
     -tabua de passar
-    -
+    -Itens de higiene(caso ofereça, sinta-se livre para retirar da sua sugestão de mala)
+-Coloque peças que combinam entre si para montar diversas combinações de roupas com cada peça.
 
 *Detalhes da execução:
 -HTML:
@@ -103,4 +91,34 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
     -Sugestão de texto de abertura:
     -Sugestão de output final: `Olá, ${nome}. Aqui está sua sugestão de mala de viagem: 
     (checklist com os itens)
-    Espero que faça uma ótima viagem!`
+    Espero que faça uma ótima viagem!`4
+
+
+
+
+
+
+
+
+
+Ata da reunião com sorvetinho
+-Quantos destinos
+-Quantos dias em cada destino 
+-A temperatura se manterá constante em todos os dias?
+-Qual a faixa/media de temperatura
+-Qual o perfil/clima de cada destino(frio/calor/fresco e neve/(praia, cachoeira, piscina)/(montanha,trilha))
+-Ocorrerá algum evento? Qual?
+
+
+Itens
+-Óculos de sol(sugestão 1, mas pode levar mais se quiser)
+-Chinelo: só colocar mais de um se for em um lugar quente e muitos dias)
+
+
+Próximos passos(Organizar no Trello depois)
+-Elaborar as perguntas e respostas
+-Elaborar layout, escolhendo um conjunto de imagens que seja padronizado
+-Elaborar texto final das dicas fixas(melhorar texto, filtrar, organizar ordem das dicas)
+-Elaborar funcionamento com javascript com base no layout pronto
+-Revisar e entregar
+
