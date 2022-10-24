@@ -37,7 +37,8 @@
 
 <h3 id="aprendizados">Aprendizados</h3>
 <ul>Os aprendizados reforçados e adquiridos durante a execução desse projeto serão atualizados constantemente:
-  <li></li>
+  <li>Uso de formulários;</li>
+  <li>Desenvolver projetos com conjunto com um time;</li>
 </ul> 
 
 <h2 id="autoras" align="left">Autoras</h2>
