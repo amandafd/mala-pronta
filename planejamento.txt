@@ -19,7 +19,7 @@ TODO: colocar respostas
     -
     -
     -
-REGRA: 
+REGRA: tutorial ensinando a verificar a quantidade de checkboxes selecionadas: https://www.youtube.com/watch?v=gLswTJtnNDw
 if (quantidadeDeVariacoesDeTemperatura = 1) {
     não exibir próxima pergunta basear a reposta apenas na variação de temperatura e número de dias
 } else {

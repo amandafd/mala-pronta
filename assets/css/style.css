@@ -15,7 +15,7 @@
 
 html {
     font-family: 'Quicksand', sans-serif; 
-    font-size: 16px;
+    font-size: 18px;
 }
 
 main {
@@ -24,39 +24,23 @@ main {
     padding: 3rem 10rem ;
 }
 
-.introducao {
+/*form label {
+    display: block;
+}
+
+form input {
+    display: block;
+}*/
+
+.input--campo {
+    width: 50%;
+    padding: 0.5rem 0 ;
+    border-radius: 1rem;
+}
+
+.questionario__introducao {
     font-size: 1.2rem;
     font-weight: 500;
-}
-
-.questao {
-margin: 0 10rem;
-}
-
-.questao__pergunta {
-    color: var(--turquesa);
-    font-size: 1.3rem;
-    font-weight: 500;
-}
-.questao__resposta {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-}
-
-.questao__resposta--box {
-    background-color: var(--cinza-claro);
-    width: 13rem;
-    height: 13rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 2rem;    
-}
-
-.questao__resposta--box p {
-    padding: 0.5rem;
 }
 
 /*button {

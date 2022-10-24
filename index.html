@@ -27,44 +27,47 @@
             </div>
         </header>
         <main>
-            <p class="introducao">Olá, viajante! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário e confira abaixo a sugestão da sua mala e em seguida nossas dicas!</p>
-            <form>
-                <label for="nome">Qual o seu nome?</label>
-                <input type="text" id="nome" required><br>
+            <div class="questionario categoria">
+                <p class="questionario__introducao">Olá, viajante! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário e confira abaixo a sugestão da sua mala e em seguida nossas dicas!</p>
+                <form class="questionario__formulario">
+                    <label for="nome">Qual o seu nome?</label>
+                    <input type="text" id="nome" class="input--campo" required><br>
 
-                <label for="duracaoTotal">Quantos dias vai durar sua viagem</label>
-                <input type="" id="duracaoTotal" required><br>
+                    <label for="duracaoTotal">Quantos dias vai durar sua viagem</label>
+                    <input type="" id="duracaoTotal" required><br>
 
-                <label>Selecione as variações de temperatura que encontrará durante a sua viagem</label><br>
-                <input type="checkbox" id="">
-                <input type="checkbox" id="">
-                <input type="checkbox" id="">
-                <input type="checkbox" id=""><br>
+                    <!--TODO: preencher temperaturas-->
+                    <label>Selecione as variações de temperatura que encontrará durante a sua viagem</label><br>
+                    <input type="checkbox" name="" id=""><label for=""></label>
+                    <input type="checkbox" name="" id=""><label for=""></label>
+                    <input type="checkbox" name="" id=""><label for=""></label>
+                    <input type="checkbox" name="" id=""><label for=""></label><br>
 
-                <label for="">Coloque o número de dias que a temperatura permanecerá entre:</label>
-                <input type="" id="" required><br>
+                    <label for="">Coloque o número de dias que a temperatura permanecerá entre:</label>
+                    <input type="" id="" required><br>
 
-                <label for="">Selecione quais os cenários estão presentes na sua viagem</label><br>
-                <input type="checkbox" id="">Água(praia, cachoeira ou piscina)
-                <input type="checkbox" id="">Neve
-                <input type="checkbox" id="">Montanha ou trilha
-                <input type="checkbox" id="">Cidade<br>
+                    <label for="">Selecione quais os cenários estão presentes na sua viagem</label><br>
+                    <input type="checkbox" name="agua" id="checkbox--agua"><label for="checkbox--agua">Água(praia, cachoeira ou piscina)</label>
+                    <input type="checkbox" name="neve" id="checkbox--neve"><label for="checkbox--neve">Neve</label>
+                    <input type="checkbox" name="montanha" id="checkbox--montanha"><label for="checkbox--montanha">Montanha ou trilha</label>
+                    <input type="checkbox" name="cidade" id="checkbox--cidade"><label for="checkbox--cidade">Cidade</label><br>
 
-                <label for="">Você comparecerá a algum evento durante a sua viagem?</label><br>
-                <input type="checkbox" id="">Nada especifico
-                <input type="checkbox" id="">Balada
-                <input type="checkbox" id="">Festa formal(casamento, formatura, etc)
-                <input type="checkbox" id="">Festa a fantasia<br>
+                    <label for="">Você comparecerá a algum evento durante a sua viagem?</label><br>
+                    <input type="checkbox" name="nada" id="checkbox--nada"><label for="checkbox--nada">Nada especifico</label>
+                    <input type="checkbox" name="balada" id="checkbox--balada"><label for="checkbox--balada">Balada</label>
+                    <input type="checkbox" name="formal" id="checkbox--formal"><label for="checkbox--formal">Festa formal(casamento, formatura, etc)</label>
+                    <input type="checkbox" name="fantasia" id="checkbox--fantasia"><label for="checkbox--fantasia">Festa a fantasia</label><br>
 
-                <label>Preencha o campo abaixo caso houver algum outro item que precise incluir na mala. Exemplo: roupas de cama</label>
-                <input type="text"><br>
+                    <label for="algoMais">Preencha o campo abaixo caso houver algum outro item que precise incluir na mala. Exemplo: roupas de cama</label>
+                    <input type="text" id="algoMais" class="input--campo"><br>
 
-                <!--TODO: alterar texto do botão-->
-                <input type="submit" value="Fazer as malas">
-            </form>
+                    <input type="submit" value="Fazer as malas">
+                </form>
+            </div>
+            
             
 
-            <div class="mala">
+            <div class="mala categoria">
                 <ul>MALA INSERIDA DURANTE A EXECUÇÃO
                     <li></li>
                 </ul>
