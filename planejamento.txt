@@ -38,6 +38,10 @@ TODO: existe mais alguma opção a ser colocada?
     - Montanha ou trilha
     - Cidade
 REGRA: servirá para definir itens especificos, como: biquini, calçado para montanha ou trilha, quantidade de chinelos, roupa de neve
+exibe a quantidade de inputs equivalente aos cenários escolhido, o número de dias selecionados não deve ultrapassar o numero total de dias da viagem
+
+- Quanto dias você vai visitar cada um dos cenários escolhidos acima?
+REGRA:exibir opções de input de cada variação escolhida.
 
 - Você comparecerá a algum evento durante a sua viagem?
     - Nada especifico
@@ -67,6 +71,7 @@ JÁ INSERIDAS NO LAYOUT
 Olá, ${nome}. Segue a sugestão da sua mala:
 -Roupa intimas(numero de dias + x)
 -Óculos de sol: pelo menos um
+- Documentos(documento de identificação, passaporte, etc)
 
 -Itens de higiene(TODO: elaborar melhor): 
 
