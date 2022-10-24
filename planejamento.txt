@@ -51,18 +51,8 @@ Permitir que adicione quantos itens quiser
 
 
 --DICAS--
+JÁ INSERIDAS NO LAYOUT
 
-Dicas para que sua viagem seja o mais proveitosa e confortável possível:
--Faça rolinhos com as roupas para economizar espaço;
--Dê preferência a tecidos que não amassam e ocupam menos espaço;
--Adeque a sugestão ao seu estilo pessoal(cores, modelagem, texturas, acessórios, etc);
--Escolha peças que combinam entre si, sendo possível montar diversas combinações com pouças peças;
--Verifique se é possível alugar itens muito específicos, como roupas de neve por exemplo;
--Se for para diversos destinos, coloque no fundo da mala o que for usar depois;
--Não se esqueça de levar bolsas ou sacolas para separar roupas sujas;
--Verifique se o local que vai ficar hospedado fornece itens como shampoo e sabonete, caso forneça, sinta-se livre para tirar ou manter esses itens da sua mala;
--Observe que mesmo se você for para lugar frios, colocamos proteto solar na sua mala. Independente da temperatura local, o nível de insolação pode variar;
--Se for de avião, verifique o é possível ir na bagagem despachada e na de mão;
 
 
 --MALA-- TODO: organizar, reestruturar
@@ -100,11 +90,6 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 ----TODO----
 -https://trello.com/b/7s5jG5c5/mala-pronta
 
-
-
-
-
-*Dicas fixadas no final da mala(TODO: melhorar textos):
 
 
 *Detalhes da execução:
@@ -148,11 +133,3 @@ Próximos passos(Organizar no Trello depois)
 -Elaborar texto final das dicas fixas(melhorar texto, filtrar, organizar ordem das dicas)
 -Elaborar funcionamento com javascript com base no layout pronto
 -Revisar e entregar
-
-
-
-
-
-
-
----PERGUNTAS--- 
