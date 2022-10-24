@@ -1,47 +1,73 @@
  Esse arquivo será utilizado durante a execução do projeto para auxiliar no seu planejamento e execução.
 
-*Agrupar as perguntas em grupos fixos para fazer as variáveis dentro de cada grupo.
+----VERSÂO FINAL----
+--PERGUNTAS--
+TODO:
+-Transformar "Regra" em código javascript;
+-Colocar nomes ou trocar para nomes melhores de variáveis;
 
-*Step by step CSS (opção)
+- Qual o seu nome? 
+REGRA: Captar o input ${nome};
 
-*vetores para layout (opção)
+- Quantos dias vai durar sua viagem?
+REGRA: captar input ${numeroDeDias} e já calcular itens básicos, como roupas intimas;
 
-*Usuário responde e vai pro próximo grupo de perguntas com a possibilidade de voltar atrás nas respostas.
+TODO: colocar respostas
+- Selecione as variações de temperatura que encontrará durante a sua viagem(mais de uma resposta)
+    -
+    -
+    -
+    -
+    -
+REGRA: 
+if (quantidadeDeVariacoesDeTemperatura = 1) {
+    não exibir próxima pergunta basear a reposta apenas na variação de temperatura e número de dias
+} else {
+    exibir próxima pergunta
+}
 
-*A PARTE DAS PERGUNTAS ESTÁ RELACIONADA À INTELIGÊNCIA DA APLICAÇÃO. A PARTE DA ABSTRAÇÃO ESTÁ ASSOCIADA AOS ITENS QUE SERÃO SUGERIDOS (ex: protetor solar)
+-Coloque o número de dias que a temperatura permanecerá entre:
+REGRA: exibir opções de input de cada variação escolhida. Soma dos números inseridos deve ser igual a ${numeroDeDias};
+O tipo e a quantidade de cada item serão exibidos de acordo com essa reposta
 
-PERGUNTAS CATEGORIZADAS, ITENS CATEGORIZADOS.
 
-*O USUÁRIO PODE SELECIONAR OS ITENS, SEM DIGITAR.
+- Selecione quais os cenários estão presentes na sua viagem(mais de uma resposta)
+TODO: existe mais alguma opção a ser colocada?
+    - Água(praia, cachoeira ou piscina)
+    - Neve
+    - Montanha ou trilha
+    - Cidade
+REGRA: servirá para definir itens especificos, como: biquini, calçado para montanha ou trilha, quantidade de chinelos, roupa de neve
 
-*PARA CHEGAR AO SEU DESTINO, PRECISARÁ DE VÔO? SE SIM, ALGUNS ITENS NÃO APARECERÃO COMO OPÇÃO, E ETC.(msg pro usuário)
+- Você comparecerá a algum evento durante a sua viagem?
+    - Nada especifico
+    - Balada
+    - Festa formal(casamento, formatura, etc)
+    - Festa a fantasia
 
-*O USUÁRIO RESPONDE TUDO E A MALA APARECE NO FINAL OU O USUÁRIO RESPONDE POR GRUPOS E JÁ APARECE A MALA SENDO FEITA? NO FINAL APARECE A OPÇÃO DE TIRAR ITENS OU ACRESCENTAR ITENS DA MALA.
+-Existe algum item especifico que precise incluir na sua mala? Exemplo: roupas de cama
+REGRA: captar input ${itemExtra}
+Permitir que adicione quantos itens quiser
 
-*Levar em consideração:
 
--Período.  (Para uma fase posterior: Há a possibilidade de mesclar destino e período para consumir API de clima)
+--DICAS--
 
--Destino. Se for mais de um, podemos fazer em apenas uma etapa, ou em uma etapa para cada destino, acrescentando os itens ao final.
+Dicas para que sua viagem seja o mais proveitosa e confortável possível:
+-Faça rolinhos com as roupas para economizar espaço;
+-Dê preferência a tecidos que não amassam e ocupam menos espaço;
+-Adeque a sugestão ao seu estilo pessoal(cores, modelagem, texturas, acessórios, etc);
+-Escolha peças que combinam entre si, sendo possível montar diversas combinações com pouças peças;
+-Verifique se é possível alugar itens muito específicos, como roupas de neve por exemplo;
+-Se for para diversos destinos, coloque no fundo da mala o que for usar depois;
+-Não se esqueça de levar bolsas ou sacolas para separar roupas sujas;
+-Verifique se o local que vai ficar hospedado fornece itens como shampoo e sabonete, caso forneça, sinta-se livre para tirar ou manter esses itens da sua mala;
+-Observe que mesmo se você for para lugar frios, colocamos proteto solar na sua mala. Independente da temperatura local, o nível de insolação pode variar;
+-Se for de avião, verifique o é possível ir na bagagem despachada e na de mão;
 
--Qual o clima (se vai chover, se nevará no local)
 
--Se tem praia, cachoeira ou piscina no local
-
--Se haverá algum evento. ex: festa, casamento, festa a fantasia, etc
-
--Se precisa levar roupa de cama
-
--Mala apenas para adultos. Crianças e bebês pode variar da criança e dos pais. Tamanho limite da mala desejada. (Usar configurador - uma vez por pessoa)
-
--Sugerir substituições. Exemplo: 2 Vestidos ou roupas para sair a noite, como conjunto de shorts e camisa casual. Assim abrangemos ambos os sexos e estilos.
-
-*Itens fixos na mala:
-
-Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuário quiser adicionar algum item a aplicação devolve uma resposta.
-
--Roupa íntimas: número de dias + 1 se for abaixo de 4 dias
--Roupas íntimas: número de dias + 2 se for de 5 a 15 dias
+--MALA-- TODO: organizar, reestruturar
+Olá, ${nome}. Segue a sugestão da sua mala:
+-Roupa intimas(numero de dias + x)
 -Óculos de sol: pelo menos um
 
 -Itens de higiene(TODO: elaborar melhor): 
@@ -67,19 +93,19 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 -Livro ou itens relacionados a hobbies(muito volátil)
 
 -Eletrônicos(notebook produzido entre x... ou y... determina o volume específico)
+Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuário quiser adicionar algum item a aplicação devolve uma resposta.
+
+
+
+----TODO----
+-https://trello.com/b/7s5jG5c5/mala-pronta
+
+
+
+
 
 *Dicas fixadas no final da mala(TODO: melhorar textos):
--Fazer rolinhos com as roupas para economizar espaço
--Escolher tecidos que não amassam e ocupam pouco espaço
--É possível adequar a sugestão da mala ao seu estilo
--Verificar se é possível alugar itens específicos, como roupas de neve
--Se for de avião, lembrar de verificar o que pode ir na mala de mão e na bagagem despachada 
--Se for para mais de um destino, com perfis diferentes, coloca no fundo o que for usar depois
--Verifique se o local onde ficará hospedado fornece:
-    -tabua de passar
-    -Itens de higiene(caso ofereça, sinta-se livre para retirar da sua sugestão de mala)
--Coloque peças que combinam entre si para montar diversas combinações de roupas com cada peça.
--Você vai observar que mesmo que sua viagem seja em lugares frios, colocamos protetor solar na sua mala. É importante sempre usar, pois independente da temperatura o nível de insolação pode variar de lugar para lugar;
+
 
 *Detalhes da execução:
 -HTML:
@@ -130,43 +156,3 @@ Próximos passos(Organizar no Trello depois)
 
 
 ---PERGUNTAS--- 
-TODO:
--Transformar "Regra" em código javascript;
--Colocar nomes ou trocar para nomes melhores de variáveis;
-
-- Qual o seu nome? 
-REGRA: Captar o input ${nome};
-
-- Quantos dias vai durar sua viagem?
-REGRA: captar input ${numeroDeDias} e já calcular itens básicos, como roupas intimas;
-
-TODO: colocar respostas
-- Selecione as variações de temperatura que encontrará durante a sua viagem(mais de uma resposta)
-    -
-    -
-    -
-    -
-    -
-REGRA: 
-if (quantidadeDeVariacoesDeTemperatura = 1) {
-    não exibir próxima pergunta basear a reposta apenas na variação de temperatura e número de dias
-} else {
-    exibir próxima pergunta
-}
-
--Coloque o número de dias que a temperatura permanecerá entre:
-REGRA: exibir opções de input de cada variação escolhida. Soma dos números inseridos deve ser igual a ${numeroDeDias};
-O tipo e a quantidade de cada item serão exibidos de acordo com essa reposta
-
-
-- Selecione quais os cenários estão presentes na sua viagem(mais de uma resposta)
-TODO: existe mais alguma opção a ser colocada?
-    - Água(praia, cachoeira ou piscina)
-    - Neve
-    - Montanha ou trilha
-    - Cidade
-REGRA: servirá para definir itens especificos, como: biquini, calçado para montanha ou trilha, quantidade de chinelos, roupa de neve
-
-
-
-
