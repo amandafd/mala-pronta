@@ -112,3 +112,6 @@ Ata da reunião com sorvetinho
 -Qual a faixa/media de temperatura
 -Qual o perfil/clima de cada destino(frio/calor/fresco e neve/(praia, cachoeira, piscina)/(montanha,trilha))
 -Ocorrerá algum evento? Qual?
+ 
+
+ OK
