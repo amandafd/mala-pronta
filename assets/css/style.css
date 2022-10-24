@@ -24,6 +24,11 @@ main {
     padding: 3rem 10rem ;
 }
 
+.introducao {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 .questao {
 margin: 0 10rem;
 }
