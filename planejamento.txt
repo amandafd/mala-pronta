@@ -117,11 +117,13 @@ Itens
 
 
 Próximos passos(Organizar no Trello depois)
--Elaborar as perguntas e respostas
+-Elaborar as perguntas e respostas 
 -Elaborar layout, escolhendo um conjunto de imagens que seja padronizado
 -Elaborar texto final das dicas fixas(melhorar texto, filtrar, organizar ordem das dicas)
 -Elaborar funcionamento com javascript com base no layout pronto
--Revisar e entregar
+-Revisar e entregar.
+
+OK 
 
 
 
