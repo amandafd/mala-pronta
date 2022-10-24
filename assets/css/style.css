@@ -19,7 +19,9 @@ html {
 }
 
 main {
+    color: var(--turquesa);
     min-height: 100vh;
+    padding: 3rem 10rem ;
 }
 
 .questao {
@@ -50,16 +52,6 @@ margin: 0 10rem;
 
 .questao__resposta--box p {
     padding: 0.5rem;
-}
-
-.mala{
-    color: var(--turquesa);
-    padding: 3rem 10rem;
-}
-
-.dicas {
-    color: var(--turquesa);
-    padding: 3rem 10rem ;
 }
 
 /*button {
