@@ -9,11 +9,11 @@ TODO:
 - Qual o seu nome? 
 REGRA: Captar o input ${nome};
 
-- Quantos dias vai durar sua viagem?
+- Quantos dias vai durar sua viagem? 
 REGRA: captar input ${numeroDeDias} e já calcular itens básicos, como roupas intimas;
 
 TODO: colocar respostas
-- Selecione as variações de temperatura que encontrará durante a sua viagem(mais de uma resposta)
+- Selecione as variações de temperatura que encontrará durante a sua viagem(permitir mais de uma resposta)
     -
     -
     -
@@ -26,12 +26,12 @@ if (quantidadeDeVariacoesDeTemperatura = 1) {
     exibir próxima pergunta
 }
 
--Coloque o número de dias que a temperatura permanecerá entre:
+-Coloque o número de dias que a temperatura permanecerá entre: 
 REGRA: exibir opções de input de cada variação escolhida. Soma dos números inseridos deve ser igual a ${numeroDeDias};
 O tipo e a quantidade de cada item serão exibidos de acordo com essa reposta
 
 
-- Selecione quais os cenários estão presentes na sua viagem(mais de uma resposta)
+- Selecione quais os cenários estão presentes na sua viagem(permitir mais de uma resposta) TODO: adicionar ao layout
 TODO: existe mais alguma opção a ser colocada?
     - Água(praia, cachoeira ou piscina)
     - Neve
@@ -45,7 +45,7 @@ REGRA: servirá para definir itens especificos, como: biquini, calçado para mon
     - Festa formal(casamento, formatura, etc)
     - Festa a fantasia
 
--Existe algum item especifico que precise incluir na sua mala? Exemplo: roupas de cama
+- Preencha o campo abaixo caso houver algum outro item que precise incluir na mala. Exemplo: roupas de cama
 REGRA: captar input ${itemExtra}
 Permitir que adicione quantos itens quiser
 
