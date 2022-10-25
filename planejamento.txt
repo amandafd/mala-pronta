@@ -69,8 +69,8 @@ JÁ INSERIDAS NO LAYOUT
 
 --MALA-- TODO: organizar, reestruturar
 Olá, ${nome}. Segue a sugestão da sua mala:
--Roupa intimas(numero de dias + x)
--Óculos de sol: pelo menos um
+- Roupa intimas(numero de dias + x)
+- Óculos de sol: pelo menos um
 - Documentos(documento de identificação, passaporte, etc)
 
 -Itens de higiene(TODO: elaborar melhor): 
@@ -99,24 +99,131 @@ Olá, ${nome}. Segue a sugestão da sua mala:
 Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuário quiser adicionar algum item a aplicação devolve uma resposta.
 
 
-
-
-
-
-
-
 ----TODO----
 -https://trello.com/b/7s5jG5c5/mala-pronta
 
 
 
-Ata da reunião com sorvetinho
--Quantos destinos
--Quantos dias em cada destino 
--A temperatura se manterá constante em todos os dias?
--Qual a faixa/media de temperatura
--Qual o perfil/clima de cada destino(frio/calor/fresco e neve/(praia, cachoeira, piscina)/(montanha,trilha))
--Ocorrerá algum evento? Qual?
- 
+25º e 35º: 
+-Tecidos leves e frescos;
+-Cores claras
+-Top de alças;
+-Vestido curto e leve;
+-Calça de tecidos leves;
 
- OK
+-Bermuda/shorts;
+-Saias
+-Jardineiras;
+
+
+20º e 30º:
+-Calças fluidas;
+-Jeans;
+-Calções;
+-Camisas;
+
+
+15º e 25º:
+-Calça flare;
+-Camiseta de manga comprida fina;
+-Cardiga;
+-Parca;
+-Botas;
+
+10º e 20º:
+-Camiseta gola alta;
+-Casaco;
+-Jaqueta de couro;
+-Sobretudo;
+-Camadas;
+
+
+5º e os 15º:
+-Gola alta;
+-Casacos pesados;
+-Camiseta manga comprida;
+-Camadas;
+-Cachecol;
+
+0º e os 10º:
+-Sobretudos;
+-Casaco de pelos;
+-Lã;
+-Camiseta gola alta;
+-Botas;
+
+
+
+
+
+0-5 graus:
+-Pelagem, verdadeira e sintética
+-Couro e couro ecológico;
+-Casaco de penas;
+-Calças de veludo;
+-Gola alta e mangas compridas;
+-Cardigã de cashmere extra fino;
+-Blazer de veludo.
+
+5-10 graus:
+-Pelagem (mas um pouco menos forte do que colocaríamos abaixo de zero)
+-Lã é estofado mais leve que a clássica parca de inverno;
+-Casacos;
+-Lenço de caxemira
+-Parka;
+-Jeans pesado 
+-Saia maxi veludo
+-Vestidinho preto;
+-Calças de couro;
+
+10-15 graus
+-Lã mais leve;
+-Casaco de lã versão light;
+-Poncho;
+-Calça chinos(TODO: o que é chinos?); 
+-Saia lápis de cetim
+-Jeans;
+-Gola alta mais fina;
+-Suéter extra fino ou um cardigã de primavera;
+
+15-20 graus:
+-Algodão, couro e veludo leve;
+-Sobretudo de algodão, de comprimento médio ou longo;
+-Minivestido;
+-Paletó-calça(TODO: o que é isso?);
+-Paletó-saia(TODO: o que é isso?); 
+-Macacão;
+-Jeans skinny;
+-Moletom;
+-Jaqueta de couro;
+-Blazer de veludo;
+-Camiseta de mangas compridas;
+-Lenço;
+-Foulard de seda(TODO: O que é Foulard?);
+
+TODO:Terminar de resumir
+
+20-25 graus:
+-Luz verde(?), algodão leve, linho, jeans e algodão.
+Aí vem o momento do referido "espanador", o casaco de algodão espesso caracterizado pelo corte de trincheira.
+Nesta temporada, aposte em fantasias e cores mais vivas em vez das nuances neutras típicas dos meses cinzentos: tons pastéis e vitaminas irá colorir sua aparência com pura alegria.
+Lá também jaqueta jeans Não pode faltar no guarda-roupa mais moderno: é uma sempre-viva atemporal que se adapta a todos! E se você quiser um agasalho menos fácil do que jeans, opte pelo cardigã de algodão e você nunca vai dar errado.
+Na parte inferior luz verde para jeans, camisetas, moletons leves e saias de médio e curto comprimento.
+
+
+
+25-30 graus:
+-Seda, cetim e algodão leve;
+Diga adeus (ou melhor: adeus) aos agasalhos porque eles não são mais necessários. A vestimenta necessária para esta faixa climática é a blusas de seda, Essa em algodão de manga curta, a camiseta muito leve, a minissaias ele calção.
+
+O maxi saias se escolhidas em tecidos super leves como tule ou cetim. Também em cetim cetim está outra peça chave do verão: lo vestido deslizante. Fresco e leve, elegante e sensual, o vestido slip é ultra moderno e vai bem em qualquer ocasião.
+
+Até agora os sapatos estavam mais ou menos fechados, mas agora é bom focar sandálias abertas para manter os pés frios. Se as extremidades do corpo não estiverem quentes, de fato, todo o corpo se beneficiará e a temperatura corporal será mantida equilibrada.
+
+
+30-35 graus:
+-Minivestid;
+-Macacão curto;
+-Sem mangas e mangas curtas;
+-Saia midi;
+-Camisa pólo; 
