@@ -30,13 +30,25 @@
             <div class="questionario categoria">
                 <p class="questionario__introducao">Olá, viajante! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário e confira abaixo a sugestão da sua mala e em seguida nossas dicas!</p>
                 <form class="questionario__formulario">
+                    <!--TODO: conferir se falta algo-->
                     <label for="nome">Qual o seu nome?</label>
                     <input type="text" id="nome" class="input--campo" required>
 
+                    <!--TODO: conferir se falta algo-->
                     <br>
-                    <label for="duracaoTotal">Quantos dias vai durar sua viagem</label><!--TODO: descobrir tipo de input pra aumentar número-->
-                    <input type="" id="duracaoTotal" required>
+                    <fieldset>
+                        <legend>Você poderá lavar roupas durante a viagem?</legend>
 
+                        <input type="radio" id="lavarRoupa--sim" name="lavarRoupa" value="sim"><label for="lavarRoupa--sim">Sim</label>
+                        <input type="radio" id="lavarRoupa--nao" name="lavarRoupa" value="nao" checked><label id="lavarRoupa--nao">Não</label>
+                    </fieldset>
+
+                    <!--TODO: conferir se falta algo-->
+                    <br>
+                    <label for="duracaoTotal">Quantos dias vai durar sua viagem</label>
+                    <input type="number" id="duracaoTotal" class="input--campo" required>
+
+                    <!--TODO: conferir se falta algo-->
                     <br>
                     <fieldset>
                         <legend>Selecione as variações de temperatura que encontrará durante a sua viagem:</legend><!--TODO: adicionar imagens as checkboxes-->
@@ -48,10 +60,12 @@
                         <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for=""></label>
                     </fieldset>
 
+                    <!--TODO: conferir se falta algo-->
                     <br>
-                    <label for="">Coloque o número de dias que a temperatura permanecerá entre:</label><!--TODO: descobrir tipo de input pra aumentar número-->
-                    <input type="" id="" required>
+                    <label for="">Coloque o número de dias que a temperatura permanecerá entre:</label>
+                    <input type="number" id="" class="input--campo" required>
 
+                    <!--TODO: conferir se falta algo-->
                     <br>
                     <fieldset>
                         <legend>Selecione quais os cenários estão presentes na sua viagem</legend><!--TODO: adicionar imagens as checkboxes-->
@@ -62,6 +76,7 @@
                         <input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade"><label for="checkbox--cidade">Cidade</label>
                     </fieldset>
                     
+                    <!--TODO: conferir se falta algo-->
                     <br>
                     <fieldset>
                         <legend>Você comparecerá a algum evento durante a sua viagem?</legend><!--TODO: adicionar imagens as checkboxes-->
@@ -71,6 +86,7 @@
                         <input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia"><label for="checkbox--fantasia">Festa a fantasia</label>
                     </fieldset>
 
+                    <!--TODO: conferir se falta algo-->
                     <br>
                     <label for="algoMais">Preencha o campo abaixo caso houver algum outro item que precise incluir na mala. Exemplo: roupas de cama</label>
                     <input type="text" id="algoMais" class="input--campo">
