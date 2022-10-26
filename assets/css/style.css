@@ -39,23 +39,6 @@ main {
     min-height: 100vh;
     padding: 3rem 10rem ;
 }
-
-.questionario__introducao {
-    margin-bottom: 1rem;
-}
-
-.questionario__formularioQuestao {
-    height: 15rem;
-}
-
-.questionario__formularioQuestao--pergunta {
-    margin-bottom: 1rem;
-}
-
-.questionario__formularioQuestao--input {
-    margin: 1rem 0;
-}
-
 /*form label {
     display: block;
 }
@@ -64,16 +47,6 @@ form input {
     display: block;
 }*/
 
-.input--campo {
-    width: 50%;
-    padding: 0.5rem 0 ;
-    border-radius: 1rem;
-}
-
-.questionario__introducao {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
 
 /*button {
     font-family: 'Amatic SC', cursive;
@@ -82,26 +55,22 @@ form input {
 footer {
     background-color: var(--laranja-claro);
     height: 4rem;
-}
-
-.footer {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer p {
+footer p {
     color: var(--vinho);
 }
 
-.footer__link {
+footer a {
     color: var(--turquesa);
     text-decoration: none;
     font-weight: 500;
 }
 
-.footer__link:hover {
+footer a:hover {
     font-size: 1.2rem;
     transition: 0.5s;
 }
