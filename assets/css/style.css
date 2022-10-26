@@ -24,6 +24,21 @@ main {
     padding: 3rem 10rem ;
 }
 
+.navBar {
+    background-color: var(--laranja-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    color: var(--vinho);
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
 /*form label {
     display: block;
 }
