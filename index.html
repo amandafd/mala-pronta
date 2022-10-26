@@ -20,9 +20,7 @@
     </head>
     <body>
         <header>
-            <div class="navBar">
                 <p class="logo">MALA PRONTA</p>
-            </div>
         </header>
         <main>
             <div class="questionario categoria">
@@ -32,82 +30,99 @@
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 2-->
-                    <label for="nome">Qual o seu nome?</label><br>
-                    <input type="text" id="nome" name="nome" class="input--campo" required>
+                    <div class="questionario__formularioQuestao">
+                        <label for="nome" class="questionario__formularioQuestao--pergunta">Qual o seu nome?</label><br>
+                        <input type="text" id="nome" name="nome" class="questionario__formularioQuestao--input" required>
+                    </div>
+                    
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 3-->
-                    <br>
-                    <fieldset>
-                        <legend>Você poderá lavar roupas durante a viagem?</legend>
-
-                        <input type="radio" id="lavarRoupa--sim" name="lavarRoupa" value="sim"><label for="lavarRoupa--sim">Sim</label>
-                        <input type="radio" id="lavarRoupa--nao" name="lavarRoupa" value="nao" checked><label id="lavarRoupa--nao">Não</label>
-                    </fieldset>
+                    <div class="questionario__formularioQuestao">
+                        <br>
+                        <fieldset>
+                            <legend>Você poderá lavar roupas durante a viagem?</legend>
+                            <div class="questionario__formularioQuestao--input"> </div>
+                            <input type="radio" id="lavarRoupa--sim" name="lavarRoupa" value="sim"><label for="lavarRoupa--sim">Sim</label>
+                            <input type="radio" id="lavarRoupa--nao" name="lavarRoupa" value="nao" checked><label id="lavarRoupa--nao">Não</label>
+                        </fieldset>
+                    </div>
+                    
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 4-->
-                    <br>
-                    <label for="duracaoTotal">Quantos dias vai durar sua viagem</label>
-                    <input type="number" id="duracaoTotal" class="input--campo" required>
+                    <div class="questionario__formularioQuestao">
+                        <br>
+                        <label for="duracaoTotal">Quantos dias vai durar sua viagem</label><br>
+                        <input type="number" id="duracaoTotal" class="questionario__formularioQuestao--input" required>
+                    </div>
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 5-->
-                    <br>
-                    <fieldset>
-                        <legend>Selecione as variações de temperatura que encontrará durante a sua viagem:</legend><!--TODO: adicionar imagens as checkboxes-->
+                    <div class="questionario__formularioQuestao">
+                        <br>
+                        <fieldset>
+                            <legend>Selecione as variações de temperatura que encontrará durante a sua viagem:</legend><!--TODO: adicionar imagens as checkboxes-->
 
-                        <!--TODO: preencher faixas de temperatura-->
-                        <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">25ºC ou mais</label>
-                        <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">20ºC e 25ºC</label>
-                        <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">15ºC e 20ºC</label>
-                        <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">10ºC e 15ºC</label>
-                        <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">5ºC e 10ºC</label>
-                        <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">0ºC e 5ºC</label>
-                        <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">Abaixo de 0ºC</label>
-                    </fieldset>
+                            <!--TODO: preencher faixas de temperatura-->
+                            <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">25ºC ou mais</label>
+                            <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">20ºC e 25ºC</label>
+                            <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">15ºC e 20ºC</label>
+                            <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">10ºC e 15ºC</label>
+                            <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">5ºC e 10ºC</label>
+                            <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">0ºC e 5ºC</label>
+                            <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">Abaixo de 0ºC</label>
+                        </fieldset>
+                    </div>
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 6-->
-                    <br>
-                    <label for="duracaoTemperatura">Coloque o número de dias que a temperatura permanecerá em cada variação:</label>
-                    <input type="number" id="duracaoTemperatura" class="input--campo" required>
+                    <div class="questionario__formularioQuestao">
+                        <br>
+                        <label for="duracaoTemperatura">Coloque o número de dias que a temperatura permanecerá em cada variação:</label>
+                        <input type="number" id="duracaoTemperatura" class="questionario__formularioQuestao--input" required>
+                    </div>
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 7-->
-                    <br>
-                    <fieldset>
-                        <legend>Selecione quais os cenários estão presentes na sua viagem</legend><!--TODO: adicionar imagens as checkboxes-->
+                    <div class="questionario__formularioQuestao">
+                        <br>
+                        <fieldset>
+                            <legend>Selecione quais os cenários estão presentes na sua viagem</legend><!--TODO: adicionar imagens as checkboxes-->
                         
-                        <input type="checkbox" name="cenario" id="checkbox--agua" value="agua"><label for="checkbox--agua">Água(praia, cachoeira ou piscina)</label>
-                        <input type="checkbox" name="cenario" id="checkbox--neve" value="neve"><label for="checkbox--neve">Neve</label>
-                        <input type="checkbox" name="cenario" id="checkbox--montanha" value="montanha"><label for="checkbox--montanha">Montanha ou trilha</label>
-                        <input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade"><label for="checkbox--cidade">Cidade</label>
-                    </fieldset>
+                            <input type="checkbox" name="cenario" id="checkbox--agua" value="agua"><label for="checkbox--agua">Água(praia, cachoeira ou piscina)</label>
+                            <input type="checkbox" name="cenario" id="checkbox--neve" value="neve"><label for="checkbox--neve">Neve</label>
+                            <input type="checkbox" name="cenario" id="checkbox--montanha" value="montanha"><label for="checkbox--montanha">Montanha ou trilha</label>
+                            <input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade"><label for="checkbox--cidade">Cidade</label>
+                        </fieldset>
+                    </div>
                     <!--TODO: Inserir botão próxima página-->
                     
                     <!--Rolagem: 8-->
-                    <br>
-                    <fieldset>
-                        <legend>Você comparecerá a algum evento durante a sua viagem?</legend><!--TODO: adicionar imagens as checkboxes-->
-                        <input type="checkbox" name="evento" id="checkbox--nada" value="nada"><label for="checkbox--nada">Nada especifico</label>
-                        <input type="checkbox" name="evento" id="checkbox--balada" value="balada"><label for="checkbox--balada">Balada</label>
-                        <input type="checkbox" name="evento" id="checkbox--formal" value="formal"><label for="checkbox--formal">Festa formal(casamento, formatura, etc)</label>
-                        <input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia"><label for="checkbox--fantasia">Festa a fantasia</label>
-                    </fieldset>
+                    <div class="questionario__formularioQuestao">
+                        <br>
+                        <fieldset>
+                            <legend>Você comparecerá a algum evento durante a sua viagem?</legend><!--TODO: adicionar imagens as checkboxes-->
+                            <input type="checkbox" name="evento" id="checkbox--nada" value="nada"><label for="checkbox--nada">Nada especifico</label>
+                            <input type="checkbox" name="evento" id="checkbox--balada" value="balada"><label for="checkbox--balada">Balada</label>
+                            <input type="checkbox" name="evento" id="checkbox--formal" value="formal"><label for="checkbox--formal">Festa formal(casamento, formatura, etc)</label>
+                            <input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia"><label for="checkbox--fantasia">Festa a fantasia</label>
+                        </fieldset>
+                    </div>
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 9-->
-                    <br>
-                    <label for="algoMais">Preencha o campo abaixo caso houver algum outro item que precise incluir na mala. Exemplo: roupas de cama</label>
-                    <input type="text" id="algoMais" name="algoMais" class="input--campo">
-
-                    <br>
-                    <input type="submit" value="Fazer as malas">
+                    <div class="questionario__formularioQuestao">
+                        <br>
+                        <label for="algoMais">Preencha o campo abaixo caso houver algum outro item que precise incluir na mala. Exemplo: roupas de cama</label>
+                        <input type="text" id="algoMais" name="algoMais" class="questionario__formularioQuestao--input">
+                        
+                        <input type="submit" value="Fazer as malas">
+                    </div>
+                    
                 </form>
             </div>
-            
-            
+         
             <!--TODO: Adicionar um botão ao final para fazer nova mala-->
             <div class="mala categoria">
                 <ul>MALA INSERIDA DURANTE A EXECUÇÃO

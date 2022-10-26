@@ -18,14 +18,9 @@ html {
     font-size: 18px;
 }
 
-main {
-    color: var(--turquesa);
-    min-height: 100vh;
-    padding: 3rem 10rem ;
-}
-
-.navBar {
+header {
     background-color: var(--laranja-claro);
+    height: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +32,28 @@ main {
     font-family: 'Amatic SC', cursive;
     font-size: 4rem;
     font-weight: 600;
+}
+
+main {
+    color: var(--turquesa);
+    min-height: 100vh;
+    padding: 3rem 10rem ;
+}
+
+.questionario__introducao {
+    margin-bottom: 1rem;
+}
+
+.questionario__formularioQuestao {
+    height: 15rem;
+}
+
+.questionario__formularioQuestao--pergunta {
+    margin-bottom: 1rem;
+}
+
+.questionario__formularioQuestao--input {
+    margin: 1rem 0;
 }
 
 /*form label {
