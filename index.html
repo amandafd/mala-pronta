@@ -28,12 +28,17 @@
         </header>
         <main>
             <div class="questionario categoria">
-                <p class="questionario__introducao">Olá, viajante! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário e confira abaixo a sugestão da sua mala e em seguida nossas dicas!</p>
+                <!--Rolagem: 1-->
+                <p class="questionario__introducao">Olá, viajante! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário a seguir e confira a sugestão da sua mala e em seguida nossas dicas!</p>
                 <form class="questionario__formulario">
+                    <!--TODO: Inserir botão próxima página-->
 
-                    <label for="nome">Qual o seu nome?</label>
+                    <!--Rolagem: 2-->
+                    <label for="nome">Qual o seu nome?</label><br>
                     <input type="text" id="nome" name="nome" class="input--campo" required>
+                    <!--TODO: Inserir botão próxima página-->
 
+                    <!--Rolagem: 3-->
                     <br>
                     <fieldset>
                         <legend>Você poderá lavar roupas durante a viagem?</legend>
@@ -41,13 +46,15 @@
                         <input type="radio" id="lavarRoupa--sim" name="lavarRoupa" value="sim"><label for="lavarRoupa--sim">Sim</label>
                         <input type="radio" id="lavarRoupa--nao" name="lavarRoupa" value="nao" checked><label id="lavarRoupa--nao">Não</label>
                     </fieldset>
+                    <!--TODO: Inserir botão próxima página-->
 
-                    <!--TODO: conferir se falta algo-->
+                    <!--Rolagem: 4-->
                     <br>
                     <label for="duracaoTotal">Quantos dias vai durar sua viagem</label>
                     <input type="number" id="duracaoTotal" class="input--campo" required>
+                    <!--TODO: Inserir botão próxima página-->
 
-                    <!--TODO: conferir se falta algo-->
+                    <!--Rolagem: 5-->
                     <br>
                     <fieldset>
                         <legend>Selecione as variações de temperatura que encontrará durante a sua viagem:</legend><!--TODO: adicionar imagens as checkboxes-->
@@ -61,13 +68,15 @@
                         <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">0ºC e 5ºC</label>
                         <input type="checkbox" name="variacaoDeTemperatura" id="" value=""><label for="">Abaixo de 0ºC</label>
                     </fieldset>
+                    <!--TODO: Inserir botão próxima página-->
 
-                    <!--TODO: conferir se falta algo-->
+                    <!--Rolagem: 6-->
                     <br>
                     <label for="duracaoTemperatura">Coloque o número de dias que a temperatura permanecerá em cada variação:</label>
                     <input type="number" id="duracaoTemperatura" class="input--campo" required>
+                    <!--TODO: Inserir botão próxima página-->
 
-                    <!--TODO: conferir se falta algo-->
+                    <!--Rolagem: 7-->
                     <br>
                     <fieldset>
                         <legend>Selecione quais os cenários estão presentes na sua viagem</legend><!--TODO: adicionar imagens as checkboxes-->
@@ -77,7 +86,9 @@
                         <input type="checkbox" name="cenario" id="checkbox--montanha" value="montanha"><label for="checkbox--montanha">Montanha ou trilha</label>
                         <input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade"><label for="checkbox--cidade">Cidade</label>
                     </fieldset>
+                    <!--TODO: Inserir botão próxima página-->
                     
+                    <!--Rolagem: 8-->
                     <br>
                     <fieldset>
                         <legend>Você comparecerá a algum evento durante a sua viagem?</legend><!--TODO: adicionar imagens as checkboxes-->
@@ -86,19 +97,20 @@
                         <input type="checkbox" name="evento" id="checkbox--formal" value="formal"><label for="checkbox--formal">Festa formal(casamento, formatura, etc)</label>
                         <input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia"><label for="checkbox--fantasia">Festa a fantasia</label>
                     </fieldset>
+                    <!--TODO: Inserir botão próxima página-->
 
+                    <!--Rolagem: 9-->
                     <br>
                     <label for="algoMais">Preencha o campo abaixo caso houver algum outro item que precise incluir na mala. Exemplo: roupas de cama</label>
                     <input type="text" id="algoMais" name="algoMais" class="input--campo">
 
                     <br>
                     <input type="submit" value="Fazer as malas">
-                    <input type="reset" value="Desfazer as malas">
                 </form>
             </div>
             
             
-
+            <!--TODO: Adicionar um botão ao final para fazer nova mala-->
             <div class="mala categoria">
                 <ul>MALA INSERIDA DURANTE A EXECUÇÃO
                     <li></li>
