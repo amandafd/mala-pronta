@@ -37,7 +37,7 @@ header {
 main {
     color: var(--turquesa);
     min-height: 100vh;
-    padding: 3rem 10rem ;
+    padding: 3rem 0;
 }
 
 .intro {
@@ -49,21 +49,47 @@ main {
 
 .categoria__intro
 
-.formulario
+.formulario*/
 
-.formulario__questao
+/*fundo temporario apenas para visualizar algumas coisas*/
+.formulario__questao {
+    background-color: var(--laranja-claro);
+    height: 10rem;
+    /*width: 40rem;*/
+    display: flex;
+    flex-direction: column;
+}
 
-.formulario__pergunta
+/*.formulario__pergunta*/
 
-.formulario__resposta
+.formulario__resposta--campo {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.8rem;
+}
 
-.formulario__repostas--campo 
-
-.formulario__repostas--checkbox
+/*.formulario__repostas--checkbox
 
 .mala
 
 .dicas*/
+
+.btn {
+    background-color: var(--turquesa);
+    color: var(--cinza-claro);
+   height: 2.5rem;
+   width: 13rem;
+   border-radius: 1rem;
+   border: none;
+   font-family: 'Amatic SC', cursive;
+   font-weight: 500;
+   font-size: 1.8rem;
+}
+
+.btn:hover {
+    background-color: var(--vinho);
+    transition: 0.5s;
+}
 
 footer {
     background-color: var(--laranja-claro);
