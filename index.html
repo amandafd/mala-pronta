@@ -22,27 +22,28 @@
         <header>
                 <p class="logo">MALA PRONTA</p>
         </header>
+
         <main>
-            <div class="formulario">
+            <div>
                 <!--Rolagem: 1-->
-                <p class="questionario__introducao">Olá, viajante! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário a seguir e confira a sugestão da sua mala e em seguida nossas dicas!</p>
-                <form class="questionario__formulario">
+                <p>Olá, viajante! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário a seguir e confira a sugestão da sua mala e em seguida nossas dicas!</p>
+                <form>
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 2-->
-                    <div class="questionario__formularioQuestao">
-                        <label for="nome" class="questionario__formularioQuestao--pergunta">Qual o seu nome?</label><br>
-                        <input type="text" id="nome" name="nome" class="questionario__formularioQuestao--input" required>
+                    <div>
+                        <label for="nome">Qual o seu nome?</label><br>
+                        <input type="text" id="nome" name="nome" required>
                     </div>
                     
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 3-->
-                    <div class="questionario__formularioQuestao">
+                    <div>
                         <br>
                         <fieldset>
                             <legend>Você poderá lavar roupas durante a viagem?</legend>
-                            <div class="questionario__formularioQuestao--input"> </div>
+                            <div> </div>
                             <input type="radio" id="lavarRoupa--sim" name="lavarRoupa" value="sim"><label for="lavarRoupa--sim">Sim</label>
                             <input type="radio" id="lavarRoupa--nao" name="lavarRoupa" value="nao" checked><label id="lavarRoupa--nao">Não</label>
                         </fieldset>
@@ -51,15 +52,15 @@
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 4-->
-                    <div class="questionario__formularioQuestao">
+                    <div>
                         <br>
                         <label for="duracaoTotal">Quantos dias vai durar sua viagem</label><br>
-                        <input type="number" id="duracaoTotal" class="questionario__formularioQuestao--input" required>
+                        <input type="number" id="duracaoTotal" required>
                     </div>
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 5-->
-                    <div class="questionario__formularioQuestao">
+                    <div>
                         <br>
                         <fieldset>
                             <legend>Selecione as variações de temperatura que encontrará durante a sua viagem:</legend><!--TODO: adicionar imagens as checkboxes-->
@@ -77,15 +78,15 @@
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 6-->
-                    <div class="questionario__formularioQuestao">
+                    <div>
                         <br>
                         <label for="duracaoTemperatura">Coloque o número de dias que a temperatura permanecerá em cada variação:</label>
-                        <input type="number" id="duracaoTemperatura" class="questionario__formularioQuestao--input" required>
+                        <input type="number" id="duracaoTemperatura" required>
                     </div>
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 7-->
-                    <div class="questionario__formularioQuestao">
+                    <div>
                         <br>
                         <fieldset>
                             <legend>Selecione quais os cenários estão presentes na sua viagem</legend><!--TODO: adicionar imagens as checkboxes-->
@@ -99,7 +100,7 @@
                     <!--TODO: Inserir botão próxima página-->
                     
                     <!--Rolagem: 8-->
-                    <div class="questionario__formularioQuestao">
+                    <div>
                         <br>
                         <fieldset>
                             <legend>Você comparecerá a algum evento durante a sua viagem?</legend><!--TODO: adicionar imagens as checkboxes-->
@@ -112,10 +113,10 @@
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 9-->
-                    <div class="questionario__formularioQuestao">
+                    <div>
                         <br>
                         <label for="algoMais">Preencha o campo abaixo caso houver algum outro item que precise incluir na mala. Exemplo: roupas de cama</label>
-                        <input type="text" id="algoMais" name="algoMais" class="questionario__formularioQuestao--input">
+                        <input type="text" id="algoMais" name="algoMais">
                         
                         <input type="submit" value="Fazer as malas">
                     </div>
@@ -124,29 +125,30 @@
             </div>
          
             <!--TODO: Adicionar um botão ao final para fazer nova mala-->
-            <div class="mala categoria">
+            <div>
                 <ul>MALA INSERIDA DURANTE A EXECUÇÃO
                     <li></li>
                 </ul>
 
             </div>
-            <div class="dicas">
-                <ul class="dicas__lista">Dicas para que sua viagem seja o mais proveitosa e confortável possível:
-                    <li class="dicas__lista--itens">Faça rolinhos com as roupas para economizar espaço;</li>
-                    <li class="dicas__lista--itens">Dê preferência a tecidos que não amassam e ocupam menos espaço;</li>
-                    <li class="dicas__lista--itens">Adeque a sugestão ao seu estilo pessoal(cores, modelagem, texturas, acessórios, etc);</li>
-                    <li class="dicas__lista--itens">Escolha peças que combinam entre si, sendo possível montar diversas combinações com pouças peças;</li>
-                    <li class="dicas__lista--itens">Para dias com grande variação de temperatura, invista em camadas;</li>
-                    <li class="dicas__lista--itens">Verifique se é possível alugar itens muito específicos, como roupas de neve por exemplo;</li>
-                    <li class="dicas__lista--itens">Se for para diversos destinos, coloque no fundo da mala o que for usar depois;</li>
-                    <li class="dicas__lista--itens">Não se esqueça de levar bolsas ou sacolas para separar roupas sujas;</li>
-                    <li class="dicas__lista--itens">Verifique se o local que vai ficar hospedado fornece itens como shampoo e sabonete, caso forneça, sinta-se livre para tirar ou manter esses itens da sua mala;</li>
-                    <li class="dicas__lista--itens">Observe que mesmo se você for para lugar frios, colocamos proteto solar na sua mala. Independente da temperatura local, o nível de insolação pode variar;</li>
-                    <li class="dicas__lista--itens">Se for de avião, verifique o é possível ir na bagagem despachada e na de mão;</li>
+
+            <div>
+                <ul>Dicas para que sua viagem seja o mais proveitosa e confortável possível:
+                    <li>Faça rolinhos com as roupas para economizar espaço;</li>
+                    <li>Dê preferência a tecidos que não amassam e ocupam menos espaço;</li>
+                    <li>Adeque a sugestão ao seu estilo pessoal(cores, modelagem, texturas, acessórios, etc);</li>
+                    <li>Escolha peças que combinam entre si, sendo possível montar diversas combinações com pouças peças;</li>
+                    <li>Para dias com grande variação de temperatura, invista em camadas;</li>
+                    <li>Verifique se é possível alugar itens muito específicos, como roupas de neve por exemplo;</li>
+                    <li>Se for para diversos destinos, coloque no fundo da mala o que for usar depois;</li>
+                    <li>Não se esqueça de levar bolsas ou sacolas para separar roupas sujas;</li>
+                    <li>Verifique se o local que vai ficar hospedado fornece itens como shampoo e sabonete, caso forneça, sinta-se livre para tirar ou manter esses itens da sua mala;</li>
+                    <li>Observe que mesmo se você for para lugar frios, colocamos proteto solar na sua mala. Independente da temperatura local, o nível de insolação pode variar;</li>
+                    <li>Se for de avião, verifique o é possível ir na bagagem despachada e na de mão;</li>
                 </ul>
             </div>
-
         </main>
+
         <footer>
                 <p>
                     Desenvolvido por <a href="https://github.com/amandafd">Amanda Dionisio</a> e <a href="https://github.com/soraia-barbosa" >Soraia Barbosa</a>
