@@ -40,29 +40,30 @@ main {
     padding: 3rem 10rem ;
 }
 
-.formulario {
-
+.intro {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
-.mala {
+/*.categoria
 
-}
+.categoria__intro
 
-.dicas {
-    
-}
-/*form label {
-    display: block;
-}
+.formulario
 
-form input {
-    display: block;
-}*/
+.formulario__questao
 
+.formulario__pergunta
 
-/*button {
-    font-family: 'Amatic SC', cursive;
-}*/
+.formulario__resposta
+
+.formulario__repostas--campo 
+
+.formulario__repostas--checkbox
+
+.mala
+
+.dicas*/
 
 footer {
     background-color: var(--laranja-claro);
