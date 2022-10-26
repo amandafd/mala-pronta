@@ -104,23 +104,9 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 
 
 
-25º e 35º: 
--Tecidos leves e frescos;
--Cores claras
--Top de alças;
--Vestido curto e leve;
--Calça de tecidos leves;
-
--Bermuda/shorts;
--Saias
--Jardineiras;
 
 
-20º e 30º:
--Calças fluidas;
--Jeans;
--Calções;
--Camisas;
+
 
 
 15º e 25º:
@@ -201,27 +187,74 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 -Lenço;
 -Foulard de seda(TODO: O que é Foulard?);
 
-20-25 graus:
--Algodão leve, linho, jeans e algodão;
--Trench coat de algodão;
--Jaqueta jeans;
--Cardigã de algodão;
--Jeans;
--Camisetas;
--Moletons leves;
 
-25-30 graus:
--Seda, cetim e algodão leve;
--Blusas de seda;
--Manga curta;
--Minissaias;
--Saia longa de tule ou cetim;
--Vestido de cetim;
--Sandálias;
 
-30-35 graus:
--Minivestid;
--Macacão curto;
--Sem mangas e mangas curtas;
--Saia midi;
--Camisa pólo; 
+-----DEFINIÇÃO FINAL DOS ITENS FIXOS----- 
+- 1 chinelo;
+- Pelo menos 1 lenço longo para colocar na cabeça/pescoço;
+- Pelo menos 1 par de óculos escuros;
+- 
+
+-----DEFINIÇÃO FINAL DOS ITENS CONTIDOS EM CADA TEMPERATURA----- 
+----25º ou mais----
+    - Tecidos sugeridos: leves e frescos, preferencialmente de cores claras. Algodão, seda, cetim, linho;
+    - X vestidos/jardineiras. Caso não use nenhum dos dois, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts;
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts;
+    - X bermudas ou shorts;
+    - X calça de tecido leve;
+    - X calça jeans;
+    - X camisetas;
+    - X croppeds ou tops ou camisas;
+    - X sandálias;
+    - 1 chinelo extra;
+    - X pares de tênis;
+    - X moletons;
+
+----20º a 25º----
+    - Tecidos sugeridos:Algodão linho e jeans;
+    - X vestidos/jardineiras. Caso não use nenhum dos dois, substitua acrescentando mais X camisetas/croppeds, X bermudas/shorts e X calças;
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e X calças;
+    - Xbermudas ou shorts;
+    - Xcalça de tecido leve;
+    - X calça jeans;
+    - X camisetas;
+    - X croppeds ou tops ou camisas;
+    - X sandálias;
+    - X pares de tênis;
+    - X moletons;
+    - X cardigãs;
+    - X jaquetas;
+
+----15º a 20º----
+    - Tecidos sugeridos:
+----10º a 15º----
+    - Tecidos sugeridos:
+----5º a 10º----
+    - Tecidos sugeridos:
+----0º a 5º----
+    - Tecidos sugeridos:
+----Abaixo de 0º----
+    - Tecidos sugeridos:
+
+
+-----DEFINIÇÃO FINAL DOS ITENS EXTRAS CONTIDOS EM CADA CENÁRIO----- 
+----Praia/piscina/cachoeira----
+    - X Roupas de banho/biquinis/maios/sungas/calções de banho;
+    - X saídas de praia/(pensar em opção);
+    - X
+----Neve----
+    - X Casacos de neve;
+    - X Botas de neve;
+    - X
+----Montanha/trilha----
+    - X calçado para trilha;
+    - X jaqueta corta-vento impermeável;
+    - X squeeze;
+    - X mochila impermeável;
+    - X
+
+
+-----DEFINIÇÃO FINAL DOS ITENS EXTRAS POR EVENTO----- 
+----Balada----
+----Formal----
+----Fantasia----
