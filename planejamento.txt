@@ -103,119 +103,60 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 -https://trello.com/b/7s5jG5c5/mala-pronta
 
 
-
-
-
-
-
-
-15º e 25º:
--Calça flare;
--Camiseta de manga comprida fina;
--Cardiga;
--Parca;
--Botas;
-
-10º e 20º:
--Camiseta gola alta;
--Casaco;
--Jaqueta de couro;
--Sobretudo;
--Camadas;
-
-
-5º e os 15º:
--Gola alta;
--Casacos pesados;
--Camiseta manga comprida;
--Camadas;
--Cachecol;
-
-0º e os 10º:
--Sobretudos;
--Casaco de pelos;
--Lã;
--Camiseta gola alta;
--Botas;
-
-
-
-
-
-0-5 graus:
--Pelagem, verdadeira e sintética
--Couro e couro ecológico;
--Casaco de penas;
--Calças de veludo;
--Gola alta e mangas compridas;
--Cardigã de cashmere extra fino;
--Blazer de veludo.
-
-5-10 graus:
--Pelagem (mas um pouco menos forte do que colocaríamos abaixo de zero)
--Lã é estofado mais leve que a clássica parca de inverno;
--Casacos;
--Lenço de caxemira
--Parka;
--Jeans pesado 
--Saia maxi veludo
--Vestidinho preto;
--Calças de couro;
-
-10-15 graus
--Lã mais leve;
--Casaco de lã versão light;
--Poncho;
--Calça chinos(TODO: o que é chinos?); 
--Saia lápis de cetim
--Jeans;
--Gola alta mais fina;
--Suéter extra fino ou um cardigã de primavera;
-
-15-20 graus:
--Algodão, couro e veludo leve;
--Sobretudo de algodão, de comprimento médio ou longo;
--Minivestido;
--Paletó-calça(TODO: o que é isso?);
--Paletó-saia(TODO: o que é isso?); 
--Macacão;
--Jeans skinny;
--Moletom;
--Jaqueta de couro;
--Blazer de veludo;
--Camiseta de mangas compridas;
--Lenço;
--Foulard de seda(TODO: O que é Foulard?);
-
-
-
 -----DEFINIÇÃO FINAL DOS ITENS FIXOS----- 
-- 1 chinelo;
+- Tecidos sugeridos;
+- X par de chinelo;
+- X pijama;
+- X camisetas de marga curta;
 - Pelo menos 1 lenço longo para colocar na cabeça/pescoço;
 - Pelo menos 1 par de óculos escuros;
 - 
 
 -----DEFINIÇÃO FINAL DOS ITENS CONTIDOS EM CADA TEMPERATURA----- 
 ----25º ou mais----
-    - Tecidos sugeridos: leves e frescos, preferencialmente de cores claras. Algodão, seda, cetim, linho;
-    - X vestidos/jardineiras. Caso não use nenhum dos dois, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts;
-    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts;
-    - X bermudas ou shorts;
-    - X calça de tecido leve;
-    - X calça jeans;
-    - X camisetas;
-    - X croppeds ou tops ou camisas;
-    - X sandálias;
-    - 1 chinelo extra;
-    - X pares de tênis;
-    - X moletons;
+    - Tecidos sugeridos: leves e frescos, preferencialmente de cores claras. algodão, linho, seda,  malha;
 
 ----20º a 25º----
-    - Tecidos sugeridos:Algodão linho e jeans;
+    - Tecidos sugeridos: algodão, linho, jeans, seda, cetim malha;
+
+----15º a 20º----
+    - Tecidos sugeridos: algodão, linho, jeans, couro e veludo leve;
+
+----10º a 15º----
+    - Tecidos sugeridos: lã mais leve, jeans;
+
+----5º a 10º----
+    - Tecidos sugeridos: lã, jeans, pelos, couro, veludo;
+
+----0º a 5º----
+    - Tecidos sugeridos: lã, jeans, pelos, couro, veludo;
+
+----Abaixo de 0º----
+-Nylon
+    - Tecidos sugeridos: lã, jeans, pelos, couro, veludo;
+
+
+
+
+----25º ou mais----
+    - X vestido/jardineira. Caso não use nenhum dos dois, substitua acrescentando mais X camiseta/cropped/camisa leve e X bermuda/short;
+    - X saias. Caso não use saia, substitua acrescentando mais X bermudas/shorts;
+    - X bermudas ou short;
+    - X calça de tecido leve;
+    - X calça jeans;
+    - X camiseta;
+    - X camisa leve;
+    - X cropped ou top ou camisa;
+    - X sandália;
+    - 1 chinelo extra;
+    - X par de tênis;
+    - X moletonm;
+
+----20º a 25º----
     - X vestidos/jardineiras. Caso não use nenhum dos dois, substitua acrescentando mais X camisetas/croppeds, X bermudas/shorts e X calças;
     - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e X calças;
-    - Xbermudas ou shorts;
-    - Xcalça de tecido leve;
+    - X bermudas ou shorts;
+    - X calça de tecido leve;
     - X calça jeans;
     - X camisetas;
     - X croppeds ou tops ou camisas;
@@ -226,15 +167,92 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
     - X jaquetas;
 
 ----15º a 20º----
-    - Tecidos sugeridos:
+    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+    - X bermudas ou shorts;
+    - X calça de tecido;
+    - X calça jeans;
+    - X camisetas de manga curta;
+    - X camisetas de manga comprida;
+    - X croppeds ou tops ou camisas;
+    - X pares de tênis ou botas leves;
+    - X moletons;
+    - x cardigãs;
+    - X jaquetas de couro ou blazer de veludo;
+    - X meias calças finas;
+    - X meias calças médias;
+
 ----10º a 15º----
-    - Tecidos sugeridos:
+    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+    - X calça de tecido;
+    - X calça jeans;
+    - X camisetas de manga curta;
+    - X camisetas de manga comprida;
+    - X croppeds ou tops ou camisas;
+    - X moletons;
+    - x cardigãs/sueters;
+    - X jaquetas
+    - X casacos/blazer/parca;
+    - X pares de tênis ou botas;
+    - X meias calças médias;
+    - x meias calças grossas;
 ----5º a 10º----
-    - Tecidos sugeridos:
+    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+    - X calça de tecido;
+    - X calça jeans;
+    - X calças de couro ou veludo
+    - X camisetas de manga curta;
+    - X camisetas de manga comprida;
+    - X croppeds ou tops ou camisas;
+    - X moletons;
+    - x cardigãs/sueters;
+    - X jaquetas
+    - X casacos/blazer/parca/sobretudos;
+    - X pares de tênis ou botas;
+    - X meias calças médias;
+    - x meias calças grossas;
+    - X cachecois;
+    - X pares de luvas
+    - X gorros;
+
 ----0º a 5º----
-    - Tecidos sugeridos:
+    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+    - X calça de tecido;
+    - X calça jeans;
+    - X calças de couro ou veludo
+    - X camisetas de manga curta;
+    - X camisetas de manga comprida;
+    - X croppeds ou tops ou camisas;
+    - X moletons;
+    - x cardigãs/sueters;
+    - X jaquetas
+    - X casacos/blazer/parca/sobretudos;
+    - X pares de tênis ou botas;
+    - X meias calças médias;
+    - x meias calças grossas;
+    - X cachecois;
+    - X pares de luvas
+    - X gorros;
+
 ----Abaixo de 0º----
-    - Tecidos sugeridos:
+    - X vestidos de lã. Caso não use, substitua acrescentando mais X camisetas/camisas de managas compridas e x calças;
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+    - X calças de couro, veludo ou lã;
+    - X calça jeans;
+    - X camisetas de manga comprida;
+    - X croppeds ou tops ou camisas;
+    - X moletons;
+    - x cardigãs/sueters;
+    - X jaquetas puffer;
+    - X casacos/blazer/parca/sobretudos;
+    - X pares de tênis ou botas;
+    - x meias calças grossas;
+    - X cachecois;
+    - X pares de luvas
+    - X gorros;
 
 
 -----DEFINIÇÃO FINAL DOS ITENS EXTRAS CONTIDOS EM CADA CENÁRIO----- 
