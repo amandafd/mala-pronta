@@ -36,9 +36,9 @@ header {
 
 main {
     color: var(--turquesa);
+    display: grid;
     min-height: 100vh;
     padding: 3rem 0;
-    display: grid;
     justify-items: center;
 }
 
@@ -51,6 +51,7 @@ main {
 fieldset {
     border: none;
 }
+
 /*.categoria
 
 .categoria__intro*/
@@ -64,11 +65,19 @@ fieldset {
 
 /*fundo temporario apenas para visualizar algumas coisas*/
 .formulario__questao {
-    background-color: var(--laranja-claro);
-    height: 20rem;
-    width: 50rem;
+    /*background-color: var(--laranja-claro);*/
     display: flex;
     flex-direction: column;
+    height: 15rem;
+    width: 50rem;
+    padding: 1rem 0;
+}
+
+.formulario__questao--lavarRoupa .formulario__resposta--opcoes, .formulario__questao--cenario .formulario__resposta--opcoes, .formulario__questao--evento .formulario__resposta--opcoes {
+    height: 9rem;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+
 }
 
 .formulario__pergunta {
@@ -76,12 +85,18 @@ fieldset {
 }
 
 .formulario__resposta--campo {
+    width: 100%;
+    align-self: center;
     padding: 0.5rem 1rem;
+    margin: 2rem 0;
+    border: solid 0.15rem var(--turquesa);
+    border-radius: 1rem;
     font-size: 1.2rem;
-    border-radius: 01rem;
-    border-color: var(--turquesa);
-    border-style: solid;
-    border-width: 0.15rem;
+}
+
+.formulario__resposta--opcoes {
+    display: flex;
+    flex-flow: column wrap;
 }
 
 form label {
@@ -97,22 +112,21 @@ form label {
 }
 
 .btn {
-    color: var(--turquesa);
     background-color: var(--cinza-claro);
+    color: var(--turquesa);
     height: 2.5rem;
     width: 13rem;
+    align-self: center;
+    border: solid 0.15rem var(--turquesa);
     border-radius: 1rem;
-    border-color: var(--turquesa);
-    border-style: solid;
-    border-width: 0.15rem;
     font-family: 'Amatic SC', cursive;
     font-weight: 500;
     font-size: 1.8rem;
 }
 
 .btn:hover {
-    color: var(--cinza-claro);
     background-color: var(--turquesa);
+    color: var(--cinza-claro);
     border: none;
     transition: 0.5s;
 }
