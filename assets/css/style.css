@@ -59,7 +59,7 @@ fieldset {
 .formulario{
     display: flex;
     flex-direction: column;
-  
+    margin-bottom: 2rem;
 }
 
 
@@ -73,7 +73,9 @@ fieldset {
     padding: 1rem 0;
 }
 
-.formulario__questao--lavarRoupa .formulario__resposta--opcoes, .formulario__questao--cenario .formulario__resposta--opcoes, .formulario__questao--evento .formulario__resposta--opcoes {
+.formulario__questao--lavarRoupa .formulario__resposta--opcoes, 
+.formulario__questao--cenario .formulario__resposta--opcoes, 
+.formulario__questao--evento .formulario__resposta--opcoes {
     height: 9rem;
     margin-top: 1.5rem;
     justify-content: space-between;
@@ -158,3 +160,16 @@ footer a:hover {
     padding: 0 2rem;
 }
 
+@media (max-width: 940px) {
+    .intro {
+        width: 30rem;
+    }
+    .formulario__questao {
+        width: 30rem;
+    }
+    .dicas {
+        width: 30rem;
+    }
+
+    /*footer*/
+}

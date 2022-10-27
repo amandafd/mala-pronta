@@ -1,9 +1,15 @@
-/*nome*/
+/*Captando o nome do usuário e iniciando o preenchimento da mala*/
 var nome = document.querySelector('#nome');
 var capturarNome = document.querySelector('#btn__proximo--nome');
 
+var nomeMala = document.querySelector('.mala__nome');
+var textoInicialMala = document.querySelector('.mala__textoInicial');
+
+
 capturarNome.addEventListener('click', function(e) {
-    alert("Olá " + nome.value);
+    nomeMala.innerHTML = nome.value;
+
+    textoInicialMala.innerHTML = "Continue preenchendo o questionário para completar sua mala."
 
     e.preventDefault();
 });
