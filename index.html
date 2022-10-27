@@ -27,7 +27,7 @@
             <!--Rolagem: 1-->
             <p class="intro">Olá, viajante! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário a seguir, confira a sugestão da sua mala e em seguida nossas dicas!</p>
                 <form class="formulario categoria">
-                    <!--TODO: Inserir botão próxima página-->
+                    <!--TODO: Inserir botão próxima-->
 
                     <!--Rolagem: 2-->
                     <br>
@@ -36,30 +36,10 @@
                         <input type="text" id="nome" name="nome" class="formulario__resposta formulario__resposta--campo"required>
                         <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--nome">
                     </div>
-                    
-                    <!--TODO: Inserir botão próxima página-->
+                    <!--TODO: Inserir botão voltar-->
+    
 
                     <!--Rolagem: 3-->
-                    <br>
-                    <div class="formulario__questao formulario__questao--lavarRoupa">
-                        <fieldset class="fieldset__lavarRoupa">
-                            <legend class="formulario__pergunta">Você poderá lavar roupas durante a viagem?</legend>
-                            <div class="formulario__resposta formulario__resposta--opcoes"> 
-                                <label for="lavarRoupa--sim">
-                                    <input type="radio" id="lavarRoupa--sim" name="lavarRoupa" value="sim" class="formulario__resposta--checkbox">Sim
-                                    
-                                </label>
-                                <label id="lavarRoupa--nao">
-                                    <input type="radio" id="lavarRoupa--nao" name="lavarRoupa" value="não" class="formulario__resposta--checkbox">Não
-                                </label>
-                            </div>
-                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--lavarRoupa">
-                        </fieldset>
-                    </div>
-                    
-                    <!--TODO: Inserir botão próxima página-->
-
-                    <!--Rolagem: 4-->
                     <br>
                     <div class="formulario__questao">
                         <br>
@@ -67,9 +47,9 @@
                         <input type="number" id="duracaoTotal" class="formulario__resposta formulario__resposta--campo" min="0" required>
                         <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTotal">
                     </div>
-                    <!--TODO: Inserir botão próxima página-->
+                    <!--TODO: Inserir botão voltar-->
 
-                    <!--Rolagem: 5-->
+                    <!--Rolagem: 4-->
                     <br>
                     <div class="formulario__questao formulario__questao--variacaoDeTemperatura">
                         <fieldset>
@@ -101,10 +81,9 @@
                             <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--variacaoDeTemperatura">
                         </fieldset>
                     </div>
-                    
-                    <!--TODO: Inserir botão próxima página-->
+                    <!--TODO: Inserir botão voltar-->
 
-                    <!--Rolagem: 6-->
+                    <!--Rolagem: 5-->
                     <br>
                     <div class="formulario__questao formulario__questao--duracaoTemperatura">
                         <br>
@@ -112,9 +91,9 @@
                         <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__resposta--campo " min="0" required>
                         <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTemperatura">
                     </div>
-                    <!--TODO: Inserir botão próxima página-->
+                    <!--TODO: Inserir botão voltar-->
 
-                    <!--Rolagem: 7-->
+                    <!--Rolagem: 6-->
                     <br>
                     <div class="formulario__questao formulario__questao--cenario">
                         <fieldset>
@@ -136,9 +115,9 @@
                              <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--cenario"> 
                         </fieldset>
                     </div>
-                    <!--TODO: Inserir botão próxima página-->
+                    <!--TODO: Inserir botão voltar-->
                         
-                    <!--Rolagem: 8-->
+                    <!--Rolagem: 7-->
                     <br>
                     <div class="formulario__questao formulario__questao--evento">
                         <fieldset>
@@ -152,9 +131,9 @@
                             <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--evento">
                         </fieldset>
                     </div>
-                    <!--TODO: Inserir botão próxima página-->
+                    <!--TODO: Inserir botão voltar-->
 
-                    <!--Rolagem: 9-->
+                    <!--Rolagem: 8-->
                     <br>
                     <div class="formulario__questao formulario__questao--algoMais">
                         <label for="algoMais" class="formulario__pergunta">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: roupas de cama</label><br>
@@ -167,13 +146,51 @@
             <!--TODO: Adicionar um botão ao final para fazer nova mala-->
             <div class="mala categoria">
                 <p class="categoria__intro mala__intro">Olá, <text class="mala__nome">viajante</text>! <text class="mala__textoInicial">Preencha o questionário e sua mala será exibida aqui!</text></p>
-                <ul>
-                    <li class="mala__item">blablablablabla</li>
-                </ul>
+                <div class="categoriaMala">
+                    <p class="categoriaMala__nome">Roupas</p>
+                    <ul>
+                        <li class="mala__item pijama">Pijama: <text class="mala__item--quantidade quantidade__pijama"></text></li>
+                    </ul>
+                </div>
+                <div class="categoriaMala">
+                    <p class="categoriaMala__nome">Calçados</p>
+                    <ul>
+                        <li class="mala__item chinelo">Par de chinelo: <text class="mala__item--quantidade quantidade__chinelo"></text></li>
+                    </ul>
+                </div>
+                <div class="categoriaMala">
+                    <p class="categoriaMala__nome">Acessórios</p>
+                    <ul>
+                        <li class="mala__item oculoDeSol">Óculos de sol: <text class="mala__item--quantidade quantidade__oculosDeSol">1</text></li>
+                        <li class="mala__item lenco">Lenço médio/long: <text class="mala__item--quantidade quantidade__ lenco">1</text></li>
+                    </ul>
+                </div>
+                <div class="categoriaMala">
+                    <p class="categoriaMala__nome">Higiene e cosméticos</p>
+                    <ul>
+                        <li class="mala__item">Shampoo</li>
+                        <li class="mala__item">Condicionador</text></li>
+                        <li class="mala__item">Sabonete</li>
+                        <li class="mala__item">Lâmina para depilar ou barbear</li>
+                        <li class="mala__item">Hidratante corporal</li>
+                        <li class="mala__item">Protetor solar</li>
+                        <li class="mala__item">Kit para skin care com os itens normalmente usados por você</li>
+                        <li class="mala__item">Kit de maquiagem com os itens normalmente usados por você</li>
+                        <li class="mala__item">: <text class="mala__item--quantidade"></text></li>
+                    </ul>
+                </div>
+                <div class="categoriaMala">
+                    <p class="categoriaMala__nome">Na sua mochila/bolsa de mão é bom levar:</p>
+                    <ul>
+                        <li class="mala__item">Kit de remédios(dores, febre, dor de barriga, remédios específicos que você já usa)</li>
+                        <li class="mala__item">Livro</li>
+                        <li class="mala__item">Fone de ouvido</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="dicas categoria">
-                <p class="categoria__intro">Dicas para que sua viagem seja o mais proveitosa e confortável possível:</p>
+                <p class="categoria__intro dicas__intro">Dicas para que sua viagem seja o mais proveitosa e confortável possível:</p>
                 <ul class="dicas__lista">
                     <li class="dicas__item">Faça rolinhos com as roupas para economizar espaço;</li>
                     <li class="dicas__item">Dê preferência a tecidos que não amassam e ocupam menos espaço;</li>
@@ -183,7 +200,9 @@
                     <li class="dicas__item">Verifique se é possível alugar itens muito específicos, como roupas de neve por exemplo;</li>
                     <li class="dicas__item">Se for para diversos destinos, coloque no fundo da mala o que for usar depois;</li>
                     <li class="dicas__item">Não se esqueça de levar bolsas ou sacolas para separar roupas sujas;</li>
+                    <li class="dicas__item">Coloque itens de higiene(shampoo, por exemplo) em embalagens menores com quantidades ideias para a sua viagem;</li>
                     <li class="dicas__item">Verifique se o local que vai ficar hospedado fornece itens como shampoo e sabonete, caso forneça, sinta-se livre para tirar ou manter esses itens da sua mala;</li>
+                    <li class="dicas__item">Verifique também se você terá a possibilidade de lavar roupas, podendo diminuir a quantidade de cada item;</li>
                     <li class="dicas__item">Observe que mesmo se você for para lugar frios, colocamos proteto solar na sua mala. Independente da temperatura local, o nível de insolação pode variar;</li>
                     <li class="dicas__item">Se for de avião, verifique o é possível ir na bagagem despachada e na de mão;</li>
                 </ul>

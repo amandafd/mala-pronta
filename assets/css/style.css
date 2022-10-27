@@ -149,6 +149,20 @@ form label {
     margin: 2rem 0;
 }
 
+.mala__intro, .dicas__intro {
+    color: var(--laranja-claro);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.categoriaMala {
+    margin: 1rem 0;
+}
+
+.categoriaMala__nome{
+    font-size: 1.2rem;
+}
+
 .dicas__item, .mala__item {
     margin: 1rem;
 }
