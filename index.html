@@ -34,6 +34,7 @@
                     <div class="formulario__questao">
                         <label for="nome" class="formulario__pergunta">Qual o seu nome?</label><br>
                         <input type="text" id="nome" name="nome" class="formulario__resposta formulario__resposta--campo"required>
+                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--nome">
                     </div>
                     
                     <!--TODO: Inserir botão próxima página-->
@@ -46,6 +47,7 @@
                             <label for="lavarRoupa--sim"><input type="radio" id="lavarRoupa--sim" name="lavarRoupa" value="sim" class="formulario__resposta--checkbox">Sim</label>
                             <label id="lavarRoupa--nao"><input type="radio" id="lavarRoupa--nao" name="lavarRoupa" value="nao" class="formulario__resposta--checkbox" checked>Não</label>
                         </div>
+                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--lavarRoupa">
                     </fieldset>
                     <!--TODO: Inserir botão próxima página-->
 
@@ -55,6 +57,7 @@
                         <br>
                         <label for="duracaoTotal" class="formulario__pergunta">Quantos dias vai durar sua viagem</label><br>
                         <input type="number" id="duracaoTotal" class="formulario__resposta formulario__resposta--campo" min="0" required>
+                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTotal">
                     </div>
                     <!--TODO: Inserir botão próxima página-->
 
@@ -72,6 +75,7 @@
                             <label for="vdt--0e5"><input type="checkbox" name="variacaoDeTemperatura" id="vdt--0e5" value="0 e 5" class="formulario__resposta--checkbox">0ºC e 5ºC</label>
                             <label for="vdt--negativa"><input type="checkbox" name="variacaoDeTemperatura" id="vdt--negativa" value="Abaixo de 0" class="formulario__resposta--checkbox">Abaixo de 0ºC</label>
                         </div>
+                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--variacaoDeTemperatura">
                     </fieldset>
                     <!--TODO: Inserir botão próxima página-->
 
@@ -81,6 +85,7 @@
                         <br>
                         <label for="duracaoTemperatura" class="formulario__pergunta">Coloque o número de dias que a temperatura permanecerá em cada variação:</label><br>
                         <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__resposta--campo" min="0" required>
+                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTemperatura">
                     </div>
                     <!--TODO: Inserir botão próxima página-->
 
@@ -93,7 +98,8 @@
                             <label for="checkbox--neve"><input type="checkbox" name="cenario" id="checkbox--neve" value="neve" class="formulario__resposta--checkbox">Neve</label>
                             <label for="checkbox--montanha"><input type="checkbox" name="cenario" id="checkbox--montanha" value="montanha" class="formulario__resposta--checkbox">Montanha ou trilha</label>
                             <label for="checkbox--cidade"><input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade" class="formulario__resposta--checkbox">Cidade</label>
-                         </div>   
+                         </div>  
+                         <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--cenario"> 
                     </fieldset>
                     <!--TODO: Inserir botão próxima página-->
                         
@@ -106,18 +112,18 @@
                             <label for="checkbox--balada"><input type="checkbox" name="evento" id="checkbox--balada" value="balada" class="formulario__resposta--checkbox">Balada</label>
                             <label for="checkbox--formal"><input type="checkbox" name="evento" id="checkbox--formal" value="formal" class="formulario__resposta--checkbox">Festa formal(casamento, formatura, etc)</label>
                             <label for="checkbox--fantasia"><input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia" class="formulario__resposta--checkbox">Festa fantasia</label>
-
                         </div>
+                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--evento">
                     </fieldset>
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 9-->
                     <br>
                     <div class="formulario__questao">
-                        <label for="algoMais" class="formulario__pergunta">Preencha o campo abaixo caso houver algum outro item que precise incluir na mala. Exemplo: roupas de cama</label><br>
+                        <label for="algoMais" class="formulario__pergunta">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: roupas de cama</label><br>
                         <input type="text" id="algoMais" name="algoMais" class="formulario__resposta formulario__resposta--campo">
                             
-                        <input type="submit" value="FAZER AS MALAS" class="btn">
+                        <input type="submit" value="FAZER AS MALAS" class="btn" id="btn__proximo--algoMais">
                     </div>
             </form>
          
