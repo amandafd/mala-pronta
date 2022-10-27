@@ -276,3 +276,19 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 ----Balada----
 ----Formal----
 ----Fantasia----
+
+
+
+
+-escala tamanhos CSS
+
+-width: porcentagem ou pixels tamanho do pai
+-em (tamanho da fonte elemento pai) rem( (tamanho da fonta html): é um tipo de % onde 1 já é 100% (baseados em tamanho fonte).
+% > se refere ao pai e se refere 
+em se refere ao font-size do pai
+rem se refere ao font-size do body
+vw se refere ao width da tela
+vw se refere ao width da tela
+
+
+
