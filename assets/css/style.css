@@ -38,56 +38,82 @@ main {
     color: var(--turquesa);
     min-height: 100vh;
     padding: 3rem 0;
+    display: grid;
+    justify-items: center;
 }
 
 .intro {
-    font-size: 1.2rem;
+    width: 50rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
+fieldset {
+    border: none;
+}
 /*.categoria
 
-.categoria__intro
+.categoria__intro*/
 
-.formulario*/
+.formulario{
+    display: flex;
+    flex-direction: column;
+  
+}
+
 
 /*fundo temporario apenas para visualizar algumas coisas*/
 .formulario__questao {
     background-color: var(--laranja-claro);
-    height: 10rem;
-    /*width: 40rem;*/
+    height: 20rem;
+    width: 50rem;
     display: flex;
     flex-direction: column;
 }
 
-/*.formulario__pergunta*/
+.formulario__pergunta {
+    font-size: 1.2rem;
+}
 
 .formulario__resposta--campo {
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
-    border-radius: 0.8rem;
+    border-radius: 01rem;
+    border-color: var(--turquesa);
+    border-style: solid;
+    border-width: 0.15rem;
 }
 
-/*.formulario__repostas--checkbox
+form label {
+    display: block;
+}
 
-.mala
+/*.formulario__repostas--checkbox */
 
-.dicas*/
+/*.mala*/
+
+.dicas {
+    width: 50rem;
+}
 
 .btn {
-    background-color: var(--turquesa);
-    color: var(--cinza-claro);
-   height: 2.5rem;
-   width: 13rem;
-   border-radius: 1rem;
-   border: none;
-   font-family: 'Amatic SC', cursive;
-   font-weight: 500;
-   font-size: 1.8rem;
+    color: var(--turquesa);
+    background-color: var(--cinza-claro);
+    height: 2.5rem;
+    width: 13rem;
+    border-radius: 1rem;
+    border-color: var(--turquesa);
+    border-style: solid;
+    border-width: 0.15rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 500;
+    font-size: 1.8rem;
 }
 
 .btn:hover {
-    background-color: var(--vinho);
+    color: var(--cinza-claro);
+    background-color: var(--turquesa);
+    border: none;
     transition: 0.5s;
 }
 

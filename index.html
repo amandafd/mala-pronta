@@ -42,9 +42,9 @@
                     <br>
                     <fieldset class="formulario__questao">
                         <legend class="formulario__pergunta">Você poderá lavar roupas durante a viagem?</legend>
-                        <div class="formulario__resposta"> 
-                            <input type="radio" id="lavarRoupa--sim" name="lavarRoupa" value="sim" class="formulario__resposta--checkbox"><label for="lavarRoupa--sim">Sim</label>
-                            <input type="radio" id="lavarRoupa--nao" name="lavarRoupa" value="nao" class="formulario__resposta--checkbox" checked><label id="lavarRoupa--nao">Não</label>
+                        <div class="formulario__resposta formulario__resposta--opcoes"> 
+                            <label for="lavarRoupa--sim"><input type="radio" id="lavarRoupa--sim" name="lavarRoupa" value="sim" class="formulario__resposta--checkbox">Sim</label>
+                            <label id="lavarRoupa--nao"><input type="radio" id="lavarRoupa--nao" name="lavarRoupa" value="nao" class="formulario__resposta--checkbox" checked>Não</label>
                         </div>
                     </fieldset>
                     <!--TODO: Inserir botão próxima página-->
@@ -63,14 +63,14 @@
                     <fieldset class="formulario__questao">
                         <legend class="formulario__pergunta">Selecione as variações de temperatura que encontrará durante a sua viagem:</legend><!--TODO: adicionar imagens as checkboxes-->
 
-                        <div class="formulario__resposta">
-                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--25mais" value="25 ou mais" class="formulario__resposta--checkbox"><label for="vdt--25mais">25ºC ou mais</label>
-                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--20e25" value="20 e 25" class="formulario__resposta--checkbox"><label for="vdt--20e25">20ºC e 25ºC</label>
-                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--15e20" value="15 e 20" class="formulario__resposta--checkbox"><label for="vdt--15e20">15ºC e 20ºC</label>
-                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--10e15" value="10 e 15" class="formulario__resposta--checkbox"><label for="vdt--10e15">10ºC e 15ºC</label>
-                            <input type="checkbox" name="variacaoDeTemperatura" id="vtd--5e10" value="5 e 10" class="formulario__resposta--checkbox"><label for="vdt--5e10">5ºC e 10ºC</label>
-                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--0e5" value="0 e 5" class="formulario__resposta--checkbox"><label for="vdt--0e5">0ºC e 5ºC</label>
-                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--negativa" value="Abaixo de 0" class="formulario__resposta--checkbox"><label for="vdt--negativa">Abaixo de 0ºC</label>
+                        <div class="formulario__resposta formulario__resposta--opcoes">
+                            <label for="vdt--25mais"><input type="checkbox" name="variacaoDeTemperatura" id="vdt--25mais" value="25 ou mais" class="formulario__resposta--checkbox">25ºC ou mais</label>
+                            <label for="vdt--20e25"><input type="checkbox" name="variacaoDeTemperatura" id="vdt--20e25" value="20 e 25" class="formulario__resposta--checkbox">20ºC e 25ºC</label>
+                            <label for="vdt--15e20"><input type="checkbox" name="variacaoDeTemperatura" id="vdt--15e20" value="15 e 20" class="formulario__resposta--checkbox">15ºC e 20ºC</label>
+                            <label for="vdt--10e15"><input type="checkbox" name="variacaoDeTemperatura" id="vdt--10e15" value="10 e 15" class="formulario__resposta--checkbox">10ºC e 15ºC</label>
+                            <label for="vdt--5e10"><input type="checkbox" name="variacaoDeTemperatura" id="vtd--5e10" value="5 e 10" class="formulario__resposta--checkbox">5ºC e 10ºC</label>
+                            <label for="vdt--0e5"><input type="checkbox" name="variacaoDeTemperatura" id="vdt--0e5" value="0 e 5" class="formulario__resposta--checkbox">0ºC e 5ºC</label>
+                            <label for="vdt--negativa"><input type="checkbox" name="variacaoDeTemperatura" id="vdt--negativa" value="Abaixo de 0" class="formulario__resposta--checkbox">Abaixo de 0ºC</label>
                         </div>
                     </fieldset>
                     <!--TODO: Inserir botão próxima página-->
@@ -88,11 +88,11 @@
                     <br>
                     <fieldset class="formulario__questao">
                         <legend class="formulario__pergunta">Selecione quais os cenários estão presentes na sua viagem</legend><!--TODO: adicionar imagens as checkboxes-->
-                         <div class="formulario__resposta">
-                            <input type="checkbox" name="cenario" id="checkbox--agua" value="agua" class="formulario__resposta--checkbox"><label for="checkbox--agua">Água(praia, cachoeira ou piscina)</label>
-                            <input type="checkbox" name="cenario" id="checkbox--neve" value="neve" class="formulario__resposta--checkbox"><label for="checkbox--neve">Neve</label>
-                            <input type="checkbox" name="cenario" id="checkbox--montanha" value="montanha" class="formulario__resposta--checkbox"><label for="checkbox--montanha">Montanha ou trilha</label>
-                            <input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade" class="formulario__resposta--checkbox"><label for="checkbox--cidade">Cidade</label>
+                         <div class="formulario__resposta formulario__resposta--opcoes">
+                            <label for="checkbox--agua"><input type="checkbox" name="cenario" id="checkbox--agua" value="agua" class="formulario__resposta--checkbox">Água(praia, cachoeira ou piscina)</label>
+                            <label for="checkbox--neve"><input type="checkbox" name="cenario" id="checkbox--neve" value="neve" class="formulario__resposta--checkbox">Neve</label>
+                            <label for="checkbox--montanha"><input type="checkbox" name="cenario" id="checkbox--montanha" value="montanha" class="formulario__resposta--checkbox">Montanha ou trilha</label>
+                            <label for="checkbox--cidade"><input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade" class="formulario__resposta--checkbox">Cidade</label>
                          </div>   
                     </fieldset>
                     <!--TODO: Inserir botão próxima página-->
@@ -101,11 +101,11 @@
                     <br>
                     <fieldset class="formulario__questao">
                         <legend class="formulario__pergunta">Você comparecerá a algum evento durante a sua viagem?</legend><!--TODO: adicionar imagens as checkboxes-->
-                        <div class="formulario__resposta">
-                            <input type="checkbox" name="evento" id="checkbox--nada" value="nada" class="formulario__resposta--checkbox"><label for="checkbox--nada">Nada especifico</label>
-                            <input type="checkbox" name="evento" id="checkbox--balada" value="balada" class="formulario__resposta--checkbox"><label for="checkbox--balada">Balada</label>
-                            <input type="checkbox" name="evento" id="checkbox--formal" value="formal" class="formulario__resposta--checkbox"><label for="checkbox--formal">Festa formal(casamento, formatura, etc)</label>
-                            <input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia" class="formulario__resposta--checkbox"><label for="checkbox--fantasia">Festa fantasia</label>
+                        <div class="formulario__resposta formulario__resposta--opcoes">
+                            <label for="checkbox--nada"><input type="checkbox" name="evento" id="checkbox--nada" value="nada" class="formulario__resposta--checkbox">Nada especifico</label>
+                            <label for="checkbox--balada"><input type="checkbox" name="evento" id="checkbox--balada" value="balada" class="formulario__resposta--checkbox">Balada</label>
+                            <label for="checkbox--formal"><input type="checkbox" name="evento" id="checkbox--formal" value="formal" class="formulario__resposta--checkbox">Festa formal(casamento, formatura, etc)</label>
+                            <label for="checkbox--fantasia"><input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia" class="formulario__resposta--checkbox">Festa fantasia</label>
 
                         </div>
                     </fieldset>
