@@ -42,7 +42,7 @@
                     <!--Rolagem: 3-->
                     <br>
                     <div class="formulario__questao formulario__questao--lavarRoupa">
-                        <fieldset>
+                        <fieldset class="fieldset__lavarRoupa">
                             <legend class="formulario__pergunta">Você poderá lavar roupas durante a viagem?</legend>
                             <div class="formulario__resposta formulario__resposta--opcoes"> 
                                 <label for="lavarRoupa--sim">
@@ -52,9 +52,8 @@
                                 <label id="lavarRoupa--nao">
                                     <input type="radio" id="lavarRoupa--nao" name="lavarRoupa" value="não" class="formulario__resposta--checkbox">Não
                                 </label>
-
-                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--lavarRoupa">
                             </div>
+                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--lavarRoupa">
                         </fieldset>
                     </div>
                     
@@ -64,7 +63,7 @@
                     <br>
                     <div class="formulario__questao">
                         <br>
-                        <label for="duracaoTotal" class="formulario__pergunta">Quantos dias vai durar sua viagem</label><br>
+                        <label for="duracaoTotal" class="formulario__pergunta">Quantos dias vai durar sua viagem?</label><br>
                         <input type="number" id="duracaoTotal" class="formulario__resposta formulario__resposta--campo" min="0" required>
                         <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTotal">
                     </div>
@@ -98,8 +97,8 @@
                                 <label for="vdt--negativa">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--negativa" value="Abaixo de 0" class="formulario__resposta--checkbox">Abaixo de 0ºC
                                 </label>
-                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--variacaoDeTemperatura">
                             </div>
+                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--variacaoDeTemperatura">
                         </fieldset>
                     </div>
                     
@@ -107,10 +106,10 @@
 
                     <!--Rolagem: 6-->
                     <br>
-                    <div class="formulario__questao">
+                    <div class="formulario__questao formulario__questao--duracaoTemperatura">
                         <br>
                         <label for="duracaoTemperatura" class="formulario__pergunta">Coloque o número de dias que a temperatura permanecerá em cada variação:</label><br>
-                        <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__resposta--campo" min="0" required>
+                        <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__resposta--campo " min="0" required>
                         <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTemperatura">
                     </div>
                     <!--TODO: Inserir botão próxima página-->
@@ -133,8 +132,8 @@
                                 <label for="checkbox--cidade">
                                     <input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade" class="formulario__resposta--checkbox">Cidade
                                 </label>
-                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--cenario">
-                             </div>   
+                             </div> 
+                             <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--cenario"> 
                         </fieldset>
                     </div>
                     <!--TODO: Inserir botão próxima página-->
@@ -149,15 +148,15 @@
                                 <label for="checkbox--balada"><input type="checkbox" name="evento" id="checkbox--balada" value="balada" class="formulario__resposta--checkbox">Balada</label>
                                 <label for="checkbox--formal"><input type="checkbox" name="evento" id="checkbox--formal" value="formal" class="formulario__resposta--checkbox">Festa formal(casamento, formatura, etc)</label>
                                 <label for="checkbox--fantasia"><input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia" class="formulario__resposta--checkbox">Festa fantasia</label>
-                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--evento">
                             </div>
+                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--evento">
                         </fieldset>
                     </div>
                     <!--TODO: Inserir botão próxima página-->
 
                     <!--Rolagem: 9-->
                     <br>
-                    <div class="formulario__questao">
+                    <div class="formulario__questao formulario__questao--algoMais">
                         <label for="algoMais" class="formulario__pergunta">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: roupas de cama</label><br>
                         <input type="text" id="algoMais" name="algoMais" class="formulario__resposta formulario__resposta--campo">
                             
@@ -169,7 +168,7 @@
             <div class="mala categoria">
                 <p class="categoria__intro mala__intro">Olá, <text class="mala__nome">viajante</text>! <text class="mala__textoInicial">Preencha o questionário e sua mala será exibida aqui!</text></p>
                 <ul>
-                    <li>blablablablabla</li>
+                    <li class="mala__item">blablablablabla</li>
                 </ul>
             </div>
 
@@ -192,11 +191,11 @@
         </main>
 
         <footer>
-                <p>
+                <p class="footer__divisao">
                     Desenvolvido por <a href="https://github.com/amandafd">Amanda Dionisio</a> e <a href="https://github.com/soraia-barbosa" >Soraia Barbosa</a>
                 </p>
                 <p class="footer__ponto">&bull;</p>
-                <p>
+                <p class="footer__divisao">
                     Ilustrações por <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> para <a href="https://icons8.com/illustrations">Ouch!</a>
                 </p>
         </footer>

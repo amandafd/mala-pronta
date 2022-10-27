@@ -38,7 +38,7 @@ main {
     color: var(--turquesa);
     display: grid;
     min-height: 100vh;
-    padding: 3rem 0;
+    padding: 3rem 0 1.5rem 0;
     justify-items: center;
 }
 
@@ -50,6 +50,8 @@ main {
 
 fieldset {
     border: none;
+    display: flex;
+    flex-direction: column;
 }
 
 /*.categoria
@@ -63,23 +65,18 @@ fieldset {
 }
 
 
+form label {
+    display: block;
+}
+
 /*fundo temporario apenas para visualizar algumas coisas*/
 .formulario__questao {
     /*background-color: var(--laranja-claro);*/
     display: flex;
     flex-direction: column;
-    height: 15rem;
+    height: 18rem;
     width: 50rem;
     padding: 1rem 0;
-}
-
-.formulario__questao--lavarRoupa .formulario__resposta--opcoes, 
-.formulario__questao--cenario .formulario__resposta--opcoes, 
-.formulario__questao--evento .formulario__resposta--opcoes {
-    height: 9rem;
-    margin-top: 1.5rem;
-    justify-content: space-between;
-
 }
 
 .formulario__pergunta {
@@ -90,28 +87,38 @@ fieldset {
     width: 100%;
     align-self: center;
     padding: 0.5rem 1rem;
-    margin: 2rem 0;
+    margin: 4rem 0;
     border: solid 0.15rem var(--turquesa);
     border-radius: 1rem;
     font-size: 1.2rem;
 }
 
-.formulario__resposta--opcoes {
-    display: flex;
-    flex-flow: column wrap;
+.formulario__questao--duracaoTemperatura .formulario__resposta--campo,
+.formulario__questao--algoMais .formulario__resposta--campo {
+    margin: 3.5rem 0;
 }
 
-form label {
-    display: block;
+.formulario__resposta--opcoes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0 8rem;
+    align-items: center;
+    height: 12rem;
+    padding-top: 1rem;
+    overflow: hidden;
 }
+
+.formulario__questao--lavarRoupa .formulario__resposta--opcoes, 
+.formulario__questao--cenario .formulario__resposta--opcoes, 
+.formulario__questao--evento .formulario__resposta--opcoes {
+    justify-content: space-between;
+}
+
+
 
 /*.formulario__repostas--checkbox */
 
-/*.mala*/
 
-.dicas {
-    width: 50rem;
-}
 
 .btn {
     background-color: var(--cinza-claro);
@@ -131,6 +138,19 @@ form label {
     color: var(--cinza-claro);
     border: none;
     transition: 0.5s;
+}
+
+#btn__proximo--variacaoDeTemperatura {
+    margin-top: 2rem;
+}
+
+.mala, .dicas {
+    width: 50rem;
+    margin: 2rem 0;
+}
+
+.dicas__item, .mala__item {
+    margin: 1rem;
 }
 
 footer {
@@ -160,16 +180,74 @@ footer a:hover {
     padding: 0 2rem;
 }
 
-@media (max-width: 940px) {
-    .intro {
+@media (max-width: 950px) {
+    .intro, .formulario__questao, .mala, .dicas {
         width: 30rem;
     }
-    .formulario__questao {
-        width: 30rem;
+    
+    footer {
+        font-size: 0.7rem;
     }
-    .dicas {
-        width: 30rem;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 16px;
     }
 
-    /*footer*/
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .intro, .formulario__questao, .mala, .dicas {
+        width: 23rem;
+    } 
+
+    .formulario__resposta--opcoes {
+        gap: 0 2rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+   .footer__ponto {
+    display: none;
+   }
+
+   .footer__divisao {
+    padding: 0.15rem;
+   }
+}
+
+@media (max-width: 440px) {
+    html {
+        font-size: 14px;
+    }
+
+    /*.formulario__questao .formulario__questao--duracaoTemperatura,
+    .formulario__questao .formulario__questao--cenario {
+        margin-top: 2rem;
+    }*/
+
+    .intro, .formulario__questao, .mala, .dicas {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 12px;
+    }
+    
+   .formulario__resposta--campo,
+   .formulario__questao--duracaoTemperatura .formulario__resposta--campo, 
+   .formulario__questao--algoMais .formulario__resposta--campo {
+    margin: 3rem 0;
+   }
+
+   .formulario__resposta--opcoes {
+    height: 10rem;
+   }
 }

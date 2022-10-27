@@ -14,7 +14,12 @@ capturarNome.addEventListener('click', function(e) {
     e.preventDefault();
 });
 
-/*lavarRoupa*/
+/*lavar roupa:
+Descobrir como captar esse input corretamente. Pode diminuir a quantidade de itens dependendo da reposta*/
+
+
+
+
 /*var lavarRoupa = document.querySelector('input[name="lavarRoupa"]:checked').value;
 var capturarlavarRoupa = document.querySelector('#btn__proximo--lavarRoupa');
 
@@ -28,6 +33,8 @@ capturarlavarRoupa.addEventListener('click', function(e) {
 
     e.preventDefault();
 });*/
+
+
 
 /*duracaoTotal*/
 var duracaoTotal = document.querySelector('#duracaoTotal');
