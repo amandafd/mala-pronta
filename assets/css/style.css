@@ -61,7 +61,7 @@
      scroll-snap-align: start;
   }
  
-  .wrapper section:nth-child(1){
+ .wrapper section:nth-child(1){
  
      
   }
@@ -127,9 +127,6 @@
     border: none;
  }
  
- /*.categoria
- .categoria__intro*/
- 
  .formulario{
     display: flex;
     flex-direction: column;
@@ -140,9 +137,7 @@
     display: block;
  }
  
- /*fundo temporario apenas para visualizar algumas coisas*/
  .formulario__questao {
-    /*background-color: var(--laranja-claro);*/
     display: flex;
     flex-direction: column;
     height: 15rem;
@@ -177,11 +172,6 @@
     display: flex;
     flex-flow: column wrap;
  }
- 
- /*.formulario__repostas--checkbox */
- 
- /*.mala*/
- 
  
  .btn {
     background-color: var(--cinza-claro);
@@ -304,11 +294,6 @@
     html {
         font-size: 14px;
     }
- 
-    /*.formulario__questao .formulario__questao--duracaoTemperatura,
-    .formulario__questao .formulario__questao--cenario {
-        margin-top: 2rem;
-    }*/
  
     .intro, .formulario__questao, .mala, .dicas {
         width: 20rem;

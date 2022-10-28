@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,205 +17,202 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-       
-
     </head>
-    
-</head>
-  
+    <body>
+        <header>
+                <p class="logo">MALA PRONTA</p>
+        </header>
 
-<body>
+        <main>
+            <p class="intro">Olá, viajante! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário a seguir, confira a sugestão da sua mala e em seguida nossas dicas!</p>
+            <form class="formulario categoria">
 
-    <header>
-        <p class="logo">MALA PRONTA</p>
-    </header>
+                <div class="wrapper">
 
-    <main>
-    
-        <div class="wrapper">
-  
-            <section id="sessão1">
-                <p class="intro">Olá, viajante! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário a seguir, confira a sugestão da sua mala e em seguida nossas dicas!</p>
-                    <form class="formulario categoria">
-             </section>
-            
-             
-             <section id="sessão2">
-                 
-                 <div class="formulario__questao formulario__questao--nome">
-                 <label for="nome" class="formulario__pergunta formulario__pergunta--nome">Qual o seu nome?</label><br>
-                 <input style="margin: 0 15px;" type="text" id="nome" name="nome" class="formulario__resposta formulario__resposta--campo"required>
-                 <input style="margin: 0 0 px;"type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--nome">
-                 
-                 </div>
-            </section>
-    
-    
-                 <section id="sessão3">
-    
-                    <div class="formulario__questao formulario__questao--lavarRoupa">
-                      <fieldset>
-                        <legend class="formulario__pergunta">Você poderá lavar roupas durante a viagem?</legend>
-                        <div class="formulario__resposta formulario__resposta--opcoes"> 
-                        <label for="lavarRoupa--sim">
-                        <input type="radio" id="lavarRoupa--sim" name="lavarRoupa" value="sim" class="formulario__resposta--checkbox">Sim
-                        </label>
-    
-                        <label id="lavarRoupa--nao">
-                        <input type="radio" id="lavarRoupa--nao" name="lavarRoupa" value="não" class="formulario__resposta--checkbox">Não
-                        </label>
-    
-                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--lavarRoupa">
+                    <section id="sessao1">
+                        <div class="formulario__questao formulario__questao--nome">
+                             <label for="nome" class="formulario__pergunta formulario__pergunta--nome">Qual o seu nome?</label><br>
+                                <!--style="margin 0 15px"-->
+                            <input type="text" id="nome" name="nome" class="formulario__resposta formulario__resposta--campo" required>
+                                <!--style="margin: 0 0 px"-->
+                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--nome">
                         </div>
-                       
-                </fieldset>
-            </div>
-        </section>
-    
-                        <section id="sessão4">
-    
-                            <div class="formulario__questao">
+                    </section>
+
+                    <section id="sessao2">
+                        <div class="formulario__questao">
+                            <br>
                             <label for="duracaoTotal" class="formulario__pergunta">Quantos dias vai durar sua viagem?</label><br>
-                            <input type="number" id="duracaoTotal" class="formulario__resposta formulario__resposta--campo" min="0" required>
+                            <input type="number" id="duracaoTotal" class="formulario__resposta formulario__resposta--campo" min="1" required>
                             <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTotal">
-                    </div>
-                </section>
-    
-                        <section id="sessão5">
-    
-                            <div class="formulario__questao formulario__questao--variacaoDeTemperatura">
-                                <fieldset>
-                                    <legend class="formulario__pergunta">Selecione as variações de temperatura que encontrará durante a sua viagem:</legend><br><!--TODO: adicionar imagens as checkboxes-->
-            
+                        </div>
+                    </section> 
+
+                    <section id="sessao3">
+                        <div class="formulario__questao formulario__questao--variacaoDeTemperatura">
+                            <fieldset>
+                                <legend class="formulario__pergunta">Selecione as variações de temperatura que encontrará durante a sua viagem:</legend>
+                                <div class="formulario__resposta formulario__resposta--opcoes">
+                                    <label for="vdt--25mais">
+                                        <input type="checkbox" name="variacaoDeTemperatura" id="vdt--25mais" value="25 ou mais" class="formulario__resposta--checkbox">25ºC ou mais
+                                    </label><br>
+                                    <label for="vdt--20e25">
+                                        <input type="checkbox" name="variacaoDeTemperatura" id="vdt--20e25" value="20 e 25" class="formulario__resposta--checkbox">20ºC e 25ºC
+                                    </label><br>
+                                    <label for="vdt--15e20">
+                                        <input type="checkbox" name="variacaoDeTemperatura" id="vdt--15e20" value="15 e 20" class="formulario__resposta--checkbox">15ºC e 20ºC
+                                    </label><br>
+                                    <label for="vdt--10e15">
+                                        <input type="checkbox" name="variacaoDeTemperatura" id="vdt--10e15" value="10 e 15" class="formulario__resposta--checkbox">10ºC e 15ºC
+                                    </label><br>
+                                    <label for="vdt--5e10">
+                                        <input type="checkbox" name="variacaoDeTemperatura" id="vtd--5e10" value="5 e 10" class="formulario__resposta--checkbox">5ºC e 10ºC
+                                    </label><br>
+                                    <label for="vdt--0e5">
+                                        <input type="checkbox" name="variacaoDeTemperatura" id="vdt--0e5" value="0 e 5" class="formulario__resposta--checkbox">0ºC e 5ºC
+                                    </label><br>
+                                    <label for="vdt--negativa">
+                                        <input type="checkbox" name="variacaoDeTemperatura" id="vdt--negativa" value="Abaixo de 0" class="formulario__resposta--checkbox">Abaixo de 0ºC
+                                    </label>
+                                </div>
+                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--variacaoDeTemperatura">
+                            </fieldset>
+                        </div>
+                    </section>
+
+                    <section id="sessao4">
+                        <div class="formulario__questao">
+                            <label for="duracaoTemperatura" class="formulario__pergunta">Coloque o número de dias que a temperatura permanecerá em cada variação:</label><br>
+                            <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__resposta--campo" min="0" required>
+                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTemperatura">
+                        </div>
+                    </section>
+           
+                    <section id="sessao5">
+                        <div class="formulario__questao formulario__questao--cenario">
+                            <fieldset>
+                                <legend class="formulario__pergunta">Selecione quais os cenários estão presentes na sua viagem:</legend>
+                                <div class="formulario__resposta formulario__resposta--opcoes">
+                                    <label for="checkbox--agua">
+                                        <input type="checkbox" name="cenario" id="checkbox--agua" value="agua" class="formulario__resposta--checkbox">Água(praia, cachoeira ou piscina)
+                                    </label>
+                                    <label for="checkbox--neve">
+                                        <input type="checkbox" name="cenario" id="checkbox--neve" value="neve" class="formulario__resposta--checkbox">Neve
+                                    </label>
+                                    <label for="checkbox--montanha">
+                                        <input type="checkbox" name="cenario" id="checkbox--montanha" value="montanha" class="formulario__resposta--checkbox">Montanha ou trilha
+                                    </label>
+                                    <label for="checkbox--cidade">
+                                        <input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade" class="formulario__resposta--checkbox">Cidade
+                                    </label>
+                                    <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--cenario">
+                                </div>   
+                            </fieldset>
+                        </div>
+                    </section>
+                            
+                    <section class="sessao6">
+                        <div class="formulario__questao formulario__questao--evento">
+                            <fieldset>
+                                <legend class="formulario__pergunta">Você comparecerá a algum evento durante a sua viagem?</legend><!--TODO: adicionar imagens as checkboxes-->
                                     <div class="formulario__resposta formulario__resposta--opcoes">
-                                        <label for="vdt--25mais">
-                                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--25mais" value="25 ou mais" class="formulario__resposta--checkbox">25ºC ou mais
-                                        </label><br>
-                                        <label for="vdt--20e25">
-                                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--20e25" value="20 e 25" class="formulario__resposta--checkbox">20ºC e 25ºC
-                                        </label><br>
-                                        <label for="vdt--15e20">
-                                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--15e20" value="15 e 20" class="formulario__resposta--checkbox">15ºC e 20ºC
-                                        </label><br>
-                                        <label for="vdt--10e15">
-                                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--10e15" value="10 e 15" class="formulario__resposta--checkbox">10ºC e 15ºC
-                                        </label><br>
-                                        <label for="vdt--5e10">
-                                            <input type="checkbox" name="variacaoDeTemperatura" id="vtd--5e10" value="5 e 10" class="formulario__resposta--checkbox">5ºC e 10ºC
-                                        </label><br>
-                                        <label for="vdt--0e5">
-                                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--0e5" value="0 e 5" class="formulario__resposta--checkbox">0ºC e 5ºC
-                                        </label><br>
-                                        <label for="vdt--negativa">
-                                            <input type="checkbox" name="variacaoDeTemperatura" id="vdt--negativa" value="Abaixo de 0" class="formulario__resposta--checkbox">Abaixo de 0ºC
-                                        </label>
-                                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--variacaoDeTemperatura">
-                                    </div>
-                                </fieldset>
-                            </div>
-                        </section>
-    
-                                  <section id="sessão6">
-    
-                                    <div class="formulario__questao">
-                                        <label for="duracaoTemperatura" class="formulario__pergunta">Coloque o número de dias que a temperatura permanecerá em cada variação:</label><br>
-                                        <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__resposta--campo" min="0" required>
-                                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTemperatura">
-                            </div>
-                        </section>
-    
-                                      <section id="sessão7">
-    
-                            <div class="formulario__questao formulario__questao--cenario">
-                                <fieldset>
-                                    <legend class="formulario__pergunta">Selecione quais os cenários estão presentes na sua viagem:</legend><!--TODO: adicionar imagens as checkboxes-->
-                                     <div class="formulario__resposta formulario__resposta--opcoes">
-                                        <label for="checkbox--agua">
-                                            <input type="checkbox" name="cenario" id="checkbox--agua" value="agua" class="formulario__resposta--checkbox">Água(praia, cachoeira ou piscina)
-                                        </label>
-                                        <label for="checkbox--neve">
-                                            <input type="checkbox" name="cenario" id="checkbox--neve" value="neve" class="formulario__resposta--checkbox">Neve
-                                        </label>
-                                        <label for="checkbox--montanha">
-                                            <input type="checkbox" name="cenario" id="checkbox--montanha" value="montanha" class="formulario__resposta--checkbox">Montanha ou trilha
-                                        </label>
-                                        <label for="checkbox--cidade">
-                                            <input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade" class="formulario__resposta--checkbox">Cidade
-                                        </label>
-                                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--cenario">
-                                     </div>   
-                                </fieldset>
-                            </div>
-                        </section>
-    
-                        <section id="sessão8">
-    
-                            <div class="formulario__questao formulario__questao--evento">
-                                <fieldset>
-                                    <legend class="formulario__pergunta">Você comparecerá a algum evento durante a sua viagem?</legend><!--TODO: adicionar imagens as checkboxes-->
-                                        <div class="formulario__resposta formulario__resposta--opcoes">
                                         <label for="checkbox--nada"><input type="checkbox" name="evento" id="checkbox--nada" value="nada" class="formulario__resposta--checkbox">Nada especifico</label>
                                         <label for="checkbox--balada"><input type="checkbox" name="evento" id="checkbox--balada" value="balada" class="formulario__resposta--checkbox">Balada</label>
                                         <label for="checkbox--formal"><input type="checkbox" name="evento" id="checkbox--formal" value="formal" class="formulario__resposta--checkbox">Festa formal(casamento, formatura, etc)</label>
                                         <label for="checkbox--fantasia"><input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia" class="formulario__resposta--checkbox">Festa fantasia</label>
                                         <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--evento">
                                     </div>
-                                </fieldset>
-                            </div>
-                        </section>
-    
-                         <section id="sessão9">
-    
-                            <div class="formulario__questao">
-                                <label for="algoMais" class="formulario__pergunta">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: roupas de cama</label><br>
-                                <input type="text" id="algoMais" name="algoMais" class="formulario__resposta formulario__resposta--campo">
-                                <input type="submit" value="FAZER AS MALAS" class="btn" id="btn__proximo--algoMais">
+                            </fieldset>
                         </div>
-                    </form>
-                </section>
-    
-                         <section id="sessão10">
-    
-                            <p>Tudo certo? Fechando a mala!</p>
-                            <input style="margin: 0 15px;" type="submit" value="Fechar a mala" class="btn" id="btn__proximo--algoMais">
-                                                    
-    
-                        </section>
-    
-                        <section id="sessão11">
-    
-                            <h1> Dicas para que sua viagem seja o mais proveitosa e confortável possível:</h1>
-                                                    
-                                                <ul>
-                                                    <li class="dicas__lista--itens">Faça rolinhos com as roupas para economizar espaço;</li>
-                                                    <li class="dicas__lista--itens">Dê preferência a tecidos que não amassam e ocupam menos espaço;</li>
-                                                    <li class="dicas__lista--itens">Adeque a sugestão ao seu estilo pessoal(cores, modelagem, texturas, acessórios, etc);</li>
-                                                    <li class="dicas__lista--itens">Escolha peças que combinam entre si, sendo possível montar diversas combinações com pouças peças;</li>
-                                                    <li class="dicas__lista--itens">Para dias com grande variação de temperatura, invista em camadas;</li>
-                                                    <li class="dicas__lista--itens">Verifique se é possível alugar itens muito específicos, como roupas de neve por exemplo;</li>
-                                                    <li class="dicas__lista--itens">Se for para diversos destinos, coloque no fundo da mala o que for usar depois;</li>
-                                                    <li class="dicas__lista--itens">Não se esqueça de levar bolsas ou sacolas para separar roupas sujas;</li>
-                                                    <li class="dicas__lista--itens">Verifique se o local que vai ficar hospedado fornece itens como shampoo e sabonete, caso forneça, sinta-se livre para tirar ou manter esses itens da sua mala;</li>
-                                                    <li class="dicas__lista--itens">Observe que mesmo se você for para lugar frios, colocamos proteto solar na sua mala. Independente da temperatura local, o nível de insolação pode variar;</li>
-                                                    <li class="dicas__lista--itens">Se for de avião, verifique o é possível ir na bagagem despachada e na de mão;</li>
-                                                </ul>
-                                                </section>
-    
-                        </section>
-                 </div>
-                </main>
-    
-              <footer>
-                    <p class="footer__divisao">
-                        Desenvolvido por <a href="https://github.com/amandafd">Amanda Dionisio</a> e <a href="https://github.com/soraia-barbosa" >Soraia Barbosa</a>
-                    </p>
-                    <p class="footer__ponto">&bull;</p>
-                    <p class="footer__divisao">
-                        Ilustrações por <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> para <a href="https://icons8.com/illustrations">Ouch!</a>
-                    </p>
-            </footer>
-               
-            <script src="script.js"></script>
-        </body>
-    </html>
-                 </body>
+                    </section>
+                        
+                    <section class="sessao7">
+                        <div class="formulario__questao">
+                            <label for="algoMais" class="formulario__pergunta">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: roupas de cama</label><br>
+                            <input type="text" id="algoMais" name="algoMais" class="formulario__resposta formulario__resposta--campo">
+                            <input type="submit" value="FAZER AS MALAS" class="btn" id="btn__proximo--algoMais">
+                        </div>  
+                    </section>
+                </div>                         
+            </form>
+
+            <div class="mala categoria">
+                <h2 class="categoria__intro mala__intro">Olá, <text class="mala__nome">viajante</text>! <text class="mala__textoInicial">Preencha o questionário e sua mala será exibida aqui!</text></h2>
+                <div class="categoriaMala">
+                    <h3 class="categoriaMala__nome">Roupas</h3>
+                    <ul>
+                        <li class="mala__item sutia">Sutiã: se usar, a quantidade fica a seu critério</li>
+                        <li class="mala__item lingerie">Calcinhas/cuecas: <text class="mala__item--quantidade quantidade__lingerie"></text></li>
+                        <li class="mala__item pijama">Pijama: <text class="mala__item--quantidade quantidade__pijama"></text></li>
+                    </ul>
+                </div>
+                <div class="categoriaMala">
+                    <h3 class="categoriaMala__nome">Calçados</h3>
+                    <ul>
+                        <li class="mala__item chinelo">Par de chinelo: <text class="mala__item--quantidade quantidade__chinelo"></text></li>
+                    </ul>
+                </div>
+                <div class="categoriaMala">
+                    <p class="categoriaMala__nome">Acessórios</p>
+                    <ul>
+                        <li class="mala__item oculoDeSol">Óculos de sol: <text class="mala__item--quantidade quantidade__oculosDeSol"></text></li>
+                        <li class="mala__item lenco">Lenço médio/longo: <text class="mala__item--quantidade quantidade__ lenco"></text></li>
+                    </ul>
+                </div>
+                <div class="categoriaMala">
+                    <h3 class="categoriaMala__nome">Higiene e cosméticos</h3>
+                    <ul>
+                        <li class="mala__item">Shampoo</li>
+                        <li class="mala__item">Condicionador</text></li>
+                        <li class="mala__item">Sabonete</li>
+                        <li class="mala__item">Lâmina para depilar ou barbear</li>
+                        <li class="mala__item">Hidratante corporal</li>
+                        <li class="mala__item">Protetor solar</li>
+                        <li class="mala__item">Kit para skin care com os itens normalmente usados por você</li>
+                        <li class="mala__item">Kit de maquiagem com os itens normalmente usados por você</li>
+                        <li class="mala__item">: <text class="mala__item--quantidade"></text></li>
+                    </ul>
+                </div>
+                <div class="categoriaMala">
+                    <h3 class="categoriaMala__nome">Na sua mochila/bolsa de mão é bom levar:</h3>
+                    <ul>
+                        <li class="mala__item">Kit de remédios(dores, febre, dor de barriga, remédios específicos que você já usa)</li>
+                        <li class="mala__item">Documentos</li>
+                        <li class="mala__item">Livro</li>
+                        <li class="mala__item">Fone de ouvido</li>
+                    </ul>
+                </div>
+            </div>           
+
+            <div class="dicas categoria">
+                <h2 class="categoria__intro dicas__intro">Dicas para que sua viagem seja o mais proveitosa e confortável possível:</h2>
+                <ul class="dicas__lista">
+                    <li class="dicas__item">Faça rolinhos com as roupas para economizar espaço;</li>
+                    <li class="dicas__item">Dê preferência a tecidos que não amassam e ocupam menos espaço;</li>
+                    <li class="dicas__item">Adeque a sugestão ao seu estilo pessoal(cores, modelagem, texturas, acessórios, etc);</li>
+                    <li class="dicas__item">Escolha peças que combinam entre si, sendo possível montar diversas combinações com pouças peças;</li>
+                    <li class="dicas__item">Para dias com grande variação de temperatura, invista em camadas;</li>
+                    <li class="dicas__item">Verifique se é possível alugar itens muito específicos, como roupas de neve por exemplo;</li>
+                    <li class="dicas__item">Se for para diversos destinos, coloque no fundo da mala o que for usar depois;</li>
+                    <li class="dicas__item">Não se esqueça de levar bolsas ou sacolas para separar roupas sujas;</li>
+                    <li class="dicas__item">Coloque itens de higiene(shampoo, por exemplo) em embalagens menores com quantidades ideias para a sua viagem;</li>
+                    <li class="dicas__item">Verifique se o local que vai ficar hospedado fornece itens como shampoo e sabonete, caso forneça, sinta-se livre para tirar ou manter esses itens da sua mala;</li>
+                    <li class="dicas__item">Verifique também se você terá a possibilidade de lavar roupas, podendo diminuir a quantidade de cada item;</li>
+                    <li class="dicas__item">Observe que mesmo se você for para lugar frios, colocamos proteto solar na sua mala. Independente da temperatura local, o nível de insolação pode variar;</li>
+                    <li class="dicas__item">Se for de avião, verifique o é possível ir na bagagem despachada e na de mão;</li>
+                </ul>
+            </div>
+        </main>
+                            
+        <footer>
+            <p class="footer__divisao">
+                Desenvolvido por <a href="https://github.com/amandafd">Amanda Dionisio</a> e <a href="https://github.com/soraia-barbosa" >Soraia Barbosa</a>
+            </p>
+            <p class="footer__ponto">&bull;</p>
+            <p class="footer__divisao">
+                Ilustrações por <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> para <a href="https://icons8.com/illustrations">Ouch!</a>
+            </p>
+        </footer>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
