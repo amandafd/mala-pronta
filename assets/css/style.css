@@ -1,317 +1,253 @@
 :root {
-    --cinza: #BABDBF;
-    --cinza-claro: #eaeaea;
-    --turquesa: #3F7373;
-    --laranja-claro: #BF754B;
-    --laranja: #A64826;
-    --vinho: #732B1A;
- }
- 
- * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
- }
- 
- html {
-    font-family: 'Quicksand', sans-serif; 
-    font-size: 18px;
- }
- 
- header {
-    background-color: var(--laranja-claro);
-    height: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- 
- .logo {
-    color: var(--vinho);
-    text-align: center;
-    font-family: 'Amatic SC', cursive;
-    font-size: 4rem;
-    font-weight: 600;
- }
- 
- 
- main {
- 
-    color: var(--turquesa);
-    display: grid;
-    min-height: 100vh;
-    padding: 3rem 0;
-    justify-items: center;
- }
- 
-  .wrapper {
- 
-     display: flex;
-     overflow: auto;
-     scroll-snap-type: x mandatory;
-  }
- 
-  section {
- 
-     height: 95vh;
-     min-width: 100vw;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     scroll-snap-align: start;
-  }
- 
- .wrapper section:nth-child(1){
- 
-     
-  }
- 
-  .wrapper section:nth-child(2){
- 
-     
-  }
- 
-  .wrapper section:nth-child(3){
- 
-    
- }
- 
- .wrapper section:nth-child(4){
- 
-    
- }
- 
- .wrapper section:nth-child(5){
- 
-    
- }
- 
- .wrapper section:nth-child(6){
- 
-    
- }
- .wrapper section:nth-child(7){
- 
-    
- }
- 
- .wrapper section:nth-child(8){
- 
-    
- }
- 
- .wrapper section:nth-child(9){
- 
-    
- }
- 
- .wrapper section:nth-child(10){
- 
-    
- }
- 
- .wrapper section:nth-child(11){
- 
-    
-    
- }
- 
- 
- .intro {
-    width: 50rem;
-    font-size: 1.5rem;
-    font-weight: 600;
- }
- 
- fieldset {
-    border: none;
- }
- 
- .formulario{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
- }
- 
- form label {
-    display: block;
- }
- 
- .formulario__questao {
-    display: flex;
-    flex-direction: column;
-    height: 15rem;
-    width: 50rem;
-    padding: 1rem 0;
- }
- 
- .formulario__questao--lavarRoupa .formulario__resposta--opcoes, 
- .formulario__questao--cenario .formulario__resposta--opcoes, 
- .formulario__questao--evento .formulario__resposta--opcoes {
-    height: 9rem;
-    margin-top: 1.5rem;
-    justify-content: space-between;
- 
- }
- 
- .formulario__pergunta {
-    font-size: 1.2rem;
- }
- 
- .formulario__resposta--campo {
-    width: 100%;
-    align-self: center;
-    padding: 0.5rem 1rem;
-    margin: 2rem 0;
-    border: solid 0.15rem var(--turquesa);
-    border-radius: 1rem;
-    font-size: 1.2rem;
- }
- 
- .formulario__resposta--opcoes {
-    display: flex;
-    flex-flow: column wrap;
- }
- 
- .btn {
-    background-color: var(--cinza-claro);
-    color: var(--turquesa);
-    height: 2.5rem;
-    width: 13rem;
-    align-self: center;
-    border: solid 0.15rem var(--turquesa);
-    border-radius: 1rem;
-    font-family: 'Amatic SC', cursive;
-    font-weight: 500;
-    font-size: 1.8rem;
- }
- 
- .btn:hover {
-    background-color: var(--turquesa);
-    color: var(--cinza-claro);
-    border: none;
-    transition: 0.5s;
- }
- 
- #btn__proximo--variacaoDeTemperatura {
-    margin-top: 2rem;
- }
- 
- .mala, .dicas {
-    width: 50rem;
-    margin: 2rem 0;
- }
- 
- .mala__intro, .dicas__intro {
-    color: var(--laranja-claro);
-    font-size: 1.2rem;
-    font-weight: 500;
- }
- 
- .categoriaMala {
-    margin: 1rem 0;
- }
- 
- .categoriaMala__nome{
-    font-size: 1.2rem;
- }
- 
- .dicas__item, .mala__item {
-    margin: 1rem;
- }
- 
- footer {
-    background-color: var(--laranja-claro);
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
- 
- footer p {
-    color: var(--vinho);
- }
- 
- footer a {
-    color: var(--turquesa);
-    text-decoration: none;
-    font-weight: 500;
- }
- 
- footer a:hover {
-    font-size: 1.2rem;
-    transition: 0.5s;
- }
- 
- .footer__ponto {
-    padding: 0 2rem;
- }
- 
- 
- 
- @media (max-width: 950px) {
-    .intro, .formulario__questao, .mala, .dicas {
-        width: 30rem;
-    }
-    
-    footer {
-        font-size: 0.7rem;
-    }
- }
- 
- @media (max-width: 600px) {
-    html {
-        font-size: 16px;
-    }
- 
-    .intro {
-        font-size: 1.2rem;
-    }
- 
-    .intro, .formulario__questao, .mala, .dicas {
-        width: 23rem;
-    } 
- 
-    .formulario__resposta--opcoes {
-        gap: 0 2rem;
-    }
- 
-    footer {
-        display: flex;
-        flex-direction: column-reverse;
-    }
- 
-   .footer__ponto {
-    display: none;
+   --cinza: #BABDBF;
+   --cinza-claro: #eaeaea;
+   --turquesa: #3F7373;
+   --laranja-claro: #BF754B;
+   --laranja: #A64826;
+   --vinho: #732B1A;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-family: 'Quicksand', sans-serif; 
+   font-size: 18px;
+}
+
+header {
+   background-color: var(--laranja-claro);
+   height: 7rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo {
+   color: var(--vinho);
+   text-align: center;
+   font-family: 'Amatic SC', cursive;
+   font-size: 4rem;
+   font-weight: 600;
+}
+
+main {
+   color: var(--turquesa);
+   display: grid;
+   min-height: 100vh;
+   padding: 3rem 0 1.5rem 0;
+   justify-items: center;
+}
+
+.intro {
+   color: var(--laranja-claro);
+   width: 50rem;
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+fieldset {
+   border: none;
+   display: flex;
+   flex-direction: column;
+}
+
+.formulario {
+   width: 50rem;
+   height: 18rem;
+   display: flex;
+   overflow-x: scroll;
+   scroll-snap-align: x mandatory;
+}
+
+.formulario__questao {
+
+   display: flex;
+   flex-direction: column;
+   min-width: 50rem;
+   height: 18rem;
+   padding: 1rem 0;
+}
+
+form label {
+   display: block;
+}
+
+.formulario__pergunta {
+   font-size: 1.2rem;
+}
+
+.formulario__resposta--campo {
+   width: 100%;
+   align-self: center;
+   padding: 0.5rem 1rem;
+   margin: 4rem 0;
+   border: solid 0.15rem var(--turquesa);
+   border-radius: 1rem;
+   font-size: 1.2rem;
+}
+
+.formulario__questao--duracaoTemperatura .formulario__resposta--campo,
+.formulario__questao--algoMais .formulario__resposta--campo {
+   margin: 3.5rem 0;
+}
+
+.formulario__resposta--opcoes {
+   display: grid;
+   grid-template-columns: 50% 50%;
+   gap: 0 8rem;
+   align-items: center;
+   height: 12rem;
+   padding-top: 1rem;
+   overflow: hidden;
+}
+
+.formulario__questao--lavarRoupa .formulario__resposta--opcoes, 
+.formulario__questao--cenario .formulario__resposta--opcoes, 
+.formulario__questao--evento .formulario__resposta--opcoes {
+   justify-content: space-between;
+}
+
+.btn {
+   background-color: var(--cinza-claro);
+   color: var(--turquesa);
+   height: 2.5rem;
+   width: 13rem;
+   align-self: center;
+   border: solid 0.15rem var(--turquesa);
+   border-radius: 1rem;
+   font-family: 'Amatic SC', cursive;
+   font-weight: 500;
+   font-size: 1.8rem;
+}
+
+.btn:hover {
+   background-color: var(--turquesa);
+   color: var(--cinza-claro);
+   border: none;
+   transition: 0.5s;
+}
+
+#btn__proximo--variacaoDeTemperatura {
+   margin-top: 2rem;
+}
+
+.mala, .dicas {
+   width: 50rem;
+   margin: 2rem 0;
+}
+
+.mala__intro, .dicas__intro {
+   color: var(--laranja-claro);
+   font-size: 1.2rem;
+   font-weight: 500;
+}
+
+.categoriaMala {
+   margin: 1rem 0;
+}
+
+.categoriaMala__nome{
+   font-size: 1.2rem;
+}
+
+.dicas__item, .mala__item {
+   margin: 1rem;
+}
+
+footer {
+   background-color: var(--laranja-claro);
+   height: 4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer p {
+   color: var(--vinho);
+}
+
+footer a {
+   color: var(--turquesa);
+   text-decoration: none;
+   font-weight: 500;
+}
+
+footer a:hover {
+   font-size: 1.2rem;
+   transition: 0.5s;
+}
+
+.footer__ponto {
+   padding: 0 2rem;
+}
+
+@media (max-width: 950px) {
+   .intro, .formulario, .formulario__questao, .mala, .dicas {
+       width: 30rem;
    }
- 
-   .footer__divisao {
-    padding: 0.15rem;
+   
+   footer {
+       font-size: 0.7rem;
    }
- }
- 
- @media (max-width: 440px) {
-    html {
-        font-size: 14px;
-    }
- 
-    .intro, .formulario__questao, .mala, .dicas {
-        width: 20rem;
-    }
- }
- 
- @media (max-width: 350px) {
-    html {
-        font-size: 12px;
-    }
-    
-   .formulario__resposta--campo,
-   .formulario__questao--duracaoTemperatura .formulario__resposta--campo, 
-   .formulario__questao--algoMais .formulario__resposta--campo {
-    margin: 3rem 0;
+}
+
+@media (max-width: 600px) {
+   html {
+       font-size: 16px;
    }
- 
+
+   .intro {
+       font-size: 1.2rem;
+   }
+
+   .intro, .formulario__questao, .mala, .dicas {
+       width: 23rem;
+   } 
+
    .formulario__resposta--opcoes {
-    height: 10rem;
+       gap: 0 2rem;
    }
- }
+
+   footer {
+       display: flex;
+       flex-direction: column-reverse;
+   }
+
+  .footer__ponto {
+   display: none;
+  }
+
+  .footer__divisao {
+   padding: 0.15rem;
+  }
+}
+
+@media (max-width: 440px) {
+   html {
+       font-size: 14px;
+   }
+
+   .intro, .formulario__questao, .mala, .dicas {
+       width: 20rem;
+   }
+}
+
+@media (max-width: 350px) {
+   html {
+       font-size: 12px;
+   }
+   
+  .formulario__resposta--campo,
+  .formulario__questao--duracaoTemperatura .formulario__resposta--campo, 
+  .formulario__questao--algoMais .formulario__resposta--campo {
+   margin: 3rem 0;
+  }
+
+  .formulario__resposta--opcoes {
+   height: 10rem;
+  }
+}
