@@ -63,6 +63,7 @@ fieldset {
 .formulario {
    width: 50rem;
    height: 18rem;
+   margin: 2rem 0;
    display: flex;
    overflow-x: scroll;
    scroll-snap-align: x mandatory;
@@ -146,12 +147,6 @@ form label {
    font-size: 1.8rem;
 }
 
-/*.btn {
-   align-self: center;
-   
-   
-}
-
 .btn:hover {
    background-color: var(--turquesa);
    color: var(--cinza-claro);
@@ -159,9 +154,9 @@ form label {
    transition: 0.5s;
 }
 
-#btn__proximo--variacaoDeTemperatura {
+/*#btn__proximo--variacaoDeTemperatura {
    margin-top: 2rem;
-}
+}*/
 
 .mala, .dicas {
    width: 50rem;
@@ -183,7 +178,7 @@ form label {
 }
 
 .dicas__item, .mala__item {
-   margin: 1rem;
+   margin: 0.5rem;
 }
 
 footer {
@@ -212,7 +207,7 @@ footer a:hover {
 .footer__ponto {
    padding: 0 2rem;
 }
-
+/*
 @media (max-width: 950px) {
    .intro, .formulario, .formulario__questao, .mala, .dicas {
        width: 30rem;
