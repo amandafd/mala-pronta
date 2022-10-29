@@ -288,7 +288,7 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 em se refere ao font-size do pai
 rem se refere ao font-size do body
 vw se refere ao width da tela
-vw se refere ao width da tela
+ex: 100 vh: viewport + height
 
 
 
