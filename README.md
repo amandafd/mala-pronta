@@ -37,7 +37,9 @@
 
 <h3 id="aprendizados">Aprendizados</h3>
 <ul>Os aprendizados reforçados e adquiridos durante a execução desse projeto serão atualizados constantemente:
-  <li>Uso de formulários;</li>
+  <li>Uso de formulários e seus diferentes inputs em HTML e CSS;</li>
+  <li>Captação de valores de inputs e manipulação desses dados com DOM e Javascript;</li>
+  <li>Trabalhar com rolagem lateral para conteúdos overflow em uma section;</li>
   <li>Desenvolver projetos com conjunto com um time;</li>
 </ul> 
 
