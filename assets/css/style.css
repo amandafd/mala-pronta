@@ -52,6 +52,9 @@ main {
    font-weight: 600;
 }*/
 
+fieldset {
+   height: 100%;
+}
 /*fieldset {
    border: none;
    display: flex;
@@ -85,7 +88,7 @@ main {
 }
 
 .formulario__questao--text {
-   margin-top: 1rem;
+   padding-top: 1rem;
 }
 
 form label {
@@ -94,6 +97,10 @@ form label {
 
 .formulario__pergunta {
    font-size: 1.2rem;
+}
+
+.formulario__resposta--texto {
+   margin-top: 0.3rem;
 }
 
 /*.formulario__resposta--campo {
