@@ -1,6 +1,3 @@
-
-
-
 :root {
    --cinza: #BABDBF;
    --cinza-claro: #eaeaea;
@@ -21,7 +18,7 @@ html {
    font-size: 18px;
 }
 
-/*header {
+header {
    background-color: var(--laranja-claro);
    height: 7rem;
    display: flex;
@@ -39,10 +36,13 @@ html {
 
 main {
    color: var(--turquesa);
-   display: grid;
-   min-height: 100vh;
-   padding: 3rem 0 1.5rem 0;
+   display: flex;
+   flex-direction: column;
    justify-items: center;
+   align-items: center;
+   min-height: 100vh;
+   width: 100%;
+   padding: 3rem 0 1.5rem 0;
 }
 
 .intro {
@@ -50,20 +50,14 @@ main {
    width: 50rem;
    font-size: 1.5rem;
    font-weight: 600;
-}*/
+}
 
 fieldset {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
    height: 100%;
-}
-/*fieldset {
    border: none;
-   display: flex;
-   flex-direction: column;
-}*/
-
-main {
-   display: flex;
-   flex-direction: column;
 }
 
 .formulario {
@@ -84,7 +78,8 @@ main {
    flex-direction: column;
    min-width: 50rem;
    height: 18rem;
-   /*padding: 1rem 0;*/
+   justify-content: flex-end;
+   padding: 0 1rem;
 }
 
 .formulario__questao--text {
@@ -99,18 +94,21 @@ form label {
    font-size: 1.2rem;
 }
 
-.formulario__resposta--texto {
-   margin-top: 0.3rem;
-}
-
-/*.formulario__resposta--campo {
-   width: 100%;
+.formulario__resposta--texto,
+.formulario__respostas--numero {
    align-self: center;
+   width: 80%;
    padding: 0.5rem 1rem;
-   margin: 4rem 0;
+   margin: 4.5rem 0;
    border: solid 0.15rem var(--turquesa);
    border-radius: 1rem;
    font-size: 1.2rem;
+}
+
+/*.formulario__resposta--texto,
+.formulario__respostas--numero {
+   width: 100%;
+   align-self: center;
 }
 
 .formulario__questao--duracaoTemperatura .formulario__resposta--campo,
@@ -120,9 +118,9 @@ form label {
 
 .formulario__resposta--opcoes {
    display: grid;
-   grid-template-columns: 50% 50%;
-   gap: 0 8rem;
-   height: 10rem;
+   grid-template-columns: 44% 44%;
+   gap: 0 6rem;
+   height: 12rem;
    align-items: center;
    /*padding-top: 1rem;*/
    overflow: hidden;
@@ -132,19 +130,26 @@ form label {
 .formulario__questao--cenario .formulario__resposta--opcoes, 
 .formulario__questao--evento .formulario__resposta--opcoes {
    justify-content: space-between;
-}
+}*/
 
 .btn {
    background-color: var(--cinza-claro);
    color: var(--turquesa);
-   height: 2.5rem;
-   width: 13rem;
    align-self: center;
+   height: 2.5rem;
+   width: 70%;
+   margin-bottom: 1rem;
    border: solid 0.15rem var(--turquesa);
    border-radius: 1rem;
    font-family: 'Amatic SC', cursive;
    font-weight: 500;
    font-size: 1.8rem;
+}
+
+/*.btn {
+   align-self: center;
+   
+   
 }
 
 .btn:hover {

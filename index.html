@@ -8,7 +8,7 @@
 
         <title>Mala Pronta</title>
 
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="./style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
 
                 <section class="sessao">
 
-                    <div class="formulario__questao formulario__questao--nome">
+                    <div class="formulario__questao formulario__questao--text formulario__questao--nome">
                         <label for="nome" class="formulario__pergunta formulario__pergunta--nome">Qual o seu nome?</label><br>
                             <!--style="margin 0 15px"-->
                         <input type="text" id="nome" name="nome" class="formulario__resposta formulario__resposta--texto" required>
@@ -40,29 +40,29 @@
                     <div class="formulario__questao">
                         <br>
                         <label for="duracaoTotal" class="formulario__pergunta">Quantos dias vai durar sua viagem?</label><br>
-                        <input type="number" id="duracaoTotal" class="formulario__resposta formulario__resposta--numero" min="1" required>
+                        <input type="number" id="duracaoTotal" class="formulario__resposta formulario__respostas--numero" min="1" required>
                         <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTotal">
                     </div>
 
                     <div class="formulario__questao formulario__questao--variacaoDeTemperatura">
                         <fieldset>
-                            <legend class="formulario__pergunta">Selecione as variações de temperatura que encontrará durante a sua viagem:</legend>
+                            <legend class="formulario__pergunta">Selecione quais os cenários estão presentes na sua viagem:</legend>
                             <div class="formulario__resposta formulario__resposta--opcoes">
                                 <label for="vdt--25mais">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--25mais" value="25 ou mais" class="formulario__resposta--checkbox">25ºC ou mais
-                                </label><br>
+                                </label>
                                 <label for="vdt--20e25">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--20e25" value="20 e 25" class="formulario__resposta--checkbox">20ºC e 25ºC
-                                </label><br>
+                                </label>
                                 <label for="vdt--15e20">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--15e20" value="15 e 20" class="formulario__resposta--checkbox">15ºC e 20ºC
-                                </label><br>
+                                </label>
                                 <label for="vdt--10e15">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--10e15" value="10 e 15" class="formulario__resposta--checkbox">10ºC e 15ºC
-                                </label><br>
+                                </label>
                                 <label for="vdt--5e10">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vtd--5e10" value="5 e 10" class="formulario__resposta--checkbox">5ºC e 10ºC
-                                </label><br>
+                                </label>
                                 <label for="vdt--0e5">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--0e5" value="0 e 5" class="formulario__resposta--checkbox">0ºC e 5ºC
                                 </label><br>
@@ -76,7 +76,7 @@
 
                     <div class="formulario__questao">
                         <label for="duracaoTemperatura" class="formulario__pergunta">Coloque o número de dias que a temperatura permanecerá em cada variação:</label><br>
-                        <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__resposta--numero" min="0" required>
+                        <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__respostas--numero" min="0" required>
                         <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTemperatura">
                     </div>
 
@@ -115,7 +115,7 @@
                     </div>
                         
                     <div class="formulario__questao">
-                        <label for="algoMais" class="formulario__pergunta">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: roupas de cama</label><br>
+                        <label for="algoMais" class="formulario__pergunta">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: Roupas de cama: 2</label><br>
                         <input type="text" id="algoMais" name="algoMais" class="formulario__resposta formulario__resposta--texto">
                         <input type="submit" value="FAZER AS MALAS" class="btn" id="btn__proximo--algoMais">
                     </div>
@@ -125,50 +125,54 @@
 
             <div class="mala categoria">
                 <h2 class="categoria__intro mala__intro">Olá, <text class="mala__nome">viajante</text>! <text class="mala__textoInicial">Preencha o questionário e sua mala será exibida aqui!</text></h2>
-                <div class="categoriaMala">
-                    <h3 class="categoriaMala__nome">Roupas</h3>
-                    <ul>
-                        <li class="mala__item sutia">Sutiã: se usar, a quantidade fica a seu critério</li>
-                        <li class="mala__item lingerie">Calcinhas/cuecas: <text class="mala__item--quantidade quantidade__lingerie"></text></li>
-                        <li class="mala__item pijama">Pijama: <text class="mala__item--quantidade quantidade__pijama"></text></li>
-                    </ul>
-                </div>
-                <div class="categoriaMala">
-                    <h3 class="categoriaMala__nome">Calçados</h3>
-                    <ul>
-                        <li class="mala__item chinelo">Par de chinelo: <text class="mala__item--quantidade quantidade__chinelo"></text></li>
-                    </ul>
-                </div>
-                <div class="categoriaMala">
-                    <p class="categoriaMala__nome">Acessórios</p>
-                    <ul>
-                        <li class="mala__item oculoDeSol">Óculos de sol: <text class="mala__item--quantidade quantidade__oculosDeSol"></text></li>
-                        <li class="mala__item lenco">Lenço médio/longo: <text class="mala__item--quantidade quantidade__ lenco"></text></li>
-                    </ul>
-                </div>
-                <div class="categoriaMala">
-                    <h3 class="categoriaMala__nome">Higiene e cosméticos</h3>
-                    <ul>
-                        <li class="mala__item">Shampoo</li>
-                        <li class="mala__item">Condicionador</text></li>
-                        <li class="mala__item">Sabonete</li>
-                        <li class="mala__item">Lâmina para depilar ou barbear</li>
-                        <li class="mala__item">Hidratante corporal</li>
-                        <li class="mala__item">Protetor solar</li>
-                        <li class="mala__item">Kit para skin care com os itens normalmente usados por você</li>
-                        <li class="mala__item">Kit de maquiagem com os itens normalmente usados por você</li>
-                        <li class="mala__item">: <text class="mala__item--quantidade"></text></li>
-                    </ul>
-                </div>
-                <div class="categoriaMala">
-                    <h3 class="categoriaMala__nome">Na sua mochila/bolsa de mão é bom levar:</h3>
-                    <ul>
-                        <li class="mala__item">Kit de remédios(dores, febre, dor de barriga, remédios específicos que você já usa)</li>
-                        <li class="mala__item">Documentos</li>
-                        <li class="mala__item">Livro</li>
-                        <li class="mala__item">Fone de ouvido</li>
-                    </ul>
-                </div>
+                <ul class="mala__lista">
+                    <li class="categoriaMala">
+                        <h3 class="categoriaMala__nome">Roupas</h3>
+                        <ul>
+                            <li class="mala__item sutia">Sutiã: se usar, a quantidade fica a seu critério</li>
+                            <li class="mala__item lingerie">Calcinhas/cuecas: <text class="mala__item--quantidade quantidade__lingerie"></text></li>
+                            <li class="mala__item pijama">Pijama: <text class="mala__item--quantidade quantidade__pijama"></text></li>
+                        </ul>
+                    </li>
+                    <li class="categoriaMala">
+                        <h3 class="categoriaMala__nome">Calçados</h3>
+                        <ul>
+                            <li class="mala__item chinelo">Par de chinelo: <text class="mala__item--quantidade quantidade__chinelo"></text></li>
+                        </ul>
+                    </li>
+                    <li class="categoriaMala">
+                        <h3 class="categoriaMala__nome">Acessórios</h3>
+                        <ul>
+                            <li class="mala__item oculoDeSol">Óculos de sol: <text class="mala__item--quantidade quantidade__oculosDeSol"></text></li>
+                            <li class="mala__item lenco">Lenço médio/longo: <text class="mala__item--quantidade quantidade__ lenco"></text></li>
+                        </ul>
+                    </li>
+                    <li class="categoriaMala">
+                        <h3 class="categoriaMala__nome">Higiene e cosméticos</h3>
+                        <ul>
+                            <li class="mala__item">Shampoo</li>
+                            <li class="mala__item">Condicionador</text></li>
+                            <li class="mala__item">Sabonete</li>
+                            <li class="mala__item">Lâmina para depilar ou barbear</li>
+                            <li class="mala__item">Hidratante corporal</li>
+                            <li class="mala__item">Protetor solar</li>
+                            <li class="mala__item">Kit para skin care com os itens normalmente usados por você</li>
+                            <li class="mala__item">Kit de maquiagem com os itens normalmente usados por você</li>
+                            <li class="mala__item">: <text class="mala__item--quantidade"></text></li>
+                        </ul>
+                    </li>
+                    <li class="categoriaMala">
+                        <h3 class="categoriaMala__nome">Na sua mochila/bolsa de mão é bom levar:</h3>
+                        <ul>
+                            <li class="mala__item">Kit de remédios(dores, febre, dor de barriga, remédios específicos que você já usa)</li>
+                            <li class="mala__item">Documentos</li>
+                            <li class="mala__item">Livro</li>
+                            <li class="mala__item">Fone de ouvido</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                
             </div>           
 
             <div class="dicas categoria">
