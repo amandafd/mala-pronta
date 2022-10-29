@@ -34,19 +34,26 @@
                             <!--style="margin 0 15px"-->
                         <input type="text" id="nome" name="nome" class="formulario__resposta formulario__resposta--texto" required>
                             <!--style="margin: 0 0 px"-->
-                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--nome">
+                        <div class="btn__container">
+                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--nome">
+                        </div> 
+                        
                     </div>
 
                     <div class="formulario__questao">
                         <br>
                         <label for="duracaoTotal" class="formulario__pergunta">Quantos dias vai durar sua viagem?</label><br>
-                        <input type="number" id="duracaoTotal" class="formulario__resposta formulario__respostas--numero" min="1" required>
-                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTotal">
+                        <input type="number" id="duracaoTotal" class="formulario__resposta formulario__resposta--numero" min="1" required>
+                        <div class="btn__container">
+                            <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTotal">
+                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTotal">
+                        </div> 
+                        
                     </div>
 
-                    <div class="formulario__questao formulario__questao--variacaoDeTemperatura">
+                    <div class="formulario__questao formulario__questao--variacaoDeTemperatura" id="formulario__questao--variacaoDeTemperatura">
                         <fieldset>
-                            <legend class="formulario__pergunta">Selecione quais os cenários estão presentes na sua viagem:</legend>
+                            <legend class="formulario__pergunta" align="center">Selecione quais os cenários estão presentes na sua viagem:</legend>
                             <div class="formulario__resposta formulario__resposta--opcoes">
                                 <label for="vdt--25mais">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--25mais" value="25 ou mais" class="formulario__resposta--checkbox">25ºC ou mais
@@ -70,19 +77,26 @@
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--negativa" value="Abaixo de 0" class="formulario__resposta--checkbox">Abaixo de 0ºC
                                 </label>
                             </div>
-                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--variacaoDeTemperatura">
+                            <div class="btn__container">
+                                <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--variacaoDeTemperatura">
+                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--variacaoDeTemperatura">
+                            </div> 
+                            
                         </fieldset>
                     </div>
 
                     <div class="formulario__questao">
                         <label for="duracaoTemperatura" class="formulario__pergunta">Coloque o número de dias que a temperatura permanecerá em cada variação:</label><br>
-                        <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__respostas--numero" min="0" required>
-                        <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTemperatura">
+                        <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__resposta--numero" min="0" required>
+                        <div class="btn__container">
+                            <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTemperatura">
+                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTemperatura">
+                        </div>
                     </div>
 
                     <div class="formulario__questao formulario__questao--cenario">
                         <fieldset>
-                            <legend class="formulario__pergunta">Selecione quais os cenários estão presentes na sua viagem:</legend>
+                            <legend class="formulario__pergunta" align="center">Selecione quais os cenários estão presentes na sua viagem:</legend>
                             <div class="formulario__resposta formulario__resposta--opcoes">
                                 <label for="checkbox--agua">
                                     <input type="checkbox" name="cenario" id="checkbox--agua" value="agua" class="formulario__resposta--checkbox">Água(praia, cachoeira ou piscina)
@@ -97,27 +111,36 @@
                                     <input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade" class="formulario__resposta--checkbox">Cidade
                                 </label>
                             </div>
-                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--cenario">
+                            <div class="btn__container">
+                                <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--cenario">
+                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--cenario">
+                            </div> 
                         </fieldset>
                     </div>
 
                     <div class="formulario__questao formulario__questao--evento">
                         <fieldset>
-                            <legend class="formulario__pergunta">Você comparecerá a algum evento durante a sua viagem?</legend>
+                            <legend class="formulario__pergunta" align="center">Você comparecerá a algum evento durante a sua viagem?</legend>
                                 <div class="formulario__resposta formulario__resposta--opcoes">
                                     <label for="checkbox--nada"><input type="checkbox" name="evento" id="checkbox--nada" value="nada" class="formulario__resposta--checkbox">Nada especifico</label>
                                     <label for="checkbox--balada"><input type="checkbox" name="evento" id="checkbox--balada" value="balada" class="formulario__resposta--checkbox">Balada</label>
                                     <label for="checkbox--formal"><input type="checkbox" name="evento" id="checkbox--formal" value="formal" class="formulario__resposta--checkbox">Festa formal(casamento, formatura, etc)</label>
                                     <label for="checkbox--fantasia"><input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia" class="formulario__resposta--checkbox">Festa fantasia</label>
                                 </div>
-                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--evento">
+                                <div class="btn__container">
+                                    <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--evento">
+                                    <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--evento">
+                                </div>
                         </fieldset>
                     </div>
                         
-                    <div class="formulario__questao">
+                    <div class="formulario__questao formulario__questao--algoMais">
                         <label for="algoMais" class="formulario__pergunta">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: Roupas de cama: 2</label><br>
                         <input type="text" id="algoMais" name="algoMais" class="formulario__resposta formulario__resposta--texto">
-                        <input type="submit" value="FAZER AS MALAS" class="btn" id="btn__proximo--algoMais">
+                        <div class="btn__container">
+                            <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--algoMais">
+                            <input type="submit" value="FAZER AS MALAS" class="btn" id="btn__proximo--algoMais">
+                        </div>
                     </div>
 
                 </section>                        
