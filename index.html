@@ -30,7 +30,7 @@
                 <section class="sessao">
 
                     <div class="formulario__questao formulario__questao--text formulario__questao--nome">
-                        <label for="nome" class="formulario__pergunta formulario__pergunta--nome">Qual o seu nome?</label><br>
+                        <label for="nome" class="formulario__pergunta formulario__pergunta--campo">Qual o seu nome?</label><br>
                             <!--style="margin 0 15px"-->
                         <input type="text" id="nome" name="nome" class="formulario__resposta formulario__resposta--texto" required>
                             <!--style="margin: 0 0 px"-->
@@ -42,7 +42,7 @@
 
                     <div class="formulario__questao">
                         <br>
-                        <label for="duracaoTotal" class="formulario__pergunta">Quantos dias vai durar sua viagem?</label><br>
+                        <label for="duracaoTotal" class="formulario__pergunta formulario__pergunta--campo">Quantos dias vai durar sua viagem?</label><br>
                         <input type="number" id="duracaoTotal" class="formulario__resposta formulario__resposta--numero" min="1" required>
                         <div class="btn__container">
                             <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTotal">
@@ -53,7 +53,7 @@
 
                     <div class="formulario__questao formulario__questao--variacaoDeTemperatura" id="formulario__questao--variacaoDeTemperatura">
                         <fieldset>
-                            <legend class="formulario__pergunta" align="center">Selecione quais os cenários estão presentes na sua viagem:</legend>
+                            <legend class="formulario__pergunta" align="center">Selecione o número de dias que  vai permanecer em cada variação de temperatura:</legend>
                             <div class="formulario__resposta formulario__resposta--opcoes">
                                 <label for="vdt--25mais">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--25mais" value="25 ou mais" class="formulario__resposta--checkbox">25ºC ou mais
@@ -86,7 +86,7 @@
                     </div>
 
                     <div class="formulario__questao">
-                        <label for="duracaoTemperatura" class="formulario__pergunta">Coloque o número de dias que a temperatura permanecerá em cada variação:</label><br>
+                        <label for="duracaoTemperatura" class="formulario__pergunta formulario__pergunta--campo">Coloque o número de dias que a temperatura permanecerá em cada variação:</label><br>
                         <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__resposta--numero" min="0" required>
                         <div class="btn__container">
                             <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTemperatura">
@@ -135,7 +135,7 @@
                     </div>
                         
                     <div class="formulario__questao formulario__questao--algoMais">
-                        <label for="algoMais" class="formulario__pergunta">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: Roupas de cama: 2</label><br>
+                        <label for="algoMais" class="formulario__pergunta formulario__pergunta--campo">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: Roupas de cama: 2</label><br>
                         <input type="text" id="algoMais" name="algoMais" class="formulario__resposta formulario__resposta--texto">
                         <div class="btn__container">
                             <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--algoMais">
