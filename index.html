@@ -53,8 +53,8 @@
 
                     <div class="formulario__questao formulario__questao--variacaoDeTemperatura" id="formulario__questao--variacaoDeTemperatura">
                         <fieldset>
-                            <legend class="formulario__pergunta" align="center">Selecione o número de dias que  vai permanecer em cada variação de temperatura:</legend>
-                            <div class="formulario__resposta formulario__resposta--opcoes">
+                            <legend class="formulario__pergunta" align="center">Selecione as variações de temperatura encontradas em sua viagem:</legend>
+                            <div class="formulario__resposta formulario__resposta--opcoes" id="formulario__resposta--opcoesVariacao">
                                 <label for="vdt--25mais">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--25mais" value="25 ou mais" class="formulario__resposta--checkbox">25ºC ou mais
                                 </label>
@@ -72,7 +72,7 @@
                                 </label>
                                 <label for="vdt--0e5">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--0e5" value="0 e 5" class="formulario__resposta--checkbox">0ºC e 5ºC
-                                </label><br>
+                                </label>
                                 <label for="vdt--negativa">
                                     <input type="checkbox" name="variacaoDeTemperatura" id="vdt--negativa" value="Abaixo de 0" class="formulario__resposta--checkbox">Abaixo de 0ºC
                                 </label>
@@ -86,18 +86,31 @@
                     </div>
 
                     <div class="formulario__questao">
-                        <label for="duracaoTemperatura" class="formulario__pergunta formulario__pergunta--campo">Coloque o número de dias que a temperatura permanecerá em cada variação:</label><br>
-                        <input type="number" id="duracaoTemperatura" class="formulario__resposta formulario__resposta--numero" min="0" required>
-                        <div class="btn__container">
-                            <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTemperatura">
-                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTemperatura">
-                        </div>
+                        <fieldset>
+                            <legend class="formulario__pergunta" align="center">Coloque o número de dias que a temperatura permanecerá em cada variação:</legend>
+                            <div class="formulario__repostas formulario__respostas--variosCampos">
+                                <label for="vdt__selecionar--25mais" class="formulario__resposta--labelNumberVarios">25ºC ou mais<input type="number" id="vdt__selecionar--25mais" class="formulario__reposta--numberVarios formulario__reposta--numberVarios25mais" min="1"></label>
+                                <label for="vdt__selecionar--20e25" class="formulario__resposta--labelNumberVarios">20ºC e 25ºC<input type="number" id="vdt__selecionar--20e25" class="formulario__reposta--numberVarios formulario__reposta--numberVarios20e25" min="1"></label>
+                                <label for="vdt__selecionar--15e20" class="formulario__resposta--labelNumberVarios">15ºC e 20ºC<input type="number" id="vdt__selecionar--15e20" class="formulario__reposta--numberVarios formulario__reposta--numberVarios15e20" min="1"></label>
+                                <label for="vdt__selecionar--10e15" class="formulario__resposta--labelNumberVarios">10ºC e 15ºC<input type="number" id="vdt__selecionar--10e15" class="formulario__reposta--numberVarios formulario__reposta--numberVarios10e25" min="1"></label>
+                                <label for="vdt__selecionar--10e5" class="formulario__resposta--labelNumberVarios">5ºC e 10ºC<input type="number" id="vdt__selecionar--10e5" class="formulario__reposta--numberVarios formulario__reposta--numberVarios5e10" min="1"></label>
+                                <label for="vdt__selecionar--0e5" class="formulario__resposta--labelNumberVarios">0ºC e 5ºC<input type="number" id="vdt__selecionar--0e5" class="formulario__reposta--numberVarios formulario__reposta--numberVarios0e5" min="1"></label>
+                                <label for="vdt__selecionar--negativa" class="formulario__resposta--labelNumberVarios">Abaixo de 0ºC<input type="number" id="vdt__selecionar--negativa" class="formulario__reposta--numberVarios formulario__reposta--numberVariosNegativa" min="1"></label>
+                                
+                            </div>
+                            <div class="btn__container">
+                                <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTemperatura">
+                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTemperatura">
+                            </div>
+                        </fieldset>
+                        
+                        
                     </div>
 
                     <div class="formulario__questao formulario__questao--cenario">
                         <fieldset>
                             <legend class="formulario__pergunta" align="center">Selecione quais os cenários estão presentes na sua viagem:</legend>
-                            <div class="formulario__resposta formulario__resposta--opcoes">
+                            <div class="formulario__resposta formulario__resposta--opcoes" id="formulario__resposta--opcoesCenario">
                                 <label for="checkbox--agua">
                                     <input type="checkbox" name="cenario" id="checkbox--agua" value="agua" class="formulario__resposta--checkbox">Água(praia, cachoeira ou piscina)
                                 </label>
@@ -121,7 +134,7 @@
                     <div class="formulario__questao formulario__questao--evento">
                         <fieldset>
                             <legend class="formulario__pergunta" align="center">Você comparecerá a algum evento durante a sua viagem?</legend>
-                                <div class="formulario__resposta formulario__resposta--opcoes">
+                                <div class="formulario__resposta formulario__resposta--opcoes" id="formulario__resposta--opcoesEvento">
                                     <label for="checkbox--nada"><input type="checkbox" name="evento" id="checkbox--nada" value="nada" class="formulario__resposta--checkbox">Nada especifico</label>
                                     <label for="checkbox--balada"><input type="checkbox" name="evento" id="checkbox--balada" value="balada" class="formulario__resposta--checkbox">Balada</label>
                                     <label for="checkbox--formal"><input type="checkbox" name="evento" id="checkbox--formal" value="formal" class="formulario__resposta--checkbox">Festa formal(casamento, formatura, etc)</label>
