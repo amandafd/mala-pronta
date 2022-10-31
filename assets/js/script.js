@@ -13,26 +13,6 @@ captarNome.addEventListener('click', function(e) {
     e.preventDefault();
 });
 
-
-/*LAVAR ROUPA:
-Descobrir como captar esse input corretamente. Pode diminuir a quantidade de itens dependendo da reposta*/
-
-/*var lavarRoupa = document.querySelector('input[name="lavarRoupa"]:checked').value;
-var capturarlavarRoupa = document.querySelector('#btn__proximo--lavarRoupa');
-
-
-capturarlavarRoupa.addEventListener('click', function(e) {
-    if(lavarRoupa === "não"){
-        alert("Você não precisa lavar roupa");
-    } else if(lavarRoupa === "sim") {
-        alert("Você precisa lavar roupa");
-    }
-
-    e.preventDefault();
-});*/
-
-
-
 /*Capturando a quantidade total de dias da viagem*/
 var duracaoTotal = document.querySelector('#duracaoTotal');
 var capturarDuracaoTotal = document.querySelector('#btn__proximo--duracaoTotal');
