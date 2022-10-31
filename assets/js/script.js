@@ -1,4 +1,4 @@
-/*NOME*/ 
+/*CAPTANDO NOME*/ 
 var nome = document.querySelector('#nome');
 var captarNome = document.querySelector('#btn__proximo--nome');
 
@@ -17,8 +17,17 @@ captarNome.addEventListener('click', function(e) {
 var duracaoTotal = document.querySelector('#duracaoTotal');
 var capturarDuracaoTotal = document.querySelector('#btn__proximo--duracaoTotal');
 
+var quantidadeLingerie = document.querySelector('.quantidade__lingerie');
+
 capturarDuracaoTotal.addEventListener('click', function(e) {
-    alert("Sua viagem vai durar " + duracaoTotal.value + " dias");
+    if (duracaoTotal.value <= 7) {
+        quantidadeLingerie.innerHTML = parseInt(duracaoTotal.value) + 2;
+    } else if (duracaoTotal.value <= 20) {
+        quantidadeLingerie.innerHTML = parseInt(duracaoTotal.value) + 3;
+    } else if(duracaoTotal.value > 35) {
+        quantidadeLingerie.innerHTML = parseInt(duracaoTotal.value) + 4;
+    }
+    
     e.preventDefault();
 });
 
