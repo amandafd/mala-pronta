@@ -13,21 +13,23 @@ captarNome.addEventListener('click', function(e) {
     e.preventDefault();
 });
 
-/*Capturando a quantidade total de dias da viagem*/
+/*CAPTANDO DURAÇÃO TOTAL DA VIAGEM E FAZENDO CALCULOS DOS ITENS COM BASE APENAS NESSA VARIÁVEL*/
 var duracaoTotal = document.querySelector('#duracaoTotal');
 var capturarDuracaoTotal = document.querySelector('#btn__proximo--duracaoTotal');
 
 var quantidadeLingerie = document.querySelector('.quantidade__lingerie');
+var quantidadePijama = document.querySelector('.quantidade__pijama');
 
 capturarDuracaoTotal.addEventListener('click', function(e) {
-    if (duracaoTotal.value <= 7) {
-        quantidadeLingerie.innerHTML = parseInt(duracaoTotal.value) + 2;
-    } else if (duracaoTotal.value <= 20) {
-        quantidadeLingerie.innerHTML = parseInt(duracaoTotal.value) + 3;
-    } else if(duracaoTotal.value > 35) {
-        quantidadeLingerie.innerHTML = parseInt(duracaoTotal.value) + 4;
-    }
-    
+   if(duracaoTotal.value < 15) {
+    quantidadeLingerie.innerHTML = parseInt(duracaoTotal.value) + 2;
+    quantidadePijama.innerHTML = parseInt(parseInt(duracaoTotal.value) / 3);
+   } else {
+    quantidadePijama.innerHTML = 4;
+    quantidadeLingerie.innerHTML = 18;
+   }
+
+   
     e.preventDefault();
 });
 

@@ -139,116 +139,185 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 
 
 ----25º ou mais----
-    - X vestido/jardineira. Caso não use nenhum dos dois, substitua acrescentando mais X camiseta/cropped/camisa leve e X bermuda/short;
-    - X saias. Caso não use saia, substitua acrescentando mais X bermudas/shorts;
-    - X bermudas ou short;
+
+--camisetas--
+    - X camiseta;
+--partes de cima--
+    - X croppeds ou tops ou camisas;
+--calças--
     - X calça de tecido leve;
     - X calça jeans;
-    - X camiseta;
-    - X camisa leve;
-    - X cropped ou top ou camisa;
+--bermudas--
+    - X bermudas ou short;
+--saias--
+    - X saias. Caso não use saia, substitua acrescentando mais X bermudas/shorts;
+--vestidos--
+    - X vestido/jardineira. Caso não use nenhum dos dois, substitua acrescentando mais X camiseta/cropped/camisa leve e X bermuda/short;
+--blusas de frio--
+- X moletom;
+--calçados--
     - X sandália;
     - 1 chinelo extra;
     - X par de tênis;
-    - X moletonm;
+
 
 ----20º a 25º----
-    - X vestidos/jardineiras. Caso não use nenhum dos dois, substitua acrescentando mais X camisetas/croppeds, X bermudas/shorts e X calças;
-    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e X calças;
-    - X bermudas ou shorts;
+--camisetas--
+    - X camisetas;
+--partes de cima--
+    - X croppeds ou tops ou camisas;
+--calças--
     - X calça de tecido leve;
     - X calça jeans;
-    - X camisetas;
-    - X croppeds ou tops ou camisas;
-    - X sandálias;
-    - X pares de tênis;
+--bermudas--
+    - X bermudas ou shorts;
+--saias--
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e X calças;
+--vestidos--
+    - X vestidos/jardineiras. Caso não use nenhum dos dois, substitua acrescentando mais X camisetas/croppeds, X bermudas/shorts e X calças;
+--blusas de frio--
     - X moletons;
     - X cardigãs;
     - X jaquetas;
+--calçados--
+    - X sandálias;
+    - X pares de tênis;
+
 
 ----15º a 20º----
-    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
-    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
-    - X bermudas ou shorts;
-    - X calça de tecido;
-    - X calça jeans;
+--camisetas--
     - X camisetas de manga curta;
     - X camisetas de manga comprida;
+--partes de cima--
     - X croppeds ou tops ou camisas;
-    - X pares de tênis ou botas leves;
+--calças--
+    - X calça de tecido;
+    - X calça jeans;
+--bermudas--
+    - X bermudas ou shorts;
+--saias--
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+--vestidos--
+    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
+--blusas de frio--
     - X moletons;
     - x cardigãs;
     - X jaquetas de couro ou blazer de veludo;
+--calçados--
+    - X pares de tênis ou botas leves;
+--acessórios--
     - X meias calças finas;
     - X meias calças médias;
 
+
 ----10º a 15º----
-    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
-    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
-    - X calça de tecido;
-    - X calça jeans;
+--camisetas--
     - X camisetas de manga curta;
     - X camisetas de manga comprida;
+--partes de cima--
     - X croppeds ou tops ou camisas;
+--calças--
+    - X calça de tecido;
+    - X calça jeans;
+--bermudas--
+--saias--
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+--vestidos--
+ - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
+--blusas de frio--
     - X moletons;
     - x cardigãs/sueters;
     - X jaquetas
     - X casacos/blazer/parca;
+--calçados--
     - X pares de tênis ou botas;
+--acessórios--
     - X meias calças médias;
     - x meias calças grossas;
+
+
 ----5º a 10º----
-    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
-    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+--camisetas--
+    - X camisetas de manga curta;
+    - X camisetas de manga comprida;
+--partes de cima--
+    - X croppeds ou tops ou camisas;
+--calças--
     - X calça de tecido;
     - X calça jeans;
     - X calças de couro ou veludo
-    - X camisetas de manga curta;
-    - X camisetas de manga comprida;
-    - X croppeds ou tops ou camisas;
+--bermudas--
+--saias--
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+--vestidos--
+    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
+--blusas de frio--
     - X moletons;
     - x cardigãs/sueters;
     - X jaquetas
     - X casacos/blazer/parca/sobretudos;
+--calçados--
     - X pares de tênis ou botas;
+--acessórios--
     - X meias calças médias;
     - x meias calças grossas;
     - X cachecois;
     - X pares de luvas
     - X gorros;
+
 
 ----0º a 5º----
-    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
-    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+--camisetas--
+    - X camisetas de manga curta;
+    - X camisetas de manga comprida;
+--partes de cima--
+    - X croppeds ou tops ou camisas de manga comprida;
+--calças--
     - X calça de tecido;
     - X calça jeans;
     - X calças de couro ou veludo
-    - X camisetas de manga curta;
-    - X camisetas de manga comprida;
-    - X croppeds ou tops ou camisas;
+--bermudas--
+--saias--
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+--vestidos--
+    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
+--blusas de frio--
     - X moletons;
     - x cardigãs/sueters;
     - X jaquetas
     - X casacos/blazer/parca/sobretudos;
+--calçados--
     - X pares de tênis ou botas;
+--acessórios--
     - X meias calças médias;
     - x meias calças grossas;
     - X cachecois;
     - X pares de luvas
     - X gorros;
 
+
 ----Abaixo de 0º----
-    - X vestidos de lã. Caso não use, substitua acrescentando mais X camisetas/camisas de managas compridas e x calças;
-    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+--camisetas--
+    - X camisetas de manga comprida;
+--partes de cima--
+    - X croppeds ou tops ou camisas de manga comprida;
+--calças--
     - X calças de couro, veludo ou lã;
     - X calça jeans;
-    - X camisetas de manga comprida;
-    - X croppeds ou tops ou camisas;
+--bermudas--
+--saias--
+    - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
+--vestidos--
+
+    - X vestidos. Caso não use, substitua acrescentando mais X camisetas/camisas de managas compridas e x calças;
+--blusas de frio--
     - X moletons;
     - x cardigãs/sueters;
     - X jaquetas puffer;
     - X casacos/blazer/parca/sobretudos;
+--calçados--
     - X pares de tênis ou botas;
+--acessórios--
     - x meias calças grossas;
     - X cachecois;
     - X pares de luvas
@@ -259,9 +328,9 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 ----Praia/piscina/cachoeira----
     - X Roupas de banho/biquinis/maios/sungas/calções de banho;
     - X saídas de praia/(pensar em opção);
-    - X
+    - X toalha de piscina;
 ----Neve----
-    - X Casacos de neve;
+    - X conjuntos de calça e casaco para neve;
     - X Botas de neve;
     - X
 ----Montanha/trilha----
@@ -269,7 +338,7 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
     - X jaqueta corta-vento impermeável;
     - X squeeze;
     - X mochila impermeável;
-    - X
+    - X toalha pequena;
 
 
 -----DEFINIÇÃO FINAL DOS ITENS EXTRAS POR EVENTO----- 
