@@ -129,7 +129,6 @@ form label {
    gap: 0 6rem;
    height: 12rem;
    align-items: center;
-   /*padding-top: 1rem;*/
    overflow: hidden;
 }
 .formulario__resposta--labelNumberVarios {
