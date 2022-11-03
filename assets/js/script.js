@@ -43,15 +43,18 @@ function adicionaItensFixos() {
 adicionaItensFixos();
 
 /*variacaoDeTemperatura*/
-var variacaoDeTemperatura = document.querySelectorAll('input[name="variacaoDeTemperatura"]:checked').value;
+var variacaoDeTemperatura = document.querySelectorAll('.variacaoDeTemperatura');
 var capturarVariacaoDeTemperatura = document.querySelector('#btn__proximo--variacaoDeTemperatura');
 
-capturarVariacaoDeTemperatura.addEventListener('click', function(e) {
-    alert("A temperatura vai permanecer entre " + variacaoDeTemperatura.value);
-    
-    e.preventDefault();
-});
+function verificaVariacaoDeTemperatura() {
+    capturarVariacaoDeTemperatura.addEventListener('click', function(e) {
+        
+        
+        e.preventDefault();
+    });
+}
 
+verificaVariacaoDeTemperatura();
 /*duracaoTemperatura*/
 /*var duracaoTemperatura = document.querySelector('#duracaoTemperatura');
 var capturarDuracaoTemperatura = document.querySelector('#btn__proximo--duracaoTemperatura');
