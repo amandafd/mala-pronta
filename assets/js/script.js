@@ -95,6 +95,8 @@ function verificaVariacaoDeTemperatura() {
             function variasTemperaturas() {
                 if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("20ºC e 25ºC")) {
                     tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans";
+                    t25mais.disabled = false;
+                    t20e25.disabled = false;
 
                 } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("15ºC e 20ºC")) {
                     tecidos.innerHTML = "algodão, linho, seda, malha para os dias amenos. Para os dias mais frios complementar com peças em jeans e  veludo leve";
