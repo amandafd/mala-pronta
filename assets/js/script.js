@@ -45,14 +45,18 @@ adicionaItensFixos();
 /*variacaoDeTemperatura*/
 var variacaoDeTemperatura = document.querySelectorAll('.variacaoDeTemperatura');
 var capturarVariacaoDeTemperatura = document.querySelector('#btn__proximo--variacaoDeTemperatura');
+var variacaoSelecionada = [];
+
+var tecidos = document.querySelector('.mala__item--tecidosSugeridos');
 
 function verificaVariacaoDeTemperatura() {
     capturarVariacaoDeTemperatura.addEventListener('click', function(e) {
         for(var i = 0; i < variacaoDeTemperatura.length; i++) {
             if(variacaoDeTemperatura[i].checked == true) {
-                alert(variacaoDeTemperatura[i].value)
+                variacaoSelecionada.push(variacaoDeTemperatura[i].value);
             }
         }
+        alert(variacaoSelecionada);
         
         e.preventDefault();
     });
