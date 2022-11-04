@@ -49,6 +49,15 @@ var variacaoSelecionada = [];
 
 var tecidos = document.querySelector('.mala__item--tecidosSugeridos');
 
+var t25mais = document.querySelector('.formulario__reposta--numberVarios25mais');
+var t20e25 = document.querySelector('.formulario__reposta--numberVarios20e25');
+var t15e20 = document.querySelector('.formulario__reposta--numberVarios15e20');
+var t10e15 = document.querySelector('.formulario__reposta--numberVarios10e15');
+var t5e10 = document.querySelector('.formulario__reposta--numberVarios5e10');
+var t0e5 = document.querySelector('.formulario__reposta--numberVarios0e5');
+var tNegativa = document.querySelector('.formulario__reposta--numberVariosNegativa');
+
+
 function verificaVariacaoDeTemperatura() {
     capturarVariacaoDeTemperatura.addEventListener('click', function(e) {
         for(var i = 0; i < variacaoDeTemperatura.length; i++) {
@@ -56,8 +65,59 @@ function verificaVariacaoDeTemperatura() {
                 variacaoSelecionada.push(variacaoDeTemperatura[i].value);
             }
         }
-        alert(variacaoSelecionada);
+            
+        function mostraTecidosAtivaInput() {
+            function umaTemperatura () {
+                if(variacaoSelecionada.includes("25ºC ou mais")) {
+                    tecidos.innerHTML = "algodão, linho, seda, malha";
+                    t25mais.disabled = false;
+                } else if (variacaoSelecionada.includes("20ºC e 25ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans";
+                    t20e25.disabled = false;
+                } else if(variacaoSelecionada.includes("15ºC e 20ºC")) {
+                    tecidos.innerHTML = "algodão, linho, jeans, veludo leve";
+                    t15e20.disabled = false;
+                } else if(variacaoSelecionada.includes("10ºC e 15ºC")) {
+                    tecidos.innerHTML = "lã mais leve, jeans, veludo e couro";
+                    t10e15.disabled = false;
+                } else if(variacaoSelecionada.includes("5ºC e 10ºC")) {
+                    tecidos.innerHTML = "lã, jeans, pelos, couro, veludo";
+                    t5e10.disabled = false;
+                } else if(variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "lã, jeans, pelos, couro, veludo";
+                    t0e5.disabled = false;
+                } else if(variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "lã, jeans, pelos, couro, veludo";
+                    tNegativa.disabled = false;
+                } /*Verificar se precisa adicionar mais tecidos*/
+            }
+            
+            function variasTemperaturas() {
+                if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("20ºC e 25ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans";
+
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("15ºC e 20ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, malha para os dias amenos. Para os dias mais frios complementar com peças em jeans e  veludo leve";
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("10ºC e 15ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, malha para os dias amenos. Para os dias mais frios complementar com peças em lã leve,  jeans, veludo e couro";
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("5ºC e 10ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, malha para os dias amenos. Para os dias mais frios complementar com peças em lã, jeans, pelos, couro e veludo";
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, malha para os dias amenos. Para os dias mais frios complementar com peças em lã, jeans, pelos, couro e veludo";
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, malha para os dias amenos. Para os dias mais frios complementar com peças em lã, jeans, pelos, couro e veludo";
+                } /*continuar combinando as outras temperaturas*/
+            }
+            
+
+            if (variacaoSelecionada.length < 2) {
+                umaTemperatura();
+            } else {
+                variasTemperaturas();
+            }
+        }
         
+        mostraTecidosAtivaInput();
         e.preventDefault();
     });
 }
