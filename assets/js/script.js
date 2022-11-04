@@ -48,13 +48,18 @@ var capturarVariacaoDeTemperatura = document.querySelector('#btn__proximo--varia
 
 function verificaVariacaoDeTemperatura() {
     capturarVariacaoDeTemperatura.addEventListener('click', function(e) {
-        
+        for(var i = 0; i < variacaoDeTemperatura.length; i++) {
+            if(variacaoDeTemperatura[i].checked == true) {
+                alert(variacaoDeTemperatura[i].value)
+            }
+        }
         
         e.preventDefault();
     });
 }
 
 verificaVariacaoDeTemperatura();
+
 /*duracaoTemperatura*/
 /*var duracaoTemperatura = document.querySelector('#duracaoTemperatura');
 var capturarDuracaoTemperatura = document.querySelector('#btn__proximo--duracaoTemperatura');
