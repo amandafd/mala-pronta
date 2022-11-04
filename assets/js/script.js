@@ -161,11 +161,19 @@ function verificaVariacaoDeTemperatura() {
                     tecidos.innerHTML =  "algodão, linho, jeans, veludo, lã, pelagem e couro";
                     t10e15.disabled = false;
                     t0e5.disabled = false;
-                } else if (variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("")) {
+                } else if (variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
                     tecidos.innerHTML =  "algodão, linho, jeans, veludo, lã, pelagem e couro";
                     t10e15.disabled = false;
                     tNegativa.disabled = false;
-                } else if (variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("")) {
+                } else if (variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML =  "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t5e10.disabled = false;
+                    t0e5.disabled = false;
+                }  else if (variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML =  "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t5e10.disabled = false;
+                    tNegativa.disabled = false;
+                }  else if (variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("")) {
                     tecidos.innerHTML =  "algodão, linho, jeans, veludo, lã, pelagem e couro";
                     t5e10.disabled = false;
                     t.disabled = false;
