@@ -572,6 +572,27 @@ function verificaVariacaoDeTemperatura() {
                     tNegativa.disabled = false;
                 }
             }
+            /*preencher*/
+            function cincoTemperaturas() {
+
+            }
+            /*preencher*/
+            function seisTemperaturas() {
+
+            }
+            
+            function seteTemperaturas() {
+                if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("0ºC e 5ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans, veludo, lã, pelagem e couro";
+                    t25mais.disabled = false;
+                    t20e25.disabled = false;
+                    t15e20.disabled = false;
+                    t10e15.disabled = false;
+                    t5e10.disabled = false;
+                    t0e5.disabled = false;
+                    tNegativa.disabled = false;
+                }
+            }
 
             if (variacaoSelecionada.length > 0 && variacaoSelecionada.length < 2) {
                 umaTemperatura();
@@ -581,6 +602,12 @@ function verificaVariacaoDeTemperatura() {
                 tresTemperaturas();
             } else if (variacaoSelecionada.length > 3 && variacaoSelecionada.length < 5) {
                 quatroTemperaturas();
+            } else if (variacaoSelecionada.length > 4 && variacaoSelecionada.length < 6) {
+                cincoTemperaturas();
+            } else if(variacaoSelecionada.length > 5 && variacaoSelecionada.length < 7) {
+                seisTemperaturas();
+            } else if(variacaoSelecionada.length > 6 && variacaoSelecionada.length < 8) {
+                seteTemperaturas();
             }
         }
         
