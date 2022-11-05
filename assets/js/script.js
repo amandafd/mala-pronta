@@ -69,30 +69,30 @@ function verificaVariacaoDeTemperatura() {
         function mostraTecidosAtivaInput() {
             function umaTemperatura () {
                 if(variacaoSelecionada.includes("25ºC ou mais")) {
-                    tecidos.innerHTML = "algodão, linho, seda, malha";
+                    tecidos.innerHTML = "algodão, linho, seda e malha";
                     t25mais.disabled = false;
                 } else if (variacaoSelecionada.includes("20ºC e 25ºC")) {
-                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans";
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans";
                     t20e25.disabled = false;
                 } else if(variacaoSelecionada.includes("15ºC e 20ºC")) {
                     tecidos.innerHTML = "algodão, linho, jeans, veludo e lã leve";
                     t15e20.disabled = false;
                 } else if(variacaoSelecionada.includes("10ºC e 15ºC")) {
-                    tecidos.innerHTML = "lã, jeans, veludo e couro";
+                    tecidos.innerHTML = "algodão, lã, jeans, veludo e couro";
                     t10e15.disabled = false;
                 } else if(variacaoSelecionada.includes("5ºC e 10ºC")) {
-                    tecidos.innerHTML = "lã, jeans, pelos, couro, veludo";
+                    tecidos.innerHTML = "algodão, lã, jeans, pelagem, couro e veludo";
                     t5e10.disabled = false;
                 } else if(variacaoSelecionada.includes("0ºC e 5ºC")) {
-                    tecidos.innerHTML = "lã, jeans, pelos, couro, veludo";
+                    tecidos.innerHTML = "algodão, lã, jeans, pelagem, couro e veludo";
                     t0e5.disabled = false;
                 } else if(variacaoSelecionada.includes("Abaixo de 0ºC")) {
-                    tecidos.innerHTML = "lã, jeans, pelos, couro, veludo";
+                    tecidos.innerHTML = "algodão, lã, jeans, pelagem, couro e veludo";
                     tNegativa.disabled = false;
                 } /*Verificar se precisa adicionar mais tecidos*/
             }
             
-            function variasTemperaturas() {
+            function duasTemperaturas() {
                 if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("20ºC e 25ºC")) {
                     tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans";
                     t25mais.disabled = false;
@@ -173,18 +173,200 @@ function verificaVariacaoDeTemperatura() {
                     tecidos.innerHTML =  "algodão, linho, jeans, veludo, lã, pelagem e couro";
                     t5e10.disabled = false;
                     tNegativa.disabled = false;
-                }  else if (variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("")) {
+                }  else if (variacaoSelecionada.includes("0ºC e 5ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
                     tecidos.innerHTML =  "algodão, linho, jeans, veludo, lã, pelagem e couro";
                     t5e10.disabled = false;
-                    t.disabled = false;
-                }
+                    tNegativa.disabled = false;
+                }   
             }
             
+            function tresTemperaturas() {
+                if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("15ºC e 20ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frios complementar com veludo e lã leve";
+                    t25mais.disabled = false;
+                    t20e25.disabled = false;
+                    t15e20.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("10ºC e 15ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans. Para os dias mais frios complementar com veludo, lã e couro";
+                    t25mais.disabled = false;
+                    t20e25.disabled = false;
+                    t10e15.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("5ºC e 10ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans. Para os dias mais frios complementar com veludo, lã, pelagem e couro ";
+                    t25mais.disabled = false;
+                    t20e25.disabled = false;
+                    t5e10.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans. Para os dias mais frios complementar com veludo, lã, pelagem e couro ";
+                    t25mais.disabled = false;
+                    t20e25.disabled = false;
+                    t0e5.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans. Para os dias mais frios complementar com veludo, lã, pelagem e couro";
+                    t25mais.disabled = false;
+                    t20e25.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("10ºC e 15ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frios, complementas com veludo, lã e couro";
+                    t25mais.disabled = false;
+                    t15e20.disabled = false;
+                    t10e15.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("5ºC e 10ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frios, complementas com veludo, lã, pelagem e couro";
+                    t25mais.disabled = false;
+                    t15e20.disabled = false;
+                    t5e10.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frios, complementas com veludo, lã, pelagem e couro";
+                    t25mais.disabled = false;
+                    t15e20.disabled = false;
+                    t0e5.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frios, complementas com veludo, lã, pelagem e couro";
+                    t25mais.disabled = false;
+                    t15e20.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("5ºC e 10ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frios, complementas com veludo, lã, pelagem e couro";
+                    t25mais.disabled = false;
+                    t10e15.disabled = false;
+                    t5e10.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frios, complementas com veludo, lã, pelagem e couro";
+                    t25mais.disabled = false;
+                    t10e15.disabled = false;
+                    t0e5.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frios, complementas com veludo, lã, pelagem e couro";
+                    t25mais.disabled = false;
+                    t10e15.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frios, complementas com veludo, lã, pelagem e couro";
+                    t25mais.disabled = false;
+                    t5e10.disabled = false;
+                    t0e5.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frios, complementas com veludo, lã, pelagem e couro";
+                    t25mais.disabled = false;
+                    t5e10.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("0ºC e 5ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frios, complementas com veludo, lã, pelagem e couro";
+                    t25mais.disabled = false;
+                    t0e5.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("10ºC e 15ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans. Para os dias mais frios complementar com veludo, lã e couro";
+                    t20e25.disabled = false;
+                    t15e20.disabled = false;
+                    t10e15.disabled = false;
+                } else if (variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("5ºC e 10ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans. Para os dias mais frios complementar com veludo, lã, pelagem e couro"
+                    t20e25.disabled = false;
+                    t15e20.disabled = false;
+                    t5e10.disabled = false;
+                } else if (variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans. Para os dias mais frios complementar com veludo, lã, pelagem e couro"
+                    t20e25.disabled = false;
+                    t15e20.disabled = false;
+                    t0e5.disabled = false;
+                } else if (variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans. Para os dias mais frios complementar com veludo, lã, pelagem e couro"
+                    t20e25.disabled = false;
+                    t15e20.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("5ºC e 10ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frio complementar com veludo, lã, pelagem e couro"
+                    t20e25.disabled = false;
+                    t10e15.disabled = false;
+                    t5e10.disabled = false;
+                } else if (variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frio complementar com veludo, lã, pelagem e couro"
+                    t20e25.disabled = false;
+                    t10e15.disabled = false;
+                    t0e5.disabled = false; 
+                } else if (variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frio complementar com veludo, lã, pelagem e couro"
+                    t20e25.disabled = false;
+                    t10e15.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frio complementar com veludo, lã, pelagem e couro"
+                    t20e25.disabled = false;
+                    t5e10.disabled = false;
+                    t0e5.disabled = false;
+                } else if (variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frio complementar com veludo, lã, pelagem e couro"
+                    t20e25.disabled = false;
+                    t5e10.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("0ºC e 5ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, seda, cetim, malha e jeans. Para os dias mais frio complementar com veludo, lã, pelagem e couro"
+                    t20e25.disabled = false;
+                    t0e5.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("5ºC e 10ºC")) {
+                    tecidos.innerHTML = "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t15e20.disabled = false;
+                    t10e15.disabled = false;
+                    t5e10.disabled = false;
+                } else if (variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t15e20.disabled = false;
+                    t10e15.disabled = false;
+                    t0e5.disabled = false;
+                } else if (variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t15e20.disabled = false;
+                    t10e15.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t15e20.disabled = false;
+                    t5e10.disabled = false;
+                    t0e5.disabled = false;
+                } else if (variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t15e20.disabled = false;
+                    t5e10.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("0ºC e 5ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t15e20.disabled = false;
+                    t0e5.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
+                    tecidos.innerHTML = "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t10e15.disabled = false;
+                    t5e10.disabled = false;
+                    t0e5.disabled = false;
+                } else if (variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t10e15.disabled = false;
+                    t5e10.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("0ºC e 5ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t10e15.disabled = false;
+                    t0e5.disabled = false;
+                    tNegativa.disabled = false;
+                } else if (variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("0ºC e 5ºC") && variacaoSelecionada.includes("Abaixo de 0ºC")) {
+                    tecidos.innerHTML = "algodão, linho, jeans, veludo, lã, pelagem e couro";
+                    t10e15.disabled = false;
+                    t0e5.disabled = false;
+                    tNegativa.disabled = false;
+                } 
+            }
 
-            if (variacaoSelecionada.length < 2) {
+
+
+            if (variacaoSelecionada.length > 0 && variacaoSelecionada.length < 2) {
                 umaTemperatura();
-            } else {
-                variasTemperaturas();
+            } else if (variacaoSelecionada.length > 1 && variacaoSelecionada.length < 3) {
+                duasTemperaturas();
+            } else if (variacaoSelecionada.length > 2 && variacaoSelecionada.length < 4) {
+                tresTemperaturas();
             }
         }
         
