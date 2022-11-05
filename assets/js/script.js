@@ -576,7 +576,7 @@ function verificaVariacaoDeTemperatura() {
             function cincoTemperaturas() {
 
             }
-            /*preencher*/
+
             function seisTemperaturas() {
                 if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("5ºC e 10ºC") && variacaoSelecionada.includes("0ºC e 5ºC")) {
                     tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans, veludo, lã, pelagem e couro";
