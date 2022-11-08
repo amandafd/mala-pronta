@@ -810,13 +810,13 @@ verificaVariacaoDeTemperatura();
 /*duracaoTemperatura*/
 var capturarDuracaoTemperatura = document.querySelector('#btn__proximo--duracaoTemperatura');
 
-function verificaDuracaoTemperatura() {
+/*function verificaDuracaoTemperatura() {
     capturarDuracaoTemperatura.addEventListener('click', function(e) {
         if()
     })
-}
+}*/
 
-verificaDuracaoTemperatura();
+/*verificaDuracaoTemperatura();*/
 
 /*cenario*/
 
