@@ -572,7 +572,7 @@ function verificaVariacaoDeTemperatura() {
                     tNegativa.disabled = false;
                 }
             }
-            /*preencher*/
+
             function cincoTemperaturas() {
                 if (variacaoSelecionada.includes("25ºC ou mais") && variacaoSelecionada.includes("20ºC e 25ºC") && variacaoSelecionada.includes("15ºC e 20ºC") && variacaoSelecionada.includes("10ºC e 15ºC") && variacaoSelecionada.includes("5ºC e 10ºC")) {
                     tecidos.innerHTML = "algodão, linho, seda, cetim, malha, jeans, veludo, lã, pelagem e couro";
@@ -808,14 +808,15 @@ function verificaVariacaoDeTemperatura() {
 verificaVariacaoDeTemperatura();
 
 /*duracaoTemperatura*/
-/*var duracaoTemperatura = document.querySelector('#duracaoTemperatura');
 var capturarDuracaoTemperatura = document.querySelector('#btn__proximo--duracaoTemperatura');
 
-capturarDuracaoTemperatura.addEventListener('click', function(e) {
-    alert("Vai permanecer entre " +  + " por " + duracaoTemperatura.value + " dias");
+function verificaDuracaoTemperatura() {
+    capturarDuracaoTemperatura.addEventListener('click', function(e) {
+        if()
+    })
+}
 
-    e.preventDefault();
-});*/
+verificaDuracaoTemperatura();
 
 /*cenario*/
 

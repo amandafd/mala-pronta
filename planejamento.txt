@@ -115,35 +115,55 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 -----DEFINIÇÃO FINAL DOS ITENS CONTIDOS EM CADA TEMPERATURA----- 
 ----25º ou mais----
     - Tecidos sugeridos: leves e frescos, preferencialmente de cores claras. algodão, linho, seda,  malha;
-
+    - (1 a cada 5 dias) vestido/jardineira. Caso não use nenhum dos dois, substitua acrescentando mais (1 a cada 5 dias) camiseta/cropped/camisa leve e (0.5 a cada 5 dias) bermuda/short;
+    - X camiseta;
+    - X cropped/camisa leve;
+    - X bermuda/shorts;
+    
 ----20º a 25º----
     - Tecidos sugeridos: algodão, linho, jeans, seda, cetim malha;
+    - (1 a cada 5 dias) vestidos/jardineiras. Caso não use nenhum dos dois, substitua acrescentando mais (1 a cada 5 dias) camiseta/cropped/camisa e (0.5 a cada 5 dias) bermudas/shorts/calça;
+    - X camiseta;
+    - X cropped/camisa leve;
+    - X bermuda/shorts;
 
 ----15º a 20º----
     - Tecidos sugeridos: algodão, linho, jeans, couro e veludo leve;
-
+    - (1 a cada 5 dias) vestidos/macacão. Caso não use, substitua acrescentando mais (1 a cada 5 dias) camiseta/cropped/camisa e (0.5 a cada 5 dias) calça;
+    - X camisetas de manga curta;
+    - X camisetas de manga comprida;
+    - X cropped/camisa;
 ----10º a 15º----
     - Tecidos sugeridos: lã mais leve, jeans;
+    - (1 a cada 5 dias) vestidos/macacão. Caso não use, substitua acrescentando mais (1 a cada 5 dias) camiseta/cropped/camisa e (0.5 a cada 5 dias) calças;
+    - X camisetas de manga curta;
+    - X camisetas de manga comprida;
+    - X cropped/camisa;
 
 ----5º a 10º----
     - Tecidos sugeridos: lã, jeans, pelos, couro, veludo;
+    - (1 a cada 5 dias) vestidos/macacão. Caso não use, substitua acrescentando mais (1 a cada 5 dias) camiseta/cropped/camisa e (0.5 a cada 5 dias) calças;
+    - X camisetas de manga curta;
+    - X camisetas de manga comprida;
+    - X cropped/camisa;
 
 ----0º a 5º----
     - Tecidos sugeridos: lã, jeans, pelos, couro, veludo;
+    - (1 a cada 5 dias) vestidos/macacão. Caso não use, substitua acrescentando mais (1 a cada 5 dias) camiseta/cropped/camisa e (0.5 a cada 5 dias) calças;
+    - X camisetas de manga comprida;
+    - X cropped/camisa;
 
 ----Abaixo de 0º----
 -Nylon
     - Tecidos sugeridos: lã, jeans, pelos, couro, veludo;
+    - (1 a cada 5 dias) vestidos/macacão. Caso não use, substitua acrescentando mais (1 a cada 5 dias) camiseta/cropped/camisa e (0.5 a cada 5 dias) calças;
+    - X camisetas de manga comprida;
+    - X cropped/camisa;
 
 
 
 
-----25º ou mais----
-
---camisetas--
-    - X camiseta;
---partes de cima--
-    - X croppeds ou tops ou camisas;
+----25º ou mais---- 
 --calças--
     - X calça de tecido leve;
     - X calça jeans;
@@ -151,8 +171,6 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
     - X bermudas ou short;
 --saias--
     - X saias. Caso não use saia, substitua acrescentando mais X bermudas/shorts;
---vestidos--
-    - X vestido/jardineira. Caso não use nenhum dos dois, substitua acrescentando mais X camiseta/cropped/camisa leve e X bermuda/short;
 --blusas de frio--
 - X moletom;
 --calçados--
@@ -160,12 +178,7 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
     - 1 chinelo extra;
     - X par de tênis;
 
-
 ----20º a 25º----
---camisetas--
-    - X camisetas;
---partes de cima--
-    - X croppeds ou tops ou camisas;
 --calças--
     - X calça de tecido leve;
     - X calça jeans;
@@ -173,8 +186,6 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
     - X bermudas ou shorts;
 --saias--
     - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e X calças;
---vestidos--
-    - X vestidos/jardineiras. Caso não use nenhum dos dois, substitua acrescentando mais X camisetas/croppeds, X bermudas/shorts e X calças;
 --blusas de frio--
     - X moletons;
     - X cardigãs;
@@ -185,9 +196,6 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 
 
 ----15º a 20º----
---camisetas--
-    - X camisetas de manga curta;
-    - X camisetas de manga comprida;
 --partes de cima--
     - X croppeds ou tops ou camisas;
 --calças--
@@ -197,8 +205,6 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
     - X bermudas ou shorts;
 --saias--
     - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
---vestidos--
-    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
 --blusas de frio--
     - X moletons;
     - x cardigãs;
@@ -211,19 +217,12 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 
 
 ----10º a 15º----
---camisetas--
-    - X camisetas de manga curta;
-    - X camisetas de manga comprida;
---partes de cima--
-    - X croppeds ou tops ou camisas;
 --calças--
     - X calça de tecido;
     - X calça jeans;
 --bermudas--
 --saias--
     - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
---vestidos--
- - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
 --blusas de frio--
     - X moletons;
     - x cardigãs/sueters;
@@ -237,11 +236,6 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 
 
 ----5º a 10º----
---camisetas--
-    - X camisetas de manga curta;
-    - X camisetas de manga comprida;
---partes de cima--
-    - X croppeds ou tops ou camisas;
 --calças--
     - X calça de tecido;
     - X calça jeans;
@@ -249,8 +243,6 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 --bermudas--
 --saias--
     - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
---vestidos--
-    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
 --blusas de frio--
     - X moletons;
     - x cardigãs/sueters;
@@ -267,11 +259,6 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 
 
 ----0º a 5º----
---camisetas--
-    - X camisetas de manga curta;
-    - X camisetas de manga comprida;
---partes de cima--
-    - X croppeds ou tops ou camisas de manga comprida;
 --calças--
     - X calça de tecido;
     - X calça jeans;
@@ -279,8 +266,6 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 --bermudas--
 --saias--
     - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
---vestidos--
-    - X vestidos/macacão. Caso não use, substitua acrescentando mais X camisetas/croppeds e X bermudas/shorts e x calças;
 --blusas de frio--
     - X moletons;
     - x cardigãs/sueters;
@@ -297,19 +282,12 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 
 
 ----Abaixo de 0º----
---camisetas--
-    - X camisetas de manga comprida;
---partes de cima--
-    - X croppeds ou tops ou camisas de manga comprida;
 --calças--
     - X calças de couro, veludo ou lã;
     - X calça jeans;
 --bermudas--
 --saias--
     - X saias. Caso não use saias, substitua acrescentando mais X bermudas/shorts e x calças;
---vestidos--
-
-    - X vestidos. Caso não use, substitua acrescentando mais X camisetas/camisas de managas compridas e x calças;
 --blusas de frio--
     - X moletons;
     - x cardigãs/sueters;

@@ -144,7 +144,6 @@ form label {
    font-size: 0.9rem;
 }
 
-
 #formulario__resposta--opcoesVariacao {
    grid-template-columns: 23% 23% 23%;
    gap: 0 7rem;
@@ -162,12 +161,6 @@ form label {
    gap: 0 7rem;
    margin-left: 9rem;
 }
-
-/*.formulario__questao--lavarRoupa .formulario__resposta--opcoes, 
-.formulario__questao--cenario .formulario__resposta--opcoes, 
-.formulario__questao--evento .formulario__resposta--opcoes {
-   justify-content: space-between;
-}*/
 
 .btn__container {
    display: flex;
