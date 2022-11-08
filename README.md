@@ -2,7 +2,7 @@
 
 
 <div align-items="center">
-  <img src="/imagens/screenshot-temporario.jpg" alt="Screenshot do projeto">
+  <img src="./imagens/screenshot-temporario.jpg" alt="Screenshot do projeto">
 </div>
 </br>
 
@@ -14,8 +14,8 @@
   <a href=""><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" align="center" alt="Badge Javascript" /></a>
 </p>
 
-<!--<a href="" align="center">Link da página do projeto</a><br>
-<a href="" align="center">Link do vídeo apresentando o projeto</a>-->
+<a href="https://mala-pronta.vercel.app/" align="center">Link da página do projeto</a><br>
+<!--<a href="" align="center">Link do vídeo apresentando o projeto</a>-->
 
 <ul>Conteúdos
   <li><a href="#visao-geral">Visão Geral</a> 
