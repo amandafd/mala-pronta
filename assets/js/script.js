@@ -1,16 +1,14 @@
 /*CAPTANDO NOME*/ 
-var nome = document.querySelector('#nome');
-var captarNome = document.querySelector('#btn__proximo--nome');
+const formNome = document.querySelector('.formulario__questao--nome');
+const nomeMala = document.querySelector('.mala__nome');
+const textoInicialMala = document.querySelector('.mala__textoInicial');
 
-var nomeMala = document.querySelector('.mala__nome');
-var textoInicialMala = document.querySelector('.mala__textoInicial');
-function mostraNome(){
-    captarNome.addEventListener('click', function(e) {
-        nomeMala.innerHTML = nome.value;
-
-        textoInicialMala.innerHTML = "Continue preenchendo o questionário para completar sua mala."
-
+function mostraNome() {
+    formNome.addEventListener("submit", (e) => {
         e.preventDefault();
+
+        nomeMala.innerHTML = e.target.elements['nome'].value
+        textoInicialMala.innerHTML = "Continue preenchendo o questionário para completar sua mala."
     });
 }
 

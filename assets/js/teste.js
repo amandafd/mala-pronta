@@ -1,6 +1,5 @@
-/*CAPTANDO NOME*/
+/*CAPTANDO NOME*/ 
 const formNome = document.querySelector('.formulario__questao--nome');
-
 const nomeMala = document.querySelector('.mala__nome');
 const textoInicialMala = document.querySelector('.mala__textoInicial');
 
@@ -14,6 +13,11 @@ function mostraNome() {
 }
 
 mostraNome();
+
+
+
+
+
 
 /*CAPTANDO DURAÇÃO TOTAL DA VIAGEM E FAZENDO CALCULOS DOS ITENS COM BASE APENAS NESSA VARIÁVEL*/
 /*var duracaoTotal = document.querySelector('.formulario__questao--duracaoTotal');
