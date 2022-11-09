@@ -25,28 +25,28 @@
 
         <main>
             <p class="intro">Olá, viajante! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário a seguir, confira a sugestão da sua mala e em seguida nossas dicas!</p>
-            <form class="formulario categoria">
+            <div class="formulario categoria">
 
                 <section class="sessao">
 
-                    <div class="formulario__questao formulario__questao--text formulario__questao--nome">
+                    <form class="formulario__questao formulario__questao--text formulario__questao--nome">
                         <label for="nome" class="formulario__pergunta formulario__pergunta--campo">Qual o seu nome?</label><br>
                         <input type="text" id="nome" name="nome" class="formulario__resposta formulario__resposta--texto" required>
                         <div class="btn__container">
                             <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--nome">
                         </div> 
-                    </div>
+                    </form>
 
-                    <div class="formulario__questao">
+                    <form class="formulario__questao formulario__questao--duracaoTotal">
                         <label for="duracaoTotal" class="formulario__pergunta formulario__pergunta--campo">Quantos dias vai durar sua viagem?</label><br>
                         <input type="number" id="duracaoTotal" class="formulario__resposta formulario__resposta--numero" min="1" required>
                         <div class="btn__container">
                             <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTotal">
                             <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTotal">
                         </div> 
-                    </div>
+                    </form>
 
-                    <div class="formulario__questao formulario__questao--variacaoDeTemperatura" id="formulario__questao--variacaoDeTemperatura">
+                    <form class="formulario__questao formulario__questao--variacaoDeTemperatura" id="formulario__questao--variacaoDeTemperatura">
                         <fieldset>
                             <legend class="formulario__pergunta" align="center">Selecione as variações de temperatura encontradas em sua viagem:</legend>
                             <div class="formulario__resposta formulario__resposta--opcoes" id="formulario__resposta--opcoesVariacao">
@@ -78,9 +78,9 @@
                             </div> 
                             
                         </fieldset>
-                    </div>
+                    </form>
 
-                    <div class="formulario__questao">
+                    <form class="formulario__questao">
                         <fieldset>
                             <legend class="formulario__pergunta" align="center">Coloque o número de dias que a temperatura permanecerá em cada variação:</legend>
                             <div class="formulario__repostas formulario__respostas--variosCampos">
@@ -97,11 +97,9 @@
                                 <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTemperatura">
                             </div>
                         </fieldset>
-                        
-                        
-                    </div>
+                    </form>
 
-                    <div class="formulario__questao formulario__questao--cenario">
+                    <form class="formulario__questao formulario__questao--cenario">
                         <fieldset>
                             <legend class="formulario__pergunta" align="center">Selecione quais os cenários estão presentes na sua viagem:</legend>
                             <div class="formulario__resposta formulario__resposta--opcoes" id="formulario__resposta--opcoesCenario">
@@ -123,9 +121,9 @@
                                 <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--cenario">
                             </div> 
                         </fieldset>
-                    </div>
+                    </form>
 
-                    <div class="formulario__questao formulario__questao--evento">
+                    <form class="formulario__questao formulario__questao--evento">
                         <fieldset>
                             <legend class="formulario__pergunta" align="center">Você comparecerá a algum evento durante a sua viagem?</legend>
                                 <div class="formulario__resposta formulario__resposta--opcoes" id="formulario__resposta--opcoesEvento">
@@ -139,19 +137,19 @@
                                     <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--evento">
                                 </div>
                         </fieldset>
-                    </div>
+                    </form>
                         
-                    <div class="formulario__questao formulario__questao--algoMais">
+                    <form class="formulario__questao formulario__questao--algoMais">
                         <label for="algoMais" class="formulario__pergunta formulario__pergunta--campo">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: Roupas de cama: 2</label><br>
                         <input type="text" id="algoMais" name="algoMais" class="formulario__resposta formulario__resposta--texto">
                         <div class="btn__container">
                             <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--algoMais">
                             <input type="submit" value="FAZER AS MALAS" class="btn" id="btn__proximo--algoMais">
                         </div>
-                    </div>
+                    </form>
 
                 </section>                        
-            </form>
+            </div>
 
             <div class="mala categoria">
                 <h2 class="categoria__intro mala__intro">Olá, <text class="mala__nome">viajante</text>! <text class="mala__textoInicial">Preencha o questionário e sua mala será exibida aqui!</text> Nós vamos te ajudar a montar uma mala compacta, porém completa.</h2>
@@ -238,6 +236,6 @@
                 Ilustrações por <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> para <a href="https://icons8.com/illustrations">Ouch!</a>
             </p>
         </footer>
-        <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/teste.js"></script>
     </body>
 </html>
