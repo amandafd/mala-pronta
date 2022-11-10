@@ -264,9 +264,9 @@ footer a:hover {
    }
 
    #formulario__resposta--opcoesVariacao {
-      margin-left: inherit;
+      margin-left: 1.5rem;
       grid-template-columns: 25% 25% 25%;
-      gap: 0 3.5rem;
+      gap: 0 2rem;
    }
 
    #formulario__resposta--opcoesCenario,
@@ -280,6 +280,10 @@ footer a:hover {
    .formulario__questao--algoMais .formulario__resposta--texto {
       margin: 3.1rem 0;
    }
+   .formulario__resposta--labelNumberVarios input {
+      height: 1.5rem;
+      width: 3.5rem;
+   }
 
    #btn__proximo--algoMais {
       font-size: 1.4rem;
@@ -292,7 +296,7 @@ footer a:hover {
 
 @media (max-width: 600px) {
    html {
-       font-size: 16px;
+       font-size: 15px;
    }
 
    .intro {
@@ -305,32 +309,40 @@ footer a:hover {
 
    .formulario__questao {
       min-width: inherit;
-      width: 26rem;
+      width: 25rem;
       font-size: 0.9rem;
    }
 
    .formulario__respostas--variosCampos {
-      gap: inherit;
+      height: 10rem;
+      grid-template-columns: 33% 29% 29%;
+      gap: 0 0.7rem;
    }
 
-   #formulario__resposta--opcoesCenario {
-      margin-left: inherit;
-      gap: inherit
+   .formulario__resposta--opcoes {
+      height: 11rem;
    }
 
+   #formulario__resposta--opcoesVariacao {
+      margin-left: 1.3rem;
+      grid-template-columns: 31% 27% 27%;
+      gap: 0 1.5rem;
+   }
+
+   #formulario__resposta--opcoesCenario,
    #formulario__resposta--opcoesEvento {
-      margin-left: inherit;
-      gap: inherit;
+      margin-left: 1rem;
+      grid-template-columns: 52% 31%;
+      gap: 0 3.8rem;
    }
 
    .formulario__questao--algoMais .formulario__resposta--texto {
-      margin: 2.5rem 0;
+      margin: 2.2rem 0;
    }
 
-   /* 
-   .formulario__resposta--opcoes {
-       gap: 0 2rem;
-   }*/
+   #btn__proximo--algoMais {
+      font-size: 1.2rem;
+   }
 
    footer {
        display: flex;
