@@ -247,17 +247,34 @@ footer a:hover {
    .intro, .formulario, .mala, .dicas {
       width: 30rem;
    }
-   /*.formulario__questao {
-       width: 30rem;
+
+   .formulario__questao {
+      min-width: inherit;
+      width: 30rem;
+      font-size: 0.9rem;
    }
 
-   form {
-      width: 30rem;
+   .formulario__respostas--variosCampos {
+      gap: inherit;
+   }
+
+   #formulario__resposta--opcoesCenario {
+      margin-left: inherit;
+      gap: inherit
+   }
+
+   #formulario__resposta--opcoesEvento {
+      margin-left: inherit;
+      gap: inherit;
+   }
+
+   .formulario__questao--algoMais .formulario__resposta--texto {
+      margin: 3.1rem 0;
    }
    
    footer {
        font-size: 0.7rem;
-   }*/
+   }
 }
 
 @media (max-width: 600px) {
@@ -272,14 +289,35 @@ footer a:hover {
   .intro, .formulario , .mala, .dicas {
    width: 23rem;
    } 
-   /*
-   .formulario__questao {
-       width: 23rem;
-   } 
 
+   .formulario__questao {
+      min-width: inherit;
+      width: 26rem;
+      font-size: 0.9rem;
+   }
+
+   .formulario__respostas--variosCampos {
+      gap: inherit;
+   }
+
+   #formulario__resposta--opcoesCenario {
+      margin-left: inherit;
+      gap: inherit
+   }
+
+   #formulario__resposta--opcoesEvento {
+      margin-left: inherit;
+      gap: inherit;
+   }
+
+   .formulario__questao--algoMais .formulario__resposta--texto {
+      margin: 2.5rem 0;
+   }
+
+   /* 
    .formulario__resposta--opcoes {
        gap: 0 2rem;
-   }
+   }*/
 
    footer {
        display: flex;
@@ -292,7 +330,7 @@ footer a:hover {
 
   .footer__divisao {
    padding: 0.15rem;
-  }*/
+  }
 }
 
 @media (max-width: 440px) {
@@ -308,9 +346,33 @@ footer a:hover {
       margin: 1rem 0;
    }
 
-   /*.formulario__questao {
-       width: 20rem;
-   }*/
+   .formulario__questao {
+      min-width: inherit;
+      width: 22rem;
+      font-size: 0.7rem;
+   }
+
+   .formulario__pergunta {
+      font-size: 1rem;
+   }
+
+   .formulario__respostas--variosCampos {
+      gap: inherit;
+   }
+
+   #formulario__resposta--opcoesCenario {
+      margin-left: inherit;
+      gap: inherit
+   }
+
+   #formulario__resposta--opcoesEvento {
+      margin-left: inherit;
+      gap: inherit;
+   }
+
+   .formulario__questao--algoMais .formulario__resposta--texto {
+      margin: 2.5rem 0;
+   }
 }
 
 @media (max-width: 350px) {
@@ -324,6 +386,34 @@ footer a:hover {
 
    .mala, .dicas {
       margin: 0.5rem 0;
+   }
+
+   .formulario__questao {
+      min-width: inherit;
+      width: 20rem;
+      font-size: 0.7rem;
+   }
+
+   .formulario__pergunta {
+      font-size: 1rem;
+   }
+
+   .formulario__respostas--variosCampos {
+      gap: inherit;
+   }
+
+   #formulario__resposta--opcoesCenario {
+      margin-left: inherit;
+      gap: inherit
+   }
+
+   #formulario__resposta--opcoesEvento {
+      margin-left: inherit;
+      gap: inherit;
+   }
+
+   .formulario__questao--algoMais .formulario__resposta--texto {
+      margin: 2.5rem 0;
    }
    
   /*.formulario__resposta--campo,
