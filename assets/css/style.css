@@ -242,15 +242,22 @@ footer a:hover {
 .footer__ponto {
    padding: 0 2rem;
 }
-/*
+
 @media (max-width: 950px) {
-   .intro, .formulario, .formulario__questao, .mala, .dicas {
+   .intro, .formulario, .mala, .dicas {
+      width: 30rem;
+   }
+   /*.formulario__questao {
        width: 30rem;
+   }
+
+   form {
+      width: 30rem;
    }
    
    footer {
        font-size: 0.7rem;
-   }
+   }*/
 }
 
 @media (max-width: 600px) {
@@ -259,10 +266,14 @@ footer a:hover {
    }
 
    .intro {
-       font-size: 1.2rem;
-   }
+      font-size: 1.2rem;
+  }
 
-   .intro, .formulario__questao, .mala, .dicas {
+  .intro, .formulario , .mala, .dicas {
+   width: 23rem;
+   } 
+   /*
+   .formulario__questao {
        width: 23rem;
    } 
 
@@ -281,7 +292,7 @@ footer a:hover {
 
   .footer__divisao {
    padding: 0.15rem;
-  }
+  }*/
 }
 
 @media (max-width: 440px) {
@@ -289,17 +300,33 @@ footer a:hover {
        font-size: 14px;
    }
 
-   .intro, .formulario__questao, .mala, .dicas {
-       width: 20rem;
+   .intro, .formulario, .mala, .dicas {
+      width: 20rem;
    }
+
+   .mala, .dicas {
+      margin: 1rem 0;
+   }
+
+   /*.formulario__questao {
+       width: 20rem;
+   }*/
 }
 
 @media (max-width: 350px) {
    html {
        font-size: 12px;
    }
+
+   .intro, .formulario, .mala, .dicas {
+      width: 18rem;
+   }
+
+   .mala, .dicas {
+      margin: 0.5rem 0;
+   }
    
-  .formulario__resposta--campo,
+  /*.formulario__resposta--campo,
   .formulario__questao--duracaoTemperatura .formulario__resposta--campo, 
   .formulario__questao--algoMais .formulario__resposta--campo {
    margin: 3rem 0;
@@ -307,5 +334,5 @@ footer a:hover {
 
   .formulario__resposta--opcoes {
    height: 10rem;
-  }
-}*/
+  }*/
+}
