@@ -382,21 +382,28 @@ footer a:hover {
    }
 
    .formulario__respostas--variosCampos {
-      gap: inherit;
+      gap: 0 0.3rem;
+      margin-left: 1.2rem;
    }
 
-   #formulario__resposta--opcoesCenario {
-      margin-left: inherit;
-      gap: inherit
+   .formulario__resposta--labelNumberVarios input {
+      height: 1rem;
+      width: 3.1rem;
    }
 
+   #formulario__resposta--opcoesCenario,
    #formulario__resposta--opcoesEvento {
-      margin-left: inherit;
-      gap: inherit;
+      grid-template-columns: 52% 33%;
+      margin-left: 1rem;
+      gap: 0 2.8rem;
    }
 
    .formulario__questao--algoMais .formulario__resposta--texto {
       margin: 2.5rem 0;
+   }
+
+   #btn__proximo--algoMais {
+      font-size: 1.1rem;
    }
 }
 
