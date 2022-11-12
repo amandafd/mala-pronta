@@ -807,3 +807,42 @@ function verificaVariacaoDeTemperatura() {
 }
 
 verificaVariacaoDeTemperatura();
+
+/*cenario*/
+const formCenario = document.querySelector('.formulario__questao--cenario');
+
+function verificaCenario() {
+    formCenario.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        console.assert.log(e);
+    })
+}
+
+verificaCenario();
+
+/*evento*/
+const formEvento = document.querySelector('.formulario__questao--evento');
+
+function verificaEvento() {
+    formEvento.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        console.assert.log(e);
+    })
+}
+
+verificaEvento();
+
+/*algoMais*/
+const formAlgoMais = document.querySelector('.formulario__questao--algoMais');
+
+function verificaAlgoMais() {
+    formAlgoMais.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        console.assert.log(e);
+    })
+}
+
+verificaAlgoMais();

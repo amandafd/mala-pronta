@@ -807,18 +807,53 @@ function verificaVariacaoDeTemperatura() {
 verificaVariacaoDeTemperatura();
 
 /*duracaoTemperatura*/
+const formDuracaoTemperatura = document.querySelector('.formulario__questao--duracaoTemperatura');
+
+function verificaDuracaoTemperatura() {
+    formDuracaoTemperatura.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        console.assert.log(e);
+    })
+}
+
+verificaDuracaoTemperatura();
 
 /*cenario*/
+const formCenario = document.querySelector('.formulario__questao--cenario');
+
+function verificaCenario() {
+    formCenario.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        console.assert.log(e);
+    })
+}
+
+verificaCenario();
 
 /*evento*/
+const formEvento = document.querySelector('.formulario__questao--evento');
+
+function verificaEvento() {
+    formEvento.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        console.assert.log(e);
+    })
+}
+
+verificaEvento();
 
 /*algoMais*/
+const formAlgoMais = document.querySelector('.formulario__questao--algoMais');
 
-/*---PREENCHENDO A MALA---*/
-/*NOME*/
+function verificaAlgoMais() {
+    formAlgoMais.addEventListener("submit", (e) => {
+        e.preventDefault();
 
+        console.assert.log(e);
+    })
+}
 
-
-
-
-/*--- ---*/
+verificaAlgoMais();
