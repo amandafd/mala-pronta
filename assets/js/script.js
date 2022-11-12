@@ -41,8 +41,8 @@ function adicionaItensFixos() {
 adicionaItensFixos();
 
 /*variacaoDeTemperatura*/
+const formVariacaoTemperatura = document.querySelector('.formulario__questao--variacaoDeTemperatura');
 var variacaoDeTemperatura = document.querySelectorAll('.variacaoDeTemperatura');
-var capturarVariacaoDeTemperatura = document.querySelector('#btn__proximo--variacaoDeTemperatura');
 var variacaoSelecionada = [];
 
 var tecidos = document.querySelector('.mala__item--tecidosSugeridos');
@@ -57,7 +57,9 @@ var tNegativa = document.querySelector('.formulario__reposta--numberVariosNegati
 
 
 function verificaVariacaoDeTemperatura() {
-    capturarVariacaoDeTemperatura.addEventListener('click', function(e) {
+    formVariacaoTemperatura.addEventListener("submit", function(e) {
+        e.preventDefault();
+
         for(var i = 0; i < variacaoDeTemperatura.length; i++) {
             if(variacaoDeTemperatura[i].checked == true) {
                 variacaoSelecionada.push(variacaoDeTemperatura[i].value);
@@ -799,34 +801,18 @@ function verificaVariacaoDeTemperatura() {
         }
         
         mostraTecidosAtivaInput();
-        e.preventDefault();
     });
 }
 
 verificaVariacaoDeTemperatura();
 
 /*duracaoTemperatura*/
-var capturarDuracaoTemperatura = document.querySelector('#btn__proximo--duracaoTemperatura');
-
-/*function verificaDuracaoTemperatura() {
-    capturarDuracaoTemperatura.addEventListener('click', function(e) {
-        if()
-    })
-}*/
-
-/*verificaDuracaoTemperatura();*/
 
 /*cenario*/
 
 /*evento*/
 
 /*algoMais*/
-var algoMais = document.querySelector('#algoMais');
-var capturarAlgoMais = document.querySelector('#btn__proximo--algoMais');
-
-capturarAlgoMais.addEventListener('click', function(e) {
-    alert("Não esqueça seu item extra: " + algoMais.value);
-})
 
 /*---PREENCHENDO A MALA---*/
 /*NOME*/
