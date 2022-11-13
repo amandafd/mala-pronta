@@ -55,7 +55,7 @@ const t25maisDuracao = document.querySelector('#vdt__selecionar--25mais');
 const t20e25Duracao = document.querySelector('#vdt__selecionar--20e25');
 const t15e20Duracao = document.querySelector('#vdt__selecionar--15e20');
 const t10e15Duracao = document.querySelector('#vdt__selecionar--10e15');
-const t5e10Duracao = document.querySelector('.formulario__reposta--numberVarios5e10');
+const t5e10Duracao = document.querySelector('#vdt__selecionar--5e10');
 const t0e5Duracao = document.querySelector('#vdt__selecionar--0e5');
 const tNegativaDuracao = document.querySelector('#vdt__selecionar--negativa');
 
@@ -131,7 +131,7 @@ function verificaAlgoMais() {
     formAlgoMais.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        console.assert.log(e);
+        textoInicialMala.innerHTML = "Tudo certo! Verifique sua mala pronta abaixo.";
     })
 }
 

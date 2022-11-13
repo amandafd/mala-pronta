@@ -31,7 +31,7 @@
 
                     <form class="formulario__questao formulario__questao--text formulario__questao--nome">
                         <label for="nome" class="formulario__pergunta formulario__pergunta--campo">Qual o seu nome?</label><br>
-                        <input type="text" id="nome" name="nome" class="formulario__resposta formulario__resposta--texto" required>
+                        <input type="text" name="nome" id="nome" class="formulario__resposta formulario__resposta--texto" required>
                         <div class="btn__container">
                             <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--nome">
                         </div> 
@@ -39,7 +39,7 @@
 
                     <form class="formulario__questao formulario__questao--duracaoTotal">
                         <label for="duracaoTotal" class="formulario__pergunta formulario__pergunta--campo">Quantos dias vai durar sua viagem?</label><br>
-                        <input type="number" id="duracaoTotal" class="formulario__resposta formulario__resposta--numero" min="1" required>
+                        <input type="number" nome="duracaoTotal" id="duracaoTotal" class="formulario__resposta formulario__resposta--numero" min="1" required>
                         <div class="btn__container">
                             <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTotal">
                             <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTotal">
@@ -80,7 +80,7 @@
                         </fieldset>
                     </form>
 
-                    <form class="formulario__questao">
+                    <form class="formulario__questao formulario__questao--duracaoTemperatura">
                         <fieldset>
                             <legend class="formulario__pergunta" align="center">Coloque o número de dias que a temperatura permanecerá em cada variação:</legend>
                             <div class="formulario__repostas formulario__respostas--variosCampos">
@@ -88,7 +88,7 @@
                                 <label for="vdt__selecionar--20e25" class="formulario__resposta--labelNumberVarios">20ºC e 25ºC<input type="number" id="vdt__selecionar--20e25" class="formulario__reposta--numberVarios formulario__reposta--numberVarios20e25" min="1" disabled></label>
                                 <label for="vdt__selecionar--15e20" class="formulario__resposta--labelNumberVarios">15ºC e 20ºC<input type="number" id="vdt__selecionar--15e20" class="formulario__reposta--numberVarios formulario__reposta--numberVarios15e20" min="1" disabled></label>
                                 <label for="vdt__selecionar--10e15" class="formulario__resposta--labelNumberVarios">10ºC e 15ºC<input type="number" id="vdt__selecionar--10e15" class="formulario__reposta--numberVarios formulario__reposta--numberVarios10e15" min="1" disabled></label>
-                                <label for="vdt__selecionar--10e5" class="formulario__resposta--labelNumberVarios">5ºC e 10ºC<input type="number" id="vdt__selecionar--10e5" class="formulario__reposta--numberVarios formulario__reposta--numberVarios5e10" min="1" disabled></label>
+                                <label for="vdt__selecionar--5e10" class="formulario__resposta--labelNumberVarios">5ºC e 10ºC<input type="number" id="vdt__selecionar--5e10" class="formulario__reposta--numberVarios formulario__reposta--numberVarios5e10" min="1" disabled></label>
                                 <label for="vdt__selecionar--0e5" class="formulario__resposta--labelNumberVarios">0ºC e 5ºC<input type="number" id="vdt__selecionar--0e5" class="formulario__reposta--numberVarios formulario__reposta--numberVarios0e5" min="1" disabled></label>
                                 <label for="vdt__selecionar--negativa" class="formulario__resposta--labelNumberVarios">Abaixo de 0ºC<input type="number" id="vdt__selecionar--negativa" class="formulario__reposta--numberVarios formulario__reposta--numberVariosNegativa" min="1" disabled></label>
                             </div>
@@ -140,7 +140,7 @@
                     </form>
                         
                     <form class="formulario__questao formulario__questao--algoMais">
-                        <label for="algoMais" class="formulario__pergunta formulario__pergunta--campo">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala. Exemplo: Roupas de cama: 2</label><br>
+                        <label for="algoMais" class="formulario__pergunta formulario__pergunta--campo">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala ou digite 0. Exemplo: Roupas de cama: 2</label><br>
                         <input type="text" id="algoMais" name="algoMais" class="formulario__resposta formulario__resposta--texto">
                         <div class="btn__container">
                             <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--algoMais">
@@ -152,7 +152,7 @@
             </div>
 
             <div class="mala categoria">
-                <h2 class="categoria__intro mala__intro">Olá, <text class="mala__nome">viajante</text>! <text class="mala__textoInicial">Preencha o questionário e sua mala será exibida aqui!</text> Nós vamos te ajudar a montar uma mala compacta, porém completa.</h2>
+                <h2 class="categoria__intro mala__intro">Olá, <text class="mala__nome">viajante</text>! <text class="mala__textoInicial">Nós vamos te ajudar a montar uma mala compacta, porém completa: preencha o questionário e sua mala será exibida aqui!</text></h2>
                 <ul class="mala__lista">
                     <li class="categoriaMala mala__item">Tecidos sugeridos: <text class="mala__item--tecidosSugeridos"></text></li>
                     <li class="categoriaMala">
@@ -160,7 +160,7 @@
                         <ul>
                             <li class="mala__item sutia">Sutiã: se usar, a quantidade fica a seu critério</li>
                             <li class="mala__item lingerie">Calcinha/cueca: <text class="mala__item--quantidade quantidade__lingerie"></text></li>
-                            <li class="mala__item pijama">Pijama: <text class="mala__item--quantidade quantidade__pijama"></text></li>
+                            <li class="mala__item pijama">Pijama: no máximo <text class="mala__item--quantidade quantidade__pijama"></text></li>
                             <li class="mala__item ">Vestido<text class="mala__item--tipo tipo__vestido"></text>: <text class="mala__item--quantidade quantidade__"></text></li>
                         </ul>
                     </li>
