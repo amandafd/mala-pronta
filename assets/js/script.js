@@ -55,18 +55,28 @@ const t25maisDuracao = document.querySelector('#vdt__selecionar--25mais');
 const t20e25Duracao = document.querySelector('#vdt__selecionar--20e25');
 const t15e20Duracao = document.querySelector('#vdt__selecionar--15e20');
 const t10e15Duracao = document.querySelector('#vdt__selecionar--10e15');
-const t5e10Duracao = document.querySelector('.formulario__reposta--numberVarios5e10');
+const t5e10Duracao = document.querySelector('#vdt__selecionar--5e10');
 const t0e5Duracao = document.querySelector('#vdt__selecionar--0e5');
 const tNegativaDuracao = document.querySelector('#vdt__selecionar--negativa');
 
+const linho = document.querySelector('.linho');
+const seda = document.querySelector('.seda');
+const cetim = document.querySelector('.cetim');
+const malha = document.querySelector('.malha');
+const jeans = document.querySelector('.jeans');
+const couro = document.querySelector('.couro');
+const veludo = document.querySelector('.veludo');
+const la = document.querySelector('.la');
+const pelagem = document.querySelector('.pelagem');
 
 function verificaVariacaoTemperatura() {
     formVariacaoTemperatura.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        function mostraTecidosAtivaInputs() {
+        function ativaInputs() {
             if(t25mais.checked == true) {
                 t25maisDuracao.disabled = false;
+                
             }
             if(t20e25.checked == true) {
                 t20e25Duracao.disabled = false;
@@ -88,9 +98,40 @@ function verificaVariacaoTemperatura() {
             }
         }
 
-        mostraTecidosAtivaInputs();
+        function mostraTecidos() {
+            if(t25mais.checked == true) {
+             linho.hidden = false;
+             seda.hidden = false; 
+             malha.hidden = false;
+            }
+            if(t20e25.checked == true) {
+                linho.hidden = false;
+                seda.hidden = false;
+                cetim.hidden = false;
+                malha.hidden = false;
+                jeans.hidden = false;
+            }
+            if(t15e20.checked == true) {
+                jeans.hidden = false;
+                couro.hidden = false;
+                veludo.hidden = false;
+            }
+            if(t10e15.checked == true) {
+                jeans.hidden = false;
+                couro.hidden = false;
+                veludo.hidden = false;
+                la.hidden = false;
+            }
+            if(t5e10.checked == true || t0e5.checked == true || tNegativa.checked == true) {
+                jeans.hidden = false;
+                couro.hidden = false;
+                veludo.hidden = false;
+                pelagem.hidden = false;
+            }
+        }
 
-        
+        ativaInputs();
+        mostraTecidos();
     })
 }
 

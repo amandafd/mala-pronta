@@ -114,14 +114,13 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
 
 -----DEFINIÇÃO FINAL DOS ITENS CONTIDOS EM CADA TEMPERATURA----- 
 ----25º ou mais----
-    - Tecidos sugeridos: leves e frescos, preferencialmente de cores claras. algodão, linho, seda,  malha;
     - (1 a cada 5 dias) vestido/jardineira. Caso não use nenhum dos dois, substitua acrescentando mais (1 a cada 5 dias) camiseta/cropped/camisa leve e (0.5 a cada 5 dias) bermuda/short;
     - X camiseta;
     - X cropped/camisa leve;
     - X bermuda/shorts;
     
 ----20º a 25º----
-    - Tecidos sugeridos: algodão, linho, jeans, seda, cetim malha;
+    - Tecidos sugeridos: algodão, linho, jeans, seda, cetim, malha;
     - (1 a cada 5 dias) vestidos/jardineiras. Caso não use nenhum dos dois, substitua acrescentando mais (1 a cada 5 dias) camiseta/cropped/camisa e (0.5 a cada 5 dias) bermudas/shorts/calça;
     - X camiseta;
     - X cropped/camisa leve;
