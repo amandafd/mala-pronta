@@ -82,7 +82,7 @@
 
                     <form class="formulario__questao formulario__questao--duracaoTemperatura">
                         <fieldset>
-                            <legend class="formulario__pergunta" align="center">Coloque o número de dias que a temperatura permanecerá em cada variação:</legend>
+                            <legend class="formulario__pergunta" align="center">Coloque o número de dias que a temperatura permanecerá em cada variação. A soma total dos dias deve ser igual à duração total da viagem:</legend>
                             <div class="formulario__repostas formulario__respostas--variosCampos">
                                 <label for="vdt__selecionar--25mais" class="formulario__resposta--labelNumberVarios">25ºC ou mais<input type="number" id="vdt__selecionar--25mais" class="formulario__reposta--numberVarios formulario__reposta--numberVarios25mais" min="1" disabled></label>
                                 <label for="vdt__selecionar--20e25" class="formulario__resposta--labelNumberVarios">20ºC e 25ºC<input type="number" id="vdt__selecionar--20e25" class="formulario__reposta--numberVarios formulario__reposta--numberVarios20e25" min="1" disabled></label>
@@ -172,23 +172,43 @@
                         <h3 class="categoriaMala__nome">Roupas</h3>
                         <ul>
                             <li class="mala__item sutia">Sutiã: se usar, a quantidade fica a seu critério</li>
-                            <li class="mala__item lingerie">Calcinha/cueca: <text class="mala__item--quantidade quantidade__lingerie"></text></li>
-                            <li class="mala__item pijama">Pijama: no máximo <text class="mala__item--quantidade quantidade__pijama"></text></li>
-                            <li class="mala__item ">Vestido<text class="mala__item--tipo tipo__vestido"></text>: <text class="mala__item--quantidade quantidade__"></text></li>
+                            <li class="mala__item lingerie">Calcinha/cueca: <text class="mala__item--quantidade quantidade__lingerie">0</text></li>
+                            <li class="mala__item meias">Par de meia: <text class="mala__item--quantidade quantidade__meias">0</text></li>
+                            <li class="mala__item pijama">Pijama: no máximo <text class="mala__item--quantidade quantidade__pijama">0</text></li>
+                            <li class="mala__item vestidoMacacao">Vestido/macacão: <text class="mala__item--quantidade quantidade__vestidoMacacao">0</text>. Caso não use, substitua acrescentando mais <text class="mala__item--quantidade quantidade__ptCimSub">0</text> camiseta/camisa/cropped e <text class="mala__item--quantidade quantidade__ptBaixoSub">0</text> partes de baixo</text></li>
+                            <li class="mala__item camisetaMC" hidden>Camiseta manga curta: <text class="mala__item--quantidade quantidade__camisetaMC">0</text></li>
+                            <li class="mala__item camisetaML" hidden>Camiseta manga longa: <text class="mala__item--quantidade quantidade__camisetaML">0</text></li>
+                            <li class="mala__item croppedCamisa">Cropped/camisa: <text class="mala__item--quantidade quantidade__croppedCamisa">0</text></li>
+                            <li class="mala__item bermudaShorts" hidden>Bermuda/shorts: <text class="mala__item--quantidade quantidade__bermudaShorts">0</text></li>
+                            <li class="mala__item calcaTecido">Calça de tecido<text class="tipoCalcaTecido" hidden> leve</text>: <text class="mala__item--quantidade quantidade__calcaTecido">0</text></li>
+                            <li class="mala__item calcaJeans">Calça jeans: <text class="mala__item--quantidade quantidade__calcaJeans">0</text></li>
+                            <li class="mala__item calcaCVL" hidden>Calça de couro, veludo ou lã: <text class="mala__item--quantidade quantidade__calcaCVL">0</text></li>
+                            <li class="mala__item saia">Saia: <text class="mala__item--quantidade quantidade__saia">0</text>. Caso não use, substitua acrescentando mais <text class="mala__item--quantidade quantidade__ptBaixoSub2">0</text> calças<text class="bermudaShortsSub2" hidden> ou shorts/bermudas</text></li>
+                            <li class="mala__item moletom">Moletom: <text class="mala__item--quantidade quantidade__moletom">0</text></li>
+                            <li class="mala__item cardigaSueter" hidden>Cardigã/sueter: <text class="mala__item--quantidade quantidade__cardigaSueter">0</text></li>
+                            <li class="mala__item jaqueta" hidden>Jaqueta: <text class="mala__item--quantidade quantidade__jaqueta">0</text></li>
+                            <li class="mala__item casaco" hidden>Casaco/blazer/parca/sobretudos: <text class="mala__item--quantidade quantidade__casaco">0</text></li>
                         </ul>
                     </li>
                     <li class="categoriaMala">
                         <h3 class="categoriaMala__nome">Calçados</h3>
                         <ul>
-                            <li class="mala__item chinelo">Par de chinelo: <text class="mala__item--quantidade quantidade__chinelo"></text></li>
-                            <li class="mala__item tenis">Par de tênis: <text class="mala__item--quantidade quantidade__tenis"></text></li>
+                            <li class="mala__item chinelo">Par de chinelo: <text class="mala__item--quantidade quantidade__chinelo">0</text></li>
+                            <li class="mala__item sandalia" hidden>Sandália: <text class="mala__item--quantidade quantidade__sandalia">0</text></li>
+                            <li class="mala__item tenis">Par de tênis<text class="bota" hidden> ou bota</text>: <text class="mala__item--quantidade quantidade__tenis">0</text></li>
                         </ul>
                     </li>
                     <li class="categoriaMala">
                         <h3 class="categoriaMala__nome">Acessórios</h3>
                         <ul>
-                            <li class="mala__item oculoDeSol">Óculos de sol: <text class="mala__item--quantidade quantidade__oculosDeSol"></text></li>
-                            <li class="mala__item lenco">Lenço médio/longo: <text class="mala__item--quantidade quantidade__ lenco"></text></li>
+                            <li class="mala__item oculoDeSol">Óculos de sol: <text class="mala__item--quantidade quantidade__oculosDeSol">1</text></li>
+                            <li class="mala__item lenco">Lenço médio/longo: <text class="mala__item--quantidade quantidade__lenco">1</text></li>
+                            <li class="mala__item cachecol" hidden>Cachecol: <text class="mala__item--quantidade quantidade__cachecol">0</text></li>
+                            <li class="mala__item meiaCalcaFina" hidden>Meia calça fina: <text class="mala__item--quantidade quantidade__meiaCalcaFina">0</text></li>
+                            <li class="mala__item meiaCalcaMedia" hidden>Meia calça media: <text class="mala__item--quantidade quantidade__meiaCalcaMedia">0</text></li>
+                            <li class="mala__item meiaCalcaGrossa" hidden>Meia calça grossa: <text class="mala__item--quantidade quantidade__meiaCalcaFina">0</text></li>
+                            <li class="mala__item gorro" hidden>Gorro: <text class="mala__item--quantidade quantidade__gorro">0</text></li>
+                            <li class="mala__item luva" hidden>Luva: <text class="mala__item--quantidade quantidade__luva">0</text></li>
                         </ul>
                     </li>
                     <li class="categoriaMala">

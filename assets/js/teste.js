@@ -16,8 +16,8 @@ mostraNome();
 
 /*CAPTANDO DURAÇÃO TOTAL DA VIAGEM E FAZENDO CALCULOS DOS ITENS COM BASE APENAS NESSA VARIÁVEL*/
 const formDuracaoTotal = document.querySelector('.formulario__questao--duracaoTotal');
-var quantidadeLingerie = document.querySelector('.quantidade__lingerie');
-var quantidadePijama = document.querySelector('.quantidade__pijama');
+const quantidadeLingerie = document.querySelector('.quantidade__lingerie');
+const quantidadePijama = document.querySelector('.quantidade__pijama');
 
 function adicionaItensFixos() {
     formDuracaoTotal.addEventListener("submit", (e) => {
@@ -69,14 +69,34 @@ const veludo = document.querySelector('.veludo');
 const la = document.querySelector('.la');
 const pelagem = document.querySelector('.pelagem');
 
+const camisetaMC = document.querySelector('.camisetaMC');
+const camisetaML = document.querySelector('.camisetaML');
+const croppedCamisa = document.querySelector('.croppedCamisa');
+const bermudaShorts = document.querySelector('.bermudaShorts');
+const calcaCVL = document.querySelector('.calcaCVL');
+const cardigaSueter = document.querySelector('.cardigaSueter');
+const jaqueta = document.querySelector('.jaqueta');
+const casaco = document.querySelector('.casaco');
+const sandalia = document.querySelector('.sandalia');
+const bota = document.querySelector('.bota');
+const meiaCalcaFina = document.querySelector('.meiaCalcaFina');
+const meiaCalcaMedia = document.querySelector('.meiaCalcaMedia');
+const meiaCalcaGrossa = document.querySelector('.meiaCalcaGrossa');
+const gorro = document.querySelector('.gorro');
+const luva = document.querySelector('.luva');
+const cachecol = document.querySelector('.cachecol');
+
+const tipoCalcaTecido = document.querySelector('.tipoCalcaTecido');
+const bermudaShortsSub2 = document.querySelector('.bermudaShortsSub2');
+
+
 function verificaVariacaoTemperatura() {
     formVariacaoTemperatura.addEventListener("submit", (e) => {
         e.preventDefault();
 
         function ativaInputs() {
             if(t25mais.checked == true) {
-                t25maisDuracao.disabled = false;
-                
+                t25maisDuracao.disabled = false;      
             }
             if(t20e25.checked == true) {
                 t20e25Duracao.disabled = false;
@@ -100,9 +120,15 @@ function verificaVariacaoTemperatura() {
 
         function mostraTecidos() {
             if(t25mais.checked == true) {
-             linho.hidden = false;
-             seda.hidden = false; 
-             malha.hidden = false;
+                linho.hidden = false;
+                seda.hidden = false; 
+                malha.hidden = false;
+
+                camisetaMC.hidden = false;
+                bermudaShorts.hidden = false;
+                tipoCalcaTecido.hidden = false;
+                bermudaShortsSub2.hidden = false;
+                sandalia.hidden = false;
             }
             if(t20e25.checked == true) {
                 linho.hidden = false;
@@ -110,23 +136,94 @@ function verificaVariacaoTemperatura() {
                 cetim.hidden = false;
                 malha.hidden = false;
                 jeans.hidden = false;
+
+                camisetaMC.hidden = false;
+                bermudaShorts.hidden = false;
+                tipoCalcaTecido.hidden = false;
+                bermudaShortsSub2.hidden = false;
+                sandalia.hidden = false;
+                meiaCalcaFina.hidden = false;
             }
             if(t15e20.checked == true) {
                 jeans.hidden = false;
                 couro.hidden = false;
                 veludo.hidden = false;
+
+                camisetaMC.hidden = false;
+                camisetaML.hidden = false;
+                cardigaSueter.hidden = false;
+                jaqueta.hidden = false;
+                sandalia.hidden = false;
+                meiaCalcaFina.hidden = false;
+                meiaCalcaMedia.hidden = false;
             }
             if(t10e15.checked == true) {
                 jeans.hidden = false;
                 couro.hidden = false;
                 veludo.hidden = false;
                 la.hidden = false;
+
+                camisetaMC.hidden = false;
+                camisetaML.hidden = false;
+                cardigaSueter.hidden = false;
+                jaqueta.hidden = false;
+                casaco.hidden = false;
+                bota.hidden = false;
+                meiaCalcaMedia.hidden = false;
+                cachecol.hidden = false;
             }
-            if(t5e10.checked == true || t0e5.checked == true || tNegativa.checked == true) {
+            if(t5e10.checked == true ) {
                 jeans.hidden = false;
                 couro.hidden = false;
                 veludo.hidden = false;
                 pelagem.hidden = false;
+
+                camisetaML.hidden = false;
+                calcaCVL.hidden = false;
+                cardigaSueter.hidden = false;
+                jaqueta.hidden = false;
+                casaco.hidden = false;
+                bota.hidden = false;
+                meiaCalcaMedia.hidden = false;
+                meiaCalcaGrossa.hidden = false;
+                gorro.hidden = false;
+                luva.hidden = false;
+                cachecol.hidden = false;
+            }
+            if(t0e5.checked == true) {
+                jeans.hidden = false;
+                couro.hidden = false;
+                veludo.hidden = false;
+                pelagem.hidden = false;
+
+                camisetaML.hidden = false;
+                calcaCVL.hidden = false;
+                cardigaSueter.hidden = false;
+                jaqueta.hidden = false;
+                casaco.hidden = false;
+                bota.hidden = false;
+                meiaCalcaMedia.hidden = false;
+                meiaCalcaGrossa.hidden = false;
+                gorro.hidden = false;
+                luva.hidden = false;
+                cachecol.hidden = false;
+            }
+            if(tNegativa.checked == true) {
+                jeans.hidden = false;
+                couro.hidden = false;
+                veludo.hidden = false;
+                pelagem.hidden = false;
+
+                camisetaML.hidden = false;
+                calcaCVL.hidden = false;
+                cardigaSueter.hidden = false;
+                jaqueta.hidden = false;
+                casaco.hidden = false;
+                bota.hidden = false;
+                meiaCalcaGrossa.hidden = false;
+                gorro.hidden = false;
+                luva.hidden = false;
+                cachecol.hidden = false;
             }
         }
 
