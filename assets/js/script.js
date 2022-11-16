@@ -148,25 +148,32 @@ function verificaVariacaoTemperatura() {
 
         function ativaInputs() {
             if(t25mais.checked == true) {
-                t25maisDuracao.disabled = false;      
+                t25maisDuracao.disabled = false; 
+                t25maisDuracao.required = true;  
             }
             if(t20e25.checked == true) {
                 t20e25Duracao.disabled = false;
+                t20e25Duracao.required = true;  
             }
             if(t15e20.checked == true) {
                 t15e20Duracao.disabled = false;
+                t15e20Duracao.required = true;  
             }
             if(t10e15.checked == true) {
                 t10e15Duracao.disabled = false;
+                t10e15Duracao.required = true;  
             }
             if(t5e10.checked == true) {
                 t5e10Duracao.disabled = false;
+                t5e10Duracao.required = true;  
             }
             if(t0e5.checked == true) {
                 t0e5Duracao.disabled = false;
+                t0e5Duracao.required = true;  
             }
             if(tNegativa.checked == true) {
                 tNegativaDuracao.disabled = false;
+                tNegativaDuracao.required = true;  
             }
         }
 
