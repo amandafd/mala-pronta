@@ -136,7 +136,8 @@ form label {
    justify-content: space-between;
 }
 
-.formulario__resposta--labelNumberVarios input {
+.formulario__resposta--labelNumberVarios input,
+.formulario__reposta--numberVarios {
    height: 2rem;
    width: 5rem;
    padding: 1rem;

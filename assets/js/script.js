@@ -1,27 +1,10 @@
 /*CAPTANDO FORMS*/
-const formVariacaoTemperatura = document.querySelector('.formulario__questao--variacaoDeTemperatura');
-const formDuracaoTemperatura = document.querySelector('.formulario__questao--duracaoTemperatura')
+const formDuracaoTemperatura = document.querySelector('.formulario__questao--duracaoTemperatura');
 const formCenario = document.querySelector('.formulario__questao--cenario');
 const formEvento = document.querySelector('.formulario__questao--evento');
 const formAlgoMais = document.querySelector('.formulario__questao--algoMais');
 
 /*CAPTANDO INPUTS*/
-const t25mais = document.querySelector('#vdt--25mais');
-const t20e25 = document.querySelector('#vdt--20e25');
-const t15e20 = document.querySelector('#vdt--15e20');
-const t10e15 = document.querySelector('#vdt--10e15');
-const t5e10 = document.querySelector('#vdt--5e10');
-const t0e5 = document.querySelector('#vdt--0e5');
-const tNegativa = document.querySelector('#vdt--negativa');
-
-const t25maisDuracao = document.querySelector('#vdt__selecionar--25mais');
-const t20e25Duracao = document.querySelector('#vdt__selecionar--20e25');
-const t15e20Duracao = document.querySelector('#vdt__selecionar--15e20');
-const t10e15Duracao = document.querySelector('#vdt__selecionar--10e15');
-const t5e10Duracao = document.querySelector('#vdt__selecionar--5e10');
-const t0e5Duracao = document.querySelector('#vdt__selecionar--0e5');
-const tNegativaDuracao = document.querySelector('#vdt__selecionar--negativa');
-
 const agua = document.querySelector('#checkbox--agua');
 const neve = document.querySelector('#checkbox--neve');
 const montanha = document.querySelector('#checkbox--montanha');
@@ -105,17 +88,15 @@ const nomeMala = document.querySelectorAll('.mala__nome');
 const textoInicialMala = document.querySelector('.mala__textoInicial');
 
 function mostraNome() {
-    formNome.addEventListener("submit", (e) => {
+    formNome.onsubmit = function(e) {
         e.preventDefault();
     
         for (let i = 0; i < nomeMala.length; i++) {
             nomeMala[i].innerHTML = this.nome.value;
         }
         textoInicialMala.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
-    });
+    }
 }
-
-mostraNome();
 
 /*CAPTANDO DURAÇÃO TOTAL DA VIAGEM E FAZENDO CALCULOS DOS ITENS COM BASE APENAS NESSA VARIÁVEL*/
 const formDuracaoTotal = document.querySelector('.formulario__questao--duracaoTotal');
@@ -123,23 +104,22 @@ const quantidadeLingerie = document.querySelectorAll('.quantidade__lingerie');
 const quantidadePijama = document.querySelector('.quantidade__pijama'); 
 
 function adicionaItensFixos() {
-    formDuracaoTotal.addEventListener("submit", (e) => {
+    formDuracaoTotal.onsubmit = function(e) {
         e.preventDefault();
         
-        const duracaoTotal = parseInt(this.duracaoTotal.value);
         for (let i = 0; i < quantidadeLingerie.length; i++) {
-            if(duracaoTotal < 4) {
-                quantidadeLingerie[i].innerHTML = duracaoTotal + 2;
+            if(this.duracaoTotal.value < 4) {
+                quantidadeLingerie[i].innerHTML = parseInt(this.duracaoTotal.value) + 2;
                 quantidadePijama.innerHTML = 1;
-            } else if (duracaoTotal < 15) {
-                quantidadeLingerie[i].innerHTML = duracaoTotal + 2;
-                quantidadePijama.innerHTML = parseInt(duracaoTotal / 2);    
+            } else if (this.duracaoTotal.value < 15) {
+                quantidadeLingerie[i].innerHTML = parseInt(this.duracaoTotal.value) + 2;
+                quantidadePijama.innerHTML = parseInt(this.duracaoTotal.value) / 2;    
             } else {
                 quantidadePijama.innerHTML = 5;
                 quantidadeLingerie[i].innerHTML = 18;
             }
         }
-    })
+    }
 }
 
 adicionaItensFixos();
@@ -147,36 +127,47 @@ adicionaItensFixos();
 
 
 /*CAPTANDO VARIAÇÔES DE TEMPERATURA SELECIONADAS*/
+
+const formVariacaoTemperatura = document.querySelector('.formulario__questao--variacaoDeTemperatura');
+
+const t25maisDuracao = document.querySelector('#vdt__selecionar--25mais');
+const t20e25Duracao = document.querySelector('#vdt__selecionar--20e25');
+const t15e20Duracao = document.querySelector('#vdt__selecionar--15e20');
+const t10e15Duracao = document.querySelector('#vdt__selecionar--10e15');
+const t5e10Duracao = document.querySelector('#vdt__selecionar--5e10');
+const t0e5Duracao = document.querySelector('#vdt__selecionar--0e5');
+const tNegativaDuracao = document.querySelector('#vdt__selecionar--negativa');
+
 function verificaVariacaoTemperatura() {
-    formVariacaoTemperatura.addEventListener("submit", (e) => {
+    formVariacaoTemperatura.onsubmit = function(e) {
         e.preventDefault();
 
         function ativaInputs() {
-            if(t25mais.checked == true) {
-                t25maisDuracao.disabled = false; 
-                t25maisDuracao.required = true;  
+            if(e.target[1].checked == true){
+                t25maisDuracao.disabled = false;
+                t25maisDuracao.required = true;
             }
-            if(t20e25.checked == true) {
+            if(e.target[2].checked == true) {
                 t20e25Duracao.disabled = false;
                 t20e25Duracao.required = true;  
             }
-            if(t15e20.checked == true) {
+            if(e.target[3].checked == true) {
                 t15e20Duracao.disabled = false;
                 t15e20Duracao.required = true;  
             }
-            if(t10e15.checked == true) {
+            if(e.target[4].checked == true) {
                 t10e15Duracao.disabled = false;
                 t10e15Duracao.required = true;  
             }
-            if(t5e10.checked == true) {
+            if(e.target[4].checked== true) {
                 t5e10Duracao.disabled = false;
                 t5e10Duracao.required = true;  
             }
-            if(t0e5.checked == true) {
+            if(e.target[5].checked == true) {
                 t0e5Duracao.disabled = false;
                 t0e5Duracao.required = true;  
             }
-            if(tNegativa.checked == true) {
+            if(e.target[6].checked == true) {
                 tNegativaDuracao.disabled = false;
                 tNegativaDuracao.required = true;  
             }
@@ -290,10 +281,9 @@ function verificaVariacaoTemperatura() {
                 cachecol.hidden = false;
             }
         }
-
         ativaInputs();
         mostraTecidos();
-    })
+    }
 }
 
 verificaVariacaoTemperatura();
