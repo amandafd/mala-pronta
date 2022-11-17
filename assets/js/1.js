@@ -1,5 +1,4 @@
 /*CAPTANDO FORMS*/
-const formNome = document.querySelector('.formulario__questao--nome');
 const formDuracaoTotal = document.querySelector('.formulario__questao--duracaoTotal');
 const formVariacaoTemperatura = document.querySelector('.formulario__questao--variacaoDeTemperatura');
 const formDuracaoTemperatura = document.querySelector('.formulario__questao--duracaoTemperatura')
@@ -67,10 +66,6 @@ const meiaCalcaGrossa = document.querySelector('.meiaCalcaGrossa');
 const gorro = document.querySelector('.gorro'); 
 const luva = document.querySelector('.luva'); 
 
-/*CAPTANDO TEXTO QUE SERÃO SUBSTITUIDO*/
-const nomeMala = document.querySelector('.mala__nome');
-const textoInicialMala = document.querySelector('.mala__textoInicial');
-
 /*CAPTANDO QUANTIDADE DE ITENS*/
 const quantidadeLingerie = document.querySelector('.quantidade__lingerie'); 
 const quantidadeMeia = document.querySelector('.quantidade__meia'); 
@@ -106,33 +101,6 @@ const quantidadeLuva = document.querySelector('.quantidade__luva');
 
 const quantidadeToalhaBanho = document.querySelector('.quantidade__toalhaBanho'); 
 const quantidadeToalhaPiscina = document.querySelector('.quantidade__toalhaPiscina'); 
-
-
-/*CAPTANDO NOME*/ 
-/*function mostraNome() {
-    formNome.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        nomeMala.innerHTML = e.target.elements['nome'].value
-        textoInicialMala.innerHTML = "Continue preenchendo o questionário para completar sua mala."
-    });
-}
-
-mostraNome();*/
-
-formNome.onsubmit = function(e) {
-    e.preventDefault()
-    
-    nomeMala.innerHTML = "Amandinha";
-}
-/*formNome.onsubmit = function(e) {
-    e.preventDefault();
-
-    console.log(this.nome.value);
-
-    nomeMala.innerHTML = {nome: this.nome.value};
-    textoInicialMala.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
-}*/
 
 /*CAPTANDO DURAÇÃO TOTAL DA VIAGEM E FAZENDO CALCULOS DOS ITENS COM BASE APENAS NESSA VARIÁVEL*/
 function adicionaItensFixos() {

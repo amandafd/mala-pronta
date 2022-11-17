@@ -1,5 +1,4 @@
 /*CAPTANDO FORMS*/
-const formDuracaoTotal = document.querySelector('.formulario__questao--duracaoTotal');
 const formVariacaoTemperatura = document.querySelector('.formulario__questao--variacaoDeTemperatura');
 const formDuracaoTemperatura = document.querySelector('.formulario__questao--duracaoTemperatura')
 const formCenario = document.querySelector('.formulario__questao--cenario');
@@ -66,10 +65,7 @@ const meiaCalcaGrossa = document.querySelector('.meiaCalcaGrossa');
 const gorro = document.querySelector('.gorro'); 
 const luva = document.querySelector('.luva'); 
 
-/*CAPTANDO QUANTIDADE DE ITENS*/
-const quantidadeLingerie = document.querySelector('.quantidade__lingerie'); 
-const quantidadeMeia = document.querySelector('.quantidade__meia'); 
-const quantidadePijama = document.querySelector('.quantidade__pijama'); 
+/*CAPTANDO QUANTIDADE DE ITENS*/ 
 const quantidadeVestidoMacacao = document.querySelector('.quantidade__vestidoMacacao'); 
 const quantidadePtCimaSubV = document.querySelector('.quantidade__ptCimaSub'); 
 const quantidadePtBaixoSubV = document.querySelector('.quantidade__ptBaixoSub'); 
@@ -105,7 +101,6 @@ const quantidadeToalhaPiscina = document.querySelector('.quantidade__toalhaPisci
 
 /*CAPTANDO NOME*/ 
 const formNome = document.querySelector('.formulario__questao--nome');
-
 const nomeMala = document.querySelectorAll('.mala__nome');
 const textoInicialMala = document.querySelector('.mala__textoInicial');
 
@@ -123,26 +118,33 @@ function mostraNome() {
 mostraNome();
 
 /*CAPTANDO DURAÇÃO TOTAL DA VIAGEM E FAZENDO CALCULOS DOS ITENS COM BASE APENAS NESSA VARIÁVEL*/
+const formDuracaoTotal = document.querySelector('.formulario__questao--duracaoTotal');
+const quantidadeLingerie = document.querySelectorAll('.quantidade__lingerie'); 
+const quantidadePijama = document.querySelector('.quantidade__pijama'); 
+
 function adicionaItensFixos() {
     formDuracaoTotal.addEventListener("submit", (e) => {
         e.preventDefault();
         
-        const duracaoTotal = parseInt(e.target.elements['duracaoTotal'].value);
-        
-        if(duracaoTotal < 4) {
-            quantidadeLingerie.innerHTML = duracaoTotal + 2;
-            quantidadePijama.innerHTML = 1;
-        } else if (duracaoTotal < 15) {
-            quantidadeLingerie.innerHTML = duracaoTotal + 2;
-            quantidadePijama.innerHTML = parseInt(duracaoTotal / 2);    
-        } else {
-            quantidadePijama.innerHTML = 5;
-            quantidadeLingerie.innerHTML = 18;
+        const duracaoTotal = parseInt(this.duracaoTotal.value);
+        for (let i = 0; i < quantidadeLingerie.length; i++) {
+            if(duracaoTotal < 4) {
+                quantidadeLingerie[i].innerHTML = duracaoTotal + 2;
+                quantidadePijama.innerHTML = 1;
+            } else if (duracaoTotal < 15) {
+                quantidadeLingerie[i].innerHTML = duracaoTotal + 2;
+                quantidadePijama.innerHTML = parseInt(duracaoTotal / 2);    
+            } else {
+                quantidadePijama.innerHTML = 5;
+                quantidadeLingerie[i].innerHTML = 18;
+            }
         }
     })
 }
 
 adicionaItensFixos();
+
+
 
 /*CAPTANDO VARIAÇÔES DE TEMPERATURA SELECIONADAS*/
 function verificaVariacaoTemperatura() {
