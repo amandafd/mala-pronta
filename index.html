@@ -99,7 +99,7 @@
                         </fieldset>
                     </form>
 
-                    <!--<form class="formulario__questao formulario__questao--cenario">
+                    <form class="formulario__questao formulario__questao--cenario" action="submit">
                         <fieldset>
                             <legend class="formulario__pergunta" align="center">Selecione quais os cenários estão presentes na sua viagem:</legend>
                             <div class="formulario__resposta formulario__resposta--opcoes" id="formulario__resposta--opcoesCenario">
@@ -123,7 +123,7 @@
                         </fieldset>
                     </form>
 
-                    <form class="formulario__questao formulario__questao--evento">
+                    <form class="formulario__questao formulario__questao--evento" action="submit">
                         <fieldset>
                             <legend class="formulario__pergunta" align="center">Você comparecerá a algum evento durante a sua viagem?</legend>
                                 <div class="formulario__resposta formulario__resposta--opcoes" id="formulario__resposta--opcoesEvento">
@@ -139,7 +139,7 @@
                         </fieldset>
                     </form>
                         
-                    <form class="formulario__questao formulario__questao--algoMais">
+                    <form class="formulario__questao formulario__questao--algoMais" action="submit">
                         <label for="algoMais" class="formulario__pergunta formulario__pergunta--campo">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala ou digite 0. Exemplo: Roupas de cama: 2</label><br>
                         <input type="text" id="algoMais" name="algoMais" class="formulario__resposta formulario__resposta--texto">
                         <div class="btn__container">
@@ -156,16 +156,16 @@
                 <ul class="mala__lista">
                     <li class="categoriaMala mala__item">Tecidos sugeridos: 
                         <ul>
-                            <li class="algodao">algodão</li>
-                            <li class="linho" hidden>linho</li>
-                            <li class="seda" hidden>seda</li>
-                            <li class="cetim" hidden>cetim</li>
-                            <li class="malha" hidden>malha</li>
-                            <li class="jeans" hidden>jeans</li>
-                            <li class="couro" hidden>couro</li>
-                            <li class="veludo" hidden>veludo</li>
-                            <li class="la" hidden>lã</li>
-                            <li class="pelagem" hidden>pelagem</li>
+                            <li class="algodao tecido">algodão</li>
+                            <li class="linho tecido tecido25mais tecido20e25" hidden>linho</li>
+                            <li class="seda tecido tecido25mais tecido20e25" hidden>seda</li>
+                            <li class="cetim tecido tecido20e25" hidden>cetim</li>
+                            <li class="malha tecido tecido25mais tecido20e25" hidden>malha</li>
+                            <li class="jeans tecido tecido20e25 tecido15e20 tecido10e15 tecidoMenosDe10" hidden>jeans</li>
+                            <li class="couro tecido tecido15e20 tecido10e15 tecidoMenosDe10" hidden>couro</li>
+                            <li class="veludo tecido tecido15e20 tecido10e15 tecidoMenosDe10" hidden>veludo</li>
+                            <li class="la tecido tecido10e15 tecidoMenosDe10" hidden>lã</li>
+                            <li class="pelagem tecido tecidoMenosDe10" hidden>pelagem</li>
                         </ul>
                     </li>
                     <li class="categoriaMala">
@@ -173,7 +173,7 @@
                         <ul>
                             <li class="mala__item sutia">Sutiã: se usar, a quantidade fica a seu critério</li>
                             <li class="mala__item lingerie">Calcinha/cueca: <text class="mala__item--quantidade quantidade__lingerie">1</text></li>
-                            <li class="mala__item meias">Par de meia: <text class="mala__item--quantidade quantidade__lingerie">1</text></li>
+                            <li class="mala__item meias">Par de meias: <text class="mala__item--quantidade quantidade__lingerie">1</text></li>
                             <li class="mala__item pijama">Pijama: no máximo <text class="mala__item--quantidade quantidade__pijama">1</text></li>
                             <li class="mala__item vestidoMacacao">Vestido/macacão: <text class="mala__item--quantidade quantidade__vestidoMacacao">1</text>. Caso não use, substitua acrescentando mais <text class="mala__item--quantidade quantidade__ptCimSubV">1</text> camiseta/camisa/cropped e <text class="mala__item--quantidade quantidade__ptBaixoSubV">1</text> partes de baixo</text></li>
                             <li class="mala__item camisetaMC" hidden>Camiseta manga curta: <text class="mala__item--quantidade quantidade__camisetaMC">1</text></li>
