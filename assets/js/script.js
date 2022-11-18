@@ -82,48 +82,6 @@ const quantidadeToalhaBanho = document.querySelector('.quantidade__toalhaBanho')
 const quantidadeToalhaPiscina = document.querySelector('.quantidade__toalhaPiscina'); 
 
 
-/*CAPTANDO NOME*/ 
-const formNome = document.querySelector('.formulario__questao--nome');
-const nomeMala = document.querySelectorAll('.mala__nome');
-const textoInicialMala = document.querySelector('.mala__textoInicial');
-
-function mostraNome() {
-    formNome.onsubmit = function(e) {
-        e.preventDefault();
-    
-        for (let i = 0; i < nomeMala.length; i++) {
-            nomeMala[i].innerHTML = this.nome.value;
-        }
-        textoInicialMala.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
-    }
-}
-
-/*CAPTANDO DURAÇÃO TOTAL DA VIAGEM E FAZENDO CALCULOS DOS ITENS COM BASE APENAS NESSA VARIÁVEL*/
-const formDuracaoTotal = document.querySelector('.formulario__questao--duracaoTotal');
-const quantidadeLingerie = document.querySelectorAll('.quantidade__lingerie'); 
-const quantidadePijama = document.querySelector('.quantidade__pijama'); 
-
-function adicionaItensFixos() {
-    formDuracaoTotal.onsubmit = function(e) {
-        e.preventDefault();
-        
-        for (let i = 0; i < quantidadeLingerie.length; i++) {
-            if(this.duracaoTotal.value < 4) {
-                quantidadeLingerie[i].innerHTML = parseInt(this.duracaoTotal.value) + 2;
-                quantidadePijama.innerHTML = 1;
-            } else if (this.duracaoTotal.value < 15) {
-                quantidadeLingerie[i].innerHTML = parseInt(this.duracaoTotal.value) + 2;
-                quantidadePijama.innerHTML = parseInt(this.duracaoTotal.value) / 2;    
-            } else {
-                quantidadePijama.innerHTML = 5;
-                quantidadeLingerie[i].innerHTML = 18;
-            }
-        }
-    }
-}
-
-adicionaItensFixos();
-
 
 
 /*CAPTANDO VARIAÇÔES DE TEMPERATURA SELECIONADAS*/
@@ -207,10 +165,16 @@ function verificaVariacaoTemperatura() {
 
 verificaVariacaoTemperatura();
 
+/*CAPTANDO DURAÇÂO DAS VARIAÇÔES DE TEMPERATURA*/
+const formDuracaoTemperatura = document.querySelector('.formulario__questao--duracaoTemperatura')
 
+function verificaDuracaoVariacaoTemperatura() {
+    formDuracaoTemperatura.onsubmit = function(e) {
+        e.preventDefault();
 
-
-/**/ 
+        /*console.log(this.duracao__25mais.value);*/
+    }
+}
 
 /*cenario*/
 function verificaCenario() {

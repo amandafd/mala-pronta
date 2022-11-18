@@ -122,3 +122,14 @@ function verificaVariacaoTemperatura() {
 }
 
 verificaVariacaoTemperatura();
+
+/*CAPTANDO DURAÇÂO DAS VARIAÇÔES DE TEMPERATURA*/
+const formDuracaoTemperatura = document.querySelector('.formulario__questao--duracaoTemperatura')
+
+function verificaDuracaoVariacaoTemperatura() {
+    formDuracaoTemperatura.onsubmit = function(e) {
+        e.preventDefault();
+
+        /*console.log(this.duracao__25mais.value);*/
+    }
+}
