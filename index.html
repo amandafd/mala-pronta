@@ -84,13 +84,13 @@
                         <fieldset>
                             <legend class="formulario__pergunta" align="center">Coloque o número de dias que a temperatura permanecerá em cada variação. A soma total dos dias deve ser igual à duração total da viagem:</legend>
                             <div class="formulario__repostas formulario__respostas--variosCampos">
-                                <label for="vdt__selecionar--25mais" class="formulario__resposta--labelNumberVarios">25ºC ou mais<input type="number" id="vdt__selecionar--25mais" class="formulario__reposta--numberVarios formulario__reposta--numberVarios25mais" min="1" disabled></label>
-                                <label for="vdt__selecionar--20e25" class="formulario__resposta--labelNumberVarios">20ºC e 25ºC<input type="number" id="vdt__selecionar--20e25" class="formulario__reposta--numberVarios formulario__reposta--numberVarios20e25" min="1" disabled></label>
-                                <label for="vdt__selecionar--15e20" class="formulario__resposta--labelNumberVarios">15ºC e 20ºC<input type="number" id="vdt__selecionar--15e20" class="formulario__reposta--numberVarios formulario__reposta--numberVarios15e20" min="1" disabled></label>
-                                <label for="vdt__selecionar--10e15" class="formulario__resposta--labelNumberVarios">10ºC e 15ºC<input type="number" id="vdt__selecionar--10e15" class="formulario__reposta--numberVarios formulario__reposta--numberVarios10e15" min="1" disabled></label>
-                                <label for="vdt__selecionar--5e10" class="formulario__resposta--labelNumberVarios">5ºC e 10ºC<input type="number" id="vdt__selecionar--5e10" class="formulario__reposta--numberVarios formulario__reposta--numberVarios5e10" min="1" disabled></label>
-                                <label for="vdt__selecionar--0e5" class="formulario__resposta--labelNumberVarios">0ºC e 5ºC<input type="number" id="vdt__selecionar--0e5" class="formulario__reposta--numberVarios formulario__reposta--numberVarios0e5" min="1" disabled></label>
-                                <label for="vdt__selecionar--negativa" class="formulario__resposta--labelNumberVarios">Abaixo de 0ºC<input type="number" id="vdt__selecionar--negativa" class="formulario__reposta--numberVarios formulario__reposta--numberVariosNegativa" min="1" disabled></label>
+                                <label for="vdt__selecionar--25mais" class="formulario__resposta--labelNumberVarios">25ºC ou mais<input type="number" id="vdt__selecionar--25mais" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
+                                <label for="vdt__selecionar--20e25" class="formulario__resposta--labelNumberVarios">20ºC e 25ºC<input type="number" id="vdt__selecionar--20e25" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
+                                <label for="vdt__selecionar--15e20" class="formulario__resposta--labelNumberVarios">15ºC e 20ºC<input type="number" id="vdt__selecionar--15e20" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
+                                <label for="vdt__selecionar--10e15" class="formulario__resposta--labelNumberVarios">10ºC e 15ºC<input type="number" id="vdt__selecionar--10e15" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
+                                <label for="vdt__selecionar--5e10" class="formulario__resposta--labelNumberVarios">5ºC e 10ºC<input type="number" id="vdt__selecionar--5e10" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
+                                <label for="vdt__selecionar--0e5" class="formulario__resposta--labelNumberVarios">0ºC e 5ºC<input type="number" id="vdt__selecionar--0e5" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
+                                <label for="vdt__selecionar--negativa" class="formulario__resposta--labelNumberVarios">Abaixo de 0ºC<input type="number" id="vdt__selecionar--negativa" class="formulario__reposta--numberVarios  duracaoTemperatura" min="1" disabled></label>
                             </div>
                             <div class="btn__container">
                                 <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTemperatura">
@@ -156,59 +156,59 @@
                 <ul class="mala__lista">
                     <li class="categoriaMala mala__item">Tecidos sugeridos: 
                         <ul>
-                            <li class="algodao tecido">algodão</li>
-                            <li class="linho tecido tecido25mais tecido20e25" hidden>linho</li>
-                            <li class="seda tecido tecido25mais tecido20e25" hidden>seda</li>
-                            <li class="cetim tecido tecido20e25" hidden>cetim</li>
-                            <li class="malha tecido tecido25mais tecido20e25" hidden>malha</li>
-                            <li class="jeans tecido tecido20e25 tecido15e20 tecido10e15 tecidoMenosDe10" hidden>jeans</li>
-                            <li class="couro tecido tecido15e20 tecido10e15 tecidoMenosDe10" hidden>couro</li>
-                            <li class="veludo tecido tecido15e20 tecido10e15 tecidoMenosDe10" hidden>veludo</li>
-                            <li class="la tecido tecido10e15 tecidoMenosDe10" hidden>lã</li>
-                            <li class="pelagem tecido tecidoMenosDe10" hidden>pelagem</li>
+                            <li class="algodao">algodão</li>
+                            <li class="linho roupa25mais roupa20e25" hidden>linho</li>
+                            <li class="seda roupa25mais roupa20e25" hidden>seda</li>
+                            <li class="cetim roupa20e25" hidden>cetim</li>
+                            <li class="malha roupa25mais roupa20e25" hidden>malha</li>
+                            <li class="jeans roupa20e25 roupa15e20 tecido10e15 tecidoMenosDe10" hidden>jeans</li>
+                            <li class="couro roupa15e20 tecido10e15 tecidoMenosDe10" hidden>couro</li>
+                            <li class="veludo roupa15e20 tecido10e15 tecidoMenosDe10" hidden>veludo</li>
+                            <li class="la tecido10e15 tecidoMenosDe10" hidden>lã</li>
+                            <li class="pelagem tecidoMenosDe10" hidden>pelagem</li>
                         </ul>
                     </li>
                     <li class="categoriaMala">
                         <h3 class="categoriaMala__nome">Roupas</h3>
                         <ul>
-                            <li class="mala__item sutia">Sutiã: se usar, a quantidade fica a seu critério</li>
-                            <li class="mala__item lingerie">Calcinha/cueca: <text class="mala__item--quantidade quantidade__lingerie">1</text></li>
-                            <li class="mala__item meias">Par de meias: <text class="mala__item--quantidade quantidade__lingerie">1</text></li>
-                            <li class="mala__item pijama">Pijama: no máximo <text class="mala__item--quantidade quantidade__pijama">1</text></li>
-                            <li class="mala__item vestidoMacacao">Vestido/macacão: <text class="mala__item--quantidade quantidade__vestidoMacacao">1</text>. Caso não use, substitua acrescentando mais <text class="mala__item--quantidade quantidade__ptCimSubV">1</text> camiseta/camisa/cropped e <text class="mala__item--quantidade quantidade__ptBaixoSubV">1</text> partes de baixo</text></li>
-                            <li class="mala__item camisetaMC" hidden>Camiseta manga curta: <text class="mala__item--quantidade quantidade__camisetaMC">1</text></li>
-                            <li class="mala__item camisetaML" hidden>Camiseta manga longa: <text class="mala__item--quantidade quantidade__camisetaML">1</text></li>
+                            <li class="mala__item">Sutiã: se usar, a quantidade fica a seu critério</li>
+                            <li class="mala__item">Calcinha/cueca: <text class="mala__item--quantidade quantidade__lingerie">1</text></li>
+                            <li class="mala__item">Par de meias: <text class="mala__item--quantidade quantidade__lingerie">1</text></li>
+                            <li class="mala__item">Pijama: no máximo <text class="mala__item--quantidade quantidade__pijama">1</text></li>
+                            <li class="mala__item">Vestido/macacão: <text class="mala__item--quantidade quantidade__vestidoMacacao">1</text>. Caso não use, substitua acrescentando mais <text class="mala__item--quantidade quantidade__ptCimSubV">1</text> camiseta/camisa/cropped e <text class="mala__item--quantidade quantidade__ptBaixoSubV">1</text> partes de baixo</text></li>
+                            <li class="mala__item roupas25mais roupa20e25 roupa15e20 roupa10e15" hidden>Camiseta manga curta: <text class="mala__item--quantidade quantidade__camisetaMC">1</text></li>
+                            <li class="mala__item roupa15e20 roupa10e15 roupaMenosDe10" hidden>Camiseta manga longa: <text class="mala__item--quantidade quantidade__camisetaML">1</text></li>
                             <li class="mala__item camisa">Cropped/camisa: <text class="mala__item--quantidade quantidade__camisa">1</text></li>
-                            <li class="mala__item shorts" hidden>Bermuda/shorts: <text class="mala__item--quantidade quantidade__shorts">1</text></li>
-                            <li class="mala__item calcaTecido">Calça de tecido<text class="tipoCalcaTecido" hidden> leve</text>: <text class="mala__item--quantidade quantidade__calcaTecido">1</text></li>
+                            <li class="mala__item shorts roupas25mais roupa20e25" hidden>Bermuda/shorts: <text class="mala__item--quantidade quantidade__shorts">1</text></li>
+                            <li class="mala__item calcaTecido">Calça de tecido<text class="tipoCalcaTecido roupas25mais roupa20e25" hidden> leve</text>: <text class="mala__item--quantidade quantidade__calcaTecido">1</text></li>
                             <li class="mala__item calcaJeans">Calça jeans: <text class="mala__item--quantidade quantidade__calcaJeans">1</text></li>
-                            <li class="mala__item calcaCVL" hidden>Calça de couro, veludo ou lã: <text class="mala__item--quantidade quantidade__calcaCVL">1</text></li>
-                            <li class="mala__item saia">Saia: <text class="mala__item--quantidade quantidade__saia">1</text>. Caso não use, substitua acrescentando mais <text class="mala__item--quantidade quantidade__ptBaixoSubS">1</text> calças<text class="shortsSubS" hidden> ou shorts/bermudas</text></li>
+                            <li class="mala__item roupaMenosDe10" hidden>Calça de couro, veludo ou lã: <text class="mala__item--quantidade quantidade__calcaCVL">1</text></li>
+                            <li class="mala__item saia">Saia: <text class="mala__item--quantidade quantidade__saia">1</text>. Caso não use, substitua acrescentando mais <text class="mala__item--quantidade quantidade__ptBaixoSubS">1</text> calças<text class="shortsSubS roupas25mais roupa20e25" hidden> ou shorts/bermudas</text></li>
                             <li class="mala__item moletom">Moletom: <text class="mala__item--quantidade quantidade__moletom">1</text></li>
-                            <li class="mala__item cardiga" hidden>Cardigã/sueter: <text class="mala__item--quantidade quantidade__cardiga">1</text></li>
-                            <li class="mala__item jaqueta" hidden>Jaqueta: <text class="mala__item--quantidade quantidade__jaqueta">1</text></li>
-                            <li class="mala__item casaco" hidden>Casaco/blazer/parca/sobretudos: <text class="mala__item--quantidade quantidade__casaco">1</text></li>
+                            <li class="mala__item cardiga roupa15e20 roupa10e15 roupaMenosDe10" hidden>Cardigã/sueter: <text class="mala__item--quantidade quantidade__cardiga">1</text></li>
+                            <li class="mala__item jaqueta roupa15e20 roupa10e15 roupaMenosDe10" hidden>Jaqueta: <text class="mala__item--quantidade quantidade__jaqueta">1</text></li>
+                            <li class="mala__item casaco roupa10e15 roupaMenosDe10" hidden>Casaco/blazer/parca/sobretudos: <text class="mala__item--quantidade quantidade__casaco">1</text></li>
                         </ul>
                     </li>
                     <li class="categoriaMala">
                         <h3 class="categoriaMala__nome">Calçados</h3>
                         <ul>
-                            <li class="mala__item chinelo">Par de chinelo: <text class="mala__item--quantidade quantidade__chinelo">1</text></li>
-                            <li class="mala__item sandalia" hidden>Sandália: <text class="mala__item--quantidade quantidade__sandalia">1</text></li>
-                            <li class="mala__item tenis">Par de tênis<text class="bota" hidden> ou bota</text>: <text class="mala__item--quantidade quantidade__tenis">1</text></li>
+                            <li class="mala__item chinelo">Chinelo: <text class="mala__item--quantidade quantidade__chinelo">1</text></li>
+                            <li class="mala__item sandalia roupas25mais roupa20e25" hidden>Sandália: <text class="mala__item--quantidade quantidade__sandalia">1</text></li>
+                            <li class="mala__item tenis">Tênis<text class="bota roupa15e20 roupa10e15 roupaMenosDe10" hidden> ou bota</text>: <text class="mala__item--quantidade quantidade__tenis">1</text></li>
                         </ul>
                     </li>
                     <li class="categoriaMala">
                         <h3 class="categoriaMala__nome">Acessórios</h3>
                         <ul>
                             <li class="mala__item oculoDeSol">Óculos de sol: <text class="mala__item--quantidade quantidade__oculosDeSol">1</text></li>
-                            <li class="mala__item lenco">Lenço médio/longo: <text class="mala__item--quantidade quantidade__lenco">1</text></li>
-                            <li class="mala__item cachecol" hidden>Cachecol: <text class="mala__item--quantidade quantidade__cachecol">1</text></li>
-                            <li class="mala__item meiaCalcaFina" hidden>Meia calça fina: <text class="mala__item--quantidade quantidade__meiaCalcaFina">1</text></li>
-                            <li class="mala__item meiaCalcaMedia" hidden>Meia calça media: <text class="mala__item--quantidade quantidade__meiaCalcaMedia">1</text></li>
-                            <li class="mala__item meiaCalcaGrossa" hidden>Meia calça grossa: <text class="mala__item--quantidade quantidade__meiaCalcaFina">1</text></li>
-                            <li class="mala__item gorro" hidden>Gorro: <text class="mala__item--quantidade quantidade__gorro">1</text></li>
-                            <li class="mala__item luva" hidden>Luva: <text class="mala__item--quantidade quantidade__luva">1</text></li>
+                            <li class="mala__item">Lenço médio/longo: <text class="mala__item--quantidade quantidade__lenco">1</text></li>
+                            <li class="mala__item roupa10e15 roupaMenosDe10" hidden>Cachecol: <text class="mala__item--quantidade quantidade__cachecol">1</text></li>
+                            <li class="mala__item roupa20e25" hidden>Meia calça fina: <text class="mala__item--quantidade quantidade__meiaCalcaFina roupa15e20">1</text></li>
+                            <li class="mala__item meiaCalcaMedia roupa15e20 roupa10e15 roupaMenosDe10" hidden>Meia calça media: <text class="mala__item--quantidade quantidade__meiaCalcaMedia">1</text></li>
+                            <li class="mala__item meiaCalcaGrossa roupaMenosDe10" hidden>Meia calça grossa: <text class="mala__item--quantidade quantidade__meiaCalcaFina">1</text></li>
+                            <li class="mala__item roupaMenosDe10" hidden>Gorro: <text class="mala__item--quantidade quantidade__gorro">1</text></li>
+                            <li class="mala__item roupaMenosDe10" hidden>Luva: <text class="mala__item--quantidade quantidade__luva">1</text></li>
                         </ul>
                     </li>
                     <li class="categoriaMala">
