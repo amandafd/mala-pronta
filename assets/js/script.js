@@ -1,5 +1,4 @@
 /*CAPTANDO FORMS*/
-const formDuracaoTemperatura = document.querySelector('.formulario__questao--duracaoTemperatura');
 const formCenario = document.querySelector('.formulario__questao--cenario');
 const formEvento = document.querySelector('.formulario__questao--evento');
 const formAlgoMais = document.querySelector('.formulario__questao--algoMais');
@@ -14,39 +13,6 @@ const nada = document.querySelector('.checkbox--nada');
 const balada = document.querySelector('.checkbox--balada');
 const fantasia = document.querySelector('.checkbox--fantasia');
 const formal = document.querySelector('.checkbox--formal');
-
-/*CAPTANDO ITENS ESCONDIDOS*/
-const linho = document.querySelector('.linho'); 
-const seda = document.querySelector('.seda'); 
-const cetim = document.querySelector('.cetim'); 
-const malha = document.querySelector('.malha'); 
-const jeans = document.querySelector('.jeans'); 
-const couro = document.querySelector('.couro'); 
-const veludo = document.querySelector('.veludo'); 
-const la = document.querySelector('.la'); 
-const pelagem = document.querySelector('.pelagem'); 
-
-const camisetaMC = document.querySelector('.camisetaMC'); 
-const camisetaML = document.querySelector('.camisetaML'); 
-const camisa = document.querySelector('.camisa'); 
-const shorts = document.querySelector('.shorts'); 
-const calcaCVL = document.querySelector('.calcaCVL'); 
-const cardiga = document.querySelector('.cardiga'); 
-const jaqueta = document.querySelector('.jaqueta'); 
-const casaco = document.querySelector('.casaco'); 
-
-const tipoCalcaTecido = document.querySelector('.tipoCalcaTecido'); 
-const shortsSubS = document.querySelector('.shortsSubS');
-
-const sandalia = document.querySelector('.sandalia'); 
-const bota = document.querySelector('.bota');
-
-const cachecol = document.querySelector('.cachecol'); 
-const meiaCalcaFina = document.querySelector('.meiaCalcaFina'); 
-const meiaCalcaMedia = document.querySelector('.meiaCalcaMedia'); 
-const meiaCalcaGrossa = document.querySelector('.meiaCalcaGrossa'); 
-const gorro = document.querySelector('.gorro'); 
-const luva = document.querySelector('.luva'); 
 
 /*CAPTANDO QUANTIDADE DE ITENS*/ 
 const quantidadeVestidoMacacao = document.querySelector('.quantidade__vestidoMacacao'); 
@@ -80,8 +46,6 @@ const quantidadeLuva = document.querySelector('.quantidade__luva');
 
 const quantidadeToalhaBanho = document.querySelector('.quantidade__toalhaBanho'); 
 const quantidadeToalhaPiscina = document.querySelector('.quantidade__toalhaPiscina'); 
-
-
 
 
 /*CAPTANDO VARIAÇÔES DE TEMPERATURA SELECIONADAS*/
