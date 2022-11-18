@@ -43,6 +43,7 @@
   <li>Trabalhar com rolagem lateral para conteúdos overflow em uma section;</li>
   <li>Posicionamento de divs laterais para criação de rolagem lateral da página;</li>
   <li>Captação de valores de inputs e manipulação desses dados com DOM e Javascript;</li>
+  <li>Captação de arrays de classes com DOM e Javascript para manipular elementos HTML;</li>
   <li>Desenvolver projetos com conjunto com um time;</li>
 </ul> 
 
