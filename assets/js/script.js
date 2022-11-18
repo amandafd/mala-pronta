@@ -141,9 +141,7 @@ const tecido25mais = document.querySelectorAll('.tecido25mais');
 const tecido20e25 = document.querySelectorAll('.tecido20e25');
 const tecido15e20 = document.querySelectorAll('.tecido15e20');
 const tecido10e15 = document.querySelectorAll('.tecido10e15');
-const tecidoMenosDe10 = document.querySelectorAll('.tecidoMenosDe10')
-
-const tecido = document.querySelectorAll('.tecido');
+const tecidoMenosDe10 = document.querySelectorAll('.tecidoMenosDe10');
 
 function verificaVariacaoTemperatura() {
     formVariacaoTemperatura.onsubmit = function(e) {
@@ -179,17 +177,13 @@ function verificaVariacaoTemperatura() {
                 tNegativaDuracao.required = true;  
             }
         }
+
         function mostraTecidos() {
-            /*for(i = 0; i < tecido.length; i++) {
-                if(e.target[1].checked == true) {
-                    tecido[1].hidden = false;
-                }
-            }*/
             for(i = 0; i < tecido25mais.length; i++) {
                 if(e.target[1].checked == true) {
                     tecido25mais[i].hidden = false;
                 }
-            }
+            }   
             for(i = 0; i < tecido20e25.length; i++) {
                 if(e.target[2].checked == true) {
                     tecido20e25[i].hidden = false;
@@ -206,15 +200,10 @@ function verificaVariacaoTemperatura() {
                 }
             }
             for(i = 0; i < tecidoMenosDe10.length; i++) {
-                if(e.target[5].checked == true || e.target[6].checked == true || e.target[7].checked == true) {
+                if(e.target[7].checked == true) {
                     tecidoMenosDe10[i].hidden = false;
                 }
             }
-            /*for(i = 0; i < tecido15e20.length; i++) {}
-            for(i = 0; i < tecido10e15.length; i++) {}
-            for(i = 0; i < tecido5e10.length; i++) {}
-            for(i = 0; i < tecido0e5.length; i++) {}
-            for(i = 0; i < tecidoNegativa.length; i++) {}*/
             /*if(e.target[1].checked == true) {
                 camisetaMC.hidden = false;
                 shorts.hidden = false;
@@ -295,7 +284,10 @@ function verificaVariacaoTemperatura() {
 
 verificaVariacaoTemperatura();
 
-/*CAPTANDO VARIAÇÔES DE TEMPERATURA SELECIONADAS*/
+
+
+
+/**/ 
 
 /*cenario*/
 function verificaCenario() {
