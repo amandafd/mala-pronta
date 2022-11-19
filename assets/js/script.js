@@ -1,5 +1,5 @@
 /*CAPTANDO FORMS*/
-const formCenario = document.querySelector('.formulario__questao--cenario');
+
 const formEvento = document.querySelector('.formulario__questao--evento');
 const formAlgoMais = document.querySelector('.formulario__questao--algoMais');
 
@@ -46,6 +46,7 @@ const quantidadeLuva = document.querySelector('.quantidade__luva');
 
 const quantidadeToalhaBanho = document.querySelector('.quantidade__toalhaBanho'); 
 const quantidadeToalhaPiscina = document.querySelector('.quantidade__toalhaPiscina'); 
+
 
 
 /*CAPTANDO VARIAÇÔES DE TEMPERATURA SELECIONADAS*/
@@ -139,8 +140,10 @@ function verificaDuracaoVariacaoTemperatura() {
         /*console.log(this.duracao__25mais.value);*/
     }
 }
+verificaDuracaoVariacaoTemperatura();
 
 /*cenario*/
+const formCenario = document.querySelector('.formulario__questao--cenario');
 function verificaCenario() {
     formCenario.addEventListener("submit", (e) => {
         e.preventDefault();

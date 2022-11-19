@@ -84,13 +84,13 @@
                         <fieldset>
                             <legend class="formulario__pergunta" align="center">Coloque o número de dias que a temperatura permanecerá em cada variação. A soma total dos dias deve ser igual à duração total da viagem:</legend>
                             <div class="formulario__repostas formulario__respostas--variosCampos">
-                                <label for="vdt__selecionar--25mais" class="formulario__resposta--labelNumberVarios">25ºC ou mais<input type="number" id="vdt__selecionar--25mais" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
-                                <label for="vdt__selecionar--20e25" class="formulario__resposta--labelNumberVarios">20ºC e 25ºC<input type="number" id="vdt__selecionar--20e25" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
-                                <label for="vdt__selecionar--15e20" class="formulario__resposta--labelNumberVarios">15ºC e 20ºC<input type="number" id="vdt__selecionar--15e20" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
-                                <label for="vdt__selecionar--10e15" class="formulario__resposta--labelNumberVarios">10ºC e 15ºC<input type="number" id="vdt__selecionar--10e15" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
-                                <label for="vdt__selecionar--5e10" class="formulario__resposta--labelNumberVarios">5ºC e 10ºC<input type="number" id="vdt__selecionar--5e10" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
-                                <label for="vdt__selecionar--0e5" class="formulario__resposta--labelNumberVarios">0ºC e 5ºC<input type="number" id="vdt__selecionar--0e5" class="formulario__reposta--numberVarios duracaoTemperatura" min="1" disabled></label>
-                                <label for="vdt__selecionar--negativa" class="formulario__resposta--labelNumberVarios">Abaixo de 0ºC<input type="number" id="vdt__selecionar--negativa" class="formulario__reposta--numberVarios  duracaoTemperatura" min="1" disabled></label>
+                                <input type="number" name="duracao__25mais" id="vdt__selecionar--25mais" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="25ºC ou mais" min="1" disabled>
+                                <input type="number" name="duracao__20e25" id="vdt__selecionar--20e25" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="20ºC e 25ºC" min="1" disabled>
+                                <input type="number" name="duracao__15e20" id="vdt__selecionar--15e20" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="15ºC e 20ºC" min="1" disabled>
+                                <input type="number" name="duracao__10e15" id="vdt__selecionar--10e15" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="10ºC e 15ºC" min="1" disabled>
+                                <input type="number" name="duracao__5e10" id="vdt__selecionar--5e10" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="5ºC e 10ºC" min="1" disabled>
+                                <input type="number" name="duracao__0e5" id="vdt__selecionar--0e5" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="0ºC e 5ºC" min="1" disabled>
+                                <input type="number" name="duracao__negativa" id="vdt__selecionar--negativa" class="formulario__reposta--numberVarios  duracaoTemperatura" min="1" placeholder="Abaixo de 0ºC" disabled>
                             </div>
                             <div class="btn__container">
                                 <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTemperatura">
@@ -146,7 +146,7 @@
                             <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--algoMais">
                             <input type="submit" value="FAZER AS MALAS" class="btn" id="btn__proximo--algoMais">
                         </div>
-                    </form>-->
+                    </form>
 
                 </section>                        
             </div>

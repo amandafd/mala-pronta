@@ -130,6 +130,14 @@ function verificaDuracaoVariacaoTemperatura() {
     formDuracaoTemperatura.onsubmit = function(e) {
         e.preventDefault();
 
-        /*console.log(this.duracao__25mais.value);*/
+        console.log(this.duracao__25mais.value);
+        console.log(this.duracao__20e25.value);
+        console.log(this.duracao__15e20.value);
+        console.log(this.duracao__10e15.value);
+        console.log(this.duracao__5e10.value);
+        console.log(this.duracao__0e5.value);
+        console.log(this.duracao__negativa.value);
     }
 }
+
+verificaDuracaoVariacaoTemperatura();
