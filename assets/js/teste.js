@@ -126,9 +126,15 @@ verificaVariacaoTemperatura();
 /*CAPTANDO DURAÇÂO DAS VARIAÇÔES DE TEMPERATURA*/
 const formDuracaoTemperatura = document.querySelector('.formulario__questao--duracaoTemperatura')
 
+const quantidadeVestidoMacacao = document.querySelectorAll('.quantidade__vestidoMacacao');
+
 function verificaDuracaoVariacaoTemperatura() {
     formDuracaoTemperatura.onsubmit = function(e) {
         e.preventDefault();
+
+        quantidadeVestidoMacacao[0].innerHTML = 2/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
+        quantidadeVestidoMacacao[1].innerHTML =  4/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
+        quantidadeVestidoMacacao[2].innerHTML = 8/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
 
         console.log(this.duracao__25mais.value);
         console.log(this.duracao__20e25.value);

@@ -1,7 +1,5 @@
 /*CAPTANDO FORMS*/
-
 const formEvento = document.querySelector('.formulario__questao--evento');
-const formAlgoMais = document.querySelector('.formulario__questao--algoMais');
 
 /*CAPTANDO INPUTS*/
 const agua = document.querySelector('#checkbox--agua');
@@ -14,10 +12,7 @@ const balada = document.querySelector('.checkbox--balada');
 const fantasia = document.querySelector('.checkbox--fantasia');
 const formal = document.querySelector('.checkbox--formal');
 
-/*CAPTANDO QUANTIDADE DE ITENS*/ 
-const quantidadeVestidoMacacao = document.querySelector('.quantidade__vestidoMacacao'); 
-const quantidadePtCimaSubV = document.querySelector('.quantidade__ptCimaSub'); 
-const quantidadePtBaixoSubV = document.querySelector('.quantidade__ptBaixoSub'); 
+/*CAPTANDO QUANTIDADE DE ITENS*/   
 const quantidadeCamisetaMC = document.querySelector('.quantidade__camisetaMC'); 
 const quantiadeCamisetaML = document.querySelector('.quantidade__camisetaML'); 
 const quantidadeCamisa = document.querySelector('.quantidade__camisa'); 
@@ -130,16 +125,28 @@ function verificaVariacaoTemperatura() {
 
 verificaVariacaoTemperatura();
 
-/*CAPTANDO DURAÇÂO DAS VARIAÇÔES DE TEMPERATURA*/
 const formDuracaoTemperatura = document.querySelector('.formulario__questao--duracaoTemperatura')
+
+const quantidadeVestidoMacacao = document.querySelectorAll('.quantidade__vestidoMacacao');
 
 function verificaDuracaoVariacaoTemperatura() {
     formDuracaoTemperatura.onsubmit = function(e) {
         e.preventDefault();
 
-        /*console.log(this.duracao__25mais.value);*/
+        quantidadeVestidoMacacao[0].innerHTML = 2/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
+        quantidadeVestidoMacacao[1].innerHTML =  4/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
+        quantidadeVestidoMacacao[2].innerHTML = 8/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
+
+        console.log(this.duracao__25mais.value);
+        console.log(this.duracao__20e25.value);
+        console.log(this.duracao__15e20.value);
+        console.log(this.duracao__10e15.value);
+        console.log(this.duracao__5e10.value);
+        console.log(this.duracao__0e5.value);
+        console.log(this.duracao__negativa.value);
     }
 }
+
 verificaDuracaoVariacaoTemperatura();
 
 /*cenario*/
@@ -174,6 +181,8 @@ function verificaEvento() {
 verificaEvento();
 
 /*algoMais*/
+const formAlgoMais = document.querySelector('.formulario__questao--algoMais');
+
 function verificaAlgoMais() {
     formAlgoMais.addEventListener("submit", (e) => {
         e.preventDefault();
