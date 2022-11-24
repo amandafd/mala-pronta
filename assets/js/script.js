@@ -145,22 +145,36 @@ verificaDuracaoVariacaoTemperatura();
 
 /*cenario*/
 const formCenario = document.querySelector('.formulario__questao--cenario');
+
+const roupaAgua = document.querySelectorAll('.roupaAgua');
+const roupaNeve = document.querySelectorAll('.roupaNeve');
+const roupaMontanha = document.querySelectorAll('.roupaMontanha');
+
 function verificaCenario() {
     formCenario.onsubmit = function(e) {
         e.preventDefault();
 
-        if (e.target[1].checked == true) {
-            console.log("Água");
+        for(i = 0; i < roupaAgua.length; i++) {
+            if (e.target[1].checked == true) {
+                roupaAgua[i].hidden = false;
+            }
         }
-        if (e.target[2].checked == true) {
-            console.log("Neve");
+        for(i = 0; i < roupaNeve.length; i++) {
+            if (e.target[2].checked == true) {
+                roupaNeve[i].hidden = false;
+            }
         }
-        if (e.target[3].checked == true) {
+        for(i = 0; i < roupaMontanha.length; i++) {
+            if (e.target[3].checked == true) {
+                roupaMontanha[i].hidden = false;
+            }
+        }
+        /*if (e.target[3].checked == true) {
             console.log("Montanha");
         }
         if (e.target[4].checked == true) {
             console.log("Cidade");
-        }
+        }*/
     }
 }
 
