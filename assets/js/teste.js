@@ -51,7 +51,7 @@ const roupa25mais = document.querySelectorAll('.roupa25mais');
 const roupa20e25 = document.querySelectorAll('.roupa20e25');
 const roupa15e20 = document.querySelectorAll('.roupa15e20');
 const roupa10e15 = document.querySelectorAll('.roupa10e15');
-const roupaMenosDe10 = document.querySelectorAll('.tecidoMenosDe10');
+const roupaMenosDe10 = document.querySelectorAll('.roupaMenosDe10');
 
 function verificaVariacaoTemperatura() {
     formVariacaoTemperatura.onsubmit = function(e) {
@@ -110,7 +110,7 @@ function verificaVariacaoTemperatura() {
                 }
             }
             for(i = 0; i < roupaMenosDe10.length; i++) {
-                if(e.target[7].checked == true) {
+                if(e.target[5].checked == true || e.target[6].checked == true || e.target[7].checked == true) {
                     roupaMenosDe10[i].hidden = false;
                 }
             }
@@ -151,22 +151,36 @@ verificaDuracaoVariacaoTemperatura();
 
 /*cenario*/
 const formCenario = document.querySelector('.formulario__questao--cenario');
+
+const roupaAgua = document.querySelectorAll('.roupaAgua');
+const roupaNeve = document.querySelectorAll('.roupaNeve');
+const roupaMontanha = document.querySelectorAll('.roupaMontanha');
+
 function verificaCenario() {
     formCenario.onsubmit = function(e) {
         e.preventDefault();
 
-        if (e.target[1].checked == true) {
-            console.log("Água");
+        for(i = 0; i < roupaAgua.length; i++) {
+            if (e.target[1].checked == true) {
+                roupaAgua[i].hidden = false;
+            }
         }
-        if (e.target[2].checked == true) {
-            console.log("Neve");
+        for(i = 0; i < roupaNeve.length; i++) {
+            if (e.target[2].checked == true) {
+                roupaNeve[i].hidden = false;
+            }
         }
-        if (e.target[3].checked == true) {
+        for(i = 0; i < roupaMontanha.length; i++) {
+            if (e.target[3].checked == true) {
+                roupaMontanha[i].hidden = false;
+            }
+        }
+        /*if (e.target[3].checked == true) {
             console.log("Montanha");
         }
         if (e.target[4].checked == true) {
             console.log("Cidade");
-        }
+        }*/
     }
 }
 
