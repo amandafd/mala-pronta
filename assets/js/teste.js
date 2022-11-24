@@ -128,22 +128,83 @@ const formDuracaoTemperatura = document.querySelector('.formulario__questao--dur
 
 const quantidadeVestidoMacacao = document.querySelectorAll('.quantidade__vestidoMacacao');
 
+
 function verificaDuracaoVariacaoTemperatura() {
     formDuracaoTemperatura.onsubmit = function(e) {
         e.preventDefault();
-
-        quantidadeVestidoMacacao[0].innerHTML = 2/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
+        
+        if(this.duracao__25mais.value == "") {
+            
+        }
+        
+        /*quantidadeVestidoMacacao[0].innerHTML = parseInt(this.duracao__25mais.value / 3) + parseInt(this.duracao__20e25.value / 3) /*+ parseInt(this.duracao__15e20.value / 5) + parseInt(this.duracao__10e15.value / 5) + parseInt(this.duracao__5e10.value / 5) / parseInt(this.duracao__0e5.value / 5) + parseInt(this.duracao__negativa.value / 5);
         quantidadeVestidoMacacao[1].innerHTML =  4/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
-        quantidadeVestidoMacacao[2].innerHTML = 8/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
+        /*quantidadeVestidoMacacao[2].innerHTML = 8/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
 
-        console.log(this.duracao__25mais.value);
-        console.log(this.duracao__20e25.value);
-        console.log(this.duracao__15e20.value);
-        console.log(this.duracao__10e15.value);
-        console.log(this.duracao__5e10.value);
-        console.log(this.duracao__0e5.value);
-        console.log(this.duracao__negativa.value);
+        /*verificaInputAtivo();*/
     }
 }
 
 verificaDuracaoVariacaoTemperatura();
+
+
+
+/*cenario*/
+const formCenario = document.querySelector('.formulario__questao--cenario');
+function verificaCenario() {
+    formCenario.onsubmit = function(e) {
+        e.preventDefault();
+
+        if (e.target[1].checked == true) {
+            console.log("Água");
+        }
+        if (e.target[2].checked == true) {
+            console.log("Neve");
+        }
+        if (e.target[3].checked == true) {
+            console.log("Montanha");
+        }
+        if (e.target[4].checked == true) {
+            console.log("Cidade");
+        }
+    }
+}
+
+verificaCenario();
+
+/*evento*/
+const formEvento = document.querySelector('.formulario__questao--evento');
+
+function verificaEvento() {
+    formEvento.onsubmit = function(e) {
+        e.preventDefault();
+
+        if(e.target[1].checked == true) {
+            console.log("Nada");
+        }
+        if(e.target[2].checked == true) {
+            console.log("Balada");
+        }
+        if(e.target[3].checked == true) {
+            console.log("Festa Formal");
+        }
+        if(e.target[4].checked == true) {
+            console.log("Festa a fantasia");
+        }
+    }
+}
+
+verificaEvento();
+
+/*algoMais*/
+/*const formAlgoMais = document.querySelector('.formulario__questao--algoMais');
+
+function verificaAlgoMais() {
+    formAlgoMais.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        textoInicialMala.innerHTML = "Tudo certo! Verifique sua mala pronta abaixo.";
+    })
+}
+
+verificaAlgoMais();*/
