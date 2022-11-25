@@ -18,29 +18,39 @@ mostraNome();
 
 /*CAPTANDO DURAÇÃO TOTAL DA VIAGEM E FAZENDO CALCULOS DOS ITENS COM BASE APENAS NESSA VARIÁVEL*/
 const formDuracaoTotal = document.querySelector('.formulario__questao--duracaoTotal');
-const quantidadeLingerie = document.querySelectorAll('.quantidade__lingerie'); 
+const quantidadeLingerie = document.querySelector('.quantidade__lingerie'); 
 const quantidadePijama = document.querySelector('.quantidade__pijama'); 
+const quantidadeBiquini = document.querySelector('.quantidade__biquini');
+const quantidadeSaidaPraia = document.querySelector('.quantidade__saidaPraia');
 
-function adicionaItensFixos() {
+function calculaItens() {
     formDuracaoTotal.onsubmit = function(e) {
         e.preventDefault();
         
-        for (let i = 0; i < quantidadeLingerie.length; i++) {
-            if(this.duracaoTotal.value < 4) {
-                quantidadeLingerie[i].innerHTML = parseInt(this.duracaoTotal.value) + 2;
-                quantidadePijama.innerHTML = 1;
-            } else if (this.duracaoTotal.value < 15) {
-                quantidadeLingerie[i].innerHTML = parseInt(this.duracaoTotal.value) + 2;
-                quantidadePijama.innerHTML = parseInt(this.duracaoTotal.value) / 2;    
-            } else {
-                quantidadePijama.innerHTML = 5;
-                quantidadeLingerie[i].innerHTML = 18;
-            }
+
+        if(this.duracaoTotal.value < 4) {
+            quantidadeLingerie.innerHTML = parseInt(this.duracaoTotal.value) + 2;
+            quantidadePijama.innerHTML = 1;
+            quantidadeBiquini.innerHTML = "no máximo 2";
+            quantidadeSaidaPraia.innerHTML = "1 ou 2";
+        } else if (this.duracaoTotal.value < 15) {
+            quantidadeLingerie.innerHTML = parseInt(this.duracaoTotal.value) + 2;
+            quantidadePijama.innerHTML = parseInt(this.duracaoTotal.value) / 2; 
+            quantidadeBiquini.innerHTML = "no máximo 3";
+            quantidadeSaidaPraia.innerHTML = "2";
+        } else {
+            quantidadePijama.innerHTML = 5;
+            quantidadeLingerie.innerHTML = 18;
+            quantidadeBiquini.innerHTML = "no máximo 4";
+            quantidadeSaidaPraia.innerHTML = "3 ou 4";
         }
+
+    
+       
     }
 }
 
-adicionaItensFixos();
+calculaItens();
 
 /*CAPTANDO VARIAÇÔES DE TEMPERATURA SELECIONADAS*/
 const formVariacaoTemperatura = document.querySelector('.formulario__questao--variacaoDeTemperatura');
@@ -175,12 +185,6 @@ function verificaCenario() {
                 roupaMontanha[i].hidden = false;
             }
         }
-        /*if (e.target[3].checked == true) {
-            console.log("Montanha");
-        }
-        if (e.target[4].checked == true) {
-            console.log("Cidade");
-        }*/
     }
 }
 
