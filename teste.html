@@ -24,52 +24,52 @@
         </header>
 
         <main>
-            <p class="intro">Olá, <text class="mala__nome">viajante</text>! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário a seguir, confira a sugestão da sua mala e em seguida nossas dicas!</p>
-            <div class="formulario categoria">
+            <p class="intro">Olá, <text class="suitcase__name">viajante</text>! Que tal uma ajudinha para planejar sua mala de viagem? Preencha o questionário a seguir, confira a sugestão da sua mala e em seguida nossas dicas!</p>
+            <div class="form category">
 
-                <section class="sessao">
+                <section class="section">
 
-                    <form class="formulario__questao formulario__questao--text formulario__questao--nome" action="submit">
-                        <label for="nome" class="formulario__pergunta formulario__pergunta--campo">Qual o seu nome?</label><br>
-                        <input type="text" name="nome" id="nome" class="formulario__resposta formulario__resposta--texto" required>
+                    <form class="form__question form__question--text form__question--name" action="submit">
+                        <label for="name" class="form__asking form__asking--campo">Qual o seu nome?</label><br>
+                        <input type="text" name="name" id="name" class="form__answer form__answer--texto" required>
                         <div class="btn__container">
-                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--nome">
+                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--name">
                         </div> 
                     </form>
 
-                    <form class="formulario__questao formulario__questao--duracaoTotal" action="submit">
-                        <label for="duracaoTotal" class="formulario__pergunta formulario__pergunta--campo">Quantos dias vai durar sua viagem?</label><br>
-                        <input type="number" nome="duracaoTotal" id="duracaoTotal" class="formulario__resposta formulario__resposta--numero" min="1" required>
+                    <form class="form__question form__question--duracaoTotal" action="submit">
+                        <label for="duracaoTotal" class="form__asking form__asking--campo">Quantos dias vai durar sua viagem?</label><br>
+                        <input type="number" name="duracaoTotal" id="duracaoTotal" class="form__answer form__answer--numero" min="1" required>
                         <div class="btn__container">
                             <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTotal">
                             <input type="submit" value="PRÓXIMO" class="btn" id="btn__proximo--duracaoTotal">
                         </div> 
                     </form>
 
-                    <form class="formulario__questao formulario__questao--variacaoDeTemperatura" id="formulario__questao--variacaoDeTemperatura" action="submit">
+                    <form class="form__question form__question--variacaoDeTemperatura" id="form__question--variacaoDeTemperatura" action="submit">
                         <fieldset>
-                            <legend class="formulario__pergunta" align="center">Selecione as variações de temperatura encontradas em sua viagem:</legend>
-                            <div class="formulario__resposta formulario__resposta--opcoes" id="formulario__resposta--opcoesVariacao">
+                            <legend class="form__asking" align="center">Selecione as variações de temperatura encontradas em sua viagem:</legend>
+                            <div class="form__answer form__answer--opcoes" id="form__answer--opcoesVariacao">
                                 <label for="vdt--25mais">
-                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--25mais" value="25ºC ou mais" class="formulario__resposta--checkbox variacaoDeTemperatura">25ºC ou mais
+                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--25mais" value="25ºC ou mais" class="form__answer--checkbox variacaoDeTemperatura">25ºC ou mais
                                 </label>
                                 <label for="vdt--20e25">
-                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--20e25" value="20ºC e 25ºC" class="formulario__resposta--checkbox variacaoDeTemperatura">20ºC e 25ºC
+                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--20e25" value="20ºC e 25ºC" class="form__answer--checkbox variacaoDeTemperatura">20ºC e 25ºC
                                 </label>
                                 <label for="vdt--15e20">
-                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--15e20" value="15ºC e 20ºC" class="formulario__resposta--checkbox variacaoDeTemperatura">15ºC e 20ºC
+                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--15e20" value="15ºC e 20ºC" class="form__answer--checkbox variacaoDeTemperatura">15ºC e 20ºC
                                 </label>
                                 <label for="vdt--10e15">
-                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--10e15" value="10ºC e 15ºC" class="formulario__resposta--checkbox variacaoDeTemperatura">10ºC e 15ºC
+                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--10e15" value="10ºC e 15ºC" class="form__answer--checkbox variacaoDeTemperatura">10ºC e 15ºC
                                 </label>
                                 <label for="vdt--5e10">
-                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--5e10" value="5ºC e 10ºC" class="formulario__resposta--checkbox variacaoDeTemperatura">5ºC e 10ºC
+                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--5e10" value="5ºC e 10ºC" class="form__answer--checkbox variacaoDeTemperatura">5ºC e 10ºC
                                 </label>
                                 <label for="vdt--0e5">
-                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--0e5" value="0ºC e 5ºC" class="formulario__resposta--checkbox variacaoDeTemperatura">0ºC e 5ºC
+                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--0e5" value="0ºC e 5ºC" class="form__answer--checkbox variacaoDeTemperatura">0ºC e 5ºC
                                 </label>
                                 <label for="vdt--negativa">
-                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--negativa" value="Abaixo de 0ºC" class="formulario__resposta--checkbox variacaoDeTemperatura">Abaixo de 0ºC
+                                    <input type="checkbox" name="variacaoDeTemperatura" id="vdt--negativa" value="Abaixo de 0ºC" class="form__answer--checkbox variacaoDeTemperatura">Abaixo de 0ºC
                                 </label>
                             </div>
                             <div class="btn__container">
@@ -80,17 +80,17 @@
                         </fieldset>
                     </form>
 
-                    <form class="formulario__questao formulario__questao--duracaoTemperatura" action="submit">
+                    <form class="form__question form__question--duracaoTemperatura" action="submit">
                         <fieldset>
-                            <legend class="formulario__pergunta" align="center">Coloque o número de dias que a temperatura permanecerá em cada variação. A soma total dos dias deve ser igual à duração total da viagem:</legend>
-                            <div class="formulario__repostas formulario__respostas--variosCampos">
-                                <input type="number" name="duracao__25mais" id="vdt__selecionar--25mais" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="25ºC ou mais" min="1" disabled>
-                                <input type="number" name="duracao__20e25" id="vdt__selecionar--20e25" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="20ºC e 25ºC" min="1" disabled>
-                                <input type="number" name="duracao__15e20" id="vdt__selecionar--15e20" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="15ºC e 20ºC" min="1" disabled>
-                                <input type="number" name="duracao__10e15" id="vdt__selecionar--10e15" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="10ºC e 15ºC" min="1" disabled>
-                                <input type="number" name="duracao__5e10" id="vdt__selecionar--5e10" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="5ºC e 10ºC" min="1" disabled>
-                                <input type="number" name="duracao__0e5" id="vdt__selecionar--0e5" class="formulario__reposta--numberVarios duracaoTemperatura" placeholder="0ºC e 5ºC" min="1" disabled>
-                                <input type="number" name="duracao__negativa" id="vdt__selecionar--negativa" class="formulario__reposta--numberVarios  duracaoTemperatura" min="1" placeholder="Abaixo de 0ºC" disabled>
+                            <legend class="form__asking" align="center">Coloque o número de dias que a temperatura permanecerá em cada variação. A soma total dos dias deve ser igual à duração total da viagem:</legend>
+                            <div class="form__repostas form__answers--variosCampos">
+                                <input type="number" name="duracao__25mais" id="vdt__selecionar--25mais" class="form__reposta--numberVarios duracaoTemperatura" placeholder="25ºC ou mais" min="1" disabled>
+                                <input type="number" name="duracao__20e25" id="vdt__selecionar--20e25" class="form__reposta--numberVarios duracaoTemperatura" placeholder="20ºC e 25ºC" min="1" disabled>
+                                <input type="number" name="duracao__15e20" id="vdt__selecionar--15e20" class="form__reposta--numberVarios duracaoTemperatura" placeholder="15ºC e 20ºC" min="1" disabled>
+                                <input type="number" name="duracao__10e15" id="vdt__selecionar--10e15" class="form__reposta--numberVarios duracaoTemperatura" placeholder="10ºC e 15ºC" min="1" disabled>
+                                <input type="number" name="duracao__5e10" id="vdt__selecionar--5e10" class="form__reposta--numberVarios duracaoTemperatura" placeholder="5ºC e 10ºC" min="1" disabled>
+                                <input type="number" name="duracao__0e5" id="vdt__selecionar--0e5" class="form__reposta--numberVarios duracaoTemperatura" placeholder="0ºC e 5ºC" min="1" disabled>
+                                <input type="number" name="duracao__negativa" id="vdt__selecionar--negativa" class="form__reposta--numberVarios  duracaoTemperatura" min="1" placeholder="Abaixo de 0ºC" disabled>
                             </div>
                             <div class="btn__container">
                                 <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--duracaoTemperatura">
@@ -99,21 +99,21 @@
                         </fieldset>
                     </form>
 
-                    <form class="formulario__questao formulario__questao--cenario" action="submit">
+                    <form class="form__question form__question--cenario" action="submit">
                         <fieldset>
-                            <legend class="formulario__pergunta" align="center">Selecione quais os cenários estão presentes na sua viagem:</legend>
-                            <div class="formulario__resposta formulario__resposta--opcoes" id="formulario__resposta--opcoesCenario">
+                            <legend class="form__asking" align="center">Selecione quais os cenários estão presentes na sua viagem:</legend>
+                            <div class="form__answer form__answer--opcoes" id="form__answer--opcoesCenario">
                                 <label for="checkbox--agua">
-                                    <input type="checkbox" name="cenario" id="checkbox--agua" value="agua" class="formulario__resposta--checkbox">Água(praia, cachoeira ou piscina)
+                                    <input type="checkbox" name="cenario" id="checkbox--agua" value="agua" class="form__answer--checkbox">Água(praia, cachoeira ou piscina)
                                 </label>
                                 <label for="checkbox--neve">
-                                    <input type="checkbox" name="cenario" id="checkbox--neve" value="neve" class="formulario__resposta--checkbox">Neve
+                                    <input type="checkbox" name="cenario" id="checkbox--neve" value="neve" class="form__answer--checkbox">Neve
                                 </label>
                                 <label for="checkbox--montanha">
-                                    <input type="checkbox" name="cenario" id="checkbox--montanha" value="montanha" class="formulario__resposta--checkbox">Montanha ou trilha
+                                    <input type="checkbox" name="cenario" id="checkbox--montanha" value="montanha" class="form__answer--checkbox">Montanha ou trilha
                                 </label>
                                 <label for="checkbox--cidade">
-                                    <input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade" class="formulario__resposta--checkbox">Cidade
+                                    <input type="checkbox" name="cenario" id="checkbox--cidade" value="cidade" class="form__answer--checkbox">Cidade
                                 </label>
                             </div>
                             <div class="btn__container">
@@ -123,14 +123,14 @@
                         </fieldset>
                     </form>
 
-                    <form class="formulario__questao formulario__questao--evento" action="submit">
+                    <form class="form__question form__question--evento" action="submit">
                         <fieldset>
-                            <legend class="formulario__pergunta" align="center">Você comparecerá a algum evento durante a sua viagem?</legend>
-                                <div class="formulario__resposta formulario__resposta--opcoes" id="formulario__resposta--opcoesEvento">
-                                    <label for="checkbox--nada"><input type="checkbox" name="evento" id="checkbox--nada" value="nada" class="formulario__resposta--checkbox">Nada especifico</label>
-                                    <label for="checkbox--balada"><input type="checkbox" name="evento" id="checkbox--balada" value="balada" class="formulario__resposta--checkbox">Balada</label>
-                                    <label for="checkbox--formal"><input type="checkbox" name="evento" id="checkbox--formal" value="formal" class="formulario__resposta--checkbox">Festa formal(casamento, formatura, etc)</label>
-                                    <label for="checkbox--fantasia"><input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia" class="formulario__resposta--checkbox">Festa a fantasia</label>
+                            <legend class="form__asking" align="center">Você comparecerá a algum evento durante a sua viagem?</legend>
+                                <div class="form__answer form__answer--opcoes" id="form__answer--opcoesEvento">
+                                    <label for="checkbox--nada"><input type="checkbox" name="evento" id="checkbox--nada" value="nada" class="form__answer--checkbox">Nada especifico</label>
+                                    <label for="checkbox--balada"><input type="checkbox" name="evento" id="checkbox--balada" value="balada" class="form__answer--checkbox">Balada</label>
+                                    <label for="checkbox--formal"><input type="checkbox" name="evento" id="checkbox--formal" value="formal" class="form__answer--checkbox">Festa formal(casamento, formatura, etc)</label>
+                                    <label for="checkbox--fantasia"><input type="checkbox" name="evento" id="checkbox--fantasia" value="fantasia" class="form__answer--checkbox">Festa a fantasia</label>
                                 </div>
                                 <div class="btn__container">
                                     <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--evento">
@@ -139,9 +139,9 @@
                         </fieldset>
                     </form>
                         
-                    <form class="formulario__questao formulario__questao--algoMais" action="submit">
-                        <label for="algoMais" class="formulario__pergunta formulario__pergunta--campo">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala ou digite 0. Exemplo: Roupas de cama: 2</label><br>
-                        <input type="text" id="algoMais" name="algoMais" class="formulario__resposta formulario__resposta--texto">
+                    <form class="form__question form__question--algoMais" action="submit">
+                        <label for="algoMais" class="form__asking form__asking--campo">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala ou digite 0. Exemplo: Roupas de cama: 2</label><br>
+                        <input type="text" id="algoMais" name="algoMais" class="form__answer form__answer--texto">
                         <div class="btn__container">
                             <input type="submit" value="VOLTAR" class="btn" id="btn__voltar--algoMais">
                             <input type="submit" value="FAZER AS MALAS" class="btn" id="btn__proximo--algoMais">
@@ -151,10 +151,10 @@
                 </section>                        
             </div>
 
-            <div class="mala categoria">
-                <h2 class="categoria__intro mala__intro">Olá, <text class="mala__nome">viajante</text>! <text class="mala__textoInicial">Nós vamos te ajudar a montar uma mala compacta, porém completa: preencha o questionário e sua mala será exibida aqui!</text></h2>
-                <ul class="mala__lista">
-                    <li class="categoriaMala mala__item">Tecidos sugeridos: 
+            <div class="mala category">
+                <h2 class="category__intro suitcase__intro">Olá, <text class="suitcase__name">viajante</text>! <text class="suitcase__initialText">Nós vamos te ajudar a montar uma mala compacta, porém completa: preencha o questionário e sua mala será exibida aqui!</text></h2>
+                <ul>
+                    <li class="suitcaseCategory suitcase__item">Tecidos sugeridos: 
                         <ul>
                             <li>algodão</li>
                             <li class="roupa25mais roupa20e25" hidden>linho</li>
@@ -168,91 +168,92 @@
                             <li class="roupaMenosDe10" hidden>pelagem</li>
                         </ul>
                     </li>
-                    <li class="categoriaMala">
-                        <h3 class="categoriaMala__nome">Roupas</h3>
+                    <li class="suitcaseCategory">
+                        <h3 class="suitcaseCategory__name">Roupas</h3>
                         <ul>
-                            <li class="mala__item">Sutiã: se usar, a quantidade fica a seu critério.</li>
-                            <li class="mala__item">Calcinha/cueca: <text class="quantidade__lingerie">1</text>.</li>
-                            <li class="mala__item">Par de meias de algodão: <text class="quantidade__meias">1</text>.</li>
-                            <li class="mala__item roupaMenosDe10" hidden>Par de meias de lã: <text class="quantidade__meiasLas">1</text>.</li>
-                            <li class="mala__item">Pijama: no máximo <text class="quantidade__pijama">1</text>.</li>
-                            <li class="mala__item">Vestido/macacão: <text class="quantidade__vestidoMacacao">0</text>. Caso não use, substitua acrescentando mais <text class="quantidade__vestidoMacacao quantidade__ptCimSubV">0</text> camiseta/camisa/cropped e <text class="quantidade__vestidoMacacao quantidade__ptBaixoSubV">0</text> partes de baixo</text>.</li>
-                            <li class="mala__item roupas25mais roupa20e25 roupa15e20 roupa10e15" hidden>Camiseta manga curta: <text class="quantidade__camisetaMC">1</text>.</li>
-                            <li class="mala__item roupa15e20 roupa10e15 roupaMenosDe10" hidden>Camiseta manga longa: <text class="quantidade__camisetaML">1</text>.</li>
-                            <li class="mala__item roupaMenosDe10" hidden>Camiseta térmica: <text class="quantidade__camisetaTermica">1</text>.</li>
-                            <li class="mala__item">Cropped/camisa: <text class="quantidade__camisa">1</text></li>
-                            <li class="mala__item roupas25mais roupa20e25" hidden>Bermuda/shorts: <text class="quantidade__shorts">1</text>.</li>
-                            <li class="mala__item">Calça de tecido<text class="tipoCalcaTecido roupas25mais roupa20e25" hidden> leve</text>: <text class="quantidade__calcaTecido">1</text>.</li>
-                            <li class="mala__item ">Calça jeans: <text class="quantidade__calcaJeans">1</text>.</li>
-                            <li class="mala__item roupaMenosDe10" hidden>Calça de couro, veludo ou lã: <text class="quantidade__calcaCVL">1</text>.</li>
-                            <li class="mala__item roupaMenosDe10" hidden>Calça térmica: <text class="quantidade__calcaTermica">1</text>.</li>
-                            <li class="mala__item">Saia: <text class="quantidade__saia">1</text>. Caso não use, substitua acrescentando mais <text class="quantidade__ptBaixoSubS">1</text> calças<text class="shortsSubS roupas25mais roupa20e25" hidden> ou shorts/bermudas</text>.</li>
-                            <li class="mala__item">Moletom: <text class="quantidade__moletom">1</text>.</li>
-                            <li class="mala__item roupa15e20 roupa10e15 roupaMenosDe10" hidden>Cardigã/sueter: <text class="quantidade__cardiga">1</text>.</li>
-                            <li class="mala__item roupa15e20 roupa10e15 roupaMenosDe10" hidden>Jaqueta: <text class="quantidade__jaqueta">1</text>.</li>
-                            <li class="mala__item roupa10e15 roupaMenosDe10" hidden>Casaco/blazer/parca/sobretudos: <text class="quantidade__casaco">1</text>.</li>
-                            <li class="mala__item roupaMontanha" hidden>Jaqueta corta vento: <text class="quantidade__jaquetaCortaVento">1</text>.</li>
+                            <li class="suitcase__item">Sutiã ou top: se usar, a quantidade fica a seu critério.</li>
+                            <li class="suitcase__item">Calcinha/cueca: <text class="quantidade__lingerie">1</text>.</li>
+                            <li class="suitcase__item">Par de meias de algodão: <text class="quantidade__meias">1</text>.</li>
+                            <li class="suitcase__item roupaMenosDe10" hidden>Par de meias de lã: <text class="quantidade__meiasLas">1</text>.</li>
+                            <li class="suitcase__item">Pijama: no máximo <text class="quantidade__pijama">1</text>.</li>
+                            <li class="suitcase__item">Vestido/macacão: <text class="quantidade__vestidoMacacao">0</text>. Caso não use, substitua acrescentando mais <text class="quantidade__vestidoMacacao quantidade__ptCimSubV">0</text> camiseta/camisa/cropped e <text class="quantidade__vestidoMacacao quantidade__ptBaixoSubV">0</text> partes de baixo</text>.</li>
+                            <li class="suitcase__item roupas25mais roupa20e25 roupa15e20 roupa10e15" hidden>Camiseta manga curta: <text class="quantidade__camisetaMC">1</text>.</li>
+                            <li class="suitcase__item roupa15e20 roupa10e15 roupaMenosDe10" hidden>Camiseta manga longa: <text class="quantidade__camisetaML">1</text>.</li>
+                            <li class="suitcase__item roupaMenosDe10" hidden>Camiseta térmica: <text class="quantidade__camisetaTermica">1</text>.</li>
+                            <li class="suitcase__item">Cropped/camisa: <text class="quantidade__camisa">1</text></li>
+                            <li class="suitcase__item roupas25mais roupa20e25" hidden>Bermuda/shorts: <text class="quantidade__shorts">1</text>.</li>
+                            <li class="suitcase__item">Calça de tecido<text class="tipoCalcaTecido roupas25mais roupa20e25" hidden> leve</text>: <text class="quantidade__calcaTecido">1</text>.</li>
+                            <li class="suitcase__item ">Calça jeans: <text class="quantidade__calcaJeans">1</text>.</li>
+                            <li class="suitcase__item roupaMenosDe10" hidden>Calça de couro, veludo ou lã: <text class="quantidade__calcaCVL">1</text>.</li>
+                            <li class="suitcase__item roupaMenosDe10" hidden>Calça térmica: <text class="quantidade__calcaTermica">1</text>.</li>
+                            <li class="suitcase__item">Saia: <text class="quantidade__saia">1</text>. Caso não use, substitua acrescentando mais <text class="quantidade__ptBaixoSubS">1</text> calças<text class="shortsSubS roupas25mais roupa20e25" hidden> ou shorts/bermudas</text>.</li>
+                            <li class="suitcase__item">Moletom: <text class="quantidade__moletom">1</text>.</li>
+                            <li class="suitcase__item roupa15e20 roupa10e15 roupaMenosDe10" hidden>Cardigã/sueter: <text class="quantidade__cardiga">1</text>.</li>
+                            <li class="suitcase__item roupa15e20 roupa10e15 roupaMenosDe10" hidden>Jaqueta: <text class="quantidade__jaqueta">1</text>.</li>
+                            <li class="suitcase__item roupa10e15 roupaMenosDe10" hidden>Casaco/blazer/parca/sobretudos: <text class="quantidade__casaco">1</text>.</li>
+                            <li class="suitcase__item roupaMontanha" hidden>Jaqueta corta vento: <text class="quantidade__jaquetaCortaVento">1</text>.</li>
                             
 
-                            <li class="mala__item  roupaAgua" hidden>Roupa de banho: <text class="quantidade__biquini">1</text>.</li>
-                            <li class="mala__item roupaAgua" hidden>Saída de praia (vestido/canga/calção/camiseta/etc): <text class="quantidade__saidaPraia">1</text>.</li>
+                            <li class="suitcase__item  roupaAgua" hidden>Roupa de banho: <text class="quantidade__biquini">1</text>.</li>
+                            <li class="suitcase__item roupaAgua" hidden>Saída de praia (vestido/canga/calção/camiseta/etc): <text class="quantidade__saidaPraia">1</text>.</li>
 
-                            <li class="mala__item roupaNeve"hidden>Conjunto para neve (casaco + calça): no máximo 2.</li>
+                            <li class="suitcase__item roupaNeve"hidden>Conjunto para neve (casaco + calça): no máximo 2.</li>
 
-                            <li class="mala__item roupaMontanha" hidden></li>
-                            <li class="mala__item roupaMontanha" hidden></li>
-                        </ul>
-                    </li>
-                    <li class="categoriaMala">
-                        <h3 class="categoriaMala__nome">Calçados</h3>
-                        <ul>
-                            <li class="mala__item">Par de chinelo: <text class="quantidade__chinelo">1</text></li>
-                            <li class="mala__item roupas25mais roupa20e25" hidden>Sandália: <text class="quantidade__sandalia">1</text></li>
-                            <li class="mala__item">Par de tênis<text class="bota roupa15e20 roupa10e15 roupaMenosDe10" hidden> ou bota</text>: <text class="quantidade__tenis">1</text></li>
+                            <li class="suitcase__item roupaMontanha" hidden>.</li>
                             
-                            <li class="mala__item roupaMontanha" hidden>Par de tênis confortável: no máximo 2</li>
-
-                            <li class="mala__item roupaNeve" hidden>Par de botas para neve: no máximo 2</li>
                         </ul>
                     </li>
-                    <li class="categoriaMala">
-                        <h3 class="categoriaMala__nome">Acessórios</h3>
+                    <li class="suitcaseCategory">
+                        <h3 class="suitcaseCategory__name">Calçados:</h3>
                         <ul>
-                            <li class="mala__item">Óculos de sol: <text class="quantidade__oculosDeSol">1</text></li>
-                            <li class="mala__item">Lenço médio/longo: <text class="quantidade__lenco">1</text></li>
-                            <li class="mala__item roupa10e15 roupaMenosDe10" hidden>Cachecol: <text class="quantidade__cachecol">1</text></li>
-                            <li class="mala__item roupa20e25" hidden>Meia calça fina: <text class="quantidade__meiaCalcaFina roupa15e20">1</text></li>
-                            <li class="mala__item roupa15e20 roupa10e15 roupaMenosDe10" hidden>Meia calça media: <text class="quantidade__meiaCalcaMedia">1</text></li>
-                            <li class="mala__itemroupaMenosDe10" hidden>Meia calça grossa: <text class="quantidade__meiaCalcaFina">1</text></li>
-                            <li class="mala__item roupaMenosDe10" hidden>Gorro: <text class="quantidade__gorro">1</text></li>
-                            <li class="mala__item roupaMenosDe10" hidden>Luva: <text class="quantidade__luva">1</text></li>
+                            <li class="suitcase__item">Par de chinelo: <text class="quantidade__chinelo">1</text>.</li>
+                            <li class="suitcase__item roupas25mais roupa20e25" hidden>Sandália: <text class="quantidade__sandalia">1</text>.</li>
+                            <li class="suitcase__item">Par de tênis<text class="bota roupa15e20 roupa10e15 roupaMenosDe10" hidden> ou bota</text>: <text class="quantidade__tenis">1</text>.</li>
+                            
+                            <li class="suitcase__item roupaMontanha" hidden>Par de tênis confortável: no máximo 2.</li>
 
-                            <li class="mala__item chapeuPraia roupaAgua roupaMontanha" hidden>Chapéu/boné: no máximo 2</li>
+                            <li class="suitcase__item roupaNeve" hidden>Par de botas para neve: no máximo 2.</li>
+                        </ul>
+                    </li>
+                    <li class="suitcaseCategory">
+                        <h3 class="suitcaseCategory__name">Acessórios:</h3>
+                        <ul>
+                            <li class="suitcase__item">Óculos de sol: <text class="quantidade__oculosDeSol">1</text>.</li>
+                            <li class="suitcase__item">Lenço médio/longo: <text class="quantidade__lenco">1</text>.</li>
+                            <li class="suitcase__item roupa10e15 roupaMenosDe10" hidden>Cachecol: <text class="quantidade__cachecol">1</text>.</li>
+                            <li class="suitcase__item roupa20e25" hidden>Meia calça fina: <text class="quantidade__meiaCalcaFina roupa15e20">1</text>.</li>
+                            <li class="suitcase__item roupa15e20 roupa10e15 roupaMenosDe10" hidden>Meia calça media: <text class="quantidade__meiaCalcaMedia">1</text>.</li>
+                            <li class="suitcase__itemroupaMenosDe10" hidden>Meia calça grossa: <text class="quantidade__meiaCalcaFina">1</text>.</li>
+                            <li class="suitcase__item roupaMenosDe10" hidden>Gorro: <text class="quantidade__gorro">1</text>.</li>
+                            <li class="suitcase__item roupaMenosDe10" hidden>Luva: <text class="quantidade__luva">1</text>.</li>
+
+                            <li class="suitcase__item chapeuPraia roupaAgua roupaMontanha" hidden>Chapéu/boné: no máximo 2.</li>
 
                         </ul>
                     </li>
-                    <li class="categoriaMala">
-                        <h3 class="categoriaMala__nome">Higiene e cosméticos</h3>
+                    <li class="suitcaseCategory">
+                        <h3 class="suitcaseCategory__name">Higiene e cosméticos:</h3>
                         <ul>
-                            <li class="mala__item">Shampoo</li>
-                            <li class="mala__item">Condicionador</text></li>
-                            <li class="mala__item">Sabonete</li>
-                            <li class="mala__item">Lâmina para depilar ou barbear</li>
-                            <li class="mala__item">Hidratante corporal</li>
-                            <li class="mala__item">Protetor solar</li>
-                            <li class="mala__item">Kit para skin care com os itens normalmente usados por você</li>
-                            <li class="mala__item">Kit de maquiagem com os itens normalmente usados por você</li>
-                            <li class="mala__item">Toalhas de banho: <text class="quantidade__toalhaBanho"></text></li>
-                            <li class="mala__item" hidden>Toalhas de piscina/praia: <text class="quantidade__toalhaPiscina"></text></li>
+                            <li class="suitcase__item">Shampoo.</li>
+                            <li class="suitcase__item">Condicionador.</li>
+                            <li class="suitcase__item">Sabonete.</li>
+                            <li class="suitcase__item">Lâmina para depilar ou barbear.</li>
+                            <li class="suitcase__item">Hidratante corporal.</li>
+                            <li class="suitcase__item">Protetor solar.</li>
+                            <li class="suitcase__item">Kit para skin care com os itens normalmente usados por você.</li>
+                            <li class="suitcase__item">Kit de maquiagem com os itens normalmente usados por você.</li>
+                            <li class="suitcase__item">Toalhas de banho: <text class="quantidade__toalhaBanho"></text>.</li>
+                            <li class="suitcase__item" hidden>Toalhas de piscina/praia: <text class="quantidade__toalhaPiscina"></text>.</li>
                         </ul>
                     </li>
-                    <li class="categoriaMala">
-                        <h3 class="categoriaMala__nome">Na sua mochila/bolsa de mão é bom levar:</h3>
+                    <li class="suitcaseCategory">
+                        <h3 class="suitcaseCategory__name">Na sua mochila/bolsa de mão é bom levar:</h3>
                         <ul>
-                            <li class="mala__item">Kit de remédios(dores, febre, dor de barriga, remédios específicos que você já usa)</li>
-                            <li class="mala__item">Documentos</li>
-                            <li class="mala__item">Livro</li>
-                            <li class="mala__item">Fone de ouvido</li>
+                            <li class="suitcase__item">Kit de remédios(dores, febre, dor de barriga, remédios específicos que você já usa).</li>
+                            <li class="suitcase__item">Documentos.</li>
+                            <li class="suitcase__item">Livro.</li>
+                            <li class="suitcase__item">Fone de ouvido.</li>
+                            <li class="suitcase__item">Squeeze com água.</li>
                         </ul>
                     </li>
                 </ul>
@@ -260,8 +261,8 @@
                 
             </div>           
 
-            <div class="dicas categoria">
-                <h2 class="categoria__intro dicas__intro">Dicas para que sua viagem seja o mais proveitosa e confortável possível:</h2>
+            <div class="dicas category">
+                <h2 class="category__intro dicas__intro">Dicas para que sua viagem seja o mais proveitosa e confortável possível:</h2>
                 <ul class="dicas__lista">
                     <li class="dicas__item">Faça rolinhos com as roupas para economizar espaço;</li>
                     <li class="dicas__item">Dê preferência a tecidos que não amassam e ocupam menos espaço;</li>

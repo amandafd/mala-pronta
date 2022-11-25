@@ -1,23 +1,23 @@
-/*CAPTANDO NOME*/ 
-const formNome = document.querySelector('.formulario__questao--nome');
-const nomeMala = document.querySelectorAll('.mala__nome');
-const textoInicialMala = document.querySelector('.mala__textoInicial');
+/*CAPTANDO name*/ 
+const formname = document.querySelector('.form__question--name');
+const suitcaseName = document.querySelectorAll('.suitcase__name');
+const textoInicialMala = document.querySelector('.suitcase__initialText');
 
-function mostraNome() {
-    formNome.onsubmit = function(e) {
+function mostraname() {
+    formname.onsubmit = function(e) {
         e.preventDefault();
     
-        for (let i = 0; i < nomeMala.length; i++) {
-            nomeMala[i].innerHTML = this.nome.value;
+        for (let i = 0; i < suitcaseName.length; i++) {
+            suitcaseName[i].innerHTML = this.name.value;
         }
         textoInicialMala.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
     }
 }
 
-mostraNome();
+mostraname();
 
 /*CAPTANDO DURAÇÃO TOTAL DA VIAGEM E FAZENDO CALCULOS DOS ITENS COM BASE APENAS NESSA VARIÁVEL*/
-const formDuracaoTotal = document.querySelector('.formulario__questao--duracaoTotal');
+const formDuracaoTotal = document.querySelector('.form__question--duracaoTotal');
 const quantidadeLingerie = document.querySelector('.quantidade__lingerie'); 
 const quantidadePijama = document.querySelector('.quantidade__pijama'); 
 const quantidadeBiquini = document.querySelector('.quantidade__biquini');
@@ -53,7 +53,7 @@ function calculaItens() {
 calculaItens();
 
 /*CAPTANDO VARIAÇÔES DE TEMPERATURA SELECIONADAS*/
-const formVariacaoTemperatura = document.querySelector('.formulario__questao--variacaoDeTemperatura');
+const formVariacaoTemperatura = document.querySelector('.form__question--variacaoDeTemperatura');
 
 const duracaoTemperatura = document.querySelectorAll('.duracaoTemperatura');
 
@@ -134,7 +134,7 @@ function verificaVariacaoTemperatura() {
 verificaVariacaoTemperatura();
 
 /*CAPTANDO DURAÇÂO DAS VARIAÇÔES DE TEMPERATURA*/
-const formDuracaoTemperatura = document.querySelector('.formulario__questao--duracaoTemperatura')
+const formDuracaoTemperatura = document.querySelector('.form__question--duracaoTemperatura')
 
 const quantidadeVestidoMacacao = document.querySelectorAll('.quantidade__vestidoMacacao');
 
@@ -159,8 +159,8 @@ verificaDuracaoVariacaoTemperatura();
 
 
 
-/*cenario*/
-const formCenario = document.querySelector('.formulario__questao--cenario');
+/*c*/
+const formCenario = document.querySelector('.form__question--cenario');
 
 const roupaAgua = document.querySelectorAll('.roupaAgua');
 const roupaNeve = document.querySelectorAll('.roupaNeve');
@@ -191,7 +191,7 @@ function verificaCenario() {
 verificaCenario();
 
 /*evento*/
-const formEvento = document.querySelector('.formulario__questao--evento');
+const formEvento = document.querySelector('.form__question--evento');
 
 function verificaEvento() {
     formEvento.onsubmit = function(e) {
@@ -215,7 +215,7 @@ function verificaEvento() {
 verificaEvento();
 
 /*algoMais*/
-/*const formAlgoMais = document.querySelector('.formulario__questao--algoMais');
+/*const formAlgoMais = document.querySelector('.form__question--algoMais');
 
 function verificaAlgoMais() {
     formAlgoMais.addEventListener("submit", (e) => {
