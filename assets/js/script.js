@@ -210,15 +210,21 @@ function checkEvent() {
 
 checkEvent();
 
-/*anythingElse*/
-/*const formanythingElse = document.querySelector('.form__question--anythingElse');
+/*ANYTHING ELSE*/ /*Sugestion change the function to add an new list item instead of creating in HTML and using disable = false structure, so the user can add as many items as he wants*/
+const formAnythingElse = document.querySelector('.form__question--anythingElse');
+const extraItem = document.querySelector('.extraItem');
+const extraItemCompleted = document.querySelector('.extraItemCompleted');
 
 function verificaanythingElse() {
-    formanythingElse.addEventListener("submit", (e) => {
+    formAnythingElse.addEventListener("submit", (e) => {
         e.preventDefault();
+        if(this.anythingElse.value != "") {
+            extraItem.hidden = false;
+            extraItemCompleted.innerHTML = this.anythingElse.value;
+        }
 
-        textoInicialMala.innerHTML = "Tudo certo! Verifique sua mala pronta abaixo.";
+        initialText.innerHTML = "Tudo certo! Verifique sua mala pronta abaixo.";
     })
 }
 
-verificaanythingElse();*/
+verificaanythingElse();
