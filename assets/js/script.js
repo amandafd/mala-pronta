@@ -1,48 +1,48 @@
 /*CAPTANDO name*/ 
 const formname = document.querySelector('.form__question--name');
 const suitcaseName = document.querySelectorAll('.suitcase__name');
-const textoInicialMala = document.querySelector('.suitcase__initialText');
+const initialText = document.querySelector('.suitcase__initialText');
 
-function mostraname() {
+function showName() {
     formname.onsubmit = function(e) {
         e.preventDefault();
     
         for (let i = 0; i < suitcaseName.length; i++) {
             suitcaseName[i].innerHTML = this.name.value;
         }
-        textoInicialMala.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
+        initialText.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
     }
 }
 
-mostraname();
+showName();
 
 /*CAPTANDO DURAÇÃO TOTAL DA VIAGEM E FAZENDO CALCULOS DOS ITENS COM BASE APENAS NESSA VARIÁVEL*/
-const formDuracaoTotal = document.querySelector('.form__question--duracaoTotal');
-const quantidadeLingerie = document.querySelector('.quantidade__lingerie'); 
-const quantidadePijama = document.querySelector('.quantidade__pijama'); 
-const quantidadeBiquini = document.querySelector('.quantidade__biquini');
-const quantidadeSaidaPraia = document.querySelector('.quantidade__saidaPraia');
+const formTotalVariation = document.querySelector('.form__question--totalDuration');
+const amountOfLingerie = document.querySelector('.amountOf__lingerie'); 
+const amountOfPajama = document.querySelector('.amountOf__pajama'); 
+const amountOfBikini = document.querySelector('.amountOf__bikini');
+const amountOfBeachRobe = document.querySelector('.amountOf__beachRobe');
 
-function calculaItens() {
-    formDuracaoTotal.onsubmit = function(e) {
+function calculateItens() {
+    formTotalVariation.onsubmit = function(e) {
         e.preventDefault();
         
 
-        if(this.duracaoTotal.value < 4) {
-            quantidadeLingerie.innerHTML = parseInt(this.duracaoTotal.value) + 2;
-            quantidadePijama.innerHTML = 1;
-            quantidadeBiquini.innerHTML = "no máximo 2";
-            quantidadeSaidaPraia.innerHTML = "1 ou 2";
-        } else if (this.duracaoTotal.value < 15) {
-            quantidadeLingerie.innerHTML = parseInt(this.duracaoTotal.value) + 2;
-            quantidadePijama.innerHTML = parseInt(this.duracaoTotal.value) / 2; 
-            quantidadeBiquini.innerHTML = "no máximo 3";
-            quantidadeSaidaPraia.innerHTML = "2";
+        if(this.totalVariation.value < 4) {
+            amountOfLingerie.innerHTML = parseInt(this.totalVariation.value) + 2;
+            amountOfPajama.innerHTML = 1;
+            amountOfBikini.innerHTML = "no máximo 2";
+            amountOfBeachRobe.innerHTML = "1 ou 2";
+        } else if (this.totalVariation.value < 15) {
+            amountOfLingerie.innerHTML = parseInt(this.totalVariation.value) + 2;
+            amountOfPajama.innerHTML = parseInt(this.totalVariation.value) / 2; 
+            amountOfBikini.innerHTML = "no máximo 3";
+            amountOfBeachRobe.innerHTML = "2";
         } else {
-            quantidadePijama.innerHTML = 5;
-            quantidadeLingerie.innerHTML = 18;
-            quantidadeBiquini.innerHTML = "no máximo 4";
-            quantidadeSaidaPraia.innerHTML = "3 ou 4";
+            amountOfPajama.innerHTML = 5;
+            amountOfLingerie.innerHTML = 18;
+            amountOfBikini.innerHTML = "no máximo 4";
+            amountOfBeachRobe.innerHTML = "3 ou 4";
         }
 
     
@@ -50,150 +50,146 @@ function calculaItens() {
     }
 }
 
-calculaItens();
+calculateItens();
 
 /*CAPTANDO VARIAÇÔES DE TEMPERATURA SELECIONADAS*/
-const formVariacaoTemperatura = document.querySelector('.form__question--variacaoDeTemperatura');
+const formTemperatureVariation = document.querySelector('.form__question--temperatureVariation');
 
-const duracaoTemperatura = document.querySelectorAll('.duracaoTemperatura');
+const temperatureDuration = document.querySelectorAll('.temperatureDuration');
 
-const roupa25mais = document.querySelectorAll('.roupa25mais');
-const roupa20e25 = document.querySelectorAll('.roupa20e25');
-const roupa15e20 = document.querySelectorAll('.roupa15e20');
-const roupa10e15 = document.querySelectorAll('.roupa10e15');
-const roupaMenosDe10 = document.querySelectorAll('.roupaMenosDe10');
+const moreThan25clothing = document.querySelectorAll('.moreThan25clothing');
+const t20and25clothing = document.querySelectorAll('.t20and25clothing');
+const t15and20clothing = document.querySelectorAll('.t15and20clothing');
+const t10and15clothing = document.querySelectorAll('.t10and15clothing');
+const lessThan10clothing = document.querySelectorAll('.lessThan10clothing');
 
-function verificaVariacaoTemperatura() {
-    formVariacaoTemperatura.onsubmit = function(e) {
+function checkTemperatureVariation() {
+    formTemperatureVariation.onsubmit = function(e) {
         e.preventDefault();
 
-        function ativaInputs() {
+        function activeInputs() {
             if(e.target[1].checked == true){
-                duracaoTemperatura[0].disabled = false;
-                duracaoTemperatura[0].required = true;
+                temperatureDuration[0].disabled = false;
+                temperatureDuration[0].required = true;
             }
             if(e.target[2].checked == true) {
-                duracaoTemperatura[1].disabled = false;
-                duracaoTemperatura[1].required = true;
+                temperatureDuration[1].disabled = false;
+                temperatureDuration[1].required = true;
             }
             if(e.target[3].checked == true) {
-                duracaoTemperatura[2].disabled = false;
-                duracaoTemperatura[2].required = true;  
+                temperatureDuration[2].disabled = false;
+                temperatureDuration[2].required = true;  
             }
             if(e.target[4].checked == true) {
-                duracaoTemperatura[3].disabled = false;
-                duracaoTemperatura[3].required = true;   
+                temperatureDuration[3].disabled = false;
+                temperatureDuration[3].required = true;   
             }
             if(e.target[5].checked== true) {
-                duracaoTemperatura[4].disabled = false;
-                duracaoTemperatura[4].required = true;    
+                temperatureDuration[4].disabled = false;
+                temperatureDuration[4].required = true;    
             }
             if(e.target[6].checked == true) {
-                duracaoTemperatura[5].disabled = false;
-                duracaoTemperatura[5].required = true;    
+                temperatureDuration[5].disabled = false;
+                temperatureDuration[5].required = true;    
             }
             if(e.target[7].checked == true) {
-                duracaoTemperatura[6].disabled = false;
-                duracaoTemperatura[6].required = true;  
+                temperatureDuration[6].disabled = false;
+                temperatureDuration[6].required = true;  
             }
         }
 
-        function mostraRoupas() {
-            for(i = 0; i < roupa25mais.length; i++) {
+        function showClothing() {
+            for(i = 0; i < moreThan25clothing.length; i++) {
                 if(e.target[1].checked == true) {
-                    roupa25mais[i].hidden = false;
+                    moreThan25clothing[i].hidden = false;
                 }
             }   
-            for(i = 0; i < roupa20e25.length; i++) {
+            for(i = 0; i < t20and25clothing.length; i++) {
                 if(e.target[2].checked == true) {
-                    roupa20e25[i].hidden = false;
+                    t20and25clothing[i].hidden = false;
                 }
             }
-            for(i = 0; i < roupa15e20.length; i++) {
+            for(i = 0; i < t15and20clothing.length; i++) {
                 if(e.target[3].checked == true) {
-                    roupa15e20[i].hidden = false;
+                    t15and20clothing[i].hidden = false;
                 }
             }
-            for(i = 0; i < roupa10e15.length; i++) {
+            for(i = 0; i < t10and15clothing.length; i++) {
                 if(e.target[4].checked == true) {
-                    roupa10e15[i].hidden = false;
+                    t10and15clothing[i].hidden = false;
                 }
             }
-            for(i = 0; i < roupaMenosDe10.length; i++) {
+            for(i = 0; i < lessThan10clothing.length; i++) {
                 if(e.target[5].checked == true || e.target[6].checked == true || e.target[7].checked == true) {
-                    roupaMenosDe10[i].hidden = false;
+                    lessThan10clothing[i].hidden = false;
                 }
             }
         }
 
-        ativaInputs();
-        mostraRoupas();
+        activeInputs();
+        showClothing();
     }
 }
 
-verificaVariacaoTemperatura();
+checkTemperatureVariation();
 
 /*CAPTANDO DURAÇÂO DAS VARIAÇÔES DE TEMPERATURA*/
-const formDuracaoTemperatura = document.querySelector('.form__question--duracaoTemperatura')
+const formTemperatureDuration = document.querySelector('.form__question--temperatureDuration')
 
-const quantidadeVestidoMacacao = document.querySelectorAll('.quantidade__vestidoMacacao');
+const amountOf__dress = document.querySelectorAll('.amountOf__dress');
 
 
-function verificaDuracaoVariacaoTemperatura() {
-    formDuracaoTemperatura.onsubmit = function(e) {
+function checkTemperatureDuration() {
+    formTemperatureDuration.onsubmit = function(e) {
         e.preventDefault();
         
-        if(this.duracao__25mais.value == "") {
-            
-        }
-        
-        /*quantidadeVestidoMacacao[0].innerHTML = parseInt(this.duracao__25mais.value / 3) + parseInt(this.duracao__20e25.value / 3) /*+ parseInt(this.duracao__15e20.value / 5) + parseInt(this.duracao__10e15.value / 5) + parseInt(this.duracao__5e10.value / 5) / parseInt(this.duracao__0e5.value / 5) + parseInt(this.duracao__negativa.value / 5);
-        quantidadeVestidoMacacao[1].innerHTML =  4/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
-        /*quantidadeVestidoMacacao[2].innerHTML = 8/*(this.duracao__25mais.value / x) + (this.duracao__20e25.value / x) + (this.duracao__15e20.value / x) + (this.duracao__10e15.value / x) + (this.duracao__5e10.value / x) / (this.duracao__0e5.value / x) + (this.duracao__negativa.value);*/
+        /*amountOf__dress[0].innerHTML = parseInt(this.duration__moreThan25.value / 3) + parseInt(this.duration__t20and25.value / 3) /*+ parseInt(this.duration__t15and20.value / 5) + parseInt(this.duration__t10and15.value / 5) + parseInt(this.duration__t5and10.value / 5) / parseInt(this.duration__t0and5.value / 5) + parseInt(this.duration__tNegative.value / 5);
+        amountOf__dress[1].innerHTML =  4/*(this.duration__moreThan25.value / x) + (this.duration__t20and25.value / x) + (this.duration__t15and20.value / x) + (this.duration__t10and15.value / x) + (this.duration__t5and10.value / x) / (this.duration__t0and5.value / x) + (this.duration__tNegative.value);*/
+        /*amountOf__dress[2].innerHTML = 8/*(this.duration__moreThan25.value / x) + (this.duration__t20and25.value / x) + (this.duration__t15and20.value / x) + (this.duration__t10and15.value / x) + (this.duration__t5and10.value / x) / (this.duration__t0and5.value / x) + (this.duration__tNegative.value);*/
 
         /*verificaInputAtivo();*/
     }
 }
 
-verificaDuracaoVariacaoTemperatura();
+checkTemperatureDuration();
 
 
 
-/*cenario*/
-const formCenario = document.querySelector('.form__question--cenario');
+/*Scenary*/
+const formScenary = document.querySelector('.form__question--scenary');
 
-const roupaAgua = document.querySelectorAll('.roupaAgua');
-const roupaNeve = document.querySelectorAll('.roupaNeve');
-const roupaMontanha = document.querySelectorAll('.roupaMontanha');
+const waterClothing = document.querySelectorAll('.waterClothing');
+const snowClothing = document.querySelectorAll('.snowClothing');
+const mountainClothing = document.querySelectorAll('.mountainClothing');
 
-function verificaCenario() {
-    formCenario.onsubmit = function(e) {
+function checkScenary() {
+    formScenary.onsubmit = function(e) {
         e.preventDefault();
 
-        for(i = 0; i < roupaAgua.length; i++) {
+        for(i = 0; i < waterClothing.length; i++) {
             if (e.target[1].checked == true) {
-                roupaAgua[i].hidden = false;
+                waterClothing[i].hidden = false;
             }
         }
-        for(i = 0; i < roupaNeve.length; i++) {
+        for(i = 0; i < snowClothing.length; i++) {
             if (e.target[2].checked == true) {
-                roupaNeve[i].hidden = false;
+                snowClothing[i].hidden = false;
             }
         }
-        for(i = 0; i < roupaMontanha.length; i++) {
+        for(i = 0; i < mountainClothing.length; i++) {
             if (e.target[3].checked == true) {
-                roupaMontanha[i].hidden = false;
+                mountainClothing[i].hidden = false;
             }
         }
     }
 }
 
-verificaCenario();
+checkScenary();
 
 /*evento*/
-const formEvento = document.querySelector('.form__question--evento');
+const formEvento = document.querySelector('.form__question--event');
 
-function verificaEvento() {
+function checkEvent() {
     formEvento.onsubmit = function(e) {
         e.preventDefault();
 
@@ -212,17 +208,17 @@ function verificaEvento() {
     }
 }
 
-verificaEvento();
+checkEvent();
 
-/*algoMais*/
-/*const formAlgoMais = document.querySelector('.form__question--algoMais');
+/*anythingElse*/
+/*const formanythingElse = document.querySelector('.form__question--anythingElse');
 
-function verificaAlgoMais() {
-    formAlgoMais.addEventListener("submit", (e) => {
+function verificaanythingElse() {
+    formanythingElse.addEventListener("submit", (e) => {
         e.preventDefault();
 
         textoInicialMala.innerHTML = "Tudo certo! Verifique sua mala pronta abaixo.";
     })
 }
 
-verificaAlgoMais();*/
+verificaanythingElse();*/

@@ -69,11 +69,11 @@ Cada item dentro da aplicação precisará ter um volume cadastrado. Qdo usuári
     - X Roupas de banho/biquinis/maios/sungas/calções de banho;
     - X saídas de praia/(pensar em opção);
     - X toalha de piscina;
-----Neve----
+----snow----
     - X conjuntos de calça e casaco para neve;
     - X Botas de neve;
     - X
-----Montanha/trilha----
+----mountain/trilha----
     - X calçado para trilha;
     - X jaqueta corta-vento impermeável;
     - X squeeze;
