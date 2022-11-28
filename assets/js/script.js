@@ -167,17 +167,17 @@ function checkScenary() {
         e.preventDefault();
 
         for(i = 0; i < waterClothing.length; i++) {
-            if (e.target[1].checked == true) {
+            if (e.target.elements['checkbox--water'].checked == true) {
                 waterClothing[i].hidden = false;
             }
         }
         for(i = 0; i < snowClothing.length; i++) {
-            if (e.target[2].checked == true) {
+            if (e.target.elements['checkbox--snow'].checked == true) {
                 snowClothing[i].hidden = false;
             }
         }
         for(i = 0; i < mountainClothing.length; i++) {
-            if (e.target[3].checked == true) {
+            if (e.target.elements['checkbox--mountain'].checked == true) {
                 mountainClothing[i].hidden = false;
             }
         }
