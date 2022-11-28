@@ -68,31 +68,31 @@ function checkTemperatureVariation() {
         e.preventDefault();
 
         function activeInputs() {
-            if(e.target[1].checked == true){
+            if(e.target.elements['tv--tMoreThan25'].checked == true){
                 temperatureDuration[0].disabled = false;
                 temperatureDuration[0].required = true;
             }
-            if(e.target[2].checked == true) {
+            if(e.target.elements['tv--t20and25'].checked == true) {
                 temperatureDuration[1].disabled = false;
                 temperatureDuration[1].required = true;
             }
-            if(e.target[3].checked == true) {
+            if(e.target.elements['tv--t15and20'].checked == true) {
                 temperatureDuration[2].disabled = false;
                 temperatureDuration[2].required = true;  
             }
-            if(e.target[4].checked == true) {
+            if(e.target.elements['tv--10and15'].checked == true) {
                 temperatureDuration[3].disabled = false;
                 temperatureDuration[3].required = true;   
             }
-            if(e.target[5].checked== true) {
+            if(e.target.elements['tv--t5and10'].checked== true) {
                 temperatureDuration[4].disabled = false;
                 temperatureDuration[4].required = true;    
             }
-            if(e.target[6].checked == true) {
+            if(e.target.elements['tv--t0and5'].checked == true) {
                 temperatureDuration[5].disabled = false;
                 temperatureDuration[5].required = true;    
             }
-            if(e.target[7].checked == true) {
+            if(e.target.elements['tv--tNegative'].checked == true) {
                 temperatureDuration[6].disabled = false;
                 temperatureDuration[6].required = true;  
             }
