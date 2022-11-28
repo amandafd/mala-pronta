@@ -193,16 +193,16 @@ function checkEvent() {
     formEvento.onsubmit = function(e) {
         e.preventDefault();
 
-        if(e.target[1].checked == true) {
+        if(e.target.elements['checkbox--nothing'].checked == true) {
             console.log("Nada");
         }
-        if(e.target[2].checked == true) {
+        if(e.target.elements['checkbox--party'].checked == true) {
             console.log("Balada");
         }
-        if(e.target[3].checked == true) {
+        if(e.target.elements['checkbox--formal'].checked == true) {
             console.log("Festa Formal");
         }
-        if(e.target[4].checked == true) {
+        if(e.target.elements['checkbox--costume'].checked == true) {
             console.log("Festa a fantasia");
         }
     }
