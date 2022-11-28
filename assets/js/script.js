@@ -214,14 +214,18 @@ checkEvent();
 const formAnythingElse = document.querySelector('.form__question--anythingElse');
 const extraItem = document.querySelector('.extraItem');
 const extraItemCompleted = document.querySelector('.extraItemCompleted');
+const aEItems = [];
 
 function checkAnythingElse() {
     formAnythingElse.addEventListener("submit", (e) => {
         e.preventDefault();
 
         initialText.innerHTML = "Tudo certo! Sua mala:";
+        const anythingElseElement = e.target.elements['anythingElseElement'];
 
-        createAnythingElseElement(e.target.elements['anythingElseElement'].value);
+        createAnythingElseElement(anythingElseElement.value);
+
+        anythingElseElement.value = "";
     })
 }
 
@@ -236,6 +240,14 @@ function createAnythingElseElement(anythingElseElement) {
     const list = document.querySelector('#list__extraItems');
 
     list.appendChild(newAnythingElseElement);
+
+    const aECurrentItem = {
+        "anythingElseElement": anythingElseElement,
+    }
+
+    aEItems.push(aECurrentItem);
+
+    localStorage.setItem("aEItem", JSON.stringify(aEItems));
 }
 
 checkAnythingElse();
