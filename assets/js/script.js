@@ -1,4 +1,4 @@
-/*Name*/ 
+/*Name*/ /*Sugestion: find out how to save all informations in localStorange, and show even if users refresh page*/
 const formname = document.querySelector('.form__question--name');
 const suitcaseName = document.querySelectorAll('.suitcase__name');
 const initialText = document.querySelector('.suitcase__initialText');
@@ -214,7 +214,11 @@ checkEvent();
 const formAnythingElse = document.querySelector('.form__question--anythingElse');
 const extraItem = document.querySelector('.extraItem');
 const extraItemCompleted = document.querySelector('.extraItemCompleted');
-const aEItems = [];
+const aEItems = JSON.parse(localStorage.getItem("aEItems")) || [];
+
+aEItems.forEach( (element) => {
+    console.log(element.anythingElseElement);
+})
 
 function checkAnythingElse() {
     formAnythingElse.addEventListener("submit", (e) => {
@@ -247,7 +251,7 @@ function createAnythingElseElement(anythingElseElement) {
 
     aEItems.push(aECurrentItem);
 
-    localStorage.setItem("aEItem", JSON.stringify(aEItems));
+    localStorage.setItem("aEItems", JSON.stringify(aEItems));
 }
 
 checkAnythingElse();
