@@ -1,4 +1,4 @@
-/*CAPTANDO name*/ 
+/*Name*/ 
 const formname = document.querySelector('.form__question--name');
 const suitcaseName = document.querySelectorAll('.suitcase__name');
 const initialText = document.querySelector('.suitcase__initialText');
@@ -16,7 +16,7 @@ function showName() {
 
 showName();
 
-/*CAPTANDO DURAÇÃO TOTAL DA VIAGEM E FAZENDO CALCULOS DOS ITENS COM BASE APENAS NESSA VARIÁVEL*/
+/*Total duration*/
 const formTotalVariation = document.querySelector('.form__question--totalDuration');
 const amountOfLingerie = document.querySelector('.amountOf__lingerie'); 
 const amountOfPajama = document.querySelector('.amountOf__pajama'); 
@@ -52,7 +52,7 @@ function calculateItens() {
 
 calculateItens();
 
-/*CAPTANDO VARIAÇÔES DE TEMPERATURA SELECIONADAS*/
+/*Temperature variation*/
 const formTemperatureVariation = document.querySelector('.form__question--temperatureVariation');
 
 const temperatureDuration = document.querySelectorAll('.temperatureDuration');
@@ -133,7 +133,7 @@ function checkTemperatureVariation() {
 
 checkTemperatureVariation();
 
-/*CAPTANDO DURAÇÂO DAS VARIAÇÔES DE TEMPERATURA*/
+/*Temperature duration*/
 const formTemperatureDuration = document.querySelector('.form__question--temperatureDuration')
 
 const amountOf__dress = document.querySelectorAll('.amountOf__dress');
@@ -186,7 +186,7 @@ function checkScenary() {
 
 checkScenary();
 
-/*evento*/
+/*Event*/
 const formEvento = document.querySelector('.form__question--event');
 
 function checkEvent() {
@@ -210,12 +210,12 @@ function checkEvent() {
 
 checkEvent();
 
-/*ANYTHING ELSE*/ /*Sugestion change the function to add an new list item instead of creating in HTML and using disable = false structure, so the user can add as many items as he wants*/
+/*Anything else*/ /*Sugestion change the function to add an new list item instead of creating in HTML and using disable = false structure, so the user can add as many items as he wants*/
 const formAnythingElse = document.querySelector('.form__question--anythingElse');
 const extraItem = document.querySelector('.extraItem');
 const extraItemCompleted = document.querySelector('.extraItemCompleted');
 
-function verificaanythingElse() {
+function checkAnythingElse() {
     formAnythingElse.addEventListener("submit", (e) => {
         e.preventDefault();
         if(this.anythingElse.value != "") {
@@ -227,4 +227,4 @@ function verificaanythingElse() {
     })
 }
 
-verificaanythingElse();
+checkAnythingElse();
