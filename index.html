@@ -140,11 +140,11 @@
                     </form>
                         
                     <form class="form__question form__question--anythingElse" action="submit">
-                        <label for="anythingElse" class="form__asking form__asking--field">Preencha o campo abaixo caso houver algum outro item(e quantidade) que precise incluir na mala ou digite 0. Exemplo: Roupas de cama: 2</label><br>
-                        <input type="text" id="anythingElse" name="anythingElse" class="form__answer--text">
+                        <label for="anythingElse" class="form__asking form__asking--field">Preencha o campo abaixo caso houver outros itens que precise incluir na mala (exemplo: Roupas de cama: 2). Depois é só conferir sua mala abaixo.</label><br>
+                        <input type="text" id="anythingElse" name="anythingElseElement" class="form__answer--text">
                         <div class="btn__container">
                             <input type="submit" value="VOLTAR" class="btn" id="btn__back--anythingElse">
-                            <input type="submit" value="FAZER AS MALAS" class="btn" id="btn__next--anythingElse">
+                            <input type="submit" value="ADICIONAR" class="btn" id="btn__next--anythingElse">
                         </div>
                     </form>
 
@@ -246,9 +246,9 @@
                             <li class="suitcase__item">Squeeze com água.</li>
                         </ul>
                     </li>
-                    <li class="suitcaseCategory suitcase__item"> 
+                    <li class="suitcaseCategory"> 
                         <h3 class="suitcaseCategory__name">Seus itens extras:</h3>
-                        <ul>
+                        <ul id="list__extraItems">
                             <li class="suitcase__item  waterClothing" hidden>Roupa de banho: <text class="amountOf__bikini">1</text>.</li>
                             <li class="suitcase__item waterClothing" hidden>Saída de praia (vestido/canga/calção/camiseta/etc): <text class="amountOf__saidaPraia">1</text>.</li>
                             <li class="suitcase__item snowClothing"hidden>Conjunto para neve (casaco + calça): no máximo 2.</li>
@@ -256,7 +256,7 @@
                             <li class="suitcase__item mountainClothing" hidden>Calça para prática esportiva: <text class="amountOf__sportPants">1</text>.</li>
                             <li class="suitcase__item mountainClothing" hidden>Camiseta para prática esportiva: <text class="amountOf__tShirtPants">1</text>.</li>
                             <!--Event itens-->
-                            <li class="suitcase__item extraItem" hidden><text class="extraItemCompleted"></text>.</li>
+                            <!--<li class="suitcase__item extraItem" hidden><text class="extraItemCompleted"></text>.</li>-->
                         </ul>
                     </li>
                 </ul>

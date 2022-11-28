@@ -210,7 +210,7 @@ function checkEvent() {
 
 checkEvent();
 
-/*Anything else*/ /*Sugestion change the function to add an new list item instead of creating in HTML and using disable = false structure, so the user can add as many items as he wants*/
+/*Anything else*/ 
 const formAnythingElse = document.querySelector('.form__question--anythingElse');
 const extraItem = document.querySelector('.extraItem');
 const extraItemCompleted = document.querySelector('.extraItemCompleted');
@@ -218,13 +218,24 @@ const extraItemCompleted = document.querySelector('.extraItemCompleted');
 function checkAnythingElse() {
     formAnythingElse.addEventListener("submit", (e) => {
         e.preventDefault();
-        if(this.anythingElse.value != "") {
-            extraItem.hidden = false;
-            extraItemCompleted.innerHTML = this.anythingElse.value;
-        }
 
-        initialText.innerHTML = "Tudo certo! Verifique sua mala pronta abaixo.";
+        initialText.innerHTML = "Tudo certo! Sua mala:";
+
+        createAnythingElseElement(e.target.elements['anythingElseElement'].value);
     })
+}
+
+/*<li class="suitcase__item extraItem" hidden>Item extra</li>*/
+function createAnythingElseElement(anythingElseElement) {
+    const newAnythingElseElement = document.createElement('li');
+    newAnythingElseElement.classList.add("suitcase__item");
+    newAnythingElseElement.classList.add("extraItem");
+
+    newAnythingElseElement.innerHTML = anythingElseElement;
+    
+    const list = document.querySelector('#list__extraItems');
+
+    list.appendChild(newAnythingElseElement);
 }
 
 checkAnythingElse();
