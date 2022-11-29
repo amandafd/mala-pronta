@@ -226,32 +226,32 @@ function checkAnythingElse() {
 
         initialText.innerHTML = "Tudo certo! Sua mala:";
         const anythingElseElement = e.target.elements['anythingElseElement'];
+        
+        const aECurrentItem = {
+            "anythingElseElement": anythingElseElement.value,
+        }
 
-        createAnythingElseElement(anythingElseElement.value);
+        createAnythingElseElement(aECurrentItem);
+
+        aEItems.push(aECurrentItem);
+    
+        localStorage.setItem("aEItems", JSON.stringify(aEItems));
 
         anythingElseElement.value = "";
     })
 }
 
 /*<li class="suitcase__item extraItem" hidden>Item extra</li>*/
-function createAnythingElseElement(anythingElseElement) {
+function createAnythingElseElement(extraItem) {
     const newAnythingElseElement = document.createElement('li');
     newAnythingElseElement.classList.add("suitcase__item");
     newAnythingElseElement.classList.add("extraItem");
 
-    newAnythingElseElement.innerHTML = anythingElseElement;
+    newAnythingElseElement.innerHTML = extraItem.anythingElseElement;
     
     const list = document.querySelector('#list__extraItems');
 
     list.appendChild(newAnythingElseElement);
-
-    const aECurrentItem = {
-        "anythingElseElement": anythingElseElement,
-    }
-
-    aEItems.push(aECurrentItem);
-
-    localStorage.setItem("aEItems", JSON.stringify(aEItems));
 }
 
 checkAnythingElse();
