@@ -217,7 +217,7 @@ const extraItemCompleted = document.querySelector('.extraItemCompleted');
 const aEItems = JSON.parse(localStorage.getItem("aEItems")) || [];
 
 aEItems.forEach( (element) => {
-    console.log(element.anythingElseElement);
+    createAnythingElseElement(element);
 })
 
 function checkAnythingElse() {
@@ -247,7 +247,7 @@ function createAnythingElseElement(extraItem) {
     newAnythingElseElement.classList.add("suitcase__item");
     newAnythingElseElement.classList.add("extraItem");
 
-    newAnythingElseElement.innerHTML = extraItem.anythingElseElement;
+    newAnythingElseElement.innerHTML += extraItem.anythingElseElement;
     
     const list = document.querySelector('#list__extraItems');
 

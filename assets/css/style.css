@@ -119,7 +119,7 @@ form label {
    height: 10.5rem;
 }
 
-.form__question--anythingElse .form__answer--text {
+.form__answer--text {
    margin: 3.5rem 0;
 }
 
@@ -159,6 +159,32 @@ form label {
    margin-left: 9rem;
 }
 
+.form__answers--itemAmountOfFields {
+   display: grid;
+   grid-template-columns: 21% 21%;
+   justify-content: center;
+   gap:;
+   height: 10.5rem;
+}
+
+.form__answer--itemField {
+   height: 2rem;
+   width: ;
+   padding: 1rem 0;
+   border-radius: 1rem;
+   font-size: 0.9rem;
+   text-align: center;
+}
+
+.form__answer--amountOfField {
+   height: 2rem;
+   width: ;
+   padding: 1rem 0;
+   border-radius: 1rem;
+   font-size: 0.9rem;
+   text-align: center;
+}
+
 .btn__container {
    display: flex;
    justify-content: space-evenly;
@@ -183,11 +209,6 @@ form label {
    color: var(--cinza-claro);
    border: none;
    transition: 0.5s;
-}
-
-#btn__next--anythingElse {
-   font-size: 1.8rem;
-   font-weight: 700;
 }
 
 .suitcase, .tips {
@@ -260,6 +281,12 @@ footer a:hover {
       gap: 0 2rem;
    }
 
+   .form__answers--itemAmountOfFields {
+      height: 9rem;
+      grid-template-columns: 28% 28% 28%;
+      gap: 0 2rem;
+   }
+
    #form__answer--variationOptions {
       margin-left: 1.5rem;
       grid-template-columns: 25% 25% 25%;
@@ -274,7 +301,7 @@ footer a:hover {
       gap: 0 6rem;
    }
 
-   .form__question--anythingElse .form__answer--text {
+.form__answer--text {
       margin: 3.1rem 0;
    }
 
@@ -283,9 +310,23 @@ footer a:hover {
       width: 8rem;
    }
 
-   #btn__next--anythingElse {
-      font-size: 1.4rem;
-   }
+   .form__answer--itemField {
+   height: 2rem;
+   width: ;
+   padding: 1rem 0;
+   border-radius: 1rem;
+   font-size: 0.9rem;
+   text-align: center;
+}
+
+.form__answer--amountOfField {
+   height: 2rem;
+   width: ;
+   padding: 1rem 0;
+   border-radius: 1rem;
+   font-size: 0.9rem;
+   text-align: center;
+}
    
    footer {
        font-size: 0.7rem;
@@ -317,11 +358,27 @@ footer a:hover {
       gap: 0 2rem;
    }
 
+   .form__answers--itemAmountOfFields {
+      height: 8rem;
+      grid-template-columns: 26% 26% 26%;
+      gap: 0 2rem;
+   }
+
    .form__answer--options {
       height: 11rem;
    }
 
    .form__answer--severalNumbers {
+      width: 5.8rem;
+      font-size: 0.8rem;
+   }
+
+   .form__answer--itemField {
+      width: 5.8rem;
+      font-size: 0.8rem;
+   }
+   
+   .form__answer--amountOfField {
       width: 5.8rem;
       font-size: 0.8rem;
    }
@@ -339,7 +396,7 @@ footer a:hover {
       gap: 0 3.8rem;
    }
 
-   .form__question--anythingElse .form__answer--text {
+.form__answer--text {
       margin: 2.2rem 0;
    }
 
@@ -390,7 +447,23 @@ footer a:hover {
       height: 9rem;
    }
 
+   .form__answers--itemAmountOfFields {
+      grid-template-columns: 28% 28% 28%;
+      gap: 0 1rem;
+      height: 9rem;
+   }
+
    .form__answer--severalNumbers {
+      width: 5.8rem;
+      font-size: 0.8rem;
+   }
+
+   .form__answer--itemField {
+      width: 5.8rem;
+      font-size: 0.8rem;
+   }
+   
+   .form__answer--amountOfField {
       width: 5.8rem;
       font-size: 0.8rem;
    }
@@ -402,7 +475,7 @@ footer a:hover {
       gap: 0 2.8rem;
    }
 
-   .form__question--anythingElse .form__answer--text {
+  .form__answer--text {
       margin: 2.5rem 0;
    }
 
@@ -439,6 +512,11 @@ footer a:hover {
       gap: 0 1rem;
    }
 
+   .form__answers--itemAmountOfFields {
+      grid-template-columns: 29% 29% 28%;
+      gap: 0 1rem;
+   }
+
    #form__answer--variationOptions {
       grid-template-columns: 31% 29% 29%;
       gap: 0 1rem;
@@ -461,16 +539,29 @@ footer a:hover {
       font-size: 0.7rem;
    }
 
+   .form__answer--itemField {
+      width: 5rem;
+      font-size: 0.7rem;
+   }
+   
+   .form__answer--amountOfField {
+      width: 5rem;
+      font-size: 0.7rem;
+   }
+
    .form__answers--severalFields {
       grid-template-columns: 28% 28% 28%;
-      
+   }
+
+   .form__answers--itemAmountOfFields {
+      grid-template-columns: 28% 28% 28%;
    }
 
    .form__answer--text, .form__answer--number {
       border-radius: 1.25rem;
    }
 
-   .form__question--anythingElse .form__answer--text {
+ .form__answer--text {
       margin: 3.1rem 0;
    }
 
