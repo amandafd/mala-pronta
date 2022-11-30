@@ -29,11 +29,11 @@
             <div class="form">
                 <section>
 
-                    <form class="form__question form__question--text form__question--name" action="submit">
+                    <form class="form__question form__question--name" action="submit">
                         <label for="name" class="form__asking form__asking--field">Qual o seu nome?</label><br>
                         <input type="text" name="name" id="name" class="form__answer--text" required>
                         <div class="btn__container">
-                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__next--name">
+                            <input type="submit" value="PRÓXIMO" class="btn">
                         </div> 
                     </form>
 
@@ -41,60 +41,59 @@
                         <label for="totalVariation" class="form__asking form__asking--field">Quantos dias vai durar sua viagem?</label><br>
                         <input type="number" name="totalVariation" id="totalVariation" class="form__answer--number" min="1" required>
                         <div class="btn__container">
-                            <input type="submit" value="VOLTAR" class="btn" id="btn__back--totalVariation">
-                            <input type="submit" value="PRÓXIMO" class="btn" id="btn__next--totalVariation">
+                            <input type="submit" value="VOLTAR" class="btn">
+                            <input type="submit" value="PRÓXIMO" class="btn">
                         </div> 
                     </form>
 
-                    <form class="form__question form__question--temperatureVariation" id="form__question--temperatureVariation" action="submit">
+                    <form class="form__question form__question--temperatureVariation" action="submit">
                         <fieldset>
                             <legend class="form__asking" align="center">Selecione as variações de temperatura encontradas em sua viagem:</legend>
                             <div class="form__answer--options" id="form__answer--variationOptions">
                                 <label for="tv--tMoreThan25">
-                                    <input type="checkbox" name="tv--tMoreThan25" id="tv--tMoreThan25" value="25ºC or more">25ºC ou mais
+                                    <input type="checkbox" name="tv--tMoreThan25" value="25ºC or more">25ºC ou mais
                                 </label>
                                 <label for="tv--t20and25">
-                                    <input type="checkbox" name="tv--t20and25" id="tv--t20and25" value="20ºC and 25ºC">20ºC e 25ºC
+                                    <input type="checkbox" name="tv--t20and25" value="20ºC and 25ºC">20ºC e 25ºC
                                 </label>
                                 <label for="tv--t15and20">
-                                    <input type="checkbox" name="tv--t15and20" id="tv--t15and20" value="15ºC and 20ºC">15ºC e 20ºC
+                                    <input type="checkbox" name="tv--t15and20" value="15ºC and 20ºC">15ºC e 20ºC
                                 </label>
                                 <label for="tv--t10and15">
-                                    <input type="checkbox" name="tv--t10and15" id="tv--t10and15" value="10ºC and 15ºC">10ºC e 15ºC
+                                    <input type="checkbox" name="tv--t10and15" value="10ºC and 15ºC">10ºC e 15ºC
                                 </label>
                                 <label for="tv--t5and10">
-                                    <input type="checkbox" name="tv--t5and10" id="tv--t5and10" value="5ºC and 10ºC">5ºC e 10ºC
+                                    <input type="checkbox" name="tv--t5and10" value="5ºC and 10ºC">5ºC e 10ºC
                                 </label>
                                 <label for="tv--t0and5">
-                                    <input type="checkbox" name="tv--t0and5" id="tv--t0and5" value="0ºC and 5ºC">0ºC e 5ºC
+                                    <input type="checkbox" name="tv--t0and5" value="0ºC and 5ºC">0ºC e 5ºC
                                 </label>
                                 <label for="tv--tNegative">
-                                    <input type="checkbox" name="tv--tNegative" id="tv--tNegative" value="Abaixo de 0ºC">Abaixo de 0ºC
+                                    <input type="checkbox" name="tv--tNegative" value="Abaixo de 0ºC">Abaixo de 0ºC
                                 </label>
                             </div>
                             <div class="btn__container">
-                                <input type="submit" value="VOLTAR" class="btn" id="btn__back--temperatureVariation">
-                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__next--temperatureVariation">
+                                <input type="submit" value="VOLTAR" class="btn">
+                                <input type="submit" value="PRÓXIMO" class="btn">
                             </div> 
-                            
                         </fieldset>
                     </form>
 
                     <form class="form__question form__question--temperatureDuration" action="submit">
                         <fieldset>
                             <legend class="form__asking" align="center">Coloque o número de dias que a temperatura permanecerá em cada variação. A soma total dos dias deve ser igual à duração total da viagem:</legend>
-                            <div class="form__answers form__answers--severalFields">
-                                <input type="number" name="duration__moreThan25" class="form__answer--severalNumbers temperatureDuration" placeholder="25ºC ou mais" min="1" disabled>
-                                <input type="number" name="duration__t20and25" class="form__answer--severalNumbers temperatureDuration" placeholder="20ºC e 25ºC" min="1" disabled>
-                                <input type="number" name="duration__t15and20" class="form__answer--severalNumbers temperatureDuration" placeholder="15ºC e 20ºC" min="1" disabled>
-                                <input type="number" name="duration__t10and15" class="form__answer--severalNumbers temperatureDuration" placeholder="10ºC e 15ºC" min="1" disabled>
-                                <input type="number" name="duration__t5and10" class="form__answer--severalNumbers temperatureDuration" placeholder="5ºC e 10ºC" min="1" disabled>
-                                <input type="number" name="duration__t0and5" class="form__answer--severalNumbers temperatureDuration" placeholder="0ºC e 5ºC" min="1" disabled>
-                                <input type="number" name="duration__tNegative" class="form__answer--severalNumbers  temperatureDuration" min="1" placeholder="Abaixo de 0ºC" disabled>
+                            <div class="form__answers--sevenFields">
+                                <input type="number" name="duration__moreThan25" class="form__answer--sevenNumbers temperatureDuration" placeholder="25ºC ou mais" min="1" disabled>
+                                <input type="number" name="duration__t20and25" class="form__answer--sevenNumbers temperatureDuration" placeholder="20ºC e 25ºC" min="1" disabled>
+                                <input type="number" name="duration__t15and20" class="form__answer--sevenNumbers temperatureDuration" placeholder="15ºC e 20ºC" min="1" disabled>
+                                <input type="number" name="duration__t10and15" class="form__answer--sevenNumbers temperatureDuration" placeholder="10ºC e 15ºC" min="1" disabled>
+                                <input type="number" name="duration__t5and10" class="form__answer--sevenNumbers temperatureDuration" placeholder="5ºC e 10ºC" min="1" disabled>
+                                <input type="number" name="duration__t0and5" class="form__answer--sevenNumbers temperatureDuration" placeholder="0ºC e 5ºC" min="1" disabled>
+                                <input type="number" name="duration__tNegative" class="form__answer--sevenNumbers  temperatureDuration" min="1" placeholder="Abaixo de 0ºC" disabled>
                             </div>
                             <div class="btn__container">
-                                <input type="submit" value="VOLTAR" class="btn" id="btn__back--temperatureDuration">
-                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__next--temperatureDuration">
+                                <input type="submit" value="VOLTAR" class="btn">
+                                <input type="submit" value="PRÓXIMO" class="btn">
                             </div>
                         </fieldset>
                     </form>
@@ -117,8 +116,8 @@
                                 </label>
                             </div>
                             <div class="btn__container">
-                                <input type="submit" value="VOLTAR" class="btn" id="btn__back--scenary">
-                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__next--scenary">
+                                <input type="submit" value="VOLTAR" class="btn">
+                                <input type="submit" value="PRÓXIMO" class="btn">
                             </div> 
                         </fieldset>
                     </form>
@@ -133,22 +132,22 @@
                                     <label for="checkbox--costume"><input type="checkbox" name="checkbox--costume" id="checkbox--costume" value="costume">Festa a fantasia</label>
                                 </div>
                                 <div class="btn__container">
-                                    <input type="submit" value="VOLTAR" class="btn" id="btn__back--event">
-                                    <input type="submit" value="PRÓXIMO" class="btn" id="btn__next--event">
+                                    <input type="submit" value="VOLTAR" class="btn">
+                                    <input type="submit" value="PRÓXIMO" class="btn">
                                 </div>
                         </fieldset>
                     </form>
 
-                    <form class="form__question form__question--temperatureDuration" action="submit">
+                    <form class="form__question form__question--anythingElse" action="submit">
                         <fieldset>
                             <legend class="form__asking" align="center">Preencha o campo abaixo caso houver outros itens que precise incluir na mala. Depois é só conferir sua mala abaixo.</legend>
-                            <div class="form__answers form__answers--itemAmountOfFields">
+                            <div class="form__answers--itemAmountOfFields">
                                 <input type="text" name="item" class="form__answer--itemField" placeholder="Item" min="1" disabled>
                                 <input type="number" name="amountOf" class="form__answer--amountOfField" placeholder="Quantidade" min="1" disabled>
                             </div>
                             <div class="btn__container">
-                                <input type="submit" value="VOLTAR" class="btn" id="btn__back--temperatureDuration">
-                                <input type="submit" value="PRÓXIMO" class="btn" id="btn__next--temperatureDuration">
+                                <input type="submit" value="VOLTAR" class="btn">
+                                <input type="submit" value="PRÓXIMO" class="btn">
                             </div>
                         </fieldset>
                     </form>
