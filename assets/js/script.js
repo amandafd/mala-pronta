@@ -212,46 +212,34 @@ checkEvent();
 
 /*Anything else*/ 
 const formAnythingElse = document.querySelector('.form__question--anythingElse');
-const extraItem = document.querySelector('.extraItem');
-const extraItemCompleted = document.querySelector('.extraItemCompleted');
-const aEItems = JSON.parse(localStorage.getItem("aEItems")) || [];
-
-aEItems.forEach( (element) => {
-    createAnythingElseElement(element);
-})
+const extraItemsList = document.querySelector("#list__extraItems");
 
 function checkAnythingElse() {
-    formAnythingElse.addEventListener("submit", (e) => {
+    formAnythingElse.onsubmit = function(e) {
         e.preventDefault();
 
-        initialText.innerHTML = "Tudo certo! Sua mala:";
-        const anythingElseElement = e.target.elements['anythingElseElement'];
-        
-        const aECurrentItem = {
-            "anythingElseElement": anythingElseElement.value,
-        }
-
-        createAnythingElseElement(aECurrentItem);
-
-        aEItems.push(aECurrentItem);
-    
-        localStorage.setItem("aEItems", JSON.stringify(aEItems));
-
-        anythingElseElement.value = "";
-    })
+        createAEElement(this.aEItem.value, this.aEAmountOf.value);
+    }
 }
+
+function createAEElement(aEIName, aEAmountOf) {
+    const newAEItem = document.createElement('li');
+    newAEItem.classList.add("extraItem");
+
+    const newAEIName = document.createElement('span');
+    newAEIName.innerHTML = aEIName + ": ";
+
+    newAEItem.appendChild(newAEIName);
+    newAEItem.innerHTML += aEAmountOf;
+
+    extraItemsList.appendChild(newAEItem);
+
+    /*newAEItem.appendChild(newAEAmountOf);
+    newAEItem.innerHTML += aEIName;
+
+    extraItemsList.appendChild(newAEItem);*/
+}
+
 
 /*<li class="suitcase__item extraItem" hidden>Item extra</li>*/
-function createAnythingElseElement(extraItem) {
-    const newAnythingElseElement = document.createElement('li');
-    newAnythingElseElement.classList.add("suitcase__item");
-    newAnythingElseElement.classList.add("extraItem");
-
-    newAnythingElseElement.innerHTML += extraItem.anythingElseElement;
-    
-    const list = document.querySelector('#list__extraItems');
-
-    list.appendChild(newAnythingElseElement);
-}
-
 checkAnythingElse();
