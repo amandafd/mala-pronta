@@ -19,25 +19,25 @@ function showName() {
 showName();
 
 /*Total duration*/
-const formTotalVariation = document.querySelector('.form__question--totalDuration');
+const formTotalDuration = document.querySelector('.form__question--totalDuration');
 const amountOfLingerie = document.querySelector('.amountOf__lingerie'); 
 const amountOfPajama = document.querySelector('.amountOf__pajama'); 
 const amountOfBikini = document.querySelector('.amountOf__bikini');
 const amountOfBeachRobe = document.querySelector('.amountOf__beachRobe');
 
 function calculateItens() {
-    formTotalVariation.onsubmit = function(e) {
+    formTotalDuration.onsubmit = function(e) {
         e.preventDefault();
         
 
-        if(this.totalVariation.value < 4) {
-            amountOfLingerie.innerHTML = parseInt(this.totalVariation.value) + 2;
+        if(this.totalDuration.value < 4) {
+            amountOfLingerie.innerHTML = parseInt(this.totalDuration.value) + 2;
             amountOfPajama.innerHTML = 1;
             amountOfBikini.innerHTML = "no máximo 2";
             amountOfBeachRobe.innerHTML = "1 ou 2";
-        } else if (this.totalVariation.value < 15) {
-            amountOfLingerie.innerHTML = parseInt(this.totalVariation.value) + 2;
-            amountOfPajama.innerHTML = parseInt(this.totalVariation.value) / 2; 
+        } else if (this.totalDuration.value < 15) {
+            amountOfLingerie.innerHTML = parseInt(this.totalDuration.value) + 2;
+            amountOfPajama.innerHTML = parseInt(this.totalDuration.value) / 2; 
             amountOfBikini.innerHTML = "no máximo 3";
             amountOfBeachRobe.innerHTML = "2";
         } else {
@@ -47,6 +47,8 @@ function calculateItens() {
             amountOfBeachRobe.innerHTML = "3 ou 4";
         }
 
+        this.totalDuration.value = "";
+
     
        
     }
@@ -54,7 +56,7 @@ function calculateItens() {
 
 calculateItens();
 
-/*Temperature variation*/
+/*Temperature variation*/ /* TODO: find out how to uncheck all checkboxes at the end */
 const formTemperatureVariation = document.querySelector('.form__question--temperatureVariation');
 
 const temperatureDuration = document.querySelectorAll('.temperatureDuration');
@@ -82,7 +84,7 @@ function checkTemperatureVariation() {
                 temperatureDuration[2].disabled = false;
                 temperatureDuration[2].required = true;  
             }
-            if(e.target.elements['tv--10and15'].checked == true) {
+            if(e.target.elements['tv--t10and15'].checked == true) {
                 temperatureDuration[3].disabled = false;
                 temperatureDuration[3].required = true;   
             }
@@ -128,6 +130,7 @@ function checkTemperatureVariation() {
             }
         }
 
+
         activeInputs();
         showClothing();
     }
@@ -135,7 +138,7 @@ function checkTemperatureVariation() {
 
 checkTemperatureVariation();
 
-/*Temperature duration*/
+/*Temperature duration*/ /* TODO: find out how to clear all the fields at the end */
 const formTemperatureDuration = document.querySelector('.form__question--temperatureDuration')
 
 const amountOf__dress = document.querySelectorAll('.amountOf__dress');
@@ -145,11 +148,13 @@ function checkTemperatureDuration() {
     formTemperatureDuration.onsubmit = function(e) {
         e.preventDefault();
         
-        /*amountOf__dress[0].innerHTML = parseInt(this.duration__moreThan25.value / 3) + parseInt(this.duration__t20and25.value / 3) /*+ parseInt(this.duration__t15and20.value / 5) + parseInt(this.duration__t10and15.value / 5) + parseInt(this.duration__t5and10.value / 5) / parseInt(this.duration__t0and5.value / 5) + parseInt(this.duration__tNegative.value / 5);
-        amountOf__dress[1].innerHTML =  4/*(this.duration__moreThan25.value / x) + (this.duration__t20and25.value / x) + (this.duration__t15and20.value / x) + (this.duration__t10and15.value / x) + (this.duration__t5and10.value / x) / (this.duration__t0and5.value / x) + (this.duration__tNegative.value);*/
-        /*amountOf__dress[2].innerHTML = 8/*(this.duration__moreThan25.value / x) + (this.duration__t20and25.value / x) + (this.duration__t15and20.value / x) + (this.duration__t10and15.value / x) + (this.duration__t5and10.value / x) / (this.duration__t0and5.value / x) + (this.duration__tNegative.value);*/
-
-        /*verificaInputAtivo();*/
+        this.duration__moreThan25.value = "";
+        this.duration__t20and25.value = "";
+        this.duration__t15and20.value = "";
+        this.duration__t10and15.value = "";
+        this.duration__t5and10.value = "";
+        this.duration__t0and5.value = "";
+        this.duration__tNegative.value = "";
     }
 }
 
@@ -157,7 +162,7 @@ checkTemperatureDuration();
 
 
 
-/*Scenary*/
+/*Scenary*/ /* TODO: find out how to uncheck all checkboxes at the end */
 const formScenary = document.querySelector('.form__question--scenary');
 
 const waterClothing = document.querySelectorAll('.waterClothing');
@@ -188,7 +193,7 @@ function checkScenary() {
 
 checkScenary();
 
-/*Event*/
+/*Event*/ /* TODO: find out how to uncheck all checkboxes at the end */
 const formEvento = document.querySelector('.form__question--event');
 
 function checkEvent() {
@@ -229,6 +234,7 @@ function checkAnythingElse() {
 function createAEElement(aEIName, aEAmountOf) {
     const newAEItem = document.createElement('li');
     newAEItem.classList.add("extraItem");
+    newAEItem.classList.add("suitcase__item");
 
     const newAEIName = document.createElement('span');
     newAEIName.innerHTML = aEIName + ": ";
@@ -237,6 +243,7 @@ function createAEElement(aEIName, aEAmountOf) {
     newAEItem.innerHTML += aEAmountOf;
 
     extraItemsList.appendChild(newAEItem);
+    console.log(newAEItem.classList)
 }
 
 /*<li class="suitcase__item extraItem" hidden>Item extra</li>*/
