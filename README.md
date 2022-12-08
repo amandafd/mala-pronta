@@ -7,8 +7,8 @@
 </br>
 
 <p align="center">
-  <a href=""><img src="https://img.shields.io/badge/%C3%BAltima%20atualiza%C3%A7%C3%A3o-novembro%202022-blue" align="center" alt="Badge - last update in november 2022" /></a> 
-  <a href=""><img src="https://img.shields.io/badge/status-em%20desenvolvimento-yellowgreen" align="center" alt="Badge status: under development" /></a>
+  <a href=""><img src="https://img.shields.io/badge/last%20update-december%202022-blue" align="center" alt="Badge - last update in december 2022" /></a> 
+  <a href=""><img src="https://img.shields.io/badge/status-under%20development-yellowgreen" align="center" alt="Badge status: under development" /></a>
   <a href=""><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" align="center" alt="Badge - HTML" /></a>
   <a href=""><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" align="center" alt="Badge - CSS" /></a>
   <a href=""><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" align="center" alt="Badge - Javascript" /></a>
@@ -17,7 +17,7 @@
 <a href="https://mala-pronta.vercel.app/" align="center">Project link</a><br>
 <!--<a href="" align="center">Link do vídeo apresentando o projeto</a>-->
 
-<ul>Conteúdos
+<ul>Content
   <li><a href="#overview">Overview</a> 
     <ul><li><a href="#the-project">The Project</a></li></ul>
   </li>  

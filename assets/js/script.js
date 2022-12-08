@@ -11,6 +11,8 @@ function showName() {
             suitcaseName[i].innerHTML = this.name.value;
         }
         initialText.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
+
+        this.name.value = "";
     }
 }
 
@@ -219,6 +221,8 @@ function checkAnythingElse() {
         e.preventDefault();
 
         createAEElement(this.aEItem.value, this.aEAmountOf.value);
+        this.aEItem.value = "";
+        this.aEAmountOf.value = "";
     }
 }
 
@@ -233,13 +237,7 @@ function createAEElement(aEIName, aEAmountOf) {
     newAEItem.innerHTML += aEAmountOf;
 
     extraItemsList.appendChild(newAEItem);
-
-    /*newAEItem.appendChild(newAEAmountOf);
-    newAEItem.innerHTML += aEIName;
-
-    extraItemsList.appendChild(newAEItem);*/
 }
-
 
 /*<li class="suitcase__item extraItem" hidden>Item extra</li>*/
 checkAnythingElse();
