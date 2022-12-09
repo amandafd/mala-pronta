@@ -236,28 +236,32 @@ function checkAnythingElse() {
     formAnythingElse.onsubmit = function(e) {
         e.preventDefault();
 
-        createAEElement(this.aEItem.value, this.aEAmountOf.value);
+        createAEElement(this.aEName.value, this.aEAmountOf.value);
 
-        this.aEItem.value = "";
+        this.aEName.value = "";
         this.aEAmountOf.value = "";
     }
 }
 
-function createAEElement(aEIName, aEAmountOf) {
+function createAEElement(aEName, aEAmountOf) {
     const newAEItem = document.createElement('li');
     newAEItem.classList.add("extraItem");
     newAEItem.classList.add("suitcase__item");
 
     const newAEIName = document.createElement('span');
-    newAEIName.innerHTML = aEIName + ": ";
+    newAEIName.innerHTML = aEName + ": ";
 
     newAEItem.appendChild(newAEIName);
     newAEItem.innerHTML += aEAmountOf;
 
     extraItemsList.appendChild(newAEItem);
 
-    localStorage.setItem("aEName", aEIName);
-    localStorage.setItem("aEAmountOf", aEAmountOf);
+    const aECurrentItem = {
+        "aEName": aEName,
+        "aEAmountOf": aEAmountOf
+    }
+
+    localStorage.setItem("aEItem", aECurrentItem);
 }
 
 /*<li class="suitcase__item extraItem" hidden>Item extra</li>*/
