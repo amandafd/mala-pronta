@@ -12,6 +12,8 @@ function showName() {
         }
         initialText.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
 
+        localStorage.setItem("suitcaseName", this.name.value);
+
         this.name.value = "";
     }
 }
@@ -29,7 +31,6 @@ function calculateItens() {
     formTotalDuration.onsubmit = function(e) {
         e.preventDefault();
         
-
         if(this.totalDuration.value < 4) {
             amountOfLingerie.innerHTML = parseInt(this.totalDuration.value) + 2;
             amountOfPajama.innerHTML = 1;
@@ -47,16 +48,18 @@ function calculateItens() {
             amountOfBeachRobe.innerHTML = "3 ou 4";
         }
 
-        this.totalDuration.value = "";
+        localStorage.setItem("totalDuration", this.totalDuration.value);
 
-    
-       
+        this.totalDuration.value = "";
     }
 }
 
 calculateItens();
 
-/*Temperature variation*/ /* TODO: find out how to uncheck all checkboxes at the end */
+/*Temperature variation
+    TODO: find out how to uncheck all checkboxes at the end
+    TODO: find out how to set the checked ones in localStorage
+*/
 const formTemperatureVariation = document.querySelector('.form__question--temperatureVariation');
 
 const temperatureDuration = document.querySelectorAll('.temperatureDuration');
@@ -138,7 +141,9 @@ function checkTemperatureVariation() {
 
 checkTemperatureVariation();
 
-/*Temperature duration*/ /* TODO: find out how to clear all the fields at the end */
+/*Temperature duration
+    TODO: set duration values in localStorage
+*/
 const formTemperatureDuration = document.querySelector('.form__question--temperatureDuration')
 
 const amountOf__dress = document.querySelectorAll('.amountOf__dress');
@@ -162,7 +167,10 @@ checkTemperatureDuration();
 
 
 
-/*Scenary*/ /* TODO: find out how to uncheck all checkboxes at the end */
+/*Scenary    
+    TODO: find out how to uncheck all checkboxes at the end
+    TODO: find out how to set the checked ones in localStorage
+*/
 const formScenary = document.querySelector('.form__question--scenary');
 
 const waterClothing = document.querySelectorAll('.waterClothing');
@@ -193,7 +201,10 @@ function checkScenary() {
 
 checkScenary();
 
-/*Event*/ /* TODO: find out how to uncheck all checkboxes at the end */
+/*Event    
+    TODO: find out how to uncheck all checkboxes at the end
+    TODO: find out how to set the checked ones in localStorage
+*/
 const formEvento = document.querySelector('.form__question--event');
 
 function checkEvent() {
@@ -226,6 +237,7 @@ function checkAnythingElse() {
         e.preventDefault();
 
         createAEElement(this.aEItem.value, this.aEAmountOf.value);
+
         this.aEItem.value = "";
         this.aEAmountOf.value = "";
     }
@@ -243,7 +255,9 @@ function createAEElement(aEIName, aEAmountOf) {
     newAEItem.innerHTML += aEAmountOf;
 
     extraItemsList.appendChild(newAEItem);
-    console.log(newAEItem.classList)
+
+    localStorage.setItem("aEName", aEIName);
+    localStorage.setItem("aEAmountOf", aEAmountOf);
 }
 
 /*<li class="suitcase__item extraItem" hidden>Item extra</li>*/
