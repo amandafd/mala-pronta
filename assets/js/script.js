@@ -152,6 +152,18 @@ const amountOf__dress = document.querySelectorAll('.amountOf__dress');
 function checkTemperatureDuration() {
     formTemperatureDuration.onsubmit = function(e) {
         e.preventDefault();
+
+        const temperatureDurations = {
+            "dMoreThan25": this.duration__moreThan25.value,
+            "dT20and25": this.duration__t20and25.value,
+            "dT15and20": this.duration__t15and20.value,
+            "dT10and15": this.duration__t10and15.value,
+            "dT5and10": this.duration__t5and10.value,
+            "dT0and5": this.duration__t0and5.value,
+            "dTNegative": this.duration__tNegative.value
+        }
+
+        localStorage.setItem("temperatureDurations", temperatureDurations);
         
         this.duration__moreThan25.value = "";
         this.duration__t20and25.value = "";
