@@ -1,10 +1,10 @@
 /*Name*/ /*Sugestion: find out how to save all informations in localStorange, and show even if users refresh page*/
-const formname = document.querySelector('.form__question--name');
+const formName = document.querySelector('.form__question--name');
 const suitcaseName = document.querySelectorAll('.suitcase__name');
 const initialText = document.querySelector('.suitcase__initialText');
 
 function showName() {
-    formname.onsubmit = function(e) {
+    formName.onsubmit = function(e) {
         e.preventDefault();
     
         for (let i = 0; i < suitcaseName.length; i++) {
@@ -13,6 +13,7 @@ function showName() {
         initialText.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
 
         localStorage.setItem("suitcaseName", JSON.stringify(this.name.value));
+        localStorage.getItem(this.name.value);
 
         this.name.value = "";
     }
@@ -49,6 +50,7 @@ function calculateItens() {
         }
 
         localStorage.setItem("totalDuration", this.totalDuration.value);
+        localStorage.getItem(this.totalDuration.value);
 
         this.totalDuration.value = "";
     }
@@ -164,6 +166,7 @@ function checkTemperatureDuration() {
         }
 
         localStorage.setItem("temperatureDurations", JSON.stringify(temperatureDurations));
+        localStorage.getItem(temperatureDuration);
         
         this.duration__moreThan25.value = "";
         this.duration__t20and25.value = "";
@@ -243,7 +246,11 @@ checkEvent();
 /*Anything else*/ 
 const formAnythingElse = document.querySelector('.form__question--anythingElse');
 const extraItemsList = document.querySelector("#list__extraItems");
-const aEItems = [];
+const aEItems = JSON.parse(localStorage.getItem("itens")) || [];
+
+aEItems.forEach((element) => {
+    console.log(element);
+})
 
 function checkAnythingElse() {
     formAnythingElse.onsubmit = function(e) {
@@ -276,7 +283,7 @@ function createAEElement(aEName, aEAmountOf) {
 
     aEItems.push(aECurrentItem);
 
-    localStorage.setItem("aEItem", JSON.stringify(aEItems));
+    localStorage.setItem("aEItems", JSON.stringify(aEItems));
 }
 
 /*<li class="suitcase__item extraItem" hidden>Item extra</li>*/
