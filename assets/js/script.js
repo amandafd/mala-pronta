@@ -249,7 +249,7 @@ const extraItemsList = document.querySelector("#list__extraItems");
 const aEItems = JSON.parse(localStorage.getItem("itens")) || [];
 
 aEItems.forEach((element) => {
-    console.log(element);
+    console.log(element.aEName, element.aEAmountOf);
 })
 
 function checkAnythingElse() {
