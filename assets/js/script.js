@@ -12,7 +12,7 @@ function showName() {
         }
         initialText.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
 
-        localStorage.setItem("suitcaseName", this.name.value);
+        localStorage.setItem("suitcaseName", JSON.stringify(this.name.value));
 
         this.name.value = "";
     }
@@ -163,7 +163,7 @@ function checkTemperatureDuration() {
             "dTNegative": this.duration__tNegative.value
         }
 
-        localStorage.setItem("temperatureDurations", temperatureDurations);
+        localStorage.setItem("temperatureDurations", JSON.stringify(temperatureDurations));
         
         this.duration__moreThan25.value = "";
         this.duration__t20and25.value = "";
