@@ -243,6 +243,7 @@ checkEvent();
 /*Anything else*/ 
 const formAnythingElse = document.querySelector('.form__question--anythingElse');
 const extraItemsList = document.querySelector("#list__extraItems");
+const aEItems = [];
 
 function checkAnythingElse() {
     formAnythingElse.onsubmit = function(e) {
@@ -273,7 +274,9 @@ function createAEElement(aEName, aEAmountOf) {
         "aEAmountOf": aEAmountOf
     }
 
-    localStorage.setItem("aEItem", aECurrentItem);
+    aEItems.push(aECurrentItem);
+
+    localStorage.setItem("aEItem", JSON.stringify(aEItems));
 }
 
 /*<li class="suitcase__item extraItem" hidden>Item extra</li>*/
