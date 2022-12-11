@@ -1,4 +1,4 @@
-/*Name*/ /*Sugestion: find out how to save all informations in localStorange, and show even if users refresh page*/
+/*Name*/
 const formName = document.querySelector('.form__question--name');
 const suitcaseName = document.querySelectorAll('.suitcase__name');
 const initialText = document.querySelector('.suitcase__initialText');
@@ -249,41 +249,44 @@ const extraItemsList = document.querySelector("#list__extraItems");
 const aEItems = JSON.parse(localStorage.getItem("itens")) || [];
 
 aEItems.forEach((element) => {
-    console.log(element.aEName, element.aEAmountOf);
+    createAEElement(element.aEName, element.aEAmountOf);
 })
 
 function checkAnythingElse() {
     formAnythingElse.onsubmit = function(e) {
         e.preventDefault();
 
-        createAEElement(this.aEName.value, this.aEAmountOf.value);
+        const aEName = e.target.elements['aEName'];
+        const aEAmountOf = e.target.elements['aEAmountOf'];
 
-        this.aEName.value = "";
-        this.aEAmountOf.value = "";
+        const aECurrentItem = {
+            "aEName": aEName.value,
+            "aEAmountOf": aEAmountOf.value
+        }
+
+        createAEElement(aECurrentItem);
+
+        aEItems.push(aECurrentItem);
+
+        localStorage.setItem("aEItems", JSON.stringify(aEItems));
+
+        aEName.value = "";
+        aEAmountOf.value = "";
     }
 }
 
-function createAEElement(aEName, aEAmountOf) {
+function createAEElement(aEItem) {
     const newAEItem = document.createElement('li');
-    newAEItem.classList.add("extraItem");
+    newAEItem.classList.add("aEItem");
     newAEItem.classList.add("suitcase__item");
 
     const newAEIName = document.createElement('span');
-    newAEIName.innerHTML = aEName + ": ";
+    newAEIName.innerHTML = aEItem.aEName + ": ";
 
     newAEItem.appendChild(newAEIName);
-    newAEItem.innerHTML += aEAmountOf;
+    newAEItem.innerHTML += aEItem.aEAmountOf;
 
     extraItemsList.appendChild(newAEItem);
-
-    const aECurrentItem = {
-        "aEName": aEName,
-        "aEAmountOf": aEAmountOf
-    }
-
-    aEItems.push(aECurrentItem);
-
-    localStorage.setItem("aEItems", JSON.stringify(aEItems));
 }
 
 /*<li class="suitcase__item extraItem" hidden>Item extra</li>*/
