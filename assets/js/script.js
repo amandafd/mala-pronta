@@ -246,10 +246,10 @@ checkEvent();
 /*Anything else*/ 
 const formAnythingElse = document.querySelector('.form__question--anythingElse');
 const extraItemsList = document.querySelector("#list__extraItems");
-const aEItems = JSON.parse(localStorage.getItem("itens")) || [];
+const aEItems = JSON.parse(localStorage.getItem("aEItems")) || [];
 
 aEItems.forEach((element) => {
-    createAEElement(element.aEName, element.aEAmountOf);
+    createAEElement(element);
 })
 
 function checkAnythingElse() {
