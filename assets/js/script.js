@@ -6,16 +6,18 @@ const initialText = document.querySelector('.suitcase__initialText');
 function showName() {
     formName.onsubmit = function(e) {
         e.preventDefault();
+
+        const userName = e.target.elements['name'];
     
         for (let i = 0; i < suitcaseName.length; i++) {
-            suitcaseName[i].innerHTML = this.name.value;
+            suitcaseName[i].innerHTML = userName.value;
         }
         initialText.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
 
-        localStorage.setItem("suitcaseName", JSON.stringify(this.name.value));
-        localStorage.getItem(this.name.value);
+        localStorage.setItem("suitcaseName", JSON.stringify(userName.value));
+        localStorage.getItem(userName.value);
 
-        this.name.value = "";
+        userName.value = "";
     }
 }
 
