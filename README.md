@@ -44,6 +44,7 @@
   <li>Posicionamento de divs laterais para criação de rolagem lateral da página;</li>
   <li>Captação de valores de inputs e manipulação desses dados com DOM e Javascript;</li>
   <li>Captação de arrays e classes, com DOM e Javascript para manipular elementos HTML;</li>
+  <li>Cria e adicionar elementos em listas através do Javascript, armazenando esses elementos no localStorage;</li>
   <li>Uso de localStorage e seus métodos para armazenar informações captadas através dos inputs preenchidos pelos usuários;</li>
   <li>Desenvolver projetos com conjunto com um time;</li>
 </ul> 
