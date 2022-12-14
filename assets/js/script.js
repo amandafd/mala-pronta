@@ -1,4 +1,5 @@
-/*Name*/
+/*Name*/ 
+/* TODO: Find out how to show name after reaload page, replacing the name if user fills the input again */
 const formName = document.querySelector('.form__question--name');
 const suitcaseName = document.querySelectorAll('.suitcase__name');
 const initialText = document.querySelector('.suitcase__initialText');
@@ -15,7 +16,7 @@ function showName() {
         initialText.innerHTML = "Continue preenchendo o questionário para completar sua mala.";
 
         localStorage.setItem("suitcaseName", JSON.stringify(userName.value));
-        localStorage.getItem(userName.value);
+        JSON.parse(localStorage.getItem(userName.value));
 
         userName.value = "";
     }
@@ -261,15 +262,24 @@ function checkAnythingElse() {
         const aEName = e.target.elements['aEName'];
         const aEAmountOf = e.target.elements['aEAmountOf'];
 
+        const exist = aEItems.find(element => element.aEName === aEName.value);
+
         const aECurrentItem = {
             "aEName": aEName.value,
             "aEAmountOf": aEAmountOf.value
         }
 
-        createAEElement(aECurrentItem);
+        if (exist) {
+            aECurrentItem.id = exist.id;
+            console.log(exist.id);
+        } else {
+            aECurrentItem.id = aEItems.length
+            ;
+            createAEElement(aECurrentItem);
 
-        aEItems.push(aECurrentItem);
-
+            aEItems.push(aECurrentItem);
+        }
+        
         localStorage.setItem("aEItems", JSON.stringify(aEItems));
 
         aEName.value = "";
@@ -284,8 +294,9 @@ function createAEElement(aEItem) {
 
     const newAEIName = document.createElement('span');
     newAEIName.innerHTML = aEItem.aEName + ": ";
-
+    newAEIName.dataset.id = aEItem.id;
     newAEItem.appendChild(newAEIName);
+
     newAEItem.innerHTML += aEItem.aEAmountOf;
 
     extraItemsList.appendChild(newAEItem);
