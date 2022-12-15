@@ -271,7 +271,8 @@ function checkAnythingElse() {
 
         if (exist) {
             aECurrentItem.id = exist.id;
-            console.log(exist.id);
+            
+            updateAEElement(aECurrentItem);
         } else {
             aECurrentItem.id = aEItems.length
             ;
@@ -294,13 +295,20 @@ function createAEElement(aEItem) {
 
     const newAEIName = document.createElement('span');
     newAEIName.innerHTML = aEItem.aEName + ": ";
-    newAEIName.dataset.id = aEItem.id;
-    newAEItem.appendChild(newAEIName);
 
-    newAEItem.innerHTML += aEItem.aEAmountOf;
+    const newAEIAmountOf = document.createElement('span');
+    newAEIAmountOf.innerHTML = aEItem.aEAmountOf
+
+    newAEIAmountOf.dataset.id = aEItem.id;
+    newAEItem.appendChild(newAEIName);
+    newAEItem.appendChild(newAEIAmountOf);
+
 
     extraItemsList.appendChild(newAEItem);
 }
 
-/*<li class="suitcase__item extraItem" hidden>Item extra</li>*/
+function updateAEElement(aEItem) {
+    document.querySelector("[data-id='"+aEItem.id+"']").innerHTML = aEItem.aEAmountOf;
+}
+
 checkAnythingElse();
