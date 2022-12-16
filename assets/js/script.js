@@ -303,7 +303,6 @@ function createAEElement(aEItem) {
     newAEItem.appendChild(newAEIName);
     newAEItem.appendChild(newAEIAmountOf);
 
-
     extraItemsList.appendChild(newAEItem);
 }
 
