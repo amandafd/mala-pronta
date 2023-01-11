@@ -250,6 +250,7 @@ checkEvent();
 const formAnythingElse = document.querySelector('.form__question--anythingElse');
 const extraItemsList = document.querySelector("#list__extraItems");
 const aEItems = JSON.parse(localStorage.getItem("aEItems")) || [];
+const temporaryText = document.querySelector(".temporaryText");
 
 aEItems.forEach((element) => {
     createAEElement(element);
@@ -261,6 +262,13 @@ function checkAnythingElse() {
 
         const aEName = e.target.elements['aEName'];
         const aEAmountOf = e.target.elements['aEAmountOf'];
+        
+        if (aEName.value.lenght !== "") {
+            temporaryText.hidden = true;
+        }
+        else {
+            alert("Por favor, preencha o campo para incluir seu item na mala");
+        }
 
         const exist = aEItems.find(element => element.aEName === aEName.value);
 
