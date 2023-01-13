@@ -39,20 +39,20 @@
 
 <h3 id="lessons-learned">Lessons learned</h3>
 <ul>Os aprendizados reforçados e adquiridos durante a execução desse projeto serão atualizados constantemente:
-  <li>Uso de formulários e seus diferentes inputs em HTML, CSS e Javascript;</li>
-  <li>Trabalhar com rolagem lateral para conteúdos overflow em uma section;</li>
-  <li>Posicionamento de divs laterais para criação de rolagem lateral da página;</li>
-  <li>Captação de valores de inputs e manipulação desses dados com DOM e Javascript;</li>
-  <li>Captação de arrays e classes, com DOM e Javascript para manipular elementos HTML;</li>
-  <li>Cria e adicionar elementos em listas através do Javascript, armazenando esses elementos no localStorage;</li>
-  <li>Uso de localStorage e seus métodos para armazenar informações captadas através dos inputs preenchidos pelos usuários;</li>
-  <li>Desenvolver projetos com conjunto com um time;</li>
+  <li>Use of form and their inputs in HTML, CSS and Javascript;</li>
+  <li>Work with side scrolling to overflow contents in a section;</li>
+  <li>Positioning of side divs to create side page scrolling;</li>
+  <li>Capture of input values and manipulation of this data with DOM and Javascript;</li>
+  <li>Capture of arrays and classes using DOM and Javascript to manipulate HTML elements;</li>
+  <li>Create and add element to lists throught Javascript, storing in localStorage;</li>
+  <li>Use of localStorage methods to store input data;</li>
+  <li>Develop projects with a team;</li>
 </ul> 
 
 <h2 id="authors" align="left">Authors</h2>
 <img align="left" src="https://avatars.githubusercontent.com/u/104245596?s=400&u=22dddd54d435db2df3c8f6e91c881be3cdc31170&v=4" width=115>
 <a href="https://github.com/amandafd">Amanda Dionisio</a>
-<h3 align="left">You can fin me on social media:</h3>
+<h3 align="left">You can find me on social media:</h3>
 <p align="left">
   <a href="https://www.linkedin.com/in/amanda-felipe-dionisio"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Badge - Linkedin" /></a>
   <a href="https://www.behance.net/amanda_dionisio"><img src="https://img.shields.io/badge/-Behance-blue?style=for-the-badge&logo=behance&logoColor=white" alt="Badge - Behance" /></a>
@@ -62,7 +62,7 @@
 
 <img align="left" src="https://avatars.githubusercontent.com/u/114086320?v=4" width=115>
 <a href="https://github.com/soraia-barbosa">Soraia Barbosa</a>
-<h3 align="left">You can fin me on social media:</h3>
+<h3 align="left">You can find me on social media:</h3>
 <p align="left">
   <a href="https://www.linkedin.com/in/soraiacbarbosa/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Badge - Linkedin" /></a>
 </p>
