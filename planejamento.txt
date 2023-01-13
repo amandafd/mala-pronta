@@ -1,9 +1,0 @@
- Esse arquivo será utilizado durante a execução do projeto para auxiliar no seu planejamento e execução.
-
-- Cenário
-TODO: adicionar imagens/icones as opções
-
-- Evento
-TODO: adicionar imagens/icones as opções
-
--https://trello.com/b/7s5jG5c5/mala-pronta
