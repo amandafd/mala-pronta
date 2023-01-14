@@ -31,8 +31,8 @@
 
 <h3 id="the-project">The Project</h3>
 
-<p>Esse site está sendo desenvolvido por nós com o intuito de auxiliar na montagem de malas de viagem de acordo com o tempo em cada destino, clima e demais fatores. Assim o viajante não corre o risco de esquecer itens essenciais e economiza tempo, pensando apenas na parte boa: aproveitar o destino!</p> 
-<p>Os objetivos de aprendizado desse projeto serão atualizados na seção "Lessons learned" conforme são trabalhados na execução.</p>
+<p>This site is being developed by us in order to assist in the assembly of travel bags according to the weather in each destination, climate and other factors. This way, the traveler does not run the risk of forgetting essential items and saves time, thinking only about the good part: enjoying the destination!</p> 
+<p>The learning objectives for this project will be updated in the "Lessons learned" section as they are worked through in the run.</p>
 
 
 <h2 id="the-process">The Process</h2>
