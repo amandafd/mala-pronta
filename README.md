@@ -15,7 +15,7 @@
 </p>
 
 <a href="https://mala-pronta.vercel.app/" align="center">Project link</a><br>
-<!--<a href="" align="center">Link do vídeo apresentando o projeto</a>-->
+<!--<a href="" align="center">Video link presenting the project</a>-->
 
 <ul>Content
   <li><a href="#overview">Overview</a> 
@@ -38,7 +38,7 @@
 <h2 id="the-process">The Process</h2>
 
 <h3 id="lessons-learned">Lessons learned</h3>
-<ul>Os aprendizados reforçados e adquiridos durante a execução desse projeto serão atualizados constantemente:
+<ul>The learning reinforced and acquired during the execution of this project will be constantly updated:
   <li>Use of form and their inputs in HTML, CSS and Javascript;</li>
   <li>Work with side scrolling to overflow contents in a section;</li>
   <li>Positioning of side divs to create side page scrolling;</li>
