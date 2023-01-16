@@ -281,6 +281,8 @@ function checkAnythingElse() {
             aECurrentItem.id = exist.id;
             
             updateAEElement(aECurrentItem);
+
+            aEItems[exist.id] = aECurrentItem
         } else {
             aECurrentItem.id = aEItems.length
             ;
