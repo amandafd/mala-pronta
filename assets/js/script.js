@@ -282,10 +282,9 @@ function checkAnythingElse() {
             
             updateAEElement(aECurrentItem);
 
-            aEItems[exist.id] = aECurrentItem
+            aEItems[aEItems.findIndex(element => element.id === exist.id)] = aECurrentItem;
         } else {
-            aECurrentItem.id = aEItems.length
-            ;
+            aECurrentItem.id = aEItems[aEItems.length - 1] ? aEItems[aEItems.length - 1].id + 1 : 0;
             createAEElement(aECurrentItem);
 
             aEItems.push(aECurrentItem);
@@ -322,7 +321,7 @@ function updateAEElement(aEItem) {
     document.querySelector("[data-id='"+aEItem.id+"']").innerHTML = aEItem.aEAmountOf;
 }
 
-checkAnythingElse();
+
 
 function buttonDelete(id) {
     const elementButton = document.createElement("button");
@@ -338,7 +337,9 @@ function buttonDelete(id) {
 function deleteElement(tag, id) {
     tag.remove();
 
-    aEItems.splice(aEItems.findIndex(element => element.id === id), 1);
+    aEItems.splice(findIndex(element => element.id === id), 1);
 
     localStorage.setItem("aEItems", JSON.stringify(aEItems));
 } 
+
+checkAnythingElse();
