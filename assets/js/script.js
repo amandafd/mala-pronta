@@ -313,7 +313,7 @@ function createAEElement(aEItem) {
     newAEItem.appendChild(newAEIName);
     newAEItem.appendChild(newAEIAmountOf);
 
-    newAEItem.appendChild(deleteButton());
+    newAEItem.appendChild(buttonDelete(aEItem.id));
 
     extraItemsList.appendChild(newAEItem);
 }
@@ -324,17 +324,21 @@ function updateAEElement(aEItem) {
 
 checkAnythingElse();
 
-function deleteButton() {
+function buttonDelete(id) {
     const elementButton = document.createElement("button");
     elementButton.innerText = "X";
 
     elementButton.addEventListener("click", function() {
-        deleteElement(this.parentNode);
+        deleteElement(this.parentNode, id);
     }); 
 
     return elementButton;
 }
-
-function deleteElement(tag) {
+ 
+function deleteElement(tag, id) {
     tag.remove();
-}
+
+    aEItems.splice(aEItems.findIndex(element => element.id === id), 1);
+
+    localStorage.setItem("aEItems", JSON.stringify(aEItems));
+} 
