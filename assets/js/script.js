@@ -313,6 +313,8 @@ function createAEElement(aEItem) {
     newAEItem.appendChild(newAEIName);
     newAEItem.appendChild(newAEIAmountOf);
 
+    newAEItem.appendChild(deleteButton());
+
     extraItemsList.appendChild(newAEItem);
 }
 
@@ -321,3 +323,18 @@ function updateAEElement(aEItem) {
 }
 
 checkAnythingElse();
+
+function deleteButton() {
+    const elementButton = document.createElement("button");
+    elementButton.innerText = "X";
+
+    elementButton.addEventListener("click", function() {
+        deleteElement(this.parentNode);
+    }); 
+
+    return elementButton;
+}
+
+function deleteElement(tag) {
+    tag.remove();
+}
