@@ -2,7 +2,7 @@
 
 
 <div align-items="center">
-  <img src="/assets/imagens/screenshot-temporario.jpg" alt="Screenshot do projeto">
+  <img src="/assets/imagens/screenshot-temporario.jpg" alt="Project screenshot">
 </div>
 </br>
 
@@ -66,5 +66,3 @@
 <p align="left">
   <a href="https://www.linkedin.com/in/soraiacbarbosa/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Badge - Linkedin" /></a>
 </p>
-
-
