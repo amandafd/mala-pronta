@@ -2,7 +2,7 @@
 
 
 <div align-items="center">
-  <img src="/assets/imagens/screenshot-temporario.jpg" alt="Project screenshot">
+  <img src="/assets/images/screenshot-temporario.jpg" alt="Project screenshot">
 </div>
 </br>
 
