@@ -31,7 +31,7 @@
 
 <h3 id="the-project">The Project</h3>
 
-<p>This site is being developed by us in order to assist in the assembly of travel bags according to the weather in each destination, climate and other factors. This way, the traveler does not run the risk of forgetting essential items and saves time, thinking only about the good part: enjoying the destination!</p> 
+<p>This site is being developed by us in order to assist in the assembly of travel bags according to the weather in each destination, weather and other factors. This way, the traveler does not run the risk of forgetting essential items and saves time, thinking only about the good part: enjoying the destination!</p> 
 <p>The learning objectives for this project will be updated in the "Lessons learned" section as they are worked through in the run.</p>
 
 
